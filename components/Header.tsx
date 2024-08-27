@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import { faXTwitter, faLinkedin, faFacebook, faInstagram, faThreads } from '@fortawesome/free-brands-svg-icons';
-import React from "react";
 
 export default function Header() {
     return (
