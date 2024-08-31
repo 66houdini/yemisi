@@ -1,3 +1,112 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Vertical Timeline Styles */
+
+.cd-timeline__img--hidden,
+.cd-timeline__content--hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.6s ease;
+}
+
+.cd-timeline__img--bounce-in,
+.cd-timeline__content--bounce-in {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Vertical Line */
+.cd-timeline__container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: #38b2ac; /* Equivalent to Tailwind's bg-teal-700 */
+}
+
+/* Flexbox adjustments for layout */
+.cd-timeline__block {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .cd-timeline__block:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .cd-timeline__img {
+    order: 1;
+  }
+  .cd-timeline__content {
+    width: 45%;
+    flex-grow: 0;
+  }
+}
+
+.cd-timeline__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.cd-timeline__content {
+  flex-grow: 1;
+}
+
+
+
+/* Vertical Timeline Styles */
+
+.cd-timeline__img--hidden,
+.cd-timeline__content--hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.6s ease;
+}
+
+.cd-timeline__img--bounce-in,
+.cd-timeline__content--bounce-in {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.cd-timeline__container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 4px;
+  background: #38b2ac; /* Equivalent to Tailwind's bg-teal-700 */
+}
+
+/* Flexbox adjustments for layout */
+.cd-timeline__block {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .cd-timeline__block:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+.cd-timeline__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.cd-timeline__content {
+  flex-grow: 1;
+}

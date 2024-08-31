@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <div className="flex">
-      <div className="bg-[#F7F2E9] p-32 w-2/3 ">
+      <div className="bg-[#F7F2E9] px-20 pt-20 w-2/3 ">
       <div className="space-y-3">
         <h1 className=" text-3xl font-bold">CONTACT ME</h1>
         <h2>Let's Connect</h2>
