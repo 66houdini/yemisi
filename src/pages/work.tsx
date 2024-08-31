@@ -215,7 +215,7 @@ export default function Work() {
     <div className="flex justify-center">
       <div className="w-16 h-1 bg-purple-400 rounded-full"></div>
     </div> */}
-    <h2 className="text-2xl font-bold text-center py-10">How can we work together?</h2>
+    <h2 className="text-2xl font-bold text-center py-10">Want to work together?</h2>
   <div className="flex">
    <section className="cd-timeline js-cd-timeline p-5 md:p-20">
       <div className="container mx-auto max-w-lg relative">
@@ -241,7 +241,7 @@ export default function Work() {
 
         {/* Second Block (Right) */}
         <div className="cd-timeline__block flex mb-10 md:flex-row-reverse">
-          <div className="cd-timeline__img flex items-center justify-center w-10 h-10 rounded-full bg-purple-400 cd-timeline__img--hidden">
+          <div className="cd-timeline__img flex items-center justify-center w-10 h-10 rounded-md mx-3 bg-purple-400 cd-timeline__img--hidden">
             <img src="/vite.svg" alt="Picture" />
           </div>
 
@@ -322,7 +322,7 @@ export default function Work() {
         {/* Add more blocks as needed */}
       </div>
     </section>
-     <div className="w-[420px] h-full mt-10 p-4 bg-slate-100 text-black rounded-md">
+     <div className="w-[420px] h-full mt-10 p-4 bg-slate-100 text-black rounded-md self-center">
       <h2 className="text-2xl font-bold mb-4">Book a Service</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
