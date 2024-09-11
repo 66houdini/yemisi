@@ -9,7 +9,11 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "primary": "#EEB264"
+      }
+    },
   },
   plugins: [],
 }

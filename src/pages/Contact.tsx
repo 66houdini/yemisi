@@ -23,7 +23,7 @@ export default function Contact() {
             <input type="text"  className="w-full p-2 my-2 bg-[#F7F2E9] border" />
             <label className="text-sm">Message</label>
             <textarea  className="w-full p-2 my-2 bg-[#F7F2E9] border" />
-            <button className="  border-2 border-black p-2 my-2">Submit</button>
+            <button className="  border  border-black rounded-md p-2 my-2">Submit</button>
         </form>
       </div>
         

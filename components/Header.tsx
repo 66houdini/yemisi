@@ -4,18 +4,18 @@ import { faXTwitter, faLinkedin, faFacebook, faInstagram, faThreads } from '@for
 
 export default function Header() {
     return (
-       <div className="flex p-5 justify-between bg-black text-white">
+       <div className="flex p-5 justify-between  text-blue-950 bg-white">
         <div className=" text-3xl font-bold">
             OLUWAYEMISI
         </div>
-        <div className="  space-x-10 text-sm  font-medium">
+        <div className="  space-x-10 text-sm  font-medium content-center">
             <a href="/">HOME</a>
             <a href="/work-with-me">WORK WITH ME</a>
             <a href="/projects">PROJECTS</a>
             <a href="/contact">CONTACT</a>
         </div>
-        <div className='space-x-4'>
-            <FontAwesomeIcon icon={faEnvelope} href='talktooluwayemisiadebyao.com' />
+        <div className='space-x-4 content-center'>
+            <FontAwesomeIcon icon={faEnvelope}  href='talktooluwayemisiadebyao.com' />
             <FontAwesomeIcon icon={faXTwitter} href='https://wwww.x.com/Iamyemisikayode' />
             <FontAwesomeIcon icon={faLinkedin} href='https://www.linkedin.com/in/oluwayemisitopekayode/' />
             <FontAwesomeIcon icon={faFacebook} href='https://www.facebook.com/oluwayemisi.kayode.5' />
