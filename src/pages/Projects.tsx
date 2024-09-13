@@ -295,7 +295,6 @@ export default function Projects() {
         </div>
       </div>
 
-     
       <div
         className="bg-cover object-center h-[400px] text-white relative"
         style={{ backgroundImage: 'url("/img/sideways.jpg")' }}
@@ -303,7 +302,10 @@ export default function Projects() {
         <div className="absolute inset-0  backdrop-filter backdrop-brightness-50  z-0"></div>
 
         <div className="bg-white text-blue-950 z-10 absolute top-20 left-10 w-[600px] p-10 space-y-3">
-          <h1 className="text-2xl font-medium border-t border-primary w-fit">MY PASSION PROJECT</h1>
+          <h1 className="text-2xl font-medium  w-fit flex">
+            {" "}
+            <h2 className="border-t border-primary">MY </h2>{" "} PASSION PROJECT
+          </h1>
           <h2 className="text-sm font-light">
             Beyond my professional endeavors, I am the proud creator of the TTS
             Initiative, a non-governmental organization dedicated to empowering
@@ -312,22 +314,22 @@ export default function Projects() {
             aspirations and achievements for young people across the globe
           </h2>
           <Link to="/contact" className="flex font-semibold">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-6 text-primary"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                />
-              </svg>
-              <h1 className="text-sm self-center">TTS Initiative</h1>
-            </Link>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-6 text-primary"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+              />
+            </svg>
+            <h1 className="text-sm self-center">TTS Initiative</h1>
+          </Link>
         </div>
       </div>
 

@@ -613,6 +613,10 @@ export default function IndexPage() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleSubmit: React.FormEventHandler  = (event) => (
+    event.preventDefault()
+  )
+
   return (
     <>
       <div
@@ -645,37 +649,55 @@ export default function IndexPage() {
       </div>
 
       {/* Other sections of your page */}
-      <div id="expertise" className="p-20 grid grid-cols-3 gap-10 text-center text-sm">
-        <div>
-          <img src="/img/crowd.jpg" alt="brand-consulting" />
-          <h1 className="text-lg font-semibold">BRAND CONSULTING</h1>
-          Helping businesses create and maintain strong, memorable brands that
+      <div
+        id="expertise"
+        className="p-20 grid grid-cols-3 gap-10 text-center text-sm"
+      >
+        <div className=" space-y-5">
+          <img src="/img/man.png" alt="brand-consulting" className="h-20 inline" />
+          <h1 className="text-lg font-semibold text-blue-950">BRAND CONSULTING</h1>
+          <h1 className="text-justify text-zinc-500">
+             Helping businesses create and maintain strong, memorable brands that
           resonate with their target audience.
+          </h1>
+         
         </div>
-        <div>
-          <img src="/img/crowd.jpg" alt="brand-consulting" />
-          <h1 className="text-lg font-semibold">DIGITAL MARKETING</h1>
-          Crafting data-driven digital marketing strategies that increase
+        <div className="space-y-5">
+          <img src="/img/responsive.png" alt="brand-consulting" className="h-20 inline" />
+          <h1 className="text-lg font-semibold text-blue-950">DIGITAL MARKETING</h1>
+          <h1 className="text-justify text-zinc-500">
+             Crafting data-driven digital marketing strategies that increase
           visibility, drive traffic, and convert leads into loyal customers.
+          </h1>
+         
         </div>
-        <div>
-          <img src="/img/crowd.jpg" alt="brand-consulting" />
-          <h1 className="text-lg font-semibold">STRATEGIC PLANNING</h1>
-          Developing long-term strategies that align with business goals and
+        <div className="space-y-5">
+          <img src="/img/task.png" alt="brand-consulting" className="h-20 inline" />
+          <h1 className="text-lg font-semibold text-blue-950">STRATEGIC PLANNING</h1>
+          <h1 className="text-justify text-zinc-500">
+             Developing long-term strategies that align with business goals and
           market demands, ensuring sustainable growth.
+          </h1>
+         
         </div>
-        <div>
-          <img src="/img/crowd.jpg" alt="brand-consulting" />
-          <h1 className="text-lg font-semibold">DISRUPTIVE CONTENT CREATION</h1>
-          Designing and delivering content that not only captures attention but
+        <div className="space-y-5">
+          <img src="/img/creative.png" alt="brand-consulting" className="h-20 inline" />
+          <h1 className="text-lg font-semibold text-blue-950">DISRUPTIVE CONTENT CREATION</h1>
+          <h1 className="text-justify text-zinc-500">
+            Designing and delivering content that not only captures attention but
           also challenges the status quo, driving engagement and fostering
           innovation.
+          </h1>
+          
         </div>
-        <div>
-          <img src="/img/crowd.jpg" alt="brand-consulting" />
-          <h1 className="text-lg font-semibold">ENTREPRENEURSHIP</h1>
-          Launching and managing successful ventures, with a focus on
+        <div className="space-y-5">
+          <img src="/img/investment.png" alt="brand-consulting" className="h-20 inline" />
+          <h1 className="text-lg font-semibold text-blue-950">ENTREPRENEURSHIP</h1>
+          <h1 className="text-justify text-zinc-500">
+            Launching and managing successful ventures, with a focus on
           sustainability, innovation, and social impact.
+          </h1>
+          
         </div>
       </div>
 
@@ -691,7 +713,7 @@ export default function IndexPage() {
 
             <div className="cd-timeline__content ml-10 cd-timeline__content--hidden bg-purple-400 p-3 rounded-md">
               {/* <h2 className="text-xl font-bold">Oluwayemisi T. Adebayo</h2> */}
-               <img src="/img/crowd.jpg" alt="brand-consulting" />
+              <img src="/img/crowd.jpg" alt="brand-consulting" />
               <p className="color-contrast-medium text-sm">
                 Oluwayemisi T. Adebayo, a visionary international brand and
                 digital marketing consultant, lecturer, strategist, disruptive
@@ -701,7 +723,6 @@ export default function IndexPage() {
                 exceed expectations in today’s fast-paced, ever-evolving digital
                 landscape.
               </p>
-             
             </div>
           </div>
 
@@ -721,7 +742,6 @@ export default function IndexPage() {
                 me to craft innovative solutions that address both challenges
                 and opportunities in the marketplace.
               </p>
-              
             </div>
           </div>
 
@@ -741,7 +761,6 @@ export default function IndexPage() {
                 creative flair that ensures each project stands out in a crowded
                 marketplace.
               </p>
-              
             </div>
           </div>
 
@@ -751,12 +770,12 @@ export default function IndexPage() {
 
       <div
         className="grid place-content-center p-20 bg-cover bg-fixed text-white text-center"
-        style={{ backgroundImage: 'url("/img/crowd.jpg")' }}
+        style={{ backgroundImage: 'url("/img/sideways.jpg")' }}
       >
         <h1 className="text-xl">Sign Up for</h1>
         <h1 className="text-6xl font-bold pb-3">Oluwayemisi Newsletter</h1>
         <span>Stay in the loop with the latest activities. Subscribe now!</span>
-        <form className="py-5">
+        <form className="py-5" onSubmit={handleSubmit}>
           <input
             type="email"
             placeholder="Enter your email"
@@ -766,6 +785,90 @@ export default function IndexPage() {
             SUBSCRIBE
           </button>
         </form>
+        <div className="flex justify-center space-x-5">
+          <a href="mailto:talktooluwayemisiadebyao.com" className="">
+            <svg
+              className="w-8 h-8 text-white hover:bg-blue-950 border-2 p-1 rounded-full "
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M2.038 5.61A2.01 2.01 0 0 0 2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-.12-.01-.238-.03-.352l-.866.65-7.89 6.032a2 2 0 0 1-2.429 0L2.884 6.288l-.846-.677Z" />
+              <path d="M20.677 4.117A1.996 1.996 0 0 0 20 4H4c-.225 0-.44.037-.642.105l.758.607L12 10.742 19.9 4.7l.777-.583Z" />
+            </svg>
+          </a>
+
+          <a href="https://www.facebook.com/oluwayemisi.kayode.5">
+            <svg
+              className="w-8 h-8 text-white hover:bg-blue-950 border-2 p-1 rounded-full "
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+
+          <a href="https://wwww.x.com/Iamyemisikayode">
+            <svg
+              className="w-8 h-8 text-white hover:bg-blue-950 border-2 p-1 rounded-full"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/iamyemisikayode/">
+            <svg
+              className="w-8 h-8 text-white hover:bg-blue-950 border-2 p-1 rounded-full"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/oluwayemisitopekayode/">
+            <svg
+              className="w-8 h-8 text-white hover:bg-blue-950 border-2 p-1 rounded-full"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                clip-rule="evenodd"
+              />
+              <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
+            </svg>
+          </a>
+        </div>
       </div>
     </>
   );
