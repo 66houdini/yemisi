@@ -150,8 +150,8 @@
 //   );
 // }
 
-import React, { useEffect, useState } from "react";
-
+import React, { useState} from "react";
+import  "../work.css"
 export default function Work() {
   const [formData, setFormData] = useState({
     name: "",
@@ -182,147 +182,72 @@ export default function Work() {
     // After submission, you can show a success message or redirect the user
   };
 
-
-  useEffect(() => {
-    function handleScroll() {
-      const blocks = document.querySelectorAll(".cd-timeline__block");
-      blocks.forEach((block) => {
-        const img = block.querySelector(".cd-timeline__img");
-        const content = block.querySelector(".cd-timeline__content");
-        const blockTop = block.getBoundingClientRect().top;
-        const isVisible = blockTop <= window.innerHeight * 0.8;
-
-        if (isVisible) {
-          img!.classList.add("cd-timeline__img--bounce-in");
-          content!.classList.add("cd-timeline__content--bounce-in");
-        } else {
-          img!.classList.remove("cd-timeline__img--bounce-in");
-          content!.classList.remove("cd-timeline__content--bounce-in");
-        }
-      });
-    }
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    // <div className=" bg-gradient-to-br from-white via-purple-300 to-indigo-500">
-
-  <div className=" bg-gradient-to-br from-purple-300 via-white to-indigo-500">
-    {/* <h1 className="text-4xl font-bold text-center py-10">Work With Me</h1>
-    <div className="flex justify-center">
-      <div className="w-16 h-1 bg-purple-400 rounded-full"></div>
-    </div> */}
-    <h2 className="text-2xl font-bold text-center py-10">Want to work together?</h2>
-  <div className="flex">
-   <section className="cd-timeline js-cd-timeline p-5 md:p-20">
-      <div className="container mx-auto max-w-lg relative">
-        {/* <div className="absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-1 bg-purple-400"></div> */}
-
-        {/* First Block (Left) */}
-        <div className="cd-timeline__block flex mb-10 ">
-          <div className="cd-timeline__img flex items-center justify-center w-10 h-10 rounded-full bg-purple-400 cd-timeline__img--hidden">
-            <img src="/vite.svg" alt="Picture" />
-          </div>
-
-          <div className="cd-timeline__content ml-12 md:ml-0 md:mr-auto md:w-1/2 cd-timeline__content--hidden  shadow-purple-400 shadow-lg  p-3 rounded-md">
-            <h2 className="text-xl font-bold">Let's collaborate</h2>
-            <p className="color-contrast-medium text-sm">
-              I am always eager to embark on new ventures and projects that
-              align with my passion for innovation and results-driven strategies. Whether
-              you’re looking to revamp your brand, implement a cutting-edge
-              digital marketing strategy, or develop disruptive content that
-              speaks to your audience, I am here to help.
-            </p>
-          </div>
+    <>
+    <h1 className=" text-center text-2xl font-bold text-blue-950 py-10">Want to work together?</h1>
+     <div className="timeline bg-gray-800 text-white py-10 ">
+      <div className="container left w-[550px]">
+        <div className="content">
+          <h2 className="text-xl font-medium">Let's collaborate</h2>
+          <p className="text-sm font-light">
+            I am always eager to embark on new ventures and projects that align
+            with my passion for innovation and results-driven strategies.
+            Whether you’re looking to revamp your brand, implement a
+            cutting-edge digital marketing strategy, or develop disruptive
+            content that speaks to your audience, I am here to help{" "}
+          </p>
         </div>
-
-        {/* Second Block (Right) */}
-        <div className="cd-timeline__block flex mb-10 md:flex-row-reverse">
-          <div className="cd-timeline__img flex items-center justify-center w-10 h-10 rounded-md mx-3 bg-purple-400 cd-timeline__img--hidden">
-            <img src="/vite.svg" alt="Picture" />
-          </div>
-
-          <div className="cd-timeline__content mr-12 md:mr-0 md:ml-auto md:w-1/2 cd-timeline__content--hidden border shadow-purple-400 shadow-lg border-purple-400 p-3 rounded-md">
-            <h2 className="text-xl font-bold">Brand Consultation: Schedule a meeting</h2>
-            <p className="color-contrast-medium text-sm">
-              With over a decade of experience in B2B and B2C brand consultation, I bring
-              a unique blend of strategic insight, creativity, and actionable solutions tailored
-              to your business needs. My proven track record spans multiple industries, helping
-              brands achieve sustainable growth, increased market share, and stronger loyalty.
-              I offer comprehensive services from brand positioning to digital marketing,
-              ensuring your brand stays ahead in a competitive market. By prioritizing your
-              business goals and adopting a forward-thinking approach, I’m committed to elevating
-              your brand and driving measurable success.
-            </p>
-          </div>
-        </div>
-
-        {/* Third Block (Left) */}
-        <div className="cd-timeline__block flex mb-10 md:flex-row">
-          <div className="cd-timeline__img flex items-center justify-center w-10 h-10 rounded-full bg-purple-400 cd-timeline__img--hidden">
-            <img src="/vite.svg" alt="Picture" />
-          </div>
-
-          <div className="cd-timeline__content ml-12 md:ml-0 md:mr-auto md:w-1/2 cd-timeline__content--hidden border shadow-purple-400 shadow-lg border-purple-400 p-3 rounded-md">
-            <h2 className="text-xl font-bold">
-              Event Guest, Facilitator or Appearance: Book Oluwayemisi Adedayo
-            </h2>
-            <p className="color-contrast-medium text-sm">
-              Leveraging my extensive experience working with hundreds of brands across
-              Africa and Europe, I deliver deep industry insights and actionable strategies
-              tailored to diverse audiences. My dynamic presentation style, combined with
-              a comprehensive understanding of the latest marketing and brand development
-              trends, ensures that your audience will gain valuable, practical takeaways
-              that drive business growth and inspire meaningful change.
-            </p>
-          </div>
-        </div>
-
-        {/* Fourth Block (Right) */}
-        <div className="cd-timeline__block flex mb-10 md:flex-row-reverse">
-          <div className="cd-timeline__img flex items-center justify-center w-10 h-10 rounded-full bg-purple-400 cd-timeline__img--hidden">
-            <img src="/vite.svg" alt="Picture" />
-          </div>
-
-          <div className="cd-timeline__content mr-12 md:mr-0 md:ml-auto md:w-1/2 cd-timeline__content--hidden border shadow-purple-400 shadow-lg border-purple-400 p-3 rounded-md">
-            <h2 className="text-xl font-bold">
-              1 on 1 Coaching (Business/Individual): Schedule a meeting
-            </h2>
-            <p className="color-contrast-medium text-sm">
-              If you aim to elevate your brand, refine your marketing strategies,
-              or tackle complex business challenges, my expertise will provide the
-              clarity and direction needed for meaningful growth. Booking a one-on-one
-              session with me means investing in a partnership focused on driving
-              your success.
-            </p>
-          </div>
-        </div>
-
-        {/* Fifth Block (Left) */}
-        <div className="cd-timeline__block flex mb-10 md:flex-row">
-          <div className="cd-timeline__img flex items-center justify-center w-10 h-10 rounded-full bg-purple-400 cd-timeline__img--hidden">
-            <img src="/vite.svg" alt="Picture" />
-          </div>
-
-          <div className="cd-timeline__content ml-12 md:ml-0 md:mr-auto md:w-1/2 cd-timeline__content--hidden border shadow-purple-400 shadow-lg border-purple-400 p-3 rounded-md">
-            <h2 className="text-xl font-bold">
-              Free Engagement & Mentorship: Schedule 15 minutes
-            </h2>
-            <p className="color-contrast-medium text-sm">
-              I am passionate about supporting young individuals and emerging
-              businesses. I dedicate time to mentor and guide them, helping them grow
-              and achieve success with tailored advice and strategic insights.
-            </p>
-          </div>
-        </div>
-
-        {/* Add more blocks as needed */}
       </div>
-    </section>
-     <div className="w-[420px] h-full mt-10 p-4 bg-slate-100 text-black rounded-md self-center">
+
+      <div className="container right w-[550px]">
+        <div className="content">
+          <h2 className=" text-xl font-medium">Brand Consultation: Schedule a meeting</h2>
+          <p className=" text-sm font-light">
+            With over a decade of experience in B2B and B2C brand consultation,
+            I bring a unique blend of strategic insight, creativity, and
+            actionable solutions tailored to your business needs. My proven
+            track record spans multiple industries, helping brands achieve
+            sustainable growth, increased market share, and stronger loyalty. I
+            offer comprehensive services from brand positioning to digital
+            marketing, ensuring your brand stays ahead in a competitive market.
+            By prioritizing your business goals and adopting a forward-thinking
+            approach, I’m committed to elevating your brand and driving
+            measurable success.
+          </p>
+        </div>
+      </div>
+
+      <div className="container left w-[550px]">
+        <div className="content">
+          <h2 className=" text-xl font-medium">
+            Event Guest, Facilitator or Appearance: Book Oluwayemisi Adedayo
+          </h2>
+          <p className=" text-sm font-light">
+            Leveraging my extensive experience working with hundreds of brands
+            across Africa and Europe, I deliver deep industry insights and
+            actionable strategies tailored to diverse audiences. My dynamic
+            presentation style, combined with a comprehensive understanding of
+            the latest marketing and brand development trends, ensures that your
+            audience will gain valuable, practical takeaways that drive business
+            growth and inspire meaningful change.
+          </p>
+        </div>
+      </div>
+
+      <div className="container right w-[550px]">
+        <div className="content">
+          <h2 className=" text-xl font-medium">1 on 1 Coaching (Business/Individual): Schedule a meeting</h2>
+          <p className=" text-sm font-light">
+            If you aim to elevate your brand, refine your marketing strategies,
+            or tackle complex business challenges, my expertise will provide the
+            clarity and direction needed for meaningful growth. Booking a
+            one-on-one session with me means investing in a partnership focused
+            on driving your success.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div className="w-[420px] h-full mt-10 p-4 bg-slate-100 text-black rounded-md self-center">
       <h2 className="text-2xl font-bold mb-4">Book a Service</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
@@ -392,10 +317,8 @@ export default function Work() {
         </button>
       </form>
     </div>
-  </div>
- 
-  </div>
-    
-    
+  
+    </>
+   
   );
 }
