@@ -304,7 +304,7 @@ export default function Projects() {
         <div className="bg-white text-blue-950 z-10 absolute top-20 left-10 w-[600px] p-10 space-y-3">
           <h1 className="text-2xl font-medium  w-fit flex">
             {" "}
-            <h2 className="border-t border-primary">MY </h2>{" "} PASSION PROJECT
+            <h2 className="border-t border-primary mr-3">MY </h2>{" "} PASSION PROJECT
           </h1>
           <h2 className="text-sm font-light">
             Beyond my professional endeavors, I am the proud creator of the TTS
