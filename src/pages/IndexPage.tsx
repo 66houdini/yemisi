@@ -613,9 +613,8 @@ export default function IndexPage() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleSubmit: React.FormEventHandler  = (event) => (
-    event.preventDefault()
-  )
+  const handleSubmit: React.FormEventHandler = (event) =>
+    event.preventDefault();
 
   return (
     <>
@@ -654,50 +653,156 @@ export default function IndexPage() {
         className="p-20 grid grid-cols-3 gap-10 text-center text-sm"
       >
         <div className=" space-y-5">
-          <img src="/img/man.png" alt="brand-consulting" className="h-20 inline" />
-          <h1 className="text-lg font-semibold text-blue-950">BRAND CONSULTING</h1>
-          <h1 className="text-justify text-zinc-500">
-             Helping businesses create and maintain strong, memorable brands that
-          resonate with their target audience.
+          <img
+            src="/img/man.png"
+            alt="brand-consulting"
+            className="h-20 inline"
+          />
+          <h1 className="text-lg font-semibold text-blue-950">
+            BRAND CONSULTING
           </h1>
-         
+          <h1 className="text-justify text-zinc-500">
+            Helping businesses create and maintain strong, memorable brands that
+            resonate with their target audience.
+          </h1>
         </div>
         <div className="space-y-5">
-          <img src="/img/responsive.png" alt="brand-consulting" className="h-20 inline" />
-          <h1 className="text-lg font-semibold text-blue-950">DIGITAL MARKETING</h1>
-          <h1 className="text-justify text-zinc-500">
-             Crafting data-driven digital marketing strategies that increase
-          visibility, drive traffic, and convert leads into loyal customers.
+          <img
+            src="/img/responsive.png"
+            alt="brand-consulting"
+            className="h-20 inline"
+          />
+          <h1 className="text-lg font-semibold text-blue-950">
+            DIGITAL MARKETING
           </h1>
-         
+          <h1 className="text-justify text-zinc-500">
+            Crafting data-driven digital marketing strategies that increase
+            visibility, drive traffic, and convert leads into loyal customers.
+          </h1>
         </div>
         <div className="space-y-5">
-          <img src="/img/task.png" alt="brand-consulting" className="h-20 inline" />
-          <h1 className="text-lg font-semibold text-blue-950">STRATEGIC PLANNING</h1>
-          <h1 className="text-justify text-zinc-500">
-             Developing long-term strategies that align with business goals and
-          market demands, ensuring sustainable growth.
+          <img
+            src="/img/task.png"
+            alt="brand-consulting"
+            className="h-20 inline"
+          />
+          <h1 className="text-lg font-semibold text-blue-950">
+            STRATEGIC PLANNING
           </h1>
-         
+          <h1 className="text-justify text-zinc-500">
+            Developing long-term strategies that align with business goals and
+            market demands, ensuring sustainable growth.
+          </h1>
         </div>
         <div className="space-y-5">
-          <img src="/img/creative.png" alt="brand-consulting" className="h-20 inline" />
-          <h1 className="text-lg font-semibold text-blue-950">DISRUPTIVE CONTENT CREATION</h1>
-          <h1 className="text-justify text-zinc-500">
-            Designing and delivering content that not only captures attention but
-          also challenges the status quo, driving engagement and fostering
-          innovation.
+          <img
+            src="/img/creative.png"
+            alt="brand-consulting"
+            className="h-20 inline"
+          />
+          <h1 className="text-lg font-semibold text-blue-950">
+            DISRUPTIVE CONTENT CREATION
           </h1>
-          
+          <h1 className="text-justify text-zinc-500">
+            Designing and delivering content that not only captures attention
+            but also challenges the status quo, driving engagement and fostering
+            innovation.
+          </h1>
         </div>
         <div className="space-y-5">
-          <img src="/img/investment.png" alt="brand-consulting" className="h-20 inline" />
-          <h1 className="text-lg font-semibold text-blue-950">ENTREPRENEURSHIP</h1>
+          <img
+            src="/img/investment.png"
+            alt="brand-consulting"
+            className="h-20 inline"
+          />
+          <h1 className="text-lg font-semibold text-blue-950">
+            ENTREPRENEURSHIP
+          </h1>
           <h1 className="text-justify text-zinc-500">
             Launching and managing successful ventures, with a focus on
-          sustainability, innovation, and social impact.
+            sustainability, innovation, and social impact.
           </h1>
-          
+        </div>
+      </div>
+      {/*just added*/}
+      <div className="w-full items-center justify-center h-fit relative ">
+        <div className="relative">
+          <div className="brightness-75">
+            <img
+              src="/img/flipped.jpg"
+              alt="about"
+              className="h-40 md:h-[500px] w-full object-cover "
+            />
+          </div>
+          {/* <h1 className=" text-2xl md:text-5xl absolute text-white bottom-1/2 pl-10 md:pl-20">
+              My Projects
+            </h1> */}
+          <div className=" p-12 space-y-6 bg-white text-blue-950 absolute  w-[377px] top-20 right-20 ">
+            <h1 className="text-2xl font-semibold">
+              <h2 className=" border-t border-t-primary w-fit">OLUWAYEMISI</h2>{" "}
+              T. ADEBAYO
+            </h1>
+            {/* <h2 className="text-sm">Oluwayemisi serves as a catalyst to inspire, educate, and empower the next generation of leaders through dynamic events, workshops, and interactive platforms.</h2> */}
+            <h1 className="text-sm font-light">
+              {" "}
+              A visionary international brand and digital marketing consultant,
+              lecturer, strategist, disruptive content creator, and
+              entrepreneur. With a deep-seated passion for innovation and an
+              unwavering commitment to excellence, I am dedicated to delivering
+              tangible results that not only meet but exceed expectations in
+              today’s fast-paced, ever-evolving digital landscape.
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div className="relative">
+        <div className="absolute top-0 left-[100px] h-[150px] w-[1px] bg-zinc-400"></div>
+
+        <div className="pt-14 pb-24 px-20 grid grid-cols-2 text-blue-950">
+          <div id="1" className="pt-14 px-14 space-y-7 content-end">
+            <h1 className="text-3xl font-bold">
+              <h2 className="text-2xl font-medium">Over</h2> THE PAST DECADE
+            </h1>
+            <h1 className="font-light text-sm">
+              I have honed my skills and expertise in the realms of brand
+              development, digital marketing, and strategic planning. My journey
+              has been marked by a relentless pursuit of knowledge and a desire
+              to push boundaries, enabling me to craft innovative solutions that
+              address both challenges and opportunities in the marketplace.
+            </h1>
+          </div>
+          <div id="2">
+            <img
+              src="/img/sideways.jpg"
+              className=" h-[280px] w-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="relative text-white">
+        <div>
+          <img
+            src="/img/sideways.jpg"
+            className=" h-[550px] w-full object-cover relative"
+          />
+        </div>
+        <div className=" absolute -top-6 left-20 w-[500px] border-2 border-primary pt-40 px-14 pb-20 space-y-3">
+          <div className="w-[350px] text-3xl font-bold ">
+            <h1 className=" text-2xl font-medium border-t border-primary w-fit">
+              As an
+            </h1>{" "}
+            EXPERIENCED LECTURER & STRATEGIST
+          </div>
+          <h1 className="w-[350px] text-sm font-light">
+            I have had the privilege
+            of mentoring countless individuals and organizations, guiding them
+            to achieve their goals through tailored strategies that drive growth
+            and foster success. My approach is rooted in a deep understanding of
+            the digital ecosystem, combined with a creative flair that ensures
+            each project stands out in a crowded marketplace.
+          </h1>
         </div>
       </div>
 

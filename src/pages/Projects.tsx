@@ -164,7 +164,7 @@ export default function Projects() {
               and confidence needed to navigate challenges and create lasting
               impact in their communities and beyond.
             </h1>
-            <Link to="/contact" className="flex font-semibold">
+            <Link to="/contact" className="flex font-semibold w-fit">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
