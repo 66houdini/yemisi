@@ -807,7 +807,7 @@ export default function IndexPage() {
       </div>
 
       {/* Vertical Timeline Section */}
-      <section className="cd-timeline js-cd-timeline p-5 md:p-20 ">
+      {/* <section className="cd-timeline js-cd-timeline p-5 md:p-20 ">
         <div className="container max-w-lg relative">
           <div className="absolute top-0 left-4 h-full w-1 bg-purple-400"></div>
 
@@ -817,7 +817,7 @@ export default function IndexPage() {
             </div>
 
             <div className="cd-timeline__content ml-10 cd-timeline__content--hidden bg-purple-400 p-3 rounded-md">
-              {/* <h2 className="text-xl font-bold">Oluwayemisi T. Adebayo</h2> */}
+              <h2 className="text-xl font-bold">Oluwayemisi T. Adebayo</h2>
               <img src="/img/crowd.jpg" alt="brand-consulting" />
               <p className="color-contrast-medium text-sm">
                 Oluwayemisi T. Adebayo, a visionary international brand and
@@ -837,7 +837,7 @@ export default function IndexPage() {
             </div>
 
             <div className="cd-timeline__content ml-10 cd-timeline__content--hidden bg-gradient-to-br from-indigo-200 via-purple-300 to-pink-400 p-3 rounded-md">
-              {/* <h2 className="text-xl font-bold">Strategic Planning</h2> */}
+              <h2 className="text-xl font-bold">Strategic Planning</h2>
               <img src="/img/crowd.jpg" alt="brand-consulting" />
               <p className="color-contrast-medium text-sm">
                 Over the past decade, I have honed my skills and expertise in
@@ -869,10 +869,9 @@ export default function IndexPage() {
             </div>
           </div>
 
-          {/* Add more blocks as needed */}
         </div>
-      </section>
-
+      </section> */}
+      <div className="p-20"></div>
       <div
         className="grid place-content-center p-20 bg-cover bg-fixed text-white text-center"
         style={{ backgroundImage: 'url("/img/sideways.jpg")' }}
