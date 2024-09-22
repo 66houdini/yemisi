@@ -133,6 +133,7 @@
 // }
 
 import { Link } from "react-router-dom";
+import Header from "./Header";
 
 export default function Projects() {
   return (
@@ -141,15 +142,16 @@ export default function Projects() {
         <div className="relative">
           <div className="brightness-75">
             <img
-              src="/img/sideways.jpg"
+              src="/yemisi/10.jpg"
               alt="about"
               className="h-40 md:h-[600px] w-full object-cover "
             />
           </div>
+          <Header/>
           {/* <h1 className=" text-2xl md:text-5xl absolute text-white bottom-1/2 pl-10 md:pl-20">
               My Projects
             </h1> */}
-          <div className=" p-12 space-y-6 bg-white text-blue-950 absolute  w-[377px] top-20 left-20 ">
+          <div className=" p-12 space-y-6 bg-white text-blue-950 absolute  w-[377px] top-32 left-20 ">
             <h1 className="text-2xl font-semibold">
               <h2 className=" border-t border-t-primary w-fit">OUR</h2> MISSION
             </h1>
@@ -217,7 +219,7 @@ export default function Projects() {
           </div>
           <div id="2">
             <img
-              src="/img/sideways.jpg"
+              src="/yemisi/8.jpg"
               className=" h-[280px] w-full object-cover"
             />
           </div>
@@ -227,8 +229,8 @@ export default function Projects() {
       <div className="relative text-white">
         <div>
           <img
-            src="/img/sideways.jpg"
-            className=" h-[550px] w-full object-cover relative"
+            src="/yemisi/9.jpg"
+            className=" h-[550px] w-full object-cover relative brightness-75"
           />
         </div>
         <div className=" absolute -top-6 left-20 w-[500px] border-2 border-primary pt-40 px-14 pb-20 space-y-6">
@@ -273,8 +275,8 @@ export default function Projects() {
       </div> */}
       <div className="px-10 py-20 grid grid-cols-[2fr_1fr] text-blue-950 relative">
         <img
-          src="/img/sideways.jpg"
-          className="h-[500px] py-8 w-full object-cover relative z-0"
+          src="https://ttsinitiative.com/wp-content/uploads/2023/12/DSC9455-1536x1219.jpg"
+          className="h-[500px] py-8 w-full object-cover object-top relative z-0"
         />
         <div className="py-20 px-10 border-2 border-primary space-y-5 relative z-10 -ml-16 ">
           <div className="text-2xl font-bold py-4 pl-12">
@@ -296,8 +298,8 @@ export default function Projects() {
       </div>
 
       <div
-        className="bg-cover object-center h-[400px] text-white relative"
-        style={{ backgroundImage: 'url("/img/sideways.jpg")' }}
+        className="bg-cover bg-center h-[400px] text-white relative"
+        style={{ backgroundImage: 'url("https://ttsinitiative.com/wp-content/uploads/2023/11/20211028_144623-scaled.jpg")' }}
       >
         <div className="absolute inset-0  backdrop-filter backdrop-brightness-50  z-0"></div>
 
@@ -313,7 +315,7 @@ export default function Projects() {
             platform; it is a movement that aims to bridge the gap between
             aspirations and achievements for young people across the globe
           </h2>
-          <Link to="/contact" className="flex font-semibold">
+          <a href="https://ttsinitiative.com/" className="flex font-semibold">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -329,7 +331,7 @@ export default function Projects() {
               />
             </svg>
             <h1 className="text-sm self-center">TTS Initiative</h1>
-          </Link>
+          </a>
         </div>
       </div>
 

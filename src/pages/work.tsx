@@ -1,324 +1,204 @@
-// export default function Work() {
-//   return (
-//     <>
-//       <div id="collaboration" className="bg-pink-400 grid">
-//         <h1>Let's collaborate</h1>
-//         <h2>
-// I am always eager to embark on new ventures and projects that align
-// with my passion for innovation and results-driven strategies. Whether
-// you’re looking to revamp your brand, implement a cutting-edge digital
-// marketing strategy, or develop disruptive content that speaks to your
-// audience, I am here to help.
-//         </h2>
-//       </div>
-//       <div id="consultation" className="bg-red-400 grid">
-//         <h1>Brand Consultation: </h1>
-//         Schedule a meeting With over a decade of experience in B2B and B2C brand
-//         consultation, I will bring a unique blend of strategic insight,
-//         creativity, and actionable solutions tailored to your business needs. My
-//         proven track record spans multiple industries, helping brands achieve
-//         sustainable growth, increased market share, and stronger loyalty. I
-//         offer comprehensive services from brand positioning to digital
-//         marketing, ensuring your brand stays ahead in a competitive market. By
-//         prioritizing your business goals and adopting a forward-thinking
-//         approach, I’m committed to elevating your brand and driving measurable
-//         success.
-//       </div>
-//       <div id="book-me" className="bg-green-400 grid">
-//         <h1>
-//           Event Guest, Facilitator or Appearance - Book Oluwayemisi Adedayo
-//         </h1>
-//         Leveraging my extensive experience working with hundreds of brands
-//         across Africa and Europe, I deliver deep industry insights and
-//         actionable strategies tailored to diverse audiences. My dynamic
-//         presentation style, combined with a comprehensive understanding of the
-//         latest marketing and brand development trends, ensures that your
-//         audience will gain valuable, practical takeaways that drive business
-//         growth and inspire meaningful change
-//       </div>
-//       <div id="coaching" className=" bg-blue-400 grid">
-//         <h1>1 on 1 Coaching (Business/Individual) - Schedule a meeing</h1>
-//         If you aim to elevate your brand, refine your marketing strategies, or
-//         tackle complex business challenges, my expertise will provide the
-//         clarity and direction needed for meaningful growth. Booking a one-on-one
-//         session with me means investing in a partnership focused on driving your
-//         success.
-//       </div>
-//       <div id="free-mentorship" className="bg-fuchsia-400 grid">
-//         <h1>Free Engagement & Mentorship - Schedule 15 minutes</h1>I am
-//         passionate about supporting young individuals and emerging businesses. I
-//         dedicate time to mentor and guide them, helping them grow and achieve
-//         success with tailored advice and strategic insights.
-//       </div>
-//     </>
-//   );
-// }
-
-// import React from "react";
-// import { motion, useAnimation } from "framer-motion";
-// import { useInView } from "react-intersection-observer";
-
-// interface SectionType {
-//   id: string;
-//   title: string;
-//   bgColor: string;
-//   description: string;
-// }
-
-// const sections = [
-//   {
-//     id: "collaboration",
-//     title: "Let's collaborate",
-//     bgColor: "bg-pink-400",
-//     description: "I am always eager to embark on new ventures and projects that align with my passion for innovation and results-driven strategies. Whether you’re looking to revamp your brand,implement a cutting-edge digital marketing strategy, or develop disruptive content that speaks to your audience, I am here to help.",
-//   },
-//   {
-//     id: "consultation",
-//     title: "Brand Consultation: Schedule a meeting",
-//     bgColor: "bg-red-400",
-//     description: "With over a decade of experience in B2B and B2C brand consultation, I bring a unique blend of strategic insight, creativity, and actionable solutions s tailored to your business needs. My proven track record spans multiple industries, helping brands achieve sustainable growth, increased market share, and stronger loyalty. I offer comprehensive services from brand positioning to digital marketing, ensuring your brand stays ahead in a competitive market. By prioritizing your business goals and adopting a forward-thinking approach, I’m committed to elevating your brand and driving measurable success.",
-//   },
-//   {
-//     id: "book-me",
-//     title: "Event Guest, Facilitator or Appearance: Book Oluwayemisi Adedayo",
-//     bgColor: "bg-green-400",
-//     description: "Leveraging my extensive experience working with hundreds of brands across Africa and Europe, I deliver deep industry insights and actionable strategies s tailored to diverse audiences. My dynamic presentation style, combined with a comprehensive understanding of the latest marketing and brand development trends, ensures that your audience will gain valuable, practical takeaways that drive business growth and inspire meaningful change.",
-//   },
-//   {
-//     id: "coaching",
-//     title: "1 on 1 Coaching (Business/Individual): Schedule a meeting",
-//     bgColor: "bg-blue-400",
-//     description: "If you aim to elevate your brand, refine your marketing strategies, or tackle complex business challenges, my expertise will provide the clarity and direction needed for meaningful growth. Booking a one-on-one session with me means investing in a partnership focused on driving your success.",
-//   },
-//   {
-//     id: "free-mentorship",
-//     title: "Free Engagement & Mentorship: Schedule 15 minutes",
-//     bgColor: "bg-fuchsia-400",
-//     description: "I am passionate about supporting young individuals and emerging businesses. I dedicate time to mentor and guide them, helping them grow and achieve success with tailored advice and strategic insights.",
-//   },
-// ];
-
-// export default function Work() {
-//   return (
-//     <div className="relative">
-//       {/* Vertical Timeline Line */}
-//       <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-400"></div>
-
-//       {sections.map((section, index) => (
-//         <Section key={section.id} section={section} isEven={index % 2 === 0} />
-//       ))}
-//     </div>
-//   );
-// }
-
-// function Section({
-//   section,
-//   isEven,
-// }: {
-//   section: SectionType;
-//   isEven: boolean;
-// }) {
-//   const controls = useAnimation();
-//   const [ref, inView] = useInView({ threshold: 0.5 });
-
-//   React.useEffect(() => {
-//     if (inView) {
-//       controls.start("visible");
-//     } else {
-//       controls.start("hidden");
-//     }
-//   }, [controls, inView]);
-
-//   return (
-//     <motion.div
-//       ref={ref}
-//       initial="hidden"
-//       animate={controls}
-//       variants={{
-//         hidden: { opacity: 0, backgroundColor: "transparent" },
-//         visible: { opacity: 1, backgroundColor: section.bgColor },
-//       }}
-//       transition={{ duration: 0.9 }}
-//       className={`grid p-10 mb-10 w-1/2 ${isEven ? "ml-auto" : "mr-auto"} ${
-//         section.bgColor
-//       }`}
-//       id={section.id}
-//     >
-//       <h1 className="font-semibold">{section.title}</h1>
-//       <h1 className="text-black">{section.description}</h1>
-//     </motion.div>
-//   );
-// }
-
-import React, { useState} from "react";
-import  "../work.css"
-export default function Work() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    date: "",
-    time: "",
-    service: "",
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Validation logic here
-    if (!formData.name || !formData.email || !formData.date || !formData.time || !formData.service) {
-      alert("Please fill in all fields.");
-      return;
-    }
-
-    // Submit the booking (e.g., send to a backend server)
-    console.log("Booking Data:", formData);
-    // After submission, you can show a success message or redirect the user
-  };
-
+const PersonalizedHeader = () => {
   return (
     <>
-    <h1 className=" text-center text-2xl font-bold text-blue-950 py-10">Want to work together?</h1>
-     <div className="timeline bg-gray-800 text-white py-10 ">
-      <div className="container left w-[550px]">
-        <div className="content">
-          <h2 className="text-xl font-medium">Let's collaborate</h2>
-          <p className="text-sm font-light">
-            I am always eager to embark on new ventures and projects that align
-            with my passion for innovation and results-driven strategies.
-            Whether you’re looking to revamp your brand, implement a
-            cutting-edge digital marketing strategy, or develop disruptive
-            content that speaks to your audience, I am here to help{" "}
-          </p>
+     <div className="flex p-5 w-full justify-between  text-black bg-transparent ">
+        <div className=" text-3xl font-bold">OLUWAYEMISI</div>
+        <div className="  space-x-10 text-sm  font-medium content-center">
+          <a href="/">HOME</a>
+          <a href="/work-with-me">WORK WITH ME</a>
+          <a href="/projects">PROJECTS</a>
+          <a href="/contact">CONTACT</a>
         </div>
+        <div className='space-x-4 content-center'>
+      <FontAwesomeIcon icon={faEnvelope}  href='talktooluwayemisiadebyao.com' />
+      <FontAwesomeIcon icon={faXTwitter} href='https://wwww.x.com/Iamyemisikayode' />
+      <FontAwesomeIcon icon={faLinkedin} href='https://www.linkedin.com/in/oluwayemisitopekayode/' />
+      <FontAwesomeIcon icon={faFacebook} href='https://www.facebook.com/oluwayemisi.kayode.5' />
+      <FontAwesomeIcon icon={faInstagram} href='https://www.instagram.com/iamyemisikayode/' />
+      <FontAwesomeIcon icon={faThreads} href='Iamyemisikayode' />
+  </div>
       </div>
-
-      <div className="container right w-[550px]">
-        <div className="content">
-          <h2 className=" text-xl font-medium">Brand Consultation: Schedule a meeting</h2>
-          <p className=" text-sm font-light">
-            With over a decade of experience in B2B and B2C brand consultation,
-            I bring a unique blend of strategic insight, creativity, and
-            actionable solutions tailored to your business needs. My proven
-            track record spans multiple industries, helping brands achieve
-            sustainable growth, increased market share, and stronger loyalty. I
-            offer comprehensive services from brand positioning to digital
-            marketing, ensuring your brand stays ahead in a competitive market.
-            By prioritizing your business goals and adopting a forward-thinking
-            approach, I’m committed to elevating your brand and driving
-            measurable success.
-          </p>
-        </div>
-      </div>
-
-      <div className="container left w-[550px]">
-        <div className="content">
-          <h2 className=" text-xl font-medium">
-            Event Guest, Facilitator or Appearance: Book Oluwayemisi Adedayo
-          </h2>
-          <p className=" text-sm font-light">
-            Leveraging my extensive experience working with hundreds of brands
-            across Africa and Europe, I deliver deep industry insights and
-            actionable strategies tailored to diverse audiences. My dynamic
-            presentation style, combined with a comprehensive understanding of
-            the latest marketing and brand development trends, ensures that your
-            audience will gain valuable, practical takeaways that drive business
-            growth and inspire meaningful change.
-          </p>
-        </div>
-      </div>
-
-      <div className="container right w-[550px]">
-        <div className="content">
-          <h2 className=" text-xl font-medium">1 on 1 Coaching (Business/Individual): Schedule a meeting</h2>
-          <p className=" text-sm font-light">
-            If you aim to elevate your brand, refine your marketing strategies,
-            or tackle complex business challenges, my expertise will provide the
-            clarity and direction needed for meaningful growth. Booking a
-            one-on-one session with me means investing in a partnership focused
-            on driving your success.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div className="w-[420px] h-full mt-10 p-4 bg-slate-100 text-black rounded-md self-center">
-      <h2 className="text-2xl font-bold mb-4">Book a Service</h2>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div>
-          <label className="block text-sm font-medium">Name</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="w-full p-2 border rounded-md"
-            required
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium">Email</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full p-2 border rounded-md"
-            required
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium">Date</label>
-          <input
-            type="date"
-            name="date"
-            value={formData.date}
-            onChange={handleChange}
-            className="w-full p-2 border rounded-md"
-            required
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium">Time</label>
-          <input
-            type="time"
-            name="time"
-            value={formData.time}
-            onChange={handleChange}
-            className="w-full p-2 border rounded-md"
-            required
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium">Service</label>
-          <select
-            name="service"
-            value={formData.service}
-            onChange={handleChange}
-            className="w-full p-2 border rounded-md"
-            required
-          >
-            <option value="">Select a service</option>
-            <option value="Consultation">Consultation</option>
-            <option value="Strategy Session">Strategy Session</option>
-            <option value="1-on-1 Coaching">1-on-1 Coaching</option>
-          </select>
-        </div>
-        <button
-          type="submit"
-          className="w-full bg-purple-600 text-white p-2 rounded-md"
-        >
-          Book Now
-        </button>
-      </form>
-    </div>
-  
     </>
-   
+  )
+}
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import { faXTwitter, faLinkedin, faFacebook, faInstagram, faThreads } from '@fortawesome/free-brands-svg-icons';
+import { Link } from "react-router-dom";
+import "../work.css";
+export default function Work() {
+  return (
+    <>
+    <PersonalizedHeader/>
+      <h1 className=" text-center text-2xl font-bold text-blue-950 pt-5 py-10">
+        Ready to Transform Your Life and Business?
+      </h1>
+      <div className="timeline bg-gray-800 text-white py-10 ">
+        <div className="container left w-[550px]">
+          <div className="content">
+            <h1 className="text-xl medium">Business Consultation Packages </h1>
+
+            <h2 className="text-xl font-medium">Digital Strategy</h2>
+            <p className="text-sm font-light">
+              In today’s competitive digital marketplace, a well-defined digital
+              marketing strategy is essential for achieving your business goals
+              and delivering measurable results. By booking this session, you
+              will gain:
+            </p>
+            <ul className="text-sm font-light list-disc pl-5">
+              <li>
+                <strong>Understanding of Digital Marketing Platforms:</strong> I
+                will guide you through how various digital marketing platforms
+                operate and the different results they can produce.
+              </li>
+              <li>
+                <strong>Platform Identification:</strong>
+                Together, we’ll identify the digital marketing platform that
+                best aligns with your business and brand needs.
+              </li>
+              <li>
+                <strong>Results-Driven Strategies: </strong>I will provide you
+                with effective strategies designed to guarantee positive
+                outcomes for your marketing efforts.
+              </li>
+              <li>
+                <strong>Lead Conversion System:</strong>
+                You will receive a proven system for converting leads into
+                sales, enhancing your overall profitability.
+              </li>
+              <li>
+                <strong>Effective Management Techniques:</strong>
+                Learn how to effectively manage your digital marketing space to
+                maximize efficiency and impact.
+              </li>
+            </ul>
+            <h1 className=" font-medium py-4">
+              Cost: Starter $100(1 hour) | Advance: $400; Sessions ( 1 Month - 2
+              Meetings)
+            </h1>
+            <div className="flex gap-4">
+            <Link to="https://yemisi-booking.vercel.app/digital-strategy" target="_blank" className="px-4 py-2 bg-pink-400 rounded-md" >Book Now- starter</Link>
+            <Link to="https://yemisi-booking.vercel.app/digital-strategy-advanced" target="_blank" className="px-4 py-2 bg-pink-400 rounded-md" >Book Now-Advanced</Link>
+
+            </div>
+          </div>
+        </div>
+
+        <div className="container right w-[550px]">
+          <div className="content">
+            <h1 className="text-xl medium">Business Consultation Packages </h1>
+
+            <h2 className=" text-xl font-medium">Market Expansion</h2>
+            <p className=" text-sm font-light">
+              In today’s competitive business landscape, a well-defined market
+              expansion strategy is crucial for reaching new customers and
+              driving growth. By booking this session, you will gain:
+            </p>
+            <ul className=" text-sm font-light list-disc pl-5">
+              <li>
+                <strong> Understanding of New Markets:</strong>I will guide you
+                through the process of identifying and evaluating potential
+                markets for expansion, helping you understand the unique
+                dynamics and opportunities they offer.
+              </li>
+              <li>
+                <strong>Market Selection:</strong>
+                Together, we’ll identify the most promising markets that align
+                with your business goals and resources, ensuring a strategic and
+                successful expansion.
+              </li>
+              <li>
+                <strong>Growth-Oriented Strategies:</strong>I will provide you
+                with tailored strategies that will ensure positive outcomes in
+                your target markets, helping you scale efficiently.
+              </li>
+              <li>
+                <strong>Customer Acquisition System:</strong>
+                You will receive a proven system for attracting and converting
+                new customers, increasing your market share and profitability.
+              </li>
+              <li>
+                <strong>Effective Market Management:</strong>
+                Learn how to manage your expansion efforts effectively, ensuring
+                smooth operations and sustainable growth in new territories.
+              </li>
+            </ul>
+            <h1 className="text-lg font-medium py-4">
+              Cost: Starter $100(1 hour) | Advance: $400; Sessions ( 1 Month - 2
+              Meetings)
+            </h1>
+            <div className="flex gap-4">
+            <Link to="https://yemisi-booking.vercel.app/market-expansion" target="_blank" className="px-4 py-2 bg-pink-400 rounded-md" >Book Now- starter</Link>
+            <Link to="https://yemisi-booking.vercel.app/market-expansion-advanced" target="_blank" className="px-4 py-2 bg-pink-400 rounded-md" >Book Now-Advanced</Link>
+
+            </div>
+          </div>
+        </div>
+
+        <div className="container left w-[550px]">
+          <div className="content">
+            <h1 className="text-xl medium"> Life Coaching Packages </h1>
+            <h2 className=" text-xl font-medium">Personal Development</h2>
+            <p className=" text-sm font-light">
+              A well-defined personal development plan is essential for
+              unlocking your full potential, achieving your life goals and
+              having fulfillment. By booking this session, you will gain:
+            </p>
+            <ul className=" text-sm font-light list-disc pl-5"> 
+              <li>
+                {" "}
+                <strong>Personal Growth:</strong> I will guide you through the
+                key areas of personal development, helping you to improve your
+                mindset, habits, and overall well-being.
+              </li>
+              <li>
+                <strong>Self-Assessment and Goal Setting:</strong> Together,
+                we’ll identify your strengths, challenges, and aspirations, and
+                develop clear, actionable goals that align with your personal
+                vision for success.
+              </li>
+              <li>
+                <strong>Results-Driven Strategies:</strong> I will provide you
+                with personalized strategies designed to help you achieve
+                tangible improvements in your personal life.
+              </li>
+              <li>
+                <strong>Actionable Growth System:</strong> We will create a step
+                by step action that will help you achieve long-term personal
+                growth.
+              </li>
+              <li>
+                <strong>Overcoming challenges:</strong> You will get help on
+                solutions to bypass your current challenges
+              </li>
+            </ul>
+            <h1 className="text-lg font-medium py-4">
+              Cost: Starter $100(1 hour) | Advance: $400; Sessions (3 Months - 1 meeting monthly)
+            </h1>
+            <div className="flex gap-4">
+            <Link to="https://yemisi-booking.vercel.app/life-coaching" target="_blank" className="px-4 py-2 bg-pink-400 rounded-md" >Book Now- starter</Link>
+            <Link to="https://yemisi-booking.vercel.app/life-coaching-advanced" target="_blank" className="px-4 py-2 bg-pink-400 rounded-md" >Book Now-Advanced</Link>
+
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="container right w-[550px]">
+          <div className="content">
+            <h2 className=" text-xl font-medium">
+              1 on 1 Coaching (Business/Individual): Schedule a meeting
+            </h2>
+            <p className=" text-sm font-light">
+              If you aim to elevate your brand, refine your marketing
+              strategies, or tackle complex business challenges, my expertise
+              will provide the clarity and direction needed for meaningful
+              growth. Booking a one-on-one session with me means investing in a
+              partnership focused on driving your success.
+            </p>
+          </div>
+        </div> */}
+      </div>
+    </>
   );
 }

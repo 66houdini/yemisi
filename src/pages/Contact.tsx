@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Header from "./Header";
 
 export default function Contact() {
   const handleSubmit: React.FormEventHandler = (event) =>
@@ -10,14 +11,14 @@ export default function Contact() {
         <div id="1" className="relative">
           <div className="relative">
             <img
-              src="/img/sideways.jpg"
-              className="w-full h-[400px] object-cover brightness-75"
+              src="/yemisi/4.jpg"
+              className="w-full h-[500px] object-cover brightness-75"
             />
-
+            <Header/>
             <div className="absolute top-[150px] left-[300px] text-5xl font-bold text-white">
               <h1>CONTACT OLUWAYEMISI</h1>
               <div className="flex pt-5 justify-center">
-                <Link className="text-2xl font-medium" to={"/home"}>
+                <Link className="text-xl font-medium" to={"/home"}>
                   Home
                 </Link>
                 <svg
@@ -34,7 +35,7 @@ export default function Contact() {
                     d="m8.25 4.5 7.5 7.5-7.5 7.5"
                   />
                 </svg>
-                <Link className="text-2xl font-medium" to={"/contact"}>
+                <Link className="text-xl font-medium" to={"/contact"}>
                   Contact
                 </Link>
               </div>
@@ -46,10 +47,7 @@ export default function Contact() {
 
           <div className=" w-[750px] grid grid-cols-[0.7fr_1.3fr] space-x-3">
             <div className="">
-              <img
-                src="/img/sideways.jpg"
-                className="border-2 border-primary"
-              />
+              <img src="/yemisi/3.jpg" className="border-2 " />
               <h1 className="text-2xl text-center pt-5 pb-2">OLUWAYEMISI</h1>
               <div className="flex justify-center space-x-2">
                 <a href="mailto:talktooluwayemisiadebyao.com" className="">
