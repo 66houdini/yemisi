@@ -112,7 +112,71 @@ export default function IndexPage() {
       </div>
 
       {/* Other sections of your page */}
-      <div
+      <div className="grid grid-cols-3 text-white bg-blue-950 text-center my-10">
+        <div className="">
+          <h1 className="py-3">Consultant</h1>
+          <div className="relative group">
+            <img
+              src="/yemisi/2-copy.jpg"
+              className=" h-[400px] w-full object-cover relative group-hover:brightness-50"
+              alt="consultant"
+            />
+            <h2 className="absolute top-10 p-10 text-justify invisible group-hover:visible transition duration-700">
+              As a business consultant, I specialize in transforming operations,
+              fostering sustainable growth, and achieving strategic objectives.
+              With over 9 years of experience, I have had the privilege of
+              working with hundreds of businesses across various sectors—from
+              dynamic start-ups to established enterprises. My approach is
+              rooted in delivering actionable insights, developing innovative
+              strategies, and providing personalized solutions that drive
+              measurable success.
+            </h2>
+          </div>
+        </div>
+        <div>
+          <h1 className="py-3">Coach</h1>
+          <div className="relative group">
+             <img
+            src="/yemisi/3.jpg"
+            className=" h-[400px] w-full object-cover relative group-hover:brightness-50"
+            alt="consultant"
+          />
+          <h2 className="absolute top-10 p-10 text-justify invisible group-hover:visible transition duration-700">
+            In addition to my consulting work, I am a passionate life coach. I
+            have had the opportunity to coach professionals in various fields,
+            including politics, education, oil and gas, and the creative
+            industries, from artists to fashion designers. My coaching
+            philosophy is grounded in the belief that personal development
+            should be as normalized as physical training. I strive to help my
+            clients raise their standards, set ambitious goals, and take
+            decisive action toward achieving their dreams.
+          </h2>
+          </div>
+         
+        </div>
+        <div>
+          <h1 className="py-3">Entrepeneur</h1>
+          <div className="relative group">
+            <img
+            src="/yemisi/5.jpg"
+            className=" h-[400px] w-full object-cover relative group-hover:brightness-50"
+            alt="consultant"
+          />
+          <h2 className="absolute top-10 p-10 text-justify invisible group-hover:visible transition duration-700">
+            I am a certified expert in Management Consulting, Strategic
+            Leadership, Business Management and holds a masters in Digital
+            Marketing, with credentials from both the United Kingdom and
+            Nigeria. I have worked in different executive positions in companies
+            in the UK and Nigeria, also lecturing business management in
+            universities in London, United Kingdom. This diverse background
+            equips me with a unique perspective on the global market, enabling
+            me to tailor solutions that meet your specific needs and challenges.
+          </h2>
+          </div>
+          
+        </div>
+      </div>
+      {/* <div
         id="expertise"
         className="p-20 grid grid-cols-2 gap-10 text-center text-sm"
       >
@@ -170,7 +234,7 @@ export default function IndexPage() {
             fulfillment.
           </h1>
         </div>
-      </div>
+      </div> */}
       {/*just added*/}
       <div className="w-full items-center justify-center h-fit relative ">
         <div className="relative">
@@ -198,9 +262,10 @@ export default function IndexPage() {
               unwavering commitment to excellence, I am dedicated to delivering
               tangible results that not only meet but exceed expectations in
               today’s fast-paced, ever-evolving digital landscape. I am a
-              dedicated <strong>Business Consultant</strong> and <strong>Life Coach</strong>, deeply passionate
-              about helping individuals and organizations achieve their goals
-              and unlock their full potential.
+              dedicated <strong>Business Consultant</strong> and{" "}
+              <strong>Life Coach</strong>, deeply passionate about helping
+              individuals and organizations achieve their goals and unlock their
+              full potential.
             </h1>
           </div>
         </div>

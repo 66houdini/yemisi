@@ -142,7 +142,7 @@ export default function Projects() {
         <div className="relative">
           <div className="brightness-75">
             <img
-              src="/yemisi/10.jpg"
+              src="/yemisi/11.jpg"
               alt="about"
               className="h-40 md:h-[600px] w-full object-cover "
             />
@@ -229,8 +229,8 @@ export default function Projects() {
       <div className="relative text-white">
         <div>
           <img
-            src="/yemisi/9.jpg"
-            className=" h-[550px] w-full object-cover relative brightness-75"
+            src="/yemisi/13.jpg"
+            className=" h-[550px] w-full object-cover relative brightness-50"
           />
         </div>
         <div className=" absolute -top-6 left-20 w-[500px] border-2 border-primary pt-40 px-14 pb-20 space-y-6">
@@ -275,7 +275,7 @@ export default function Projects() {
       </div> */}
       <div className="px-10 py-20 grid grid-cols-[2fr_1fr] text-blue-950 relative">
         <img
-          src="https://ttsinitiative.com/wp-content/uploads/2023/12/DSC9455-1536x1219.jpg"
+          src="/yemisi/14.jpg"
           className="h-[500px] py-8 w-full object-cover object-top relative z-0"
         />
         <div className="py-20 px-10 border-2 border-primary space-y-5 relative z-10 -ml-16 ">
@@ -299,7 +299,7 @@ export default function Projects() {
 
       <div
         className="bg-cover bg-center h-[400px] text-white relative"
-        style={{ backgroundImage: 'url("https://ttsinitiative.com/wp-content/uploads/2023/11/20211028_144623-scaled.jpg")' }}
+        style={{ backgroundImage: 'url("/yemisi/15.jpg")' }}
       >
         <div className="absolute inset-0  backdrop-filter backdrop-brightness-50  z-0"></div>
 
