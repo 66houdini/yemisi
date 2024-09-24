@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import { faXTwitter, faLinkedin, faFacebook, faInstagram, faThreads } from '@fortawesome/free-brands-svg-icons';
-
+import { Link } from 'react-router-dom';
 export default function Header() {
     return (
         <div className="flex p-5 w-full justify-between  text-white bg-transparent absolute top-0">
-        <div className=" text-3xl font-bold">OLUWAYEMISI</div>
+        <Link to="/" className=" text-3xl font-bold">OLUWAYEMISI</Link>
         <div className="  space-x-10 text-sm  font-medium content-center">
           <a href="/">HOME</a>
           <a href="/work-with-me">WORK WITH ME</a>

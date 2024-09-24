@@ -1,12 +1,16 @@
-const PersonalizedHeader = () => {
+
+
+export const PersonalizedHeader = ({bg}:{bg: string}) => {
   return (
     <>
-      <div className="flex p-5 w-full justify-between  text-white bg-black ">
-        <div className=" text-3xl font-bold">OLUWAYEMISI</div>
-        <div className="  space-x-10 text-sm  font-medium content-center">
-          <a href="/">HOME</a>
-          <a href="/work-with-me">WORK WITH ME</a>
-          <a href="/projects">PROJECTS</a>
+      <div className={`flex p-5 w-full justify-between  text-white ${bg} absolute top-0 `}>
+        <Link to="/" className=" text-2xl font-bold">OLUWAYEMISI ADEBAYO</Link>
+        <div className="  space-x-10 text-sm  font-medium content-center flex">
+          {/* <a href="/">HOME</a> */}
+          <a href="/consulting">CONSULTING</a>
+           <a href="/coaching">COACHING</a>
+          <h1> <Dropdown/> </h1>
+          <a href="/media">MEDIA</a>
           <a href="/contact">CONTACT</a>
         </div>
         <div className="space-x-4 content-center">
@@ -48,6 +52,9 @@ import {
   faInstagram,
   faThreads,
 } from "@fortawesome/free-brands-svg-icons";
+import Dropdown from "./components/Dropdown";
+
+
 
 export default function IndexPage() {
   useEffect(() => {
@@ -81,7 +88,7 @@ export default function IndexPage() {
 
   return (
     <>
-      <PersonalizedHeader />
+      <PersonalizedHeader bg="bg-black" />
       <div
         id="intro"
         className="grid grid-cols-2 px-20 pt-20 bg-black"
@@ -102,23 +109,46 @@ export default function IndexPage() {
               work.
             </h3>
           </div>
+          <div className="flex space-x-5">
           <Link
-            to={"/work-with-me"}
+            to={"/consulting"}
             className="py-2 px-6 bg-primary text-white rounded-md"
           >
-            WORK WITH ME
+            Book Me- Consultation
           </Link>
+          <Link
+            to={"/coaching"}
+            className="py-2 px-6 bg-primary text-white rounded-md"
+          >
+            Book Me- Coaching
+          </Link>
+          </div>
+         
         </div>
       </div>
 
+
+      <div className="p-10 px-20  text-center">
+        <h1 className="text-3xl font-bold pb-5">Mission</h1>
+        <h2>
+        "Oluwayemisi serves as a powerful catalyst for change, dedicated to
+              inspiring, educating, and empowering the next generation of
+              leaders. Through a diverse array of dynamic events and engaging
+              interactive platforms, she fosters personal growth and
+              professional development, equipping young leaders with the tools
+              and confidence needed to navigate challenges and create lasting
+              impact in their communities and beyond."
+        </h2>
+      </div>
+
       {/* Other sections of your page */}
-      <div className="grid grid-cols-3 text-white bg-blue-950 text-center my-10">
+      <div className="grid grid-cols-2 space-x-10 h-[350px]  text-white text-center mb-32  mx-20 my-10">
         <div className="">
-          <h1 className="py-3">Consultant</h1>
+          <h1 className="py-3 bg-blue-950 ">Consultant</h1>
           <div className="relative group">
             <img
               src="/yemisi/2-copy.jpg"
-              className=" h-[400px] w-full object-cover relative group-hover:brightness-50"
+              className=" h-[400px] w-full object-cover object-top relative group-hover:brightness-50"
               alt="consultant"
             />
             <h2 className="absolute top-10 p-10 text-justify invisible group-hover:visible transition duration-700">
@@ -134,11 +164,11 @@ export default function IndexPage() {
           </div>
         </div>
         <div>
-          <h1 className="py-3">Coach</h1>
+          <h1 className="py-3 bg-blue-950 ">Coach</h1>
           <div className="relative group">
              <img
             src="/yemisi/3.jpg"
-            className=" h-[400px] w-full object-cover relative group-hover:brightness-50"
+            className=" h-[400px] w-full object-cover object-top relative group-hover:brightness-50"
             alt="consultant"
           />
           <h2 className="absolute top-10 p-10 text-justify invisible group-hover:visible transition duration-700">
@@ -154,27 +184,7 @@ export default function IndexPage() {
           </div>
          
         </div>
-        <div>
-          <h1 className="py-3">Entrepeneur</h1>
-          <div className="relative group">
-            <img
-            src="/yemisi/5.jpg"
-            className=" h-[400px] w-full object-cover relative group-hover:brightness-50"
-            alt="consultant"
-          />
-          <h2 className="absolute top-10 p-10 text-justify invisible group-hover:visible transition duration-700">
-            I am a certified expert in Management Consulting, Strategic
-            Leadership, Business Management and holds a masters in Digital
-            Marketing, with credentials from both the United Kingdom and
-            Nigeria. I have worked in different executive positions in companies
-            in the UK and Nigeria, also lecturing business management in
-            universities in London, United Kingdom. This diverse background
-            equips me with a unique perspective on the global market, enabling
-            me to tailor solutions that meet your specific needs and challenges.
-          </h2>
-          </div>
-          
-        </div>
+        
       </div>
       {/* <div
         id="expertise"
@@ -236,7 +246,7 @@ export default function IndexPage() {
         </div>
       </div> */}
       {/*just added*/}
-      <div className="w-full items-center justify-center h-fit relative ">
+      {/* <div className="w-full items-center justify-center h-fit relative ">
         <div className="relative">
           <div className="brightness-75">
             <img
@@ -245,15 +255,12 @@ export default function IndexPage() {
               className="h-40 md:h-[500px] w-full object-cover object-top"
             />
           </div>
-          {/* <h1 className=" text-2xl md:text-5xl absolute text-white bottom-1/2 pl-10 md:pl-20">
-              My Projects
-            </h1> */}
+          
           <div className=" p-10 space-y-6 bg-white text-blue-950 absolute  w-[377px] top-14 right-20 ">
             <h1 className="text-2xl font-semibold">
               <h2 className=" border-t border-t-primary w-fit">OLUWAYEMISI</h2>{" "}
               T. ADEBAYO
             </h1>
-            {/* <h2 className="text-sm">Oluwayemisi serves as a catalyst to inspire, educate, and empower the next generation of leaders through dynamic events, workshops, and interactive platforms.</h2> */}
             <h1 className="text-sm font-light">
               {" "}
               A visionary international brand and digital marketing consultant,
@@ -269,7 +276,7 @@ export default function IndexPage() {
             </h1>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="relative">
         <div className="absolute top-0 left-[100px] h-[150px] w-[1px] bg-zinc-400"></div>
