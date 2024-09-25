@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "./Header";
+// import Header from "./Header";
+import { PersonalizedHeader } from "./IndexPage";
 
 export default function Contact() {
   const handleSubmit: React.FormEventHandler = (event) =>
@@ -11,10 +12,10 @@ export default function Contact() {
         <div id="1" className="relative">
           <div className="relative">
             <img
-              src="/yemisi/4.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245905/yemisi/4_j5yqbd.jpg"
               className="w-full h-[500px] object-cover brightness-75"
             />
-            <Header/>
+            <PersonalizedHeader bg="bg-transparent" />
             <div className="absolute top-[150px] left-[300px] text-5xl font-bold text-white">
               <h1>CONTACT OLUWAYEMISI</h1>
               <div className="flex pt-5 justify-center">
@@ -47,12 +48,12 @@ export default function Contact() {
 
           <div className=" w-[750px] grid grid-cols-[0.7fr_1.3fr] space-x-3">
             <div className="">
-              <img src="/yemisi/3.jpg" className="border-2 " />
+              <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727245909/yemisi/3_fo0gyy.jpg" className="border-2 " />
               <h1 className="text-2xl text-center pt-5 pb-2">OLUWAYEMISI</h1>
               <div className="flex justify-center space-x-2">
                 <a href="mailto:talktooluwayemisiadebyao.com" className="">
                   <svg
-                    className="w-8 h-8 text-blue-950 bg-primary border-2 p-1 rounded-full "
+                    className="w-8 h-8 text-white bg-primary border-2 p-1 rounded-full "
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -67,7 +68,7 @@ export default function Contact() {
 
                 <a href="https://www.facebook.com/oluwayemisi.kayode.5">
                   <svg
-                    className="w-8 h-8 text-blue-950 bg-primary border-2 p-1 rounded-full "
+                    className="w-8 h-8 text-white bg-primary border-2 p-1 rounded-full "
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -85,7 +86,7 @@ export default function Contact() {
 
                 <a href="https://wwww.x.com/Iamyemisikayode">
                   <svg
-                    className="w-8 h-8 text-blue-950 bg-primary border-2 p-1 rounded-full"
+                    className="w-8 h-8 text-white bg-primary border-2 p-1 rounded-full"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -98,7 +99,7 @@ export default function Contact() {
                 </a>
                 <a href="https://www.instagram.com/iamyemisikayode/">
                   <svg
-                    className="w-8 h-8 text-blue-950 bg-primary border-2 p-1 rounded-full"
+                    className="w-8 h-8 text-white bg-primary border-2 p-1 rounded-full"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -116,7 +117,7 @@ export default function Contact() {
                 </a>
                 <a href="https://www.linkedin.com/in/oluwayemisitopekayode/">
                   <svg
-                    className="w-8 h-8 text-blue-950 bg-primary border-2 p-1 rounded-full"
+                    className="w-8 h-8 text-white bg-primary border-2 p-1 rounded-full"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -144,7 +145,7 @@ export default function Contact() {
               </h3>
               <Link
                 to={"/work-with-me"}
-                className="p-3 px-10 bg-primary text-black text-lg font-medium"
+                className="p-3 px-10 bg-primary text-white text-lg font-medium"
               >
                 BOOK NOW
               </Link>

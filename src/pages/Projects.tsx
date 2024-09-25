@@ -9,9 +9,9 @@ export default function Projects() {
         <div className="relative">
           <div className="brightness-75">
             <img
-              src="/yemisi/11.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245913/yemisi/17_jcxrog.jpg"
               alt="about"
-              className=" h-[600px] w-full object-cover "
+              className=" h-[600px] w-full object-top object-cover "
             />
           </div>
           {/* <Header/> */}
@@ -99,7 +99,10 @@ export default function Projects() {
             </div>
           </div>
           <div id="2">
-            <img src="/yemisi/8.jpg" className=" h-full w-full object-cover" />
+            <img
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245848/yemisi/8_lyxp3f.jpg"
+              className=" h-full w-full object-cover"
+            />
           </div>
         </div>
       </div>
@@ -107,7 +110,7 @@ export default function Projects() {
       <div className="relative text-white">
         <div>
           <img
-            src="/yemisi/13.jpg"
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1727245863/yemisi/13_lbumxl.jpg"
             className=" h-[550px] w-full object-cover relative brightness-50"
           />
         </div>
@@ -132,7 +135,7 @@ export default function Projects() {
 
       <div className="px-10 py-20 grid grid-cols-[2fr_1fr] text-blue-950 relative">
         <img
-          src="/yemisi/14.jpg"
+          src="https://res.cloudinary.com/dador6eng/image/upload/v1727245840/yemisi/14_optcyk.jpg"
           className="h-[500px] py-8 w-full object-cover object-top relative z-0"
         />
         <div className="py-20 px-10 border-2 border-primary space-y-5 relative z-10 -ml-16 ">
@@ -197,16 +200,22 @@ export default function Projects() {
         </div>
       </div> */}
       <div className="relative">
-        <div className="absolute top-0 right-[100px] h-[150px] w-[1px] bg-zinc-400"></div>
+        {/* <div className="absolute top-0 right-[100px] h-[150px] w-[1px] bg-zinc-400"></div> */}
 
         <div className="pt-14 pb-24 px-20 grid grid-cols-2 text-blue-950">
           <div id="2">
             <img
-              src="/yemisi/8.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245841/yemisi/women-tech_esch9i.jpg"
               className=" h-[370px] w-full object-cover"
             />
           </div>
-          <div id="1" className="pt-14 px-10 space-y-7 content-end">
+          <div id="1" className="pt-14 px-10 space-y-7 content-end relative">
+            <div className="absolute top-0 right-3  w-[100px] h-[2px] bg-primary"></div>
+            <div className="absolute -top-7 right-3 h-[150px] w-[2px] bg-primary"></div>
+
+            <div className="absolute bottom-0 left-3  w-[100px] h-[2px] bg-primary"></div>
+
+            <div className="absolute bottom-0 left-3 h-[100px] w-[2px] bg-primary"></div>
             <h1 className="text-3xl font-bold">
               WearetheWomeninTech London
               <h2 className="text-xl font-medium">Digital Consultant</h2>
@@ -218,7 +227,7 @@ export default function Projects() {
               future of technology, and we are committed to breaking down
               barriers and creating equal opportunities for all.
             </h1>
-            <div className="flex">
+            <div className="flex py-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -243,9 +252,9 @@ export default function Projects() {
         <div className="relative">
           <div className="brightness-75">
             <img
-              src="/yemisi/11.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245905/yemisi/4_j5yqbd.jpg"
               alt="about"
-              className=" h-[450px] w-full object-cover "
+              className=" h-[450px] w-full  object-top object-cover "
             />
           </div>
 
@@ -291,14 +300,14 @@ export default function Projects() {
           </h1>
         </div>
         <img
-          src="/yemisi/14.jpg"
+          src="https://res.cloudinary.com/dador6eng/image/upload/v1727245840/yemisi/14_optcyk.jpg"
           className="h-[500px] py-8 w-full object-cover object-top relative z-0"
         />
       </div>
       <div className="relative text-white">
         <div>
           <img
-            src="/yemisi/11.jpg"
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1727245874/yemisi/11_e3l1bf.jpg"
             className=" h-[550px] w-full object-cover relative brightness-50"
           />
         </div>
@@ -353,7 +362,10 @@ export default function Projects() {
             </div>
           </div>
           <div id="2">
-            <img src="/yemisi/8.jpg" className=" h-[280px] w-full object-cover" />
+            <img
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245844/yemisi/18_tjvhtp.jpg"
+              className=" h-[280px] w-full object-cover"
+            />
           </div>
         </div>
       </div>
@@ -362,9 +374,9 @@ export default function Projects() {
         <div className="relative">
           <div className="brightness-75">
             <img
-              src="/yemisi/11.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245858/yemisi/women-tech-2_nv5jmm.jpg"
               alt="about"
-              className=" h-[450px] w-full object-cover "
+              className=" h-[450px] w-full object-cover object-top "
             />
           </div>
 

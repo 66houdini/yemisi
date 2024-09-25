@@ -1,15 +1,20 @@
-
-
-export const PersonalizedHeader = ({bg}:{bg: string}) => {
+export const PersonalizedHeader = ({ bg }: { bg: string }) => {
   return (
     <>
-      <div className={`flex p-5 w-full justify-between  text-white ${bg} absolute top-0 `}>
-        <Link to="/" className=" text-2xl font-bold">OLUWAYEMISI ADEBAYO</Link>
-        <div className="  space-x-10 text-sm  font-medium content-center flex">
+      <div
+        className={`flex p-5 w-full justify-between  text-white ${bg} absolute top-0 `}
+      >
+        <Link to="/" className=" text-2xl font-bold">
+          OLUWAYEMISI ADEBAYO
+        </Link>
+        <div className="  space-x-10 text-sm  font-medium items-center flex">
           {/* <a href="/">HOME</a> */}
           <a href="/consulting">CONSULTING</a>
-           <a href="/coaching">COACHING</a>
-          <h1> <Dropdown/> </h1>
+          <a href="/coaching">COACHING</a>
+          <h1>
+            {" "}
+            <Dropdown />{" "}
+          </h1>
           <a href="/media">MEDIA</a>
           <a href="/contact">CONTACT</a>
         </div>
@@ -54,8 +59,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Dropdown from "./components/Dropdown";
 
-
-
 export default function IndexPage() {
   useEffect(() => {
     // JavaScript to handle the scroll animations for the timeline blocks
@@ -95,7 +98,7 @@ export default function IndexPage() {
         // style={{ backgroundImage: 'url("/img/crowd.jpg")' }}
       >
         <div>
-          <img src="/yemisi/2.png" />
+          <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727245918/yemisi/2_yf9z5n.jpg" />
         </div>
         <div className="text-white">
           <div className="pb-3">
@@ -110,44 +113,42 @@ export default function IndexPage() {
             </h3>
           </div>
           <div className="flex space-x-5">
-          <Link
-            to={"/consulting"}
-            className="py-2 px-6 bg-primary text-white rounded-md"
-          >
-            Book Me- Consultation
-          </Link>
-          <Link
-            to={"/coaching"}
-            className="py-2 px-6 bg-primary text-white rounded-md"
-          >
-            Book Me- Coaching
-          </Link>
+            <Link
+              to={"/consulting"}
+              className="py-2 px-6 bg-primary text-white rounded-md"
+            >
+              Book Me- Consultation
+            </Link>
+            <Link
+              to={"/coaching"}
+              className="py-2 px-6 bg-primary text-white rounded-md"
+            >
+              Book Me- Coaching
+            </Link>
           </div>
-         
         </div>
       </div>
-
 
       <div className="p-10 px-20  text-center">
         <h1 className="text-3xl font-bold pb-5">Mission</h1>
         <h2>
-        "Oluwayemisi serves as a powerful catalyst for change, dedicated to
-              inspiring, educating, and empowering the next generation of
-              leaders. Through a diverse array of dynamic events and engaging
-              interactive platforms, she fosters personal growth and
-              professional development, equipping young leaders with the tools
-              and confidence needed to navigate challenges and create lasting
-              impact in their communities and beyond."
+          "Oluwayemisi serves as a powerful catalyst for change, dedicated to
+          inspiring, educating, and empowering the next generation of leaders.
+          Through a diverse array of dynamic events and engaging interactive
+          platforms, she fosters personal growth and professional development,
+          equipping young leaders with the tools and confidence needed to
+          navigate challenges and create lasting impact in their communities and
+          beyond."
         </h2>
       </div>
 
       {/* Other sections of your page */}
       <div className="grid grid-cols-2 space-x-10 h-[350px]  text-white text-center mb-32  mx-20 my-10">
         <div className="">
-          <h1 className="py-3 bg-blue-950 ">Consultant</h1>
+          <h1 className="py-3 bg-primary ">Consultant</h1>
           <div className="relative group">
             <img
-              src="/yemisi/2-copy.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"
               className=" h-[400px] w-full object-cover object-top relative group-hover:brightness-50"
               alt="consultant"
             />
@@ -164,27 +165,25 @@ export default function IndexPage() {
           </div>
         </div>
         <div>
-          <h1 className="py-3 bg-blue-950 ">Coach</h1>
+          <h1 className="py-3 bg-primary ">Coach</h1>
           <div className="relative group">
-             <img
-            src="/yemisi/3.jpg"
-            className=" h-[400px] w-full object-cover object-top relative group-hover:brightness-50"
-            alt="consultant"
-          />
-          <h2 className="absolute top-10 p-10 text-justify invisible group-hover:visible transition duration-700">
-            In addition to my consulting work, I am a passionate life coach. I
-            have had the opportunity to coach professionals in various fields,
-            including politics, education, oil and gas, and the creative
-            industries, from artists to fashion designers. My coaching
-            philosophy is grounded in the belief that personal development
-            should be as normalized as physical training. I strive to help my
-            clients raise their standards, set ambitious goals, and take
-            decisive action toward achieving their dreams.
-          </h2>
+            <img
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245909/yemisi/3_fo0gyy.jpg"
+              className=" h-[400px] w-full object-cover object-top relative group-hover:brightness-50"
+              alt="consultant"
+            />
+            <h2 className="absolute top-10 p-10 text-justify invisible group-hover:visible transition duration-700">
+              In addition to my consulting work, I am a passionate life coach. I
+              have had the opportunity to coach professionals in various fields,
+              including politics, education, oil and gas, and the creative
+              industries, from artists to fashion designers. My coaching
+              philosophy is grounded in the belief that personal development
+              should be as normalized as physical training. I strive to help my
+              clients raise their standards, set ambitious goals, and take
+              decisive action toward achieving their dreams.
+            </h2>
           </div>
-         
         </div>
-        
       </div>
       {/* <div
         id="expertise"
@@ -279,7 +278,9 @@ export default function IndexPage() {
       </div> */}
 
       <div className="relative">
-        <div className="absolute top-0 left-[100px] h-[150px] w-[1px] bg-zinc-400"></div>
+        <div className="absolute top-14 left-[100px]  w-[100px] h-[2px] bg-primary"></div>
+
+        <div className="absolute top-14 left-[100px] h-[150px] w-[2px] bg-primary"></div>
 
         <div className="pt-14 pb-24 px-20 grid grid-cols-2 text-blue-950">
           <div id="1" className="pt-14 px-14 space-y-7 content-end">
@@ -296,8 +297,8 @@ export default function IndexPage() {
           </div>
           <div id="2">
             <img
-              src="/yemisi/4.jpg"
-              className=" h-[280px] w-full object-cover"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245905/yemisi/3-copy_wfdeb2.jpg"
+              className=" h-[280px] w-full object-top object-cover"
             />
           </div>
         </div>
@@ -306,7 +307,7 @@ export default function IndexPage() {
       <div className="relative text-white">
         <div>
           <img
-            src="/yemisi/9.jpg"
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1727245842/yemisi/12_g3do9n.jpg"
             className=" h-[550px] w-full object-cover relative brightness-50"
           />
         </div>
@@ -328,71 +329,6 @@ export default function IndexPage() {
         </div>
       </div>
 
-      {/* Vertical Timeline Section */}
-      {/* <section className="cd-timeline js-cd-timeline p-5 md:p-20 ">
-        <div className="container max-w-lg relative">
-          <div className="absolute top-0 left-4 h-full w-1 bg-purple-400"></div>
-
-          <div className="cd-timeline__block flex mb-10 ">
-            <div className="cd-timeline__img flex items-center justify-center w-10 h-10 rounded-full bg-purple-400 cd-timeline__img--hidden">
-              <img src="/vite.svg" alt="Picture" />
-            </div>
-
-            <div className="cd-timeline__content ml-10 cd-timeline__content--hidden bg-purple-400 p-3 rounded-md">
-              <h2 className="text-xl font-bold">Oluwayemisi T. Adebayo</h2>
-              <img src="/img/crowd.jpg" alt="brand-consulting" />
-              <p className="color-contrast-medium text-sm">
-                Oluwayemisi T. Adebayo, a visionary international brand and
-                digital marketing consultant, lecturer, strategist, disruptive
-                content creator, and entrepreneur. With a deep-seated passion
-                for innovation and an unwavering commitment to excellence, I am
-                dedicated to delivering tangible results that not only meet but
-                exceed expectations in today’s fast-paced, ever-evolving digital
-                landscape.
-              </p>
-            </div>
-          </div>
-
-          <div className="cd-timeline__block flex mb-10">
-            <div className="cd-timeline__img flex items-center justify-center w-10 h-10 rounded-full bg-purple-400 cd-timeline__img--hidden">
-              <img src="/vite.svg" alt="Picture" />
-            </div>
-
-            <div className="cd-timeline__content ml-10 cd-timeline__content--hidden bg-gradient-to-br from-indigo-200 via-purple-300 to-pink-400 p-3 rounded-md">
-              <h2 className="text-xl font-bold">Strategic Planning</h2>
-              <img src="/img/crowd.jpg" alt="brand-consulting" />
-              <p className="color-contrast-medium text-sm">
-                Over the past decade, I have honed my skills and expertise in
-                the realms of brand development, digital marketing, and
-                strategic planning. My journey has been marked by a relentless
-                pursuit of knowledge and a desire to push boundaries, enabling
-                me to craft innovative solutions that address both challenges
-                and opportunities in the marketplace.
-              </p>
-            </div>
-          </div>
-
-          <div className="cd-timeline__block flex mb-10">
-            <div className="cd-timeline__img flex items-center justify-center w-10 h-10 rounded-full bg-purple-400 cd-timeline__img--hidden">
-              <img src="/vite.svg" alt="Picture" />
-            </div>
-
-            <div className="cd-timeline__content ml-10 cd-timeline__content--hidden bg-purple-400 p-3 rounded-md">
-              <img src="/img/crowd.jpg" alt="brand-consulting" />
-              <p className="color-contrast-medium text-sm">
-                As an experienced lecturer and strategist, I have had the
-                privilege of mentoring countless individuals and organizations,
-                guiding them to achieve their goals through tailored strategies
-                that drive growth and foster success. My approach is rooted in a
-                deep understanding of the digital ecosystem, combined with a
-                creative flair that ensures each project stands out in a crowded
-                marketplace.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </section> */}
       <div className="p-20"></div>
       <div
         className="relative grid place-content-center p-20 bg-cover bg-fixed  text-white text-center"
@@ -418,7 +354,7 @@ export default function IndexPage() {
           <div className="flex justify-center space-x-5">
             <a href="mailto:talktooluwayemisiadebyao.com" className="">
               <svg
-                className="w-8 h-8 text-white hover:bg-blue-950 border-2 p-1 rounded-full "
+                className="w-8 h-8 text-white hover:bg-primary border-2 p-1 rounded-full "
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -433,7 +369,7 @@ export default function IndexPage() {
 
             <a href="https://www.facebook.com/oluwayemisi.kayode.5">
               <svg
-                className="w-8 h-8 text-white hover:bg-blue-950 border-2 p-1 rounded-full "
+                className="w-8 h-8 text-white hover:bg-primary border-2 p-1 rounded-full "
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -451,7 +387,7 @@ export default function IndexPage() {
 
             <a href="https://wwww.x.com/Iamyemisikayode">
               <svg
-                className="w-8 h-8 text-white hover:bg-blue-950 border-2 p-1 rounded-full"
+                className="w-8 h-8 text-white hover:bg-primary border-2 p-1 rounded-full"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -464,7 +400,7 @@ export default function IndexPage() {
             </a>
             <a href="https://www.instagram.com/iamyemisikayode/">
               <svg
-                className="w-8 h-8 text-white hover:bg-blue-950 border-2 p-1 rounded-full"
+                className="w-8 h-8 text-white hover:bg-primary border-2 p-1 rounded-full"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -482,7 +418,7 @@ export default function IndexPage() {
             </a>
             <a href="https://www.linkedin.com/in/oluwayemisitopekayode/">
               <svg
-                className="w-8 h-8 text-white hover:bg-blue-950 border-2 p-1 rounded-full"
+                className="w-8 h-8 text-white hover:bg-primary border-2 p-1 rounded-full"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

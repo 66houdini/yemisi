@@ -9,9 +9,9 @@ export default function Media() {
            
           <div className="brightness-75">
             <img
-              src="/yemisi/11.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245905/yemisi/3-copy_wfdeb2.jpg"
               alt="about"
-              className=" h-[600px] w-full object-cover "
+              className=" h-[600px] w-full object-top object-cover "
             />
           </div>
           {/* <Header/> */} <PersonalizedHeader bg="bg-transparent" />
