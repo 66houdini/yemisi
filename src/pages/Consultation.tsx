@@ -57,30 +57,30 @@ export default function Consultation() {
       </div>
 
       <div className="text-black">
-        <h1 className="text-center text-2xl font-semibold py-10">
+        <h1 className="text-center text-2xl font-semibold py-5 md:py-10">
           Business Consultation Packages
         </h1>
-        <div className="  p-10 space-y-10">
-          <div className="container grid grid-cols-[0.8fr_1.2fr]">
+        <div className=" p-5  md:p-10 space-y-5 md:space-y-10">
+          <div className="container grid md:grid-cols-[0.8fr_1.2fr]">
             <div>
               <img
                 src="https://res.cloudinary.com/dador6eng/image/upload/v1727283235/yemisi/23_y8wmo8.jpg"
                 className="h-full w-full"
               />
             </div>
-            <div className="content px-10 space-y-4">
+            <div className="content px-5 md:px-10 space-y-2 md:space-y-4">
               {/* <h1 className="text-xl medium">Business Consultation Packages </h1> */}
 
-              <h2 className="text-4xl font-medium">Digital Strategy</h2>
-              <p className=" text-lg font-light">
+              <h2 className="text-2xl md:text-4xl font-medium">Digital Strategy</h2>
+              <p className=" text-sm md:text-lg font-light">
                 In today’s competitive digital marketplace, a well-defined
                 digital marketing strategy is essential for achieving your
                 business goals and delivering measurable results. By booking
                 this session, you will gain:
               </p>
-              <ul className="text-lg font-light space-y-2">
+              <ul className="text-sm md:text-lg font-light space-y-2">
                 <li>
-                  <span className="text-primary text-3xl mr-2">✓</span>
+                  <span className="text-primary text-xl md:text-3xl mr-2">✓</span>
                   <strong>
                     Understanding of Digital Marketing Platforms:
                   </strong>{" "}
@@ -88,47 +88,47 @@ export default function Consultation() {
                   platforms operate and the different results they can produce.
                 </li>
                 <li>
-                  <span className="text-primary text-3xl mr-2">✓</span>
+                  <span className="text-primary text-xl md:text-3xl mr-2">✓</span>
                   <strong>Platform Identification:</strong>
                   Together, we’ll identify the digital marketing platform that
                   best aligns with your business and brand needs.
                 </li>
                 <li>
-                  <span className="text-primary text-3xl mr-2">✓</span>
+                  <span className="text-primary text-xl md:text-3xl mr-2">✓</span>
                   <strong>Results-Driven Strategies: </strong>I will provide you
                   with effective strategies designed to guarantee positive
                   outcomes for your marketing efforts.
                 </li>
                 <li>
-                  <span className="text-primary text-3xl mr-2">✓</span>
+                  <span className="text-primary text-xl md:text-3xl mr-2">✓</span>
                   <strong>Lead Conversion System:</strong>
                   You will receive a proven system for converting leads into
                   sales, enhancing your overall profitability.
                 </li>
                 <li>
-                  <span className="text-primary text-3xl mr-2">✓</span>
+                  <span className="text-primary text-xl md:text-3xl mr-2">✓</span>
                   <strong>Effective Management Techniques:</strong>
                   Learn how to effectively manage your digital marketing space
                   to maximize efficiency and impact.
                 </li>
               </ul>
-              <div className=" font-medium py-4">
+              <div className=" font-medium py-2 md:py-4">
                 <div className="flex space-x-3 py-2">
                   <h1 className=" content-center">Cost: Starter $100(1 hour)</h1>
                   <Link
                     to="https://yemisi-booking.vercel.app/digital-strategy"
                     target="_blank"
-                    className="px-4 py-2 bg-primary text-white rounded-md"
+                    className="px-2 md:px-4 py-1 md:py-2 bg-primary text-white rounded-md text-sm md:text-base"
                   >
                     Book Now- starter
                   </Link>
                 </div>
                 <div className="flex space-x-3 py-2">
-                  <h1 className=" content-center">Advance: $400; Sessions ( 1 Month - 2 Meetings)</h1>
+                  <h1 className=" content-center ">Advance: $400; Sessions ( 1 Month - 2 Meetings)</h1>
                   <Link
                     to="https://yemisi-booking.vercel.app/digital-strategy-advanced"
                     target="_blank"
-                    className="px-4 py-2 bg-primary text-white rounded-md"
+                    className="px-2 md:px-4 py-1 md:py-2 bg-primary text-white rounded-md text-sm md:text-base"
                   >
                     Book Now-Advanced
                   </Link>
@@ -137,45 +137,45 @@ export default function Consultation() {
             </div>
           </div>
 
-          <div className=" grid grid-cols-[1.2fr_0.8fr] pt-20">
-            <div className="content py-5 px-10 space-y-4">
+          <div className=" grid md:grid-cols-[1.2fr_0.8fr] pt-10 md:pt-20">
+            <div className="content  py-5 px-5 md:px-10 space-y-4">
               {/* <h1 className="text-xl medium">Business Consultation Packages </h1> */}
 
-              <h2 className=" text-4xl font-medium">Market Expansion</h2>
-              <p className=" text-lg font-light">
+              <h2 className="text-2xl md:text-4xl font-medium">Market Expansion</h2>
+              <p className="text-sm md:text-lg font-light">
                 In today’s competitive business landscape, a well-defined market
                 expansion strategy is crucial for reaching new customers and
                 driving growth. By booking this session, you will gain:
               </p>
-              <ul className=" text-lg font-light space-y-2">
+              <ul className=" text-sm md:text-lg font-light space-y-2">
                 <li>
-                  <span className="text-primary text-3xl mr-2">✓</span>
+                  <span className="text-primary text-xl md:text-3xl mr-2">✓</span>
                   <strong> Understanding of New Markets:</strong>I will guide
                   you through the process of identifying and evaluating
                   potential markets for expansion, helping you understand the
                   unique dynamics and opportunities they offer.
                 </li>
                 <li>
-                  <span className="text-primary text-3xl mr-2">✓</span>
+                  <span className="text-primary text-xl md:text-3xl mr-2">✓</span>
                   <strong>Market Selection:</strong>
                   Together, we’ll identify the most promising markets that align
                   with your business goals and resources, ensuring a strategic
                   and successful expansion.
                 </li>
                 <li>
-                  <span className="text-primary text-3xl mr-2">✓</span>
+                  <span className="text-primary text-xl md:text-3xl mr-2">✓</span>
                   <strong>Growth-Oriented Strategies:</strong>I will provide you
                   with tailored strategies that will ensure positive outcomes in
                   your target markets, helping you scale efficiently.
                 </li>
                 <li>
-                  <span className="text-primary text-3xl mr-2">✓</span>
+                  <span className="text-primary text-xl md:text-3xl mr-2">✓</span>
                   <strong>Customer Acquisition System:</strong>
                   You will receive a proven system for attracting and converting
                   new customers, increasing your market share and profitability.
                 </li>
                 <li>
-                  <span className="text-primary text-3xl mr-2">✓</span>
+                  <span className="text-primary text-xl md:text-3xl mr-2">✓</span>
                   <strong>Effective Market Management:</strong>
                   Learn how to manage your expansion efforts effectively,
                   ensuring smooth operations and sustainable growth in new

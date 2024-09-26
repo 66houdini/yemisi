@@ -43,63 +43,63 @@ export default function Coach() {
             fulfillment.
           </h2>
         </div>
-        <div className="p-3 ">
+        <div className="p-10 py-5 md:p-3 ">
           <img
             src="https://res.cloudinary.com/dador6eng/image/upload/v1727245848/yemisi/8_lyxp3f.jpg"
-            className=" object-cover h-[400px] rounded-lg "
+            className=" object-cover h-[400px] w-full rounded-lg "
           />
         </div>
       </div>
 
       <div className="">
-        <h1 className="text-center text-2xl font-semibold py-5">
+        <h1 className="text-center text-2xl font-semibold py-2.5 md:py-5">
           Life Coaching Packages
         </h1>
         <div className="px-10 py-5">
-          <div className="container grid grid-cols-[0.8fr_1.2fr]">
+          <div className="container grid md:grid-cols-[0.8fr_1.2fr]">
             <div>
               <img
                 src="https://res.cloudinary.com/dador6eng/image/upload/v1727283235/yemisi/23_y8wmo8.jpg"
                 className="h-full w-full"
               />
             </div>
-            <div className="content px-10 space-y-4">
+            <div className="content px-5 py-5 md:py-0 md:px-10 space-y-4">
               {/* <h1 className="text-xl medium">Business Consultation Packages </h1> */}
 
-              <h2 className="text-4xl font-medium">Personal Development</h2>
-              <p className=" text-lg font-light">
+              <h2 className="text-2xl md:text-4xl font-medium">Personal Development</h2>
+              <p className=" text-sm md:text-lg font-light">
                 A well-defined personal development plan is essential for
                 unlocking your full potential, achieving your life goals and
                 having fulfillment. By booking this session, you will gain:
               </p>
-              <ul className="text-lg font-light space-y-2">
+              <ul className="text-sm md:text-lg font-light space-y-2">
                 <li>
-                  <span className="text-primary text-3xl mr-2">✓</span>{" "}
+                  <span className="text-primary text-xl md:text-3xl mr-2">✓</span>{" "}
                   <strong>Personal Growth:</strong> I will guide you through the
                   key areas of personal development, helping you to improve your
                   mindset, habits, and overall well-being.
                 </li>
                 <li>
-                  <span className="text-primary text-3xl mr-2">✓</span>
+                  <span className="text-primary text-xl md:text-3xl mr-2">✓</span>
                   <strong>Self-Assessment and Goal Setting:</strong> Together,
                   we’ll identify your strengths, challenges, and aspirations,
                   and develop clear, actionable goals that align with your
                   personal vision for success.
                 </li>
                 <li>
-                  <span className="text-primary text-3xl mr-2">✓</span>
+                  <span className="text-primary text-xl md:text-3xl mr-2">✓</span>
                   <strong>Results-Driven Strategies: </strong>I will provide you
                   with effective strategies designed to guarantee positive
                   outcomes for your marketing efforts.
                 </li>
                 <li>
-                  <span className="text-primary text-3xl mr-2">✓</span>
+                  <span className="text-primary text-xl md:text-3xl mr-2">✓</span>
                   <strong>Actionable Growth System:</strong> We will create a
                   step by step action that will help you achieve long-term
                   personal growth.
                 </li>
                 <li>
-                  <span className="text-primary text-3xl mr-2">✓</span>
+                  <span className="text-primary text-xl md:text-3xl mr-2">✓</span>
                   <strong>Overcoming challenges:</strong> You will get help on
                   solutions to bypass your current challenges
                 </li>

@@ -23,7 +23,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 p-20 relative">
+      <div className="grid md:grid-cols-2 p-10 md:p-20 relative">
         {/* <div className="absolute top-0 left-[100px]  w-[100px] h-[2px] bg-primary"></div> */}
 
         {/* <div className="absolute bottom-[70px] left-[70px]  w-[100px] h-[2px] bg-primary"></div>
@@ -39,19 +39,19 @@ export default function About() {
 
         <div
           id="1"
-          className="pl-5 space-y-5 font-light relative content-center"
+          className="pl-5 mt-5 md:mt-0 space-y-5 font-light relative content-center"
         >
           <div className="absolute top-0 right-3  w-[100px] h-[2px] bg-primary"></div>
 
           <div className="absolute -top-5 right-3 h-[150px] w-[2px] bg-primary"></div>
-          <h1 className="text-3xl font-medium">Oluwayemisi T. Adebayo</h1>
-          <h2>
+          <h1 className="text-xl md:text-3xl font-medium">Oluwayemisi T. Adebayo</h1>
+          <h2 className="text-sm md:text-base">
             Welcome to my corner of the web! I am a dedicated Business
             Consultant and Life Coach, deeply passionate about helping
             individuals and organizations achieve their goals and unlock their
             full potential.
           </h2>
-          <h3>
+          <h3 className="text-sm md:text-base">
             {" "}
             A visionary international brand and digital marketing consultant,
             lecturer, strategist, disruptive content creator, and entrepreneur.
@@ -60,7 +60,7 @@ export default function About() {
             results that not only meet but exceed expectations in today’s
             fast-paced, ever-evolving digital landscape.
           </h3>
-          <h2>
+          <h2 className="text-sm md:text-base">
             My mission is simple: to empower businesses and individuals to
             thrive in today’s fast-paced, competitive landscape. I believe that
             with the right strategies, insights, and support, anyone can
@@ -74,7 +74,7 @@ export default function About() {
       </div>
 
       <div
-        className="p-20 text-center grid justify-items-center bg-cover bg-center relative text-white"
+        className="p-10 md:p-20 text-center grid justify-items-center bg-cover bg-center relative text-white"
         style={{
           backgroundImage:
             "url('https://res.cloudinary.com/dador6eng/image/upload/v1727245905/yemisi/4_j5yqbd.jpg')",
@@ -82,10 +82,10 @@ export default function About() {
       >
         <div className="absolute inset-0  backdrop-filter backdrop-brightness-50  z-0"></div>
         <div className="z-10">
-          <h1 className="text-3xl">
+          <h1 className="text-xl md:text-3xl">
             Ready to Transform Your Life and Business?
           </h1>
-          <h2 className="w-[600px] text-justify font-light">
+          <h2 className="w-[600px] text-justify font-light text-sm md:text-base">
             If you are ready to set your goals, commit to your vision, and take
             action toward a brighter future, I am here to support you every step
             of the way. Together, we can craft a roadmap for success that aligns
@@ -108,8 +108,8 @@ export default function About() {
         </div>
       </div>
 
-      <div className="px-20 py-10">
-        <h1 className=" text-3xl text-center pb-4">Gallery</h1>
+      <div className="px-10 md:px-20 py-5 md:py-10">
+        <h1 className="text-xl md:text-3xl text-center pb-4">Gallery</h1>
         <div className="grid grid-cols-4 gap-4">
           <img
             src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"

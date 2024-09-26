@@ -16,10 +16,10 @@ export default function Contact() {
               className="w-full h-[500px] object-cover brightness-75"
             />
             <PersonalizedHeader bg="bg-transparent" />
-            <div className="absolute top-[150px] left-[300px] text-5xl font-bold text-white">
+            <div className="absolute top-[150px] left-[100px] md:left-[300px] text-3xl md:text-5xl font-bold text-white">
               <h1>CONTACT OLUWAYEMISI</h1>
               <div className="flex pt-5 justify-center">
-                <Link className="text-xl font-medium" to={"/home"}>
+                <Link className="text-base md:text-xl font-medium" to={"/home"}>
                   Home
                 </Link>
                 <svg
@@ -43,12 +43,20 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div id="2" className="p-10  flex  h-[500px]">
+        <div
+          id="2"
+          className="p-5 md:p-10  flex flex-col md:flex-row  md:h-[500px]"
+        >
           {/* <div className="absolute top-0 left-[50px] h-[150px] w-[1px] bg-zinc-400"></div> */}
 
-          <div className=" w-[750px] grid grid-cols-[0.7fr_1.3fr] space-x-3">
-            <div className="">
-              <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727245909/yemisi/3_fo0gyy.jpg" className="border-2 " />
+          <div className=" md:w-[750px] grid md:grid-cols-[0.7fr_1.3fr] space-x-3">
+            <div className="justify-self-center md:justify-self-auto">
+              <div className=" ">
+                <img
+                  src="https://res.cloudinary.com/dador6eng/image/upload/v1727245909/yemisi/3_fo0gyy.jpg"
+                  className="border-2 h-[500px] md:h-auto "
+                />
+              </div>
               <h1 className="text-2xl text-center pt-5 pb-2">OLUWAYEMISI</h1>
               <div className="flex justify-center space-x-2">
                 <a href="mailto:talktooluwayemisiadebyao.com" className="">
@@ -157,7 +165,7 @@ export default function Contact() {
             </div> */}
           </div>
 
-          <div className="w-[400px] bg-zinc-100 text-blue-950 p-10 py-5 rounded-md absolute right-10 top-72">
+          <div className="md:w-[400px] bg-zinc-100 text-blue-950 p-10 py-5 mt-5 rounded-md md:absolute md:right-10 md:top-72">
             <form className=" py-4" onSubmit={handleSubmit}>
               <label className="text-sm">Name</label>
               <input

@@ -59,15 +59,15 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="px-10 py-20 grid grid-cols-[1fr_2fr] text-blue-950 relative">
-        <div className="py-20 px-10 border-2 border-primary space-y-5 relative z-10 -mr-16 ">
-          <div className="text-xl font-bold py-4 pr-12">
+      <div className="px-5 md:px-10 py-10 md:py-20 grid md:grid-cols-[1fr_2fr] text-blue-950 relative">
+        <div className="py-10 md:py-20 px-5 md:px-10 border-2 border-primary space-y-5 relative z-10 md:-mr-16 ">
+          <div className="text-xl font-bold py-4 md:pr-12">
             <h1 className="text-2xl font-medium border-t border-primary w-fit">
               Gracelandic Iceland Eco Mini Conference
             </h1>
             Design Consultant
           </div>
-          <h1 className="text-sm font-light pr-12">
+          <h1 className="text-sm font-light md:pr-12">
             AltSchool Africa offers a more effective “alternative” to
             traditional academic institutions, in that it explores and offers
             practical & functional learning with the aid of modern technology.
@@ -88,14 +88,14 @@ export default function Projects() {
       </div>
 
       <div className="relative">
-        <div className="pt-14 pb-24 px-20 grid grid-cols-2 text-blue-950">
-          <div id="1" className="pt-14 px-10 space-y-7 content-end relative">
+        <div className="pt-7 md:pt-14 pb-24 px-10 md:px-20 grid grid-cols-2 text-blue-950">
+          <div id="1" className="pt-7 md:pt-14 px-5 md:px-10 space-y-7 content-end relative">
             <div className="absolute top-0 left-0  w-[100px] h-[2px] bg-primary"></div>
 
             <div className="absolute -top-7 left-0 h-[150px] w-[2px] bg-primary"></div>
-            <h1 className="text-3xl font-bold">
+            <h1 className="text-xl md:text-3xl font-bold">
               Arden University London
-              <h2 className="text-xl font-medium">
+              <h2 className="text-base md:text-xl font-medium">
                 Business Consultancy, Research & Customer Experience Lecturer
                 <h3 className="text-sm font-light italic">
                   Ranked 16th out of 149 UK universities for student
@@ -103,7 +103,7 @@ export default function Projects() {
                 </h3>
               </h2>
             </h1>
-            <h1 className="font-light text-base">
+            <h1 className="font-light text-sm md:text-base">
               Offering a combination of distance and blended learning degree
               courses to students in the UK and globally, Arden University
               provides access to the skills, knowledge, and opportunities our
@@ -144,9 +144,9 @@ export default function Projects() {
             className=" h-[550px] w-full object-cover relative brightness-50"
           />
         </div>
-        <div className=" absolute -top-6 left-20 w-[500px] border-2 border-primary pt-40 px-14 pb-20 space-y-6">
-          <div className="w-[300px] text-3xl font-bold  space-y-2">
-            <h1 className=" text-2xl font-medium border-t border-primary w-fit">
+        <div className=" absolute -top-6 left-10 md:left-20  md:w-[500px] border-2 border-primary pt-20 md:pt-40 px-7 md:px-14 pb-10 md:pb-20 space-y-6">
+          <div className="w-[150px] md:w-[300px] text-xl md:text-3xl font-bold  space-y-2">
+            <h1 className="text-lg md:text-2xl font-medium border-t border-primary w-fit">
               TTS
             </h1>{" "}
             INITIATIVE
@@ -163,19 +163,19 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="px-10 py-20 grid grid-cols-[2fr_1fr] text-blue-950 relative">
+      <div className="px-10 py-20 grid md:grid-cols-[2fr_1fr] text-blue-950 relative">
         <img
           src="https://res.cloudinary.com/dador6eng/image/upload/v1727245840/yemisi/14_optcyk.jpg"
           className="h-[500px] py-8 w-full object-cover object-top relative z-0"
         />
-        <div className="py-20 px-10 border-2 border-primary space-y-5 relative z-10 -ml-16 ">
-          <div className="text-2xl font-bold py-4 pl-12">
+        <div className="py-10 md:py-20 px-5 md:px-10 border-2 border-primary space-y-5 relative z-10 -mt-12 md:-mt-0 md:-ml-16 ">
+          <div className="text-lg md:text-2xl font-bold py-2 md:py-4 md:pl-12">
             <h1 className="text-xl font-medium border-t border-primary w-fit">
               AltSchool Africa
             </h1>
             Marketing Consultant (Contract)
           </div>
-          <h1 className="text-sm font-light pl-12">
+          <h1 className="text-sm font-light md:pl-12">
             AltSchool Africa offers a more effective “alternative” to
             traditional academic institutions, in that it explores and offers
             practical & functional learning with the aid of modern technology.
@@ -191,66 +191,29 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* <div
-        className="bg-cover bg-center h-[400px] text-white relative"
-        style={{ backgroundImage: 'url("/yemisi/15.jpg")' }}
-      >
-        <div className="absolute inset-0  backdrop-filter backdrop-brightness-50  z-0"></div>
-
-        <div className="bg-white text-blue-950 z-10 absolute top-20 left-10 w-[600px] p-10 space-y-3">
-          <h1 className="text-2xl font-medium  w-fit flex">
-            {" "}
-            <h2 className="border-t border-primary mr-3">MY </h2> PASSION
-            PROJECT
-          </h1>
-          <h2 className="text-sm font-light">
-            Beyond my professional endeavors, I am the proud creator of the TTS
-            Initiative, a non-governmental organization dedicated to empowering
-            teenagers and young adults. The TTS Initiative is more than just a
-            platform; it is a movement that aims to bridge the gap between
-            aspirations and achievements for young people across the globe
-          </h2>
-          <a href="https://ttsinitiative.com/" className="flex font-semibold">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="size-6 text-primary"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-              />
-            </svg>
-            <h1 className="text-sm self-center">TTS Initiative</h1>
-          </a>
-        </div>
-      </div> */}
+      
       <div className="relative">
         {/* <div className="absolute top-0 right-[100px] h-[150px] w-[1px] bg-zinc-400"></div> */}
 
-        <div className="pt-14 pb-24 px-20 grid grid-cols-2 text-blue-950">
+        <div className="pt-7 md:pt-14 pb-12 md:pb-24 px-10 md:px-20 grid grid-cols-2 text-blue-950">
           <div id="2">
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727245841/yemisi/women-tech_esch9i.jpg"
               className=" h-[370px] w-full object-cover"
             />
           </div>
-          <div id="1" className="pt-14 px-10 space-y-7 content-end relative">
+          <div id="1" className="pt-7 md:pt-14 px-5 md:px-10 space-y-3.5 md:space-y-7 content-end relative">
             <div className="absolute top-0 right-3  w-[100px] h-[2px] bg-primary"></div>
-            <div className="absolute -top-7 right-3 h-[150px] w-[2px] bg-primary"></div>
+            <div className="absolute -top-3.5 md:-top-7 right-3 h-[150px] w-[2px] bg-primary"></div>
 
             <div className="absolute bottom-0 left-3  w-[100px] h-[2px] bg-primary"></div>
 
             <div className="absolute bottom-0 left-3 h-[100px] w-[2px] bg-primary"></div>
-            <h1 className="text-3xl font-bold">
+            <h1 className="text-xl md:text-3xl font-bold">
               WearetheWomeninTech London
-              <h2 className="text-xl font-medium">Digital Consultant</h2>
+              <h2 className="text-base md:text-xl font-medium">Digital Consultant</h2>
             </h1>
-            <h1 className="font-light text-base">
+            <h1 className="font-light text-sm  md:text-base">
               We Are the Women In Tech is a passionate community dedicated to
               empowering and supporting women in the technology industry. We
               firmly believe that women have an invaluable role in shaping the
@@ -278,7 +241,7 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="w-full items-center justify-center h-fit relative pb-20 ">
+      <div className="w-full items-center justify-center h-fit relative pb-10 md:pb-20 ">
         <div className="relative">
           <div className="brightness-75">
             <img
@@ -288,9 +251,9 @@ export default function Projects() {
             />
           </div>
 
-          <div className=" p-12 space-y-6 bg-white text-blue-950 absolute  w-[377px] top-16 left-20 ">
-            <h1 className="text-xl font-semibold">
-              <h2 className=" border-t border-t-primary w-fit text-2xl">
+          <div className=" p-6 md:p-12 space-y-3 md:space-y-6 bg-white text-blue-950 absolute  w-[377px] top-8 md:top-16 left-10 md:left-20 ">
+            <h1 className="text-base md:text-xl font-semibold">
+              <h2 className=" border-t border-t-primary w-fit text-lg md:text-2xl">
                 TheEBConcept
               </h2>{" "}
               Lead Consultant & Executive
@@ -314,13 +277,13 @@ export default function Projects() {
             className=" h-[550px] w-full object-cover relative brightness-50"
           />
         </div>
-        <div className=" absolute -top-6 right-20 w-[500px] border-2 border-primary pt-40 px-14 pb-20 space-y-6">
-          <div className=" w-[300px] text-3xl font-bold  space-y-2">
-            <h1 className="text-2xl font-medium border-t border-primary w-fit">
+        <div className=" absolute -top-3 md:-top-6 right-10 md:right-20 w-[500px] border-2 border-primary pt-20 md:pt-40 px-7 md:px-14 pb-10 md:pb-20 space-y-6">
+          <div className=" w-[150px] md:w-[300px] text-xl md:text-3xl font-bold  md:space-y-2">
+            <h1 className="text-lg md:text-2xl font-medium border-t border-primary w-fit">
               FORT
             </h1>{" "}
             TYRES
-            <h2 className="text-xl font-medium">Co-Founder</h2>
+            <h2 className="text-base md:text-xl font-medium">Co-Founder</h2>
           </div>
           <h1 className="w-[300px] text-sm font-light">
             We help individuals and businesses experience a stress free tyre
@@ -331,17 +294,17 @@ export default function Projects() {
       </div>
 
       <div className="relative">
-        <div className="absolute top-0 left-[100px] h-[150px] w-[1px] bg-zinc-400"></div>
+        <div className="absolute top-0 left-[50px] md:left-[100px] h-[150px] w-[1px] bg-zinc-400"></div>
 
-        <div className="pt-14 pb-24 px-20 grid grid-cols-2 text-blue-950">
-          <div id="1" className="pt-14 px-10 space-y-7 content-end">
-            <h1 className="text-3xl font-bold">
+        <div className="pt-7 md:pt-14 pb-12 md:pb-24 px-10 md:px-20 grid grid-cols-2 text-blue-950">
+          <div id="1" className="pt-7 md:pt-14 px-5 md:px-10 space-y-3.5 md:space-y-7 content-end">
+            <h1 className="text-xl md:text-3xl font-bold">
               Pecksgrey LTD
-              <h2 className="text-xl font-medium">
+              <h2 className="text-base md:text-xl font-medium">
                 Digital Marketing Consultant
               </h2>
             </h1>
-            <h1 className="font-light text-base">
+            <h1 className="font-light text-sm  md:text-base">
               We offer engineering, procurement and construction services to
               clients seeking a prompt, high-quality, and cost-effective project
               delivery that meet functional and technical requirements.
@@ -379,13 +342,13 @@ export default function Projects() {
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727245858/yemisi/women-tech-2_nv5jmm.jpg"
               alt="about"
-              className=" h-[450px] w-full object-cover object-top "
+              className="h-[400px] md:h-[450px] w-full object-cover object-top "
             />
           </div>
 
-          <div className=" p-12 space-y-6 bg-white text-blue-950 absolute  w-[377px] top-16 left-20 ">
-            <h1 className="text-xl font-semibold">
-              <h2 className=" border-t border-t-primary w-fit text-2xl">
+          <div className="p-6 md:p-12 space-y-3 md:space-y-6 bg-white text-blue-950 absolute  w-[377px] top-8 md:top-16 left-10 md:left-20 ">
+            <h1 className="text-base md:text-xl font-semibold">
+              <h2 className=" border-t border-t-primary w-fit text-lg md:text-2xl">
                 Westgate Lifecare Mall
               </h2>{" "}
               Brand Consultant (Contract)
@@ -404,15 +367,15 @@ export default function Projects() {
       </div>
 
       <div className="relative">
-        <div className="absolute top-0 left-[100px] h-[150px] w-[1px] bg-zinc-400"></div>
+        <div className="absolute top-0 left-[50px] md:left-[100px] h-[150px] w-[1px] bg-zinc-400"></div>
 
-        <div className="pt-14 pb-24 px-20 grid grid-cols-2 text-blue-950">
-          <div id="1" className="pt-14 px-10 space-y-7 content-end">
-            <h1 className="text-3xl font-bold">
+        <div className="pt-7 md:pt-14 pb-12 md:pb-24 px-10 md:px-20 grid grid-cols-2 text-blue-950">
+          <div id="1" className="pt-7 md:pt-14 px-5 md:px-10 space-y-3.5 md:space-y-7 content-end">
+            <h1 className="text-xl md:text-3xl font-bold">
               DAE Young Entrepreneurial Program London
-              <h2 className="text-xl font-medium">Digital consultant</h2>
+              <h2 className="text-base md:text-xl font-medium">Digital consultant</h2>
             </h1>
-            <h1 className="font-light text-base">
+            <h1 className="font-light text-sm md:text-base">
               A career consultant dedicated to guiding individuals from jobs of
               necessity to fulfilling, purpose-driven careers. YEP is a 6-week
               workshop designed to provide support, guidance, and skills
@@ -449,25 +412,25 @@ export default function Projects() {
       <div className="relative">
         {/* <div className="absolute top-0 right-[100px] h-[150px] w-[1px] bg-zinc-400"></div> */}
 
-        <div className="pt-14 pb-24 px-20 grid grid-cols-2 text-blue-950">
+        <div className="pt-7 md:pt-14 pb-10 md:pb-24 px-10 md:px-20 grid grid-cols-2 text-blue-950">
           <div id="2">
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727245841/yemisi/women-tech_esch9i.jpg"
               className=" h-[370px] w-full object-cover"
             />
           </div>
-          <div id="1" className="pt-14 px-10 space-y-7 content-end relative">
+          <div id="1" className="pt-7 md:pt-14 px-5 md:px-10 space-y-7 md:space-y-7 content-end relative">
             <div className="absolute top-0 right-3  w-[100px] h-[2px] bg-primary"></div>
             <div className="absolute -top-7 right-3 h-[150px] w-[2px] bg-primary"></div>
 
             <div className="absolute bottom-0 left-3  w-[100px] h-[2px] bg-primary"></div>
 
             <div className="absolute bottom-0 left-3 h-[100px] w-[2px] bg-primary"></div>
-            <h1 className="text-3xl font-bold">
+            <h1 className="text-xl md:text-3xl font-bold">
               Standard Chartered Bank
-              <h2 className="text-xl font-medium">Creatives(contract)</h2>
+              <h2 className="text-base md:text-xl font-medium">Creatives(contract)</h2>
             </h1>
-            <h1 className="font-light text-base">
+            <h1 className="font-light text-sm md:text-base">
               We are a connector for corporates and financial institutions
               across the world’s most dynamic markets to unlock the most
               exciting growth opportunities. From transaction banking to
