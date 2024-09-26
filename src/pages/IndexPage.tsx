@@ -260,7 +260,7 @@ export default function IndexPage() {
 
         <div className="absolute top-7 md:top-14 left-[50px] md:left-[100px] h-[75px] md:h-[150px] w-[2px] bg-primary"></div>
 
-        <div className="pt-7 md:pt-14 pb-12 md:pb-24 px-10 md:px-20 grid grid-cols-2 text-blue-950">
+        <div className="pt-7 md:pt-14 pb-12 md:pb-24 px-10 md:px-20 grid md:grid-cols-2 text-blue-950">
           <div id="1" className="pt-7 md:pt-14 px-7 md:px-14 space-y-3.5 md:space-y-7 content-end">
             <h1 className="text-xl md:text-3xl font-bold">
               <h2 className="text-lg md:text-2xl font-medium">Over</h2> THE PAST DECADE
@@ -289,14 +289,14 @@ export default function IndexPage() {
             className=" h-[550px] w-full object-cover relative brightness-50"
           />
         </div>
-        <div className=" absolute -top-3 md:-top-6 left-10 md:left-20 md:w-[500px] border-2 border-primary pt-20 md:pt-40 px-7 md:px-14 pb-10 md:pb-20 space-y-1.5 md:space-y-3">
+        <div className=" absolute -top-3 md:-top-6 left-5 md:left-20 md:w-[500px] border-2 border-primary pt-10 md:pt-40 px-7 md:px-14 pb-10 md:pb-20 space-y-1.5 md:space-y-3">
           <div className="w-[175px] md:w-[350px] text-xl md:text-3xl font-bold ">
             <h1 className=" text-lg md:text-2xl font-medium border-t border-primary w-fit">
               As an
             </h1>{" "}
             EXPERIENCED LECTURER & STRATEGIST
           </div>
-          <h1 className="w-[350px] text-sm font-light">
+          <h1 className="w-[200px] md:w-[350px] text-sm font-light">
             I have had the privilege of mentoring countless individuals and
             organizations, guiding them to achieve their goals through tailored
             strategies that drive growth and foster success. My approach is
@@ -315,7 +315,7 @@ export default function IndexPage() {
           <div className="grid justify-items-center space-y-2 md:space-y-4">
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
-              className=" h-60 w-60 rounded-full object-cover object-top"
+              className=" h-32 md:h-60 w-32 md:w-60 rounded-full object-cover object-top"
             />
             <div className="grid justify-items-center">
               <h1 className="text-lg md:text-2xl font-semibold">John Doe</h1>
@@ -329,7 +329,7 @@ export default function IndexPage() {
           <div className="grid justify-items-center space-y-2 md:space-y-4">
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
-              className=" h-60 w-60 rounded-full object-cover object-top"
+              className=" h-32 md:h-60 w-32 md:w-60 rounded-full object-cover object-top"
             />
             <div className="grid justify-items-center">
               <h1 className="text-lg md:text-2xl font-semibold">John Doe</h1>
