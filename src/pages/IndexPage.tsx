@@ -2,12 +2,12 @@ export const PersonalizedHeader = ({ bg }: { bg: string }) => {
   return (
     <>
       <div
-        className={`flex p-5 w-full justify-between  text-white ${bg} absolute top-0 `}
+        className={`md:flex grid p-5 w-full justify-between  text-white ${bg} absolute top-0 `}
       >
         <Link to="/" className=" text-2xl font-bold">
           OLUWAYEMISI ADEBAYO
         </Link>
-        <div className="  space-x-10 text-sm  font-medium items-center flex">
+        <div className=" space-x-5 md:space-x-10 text-sm  font-medium items-center flex">
           {/* <a href="/">HOME</a> */}
           <a href="/consulting">CONSULTING</a>
           <a href="/coaching">COACHING</a>
@@ -15,38 +15,41 @@ export const PersonalizedHeader = ({ bg }: { bg: string }) => {
             {" "}
             <Dropdown />{" "}
           </h1>
-          <a href="/media">MEDIA</a>
+          <h1>
+            <MediaDropdown />
+          </h1>
           <a href="/contact">CONTACT</a>
         </div>
         <div className="space-x-4 content-center">
-          <FontAwesomeIcon
-            icon={faEnvelope}
-            href="talktooluwayemisiadebyao.com"
-          />
-          <FontAwesomeIcon
-            icon={faXTwitter}
-            href="https://wwww.x.com/Iamyemisikayode"
-          />
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            href="https://www.linkedin.com/in/oluwayemisitopekayode/"
-          />
-          <FontAwesomeIcon
-            icon={faFacebook}
-            href="https://www.facebook.com/oluwayemisi.kayode.5"
-          />
-          <FontAwesomeIcon
-            icon={faInstagram}
-            href="https://www.instagram.com/iamyemisikayode/"
-          />
-          <FontAwesomeIcon icon={faThreads} href="Iamyemisikayode" />
+          <Link to={"mailto: contact@yemisiadebayo.com"}>
+            <FontAwesomeIcon icon={faEnvelope} />
+          </Link>
+
+          <Link to={"https://www.x.com/Iamyemisikayode"}>
+            <FontAwesomeIcon icon={faXTwitter} />
+          </Link>
+
+          <Link to="https://www.linkedin.com/in/oluwayemisitopekayode/">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </Link>
+
+          <Link to="https://www.facebook.com/oluwayemisi.kayode.5">
+            <FontAwesomeIcon icon={faFacebook} />
+          </Link>
+
+          <Link to="https://www.instagram.com/iamyemisikayode/">
+            <FontAwesomeIcon icon={faInstagram} />
+          </Link>
+          <Link to="Iamyemisikayode">
+            <FontAwesomeIcon icon={faThreads} />
+          </Link>
         </div>
       </div>
     </>
   );
 };
 
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -58,33 +61,10 @@ import {
   faThreads,
 } from "@fortawesome/free-brands-svg-icons";
 import Dropdown from "./components/Dropdown";
+import MediaDropdown from "./components/MediaDropdown";
 
 export default function IndexPage() {
-  useEffect(() => {
-    // JavaScript to handle the scroll animations for the timeline blocks
-    function handleScroll() {
-      const blocks = document.querySelectorAll(".cd-timeline__block");
-      blocks.forEach((block) => {
-        const img = block.querySelector(".cd-timeline__img");
-        const content = block.querySelector(".cd-timeline__content");
-        const blockTop = block.getBoundingClientRect().top;
-        const isVisible = blockTop <= window.innerHeight * 0.8;
-
-        if (isVisible) {
-          img!.classList.add("cd-timeline__img--bounce-in");
-          content!.classList.add("cd-timeline__content--bounce-in");
-        } else {
-          img!.classList.remove("cd-timeline__img--bounce-in");
-          content!.classList.remove("cd-timeline__content--bounce-in");
-        }
-      });
-    }
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Cleanup the event listener
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+ 
 
   const handleSubmit: React.FormEventHandler = (event) =>
     event.preventDefault();
@@ -92,67 +72,65 @@ export default function IndexPage() {
   return (
     <>
       <PersonalizedHeader bg="bg-black" />
+      <div className="block md:hidden h-16"></div>
       <div
         id="intro"
-        className="grid grid-cols-2 px-20 pt-20 bg-black"
+        className="grid grid-cols-2 px-10 md:px-20 pt-10 pb-10 md:pb-0 md:pt-20 bg-black"
         // style={{ backgroundImage: 'url("/img/crowd.jpg")' }}
       >
         <div>
           <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727245918/yemisi/2_yf9z5n.jpg" />
         </div>
-        <div className="text-white">
+        <div className="text-white content-center md:content-normal">
           <div className="pb-3">
             <h1 className="font-medium">Oluwayemisi T. Adebayo</h1>
-            <h2 className="text-5xl font-black my-4 leading-tight">
+            <h2 className="text-2xl md:text-5xl font-black my-2 md:my-4 md:leading-tight">
               I HAVE SUCCESSFULLY DRIVEN RESULTS FOR HUNDREDS OF BRANDS ACROSS
               AFRICA, EUROPE, AND ASIA
             </h2>
-            <h3 className="font-medium text-xl">
+            <h3 className="font-medium md:text-xl">
               Are you ready to enhance your brand's results? If so, let's get to
               work.
             </h3>
           </div>
-          <div className="flex space-x-5">
+          <div className="flex space-x-2 md:space-x-5">
             <Link
               to={"/consulting"}
-              className="py-2 px-6 bg-primary text-white rounded-md"
+              className="py-1 md:py-2 px-1 md:px-6 bg-primary text-white rounded-md text-sm md:text-base"
             >
-              Book Me- Consultation
+              Book Me - Consultation
             </Link>
             <Link
               to={"/coaching"}
-              className="py-2 px-6 bg-primary text-white rounded-md"
+              className="py-1 md:py-2 px-1 md:px-6 bg-primary text-white rounded-md text-sm md:text-base"
             >
-              Book Me- Coaching
+              Book Me - Coaching
             </Link>
           </div>
         </div>
       </div>
 
-      <div className="p-10 px-20  text-center">
-        <h1 className="text-3xl font-bold pb-5">Mission</h1>
-        <h2>
-          "Oluwayemisi serves as a powerful catalyst for change, dedicated to
-          inspiring, educating, and empowering the next generation of leaders.
-          Through a diverse array of dynamic events and engaging interactive
-          platforms, she fosters personal growth and professional development,
-          equipping young leaders with the tools and confidence needed to
-          navigate challenges and create lasting impact in their communities and
-          beyond."
+      <div className="p-5 md:p-10 px-10 md:px-20  text-center">
+        <h1 className="text-xl md:text-3xl font-bold pb-5">Mission</h1>
+        <h2 className="text-sm md:text-base">
+          "To empower businesses and individuals to thrive in today’s
+          fast-paced, competitive landscape. I believe that with the right
+          strategies, insights, and support, anyone can transform their
+          aspirations into reality."
         </h2>
       </div>
 
       {/* Other sections of your page */}
-      <div className="grid grid-cols-2 space-x-10 h-[350px]  text-white text-center mb-32  mx-20 my-10">
+      <div className="grid grid-cols-2 space-x-5 md:space-x-10 md:h-[350px]  text-white text-center mb-16 md:mb-32 mx-10 md:mx-20 my-5 md:my-10">
         <div className="">
-          <h1 className="py-3 bg-primary ">Consultant</h1>
+          <h1 className="py-1 md:py-3 bg-primary ">Consultant</h1>
           <div className="relative group">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727274366/yemisi/consult.jpg"
               className=" h-[400px] w-full object-cover object-top relative group-hover:brightness-50"
               alt="consultant"
             />
-            <h2 className="absolute top-10 p-10 text-justify invisible group-hover:visible transition duration-700">
+            <h2 className="absolute top-5 md:top-10 p-5 md:p-10 text-sm md:text-base text-justify invisible group-hover:visible transition duration-700">
               As a business consultant, I specialize in transforming operations,
               fostering sustainable growth, and achieving strategic objectives.
               With over 9 years of experience, I have had the privilege of
@@ -165,14 +143,14 @@ export default function IndexPage() {
           </div>
         </div>
         <div>
-          <h1 className="py-3 bg-primary ">Coach</h1>
+          <h1 className="py-1 md:py-3 bg-primary ">Coach</h1>
           <div className="relative group">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245909/yemisi/3_fo0gyy.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"
               className=" h-[400px] w-full object-cover object-top relative group-hover:brightness-50"
               alt="consultant"
             />
-            <h2 className="absolute top-10 p-10 text-justify invisible group-hover:visible transition duration-700">
+            <h2 className="absolute top-5 md:top-10 p-5 md:p-10 text-sm md:text-base text-justify invisible group-hover:visible transition duration-700">
               In addition to my consulting work, I am a passionate life coach. I
               have had the opportunity to coach professionals in various fields,
               including politics, education, oil and gas, and the creative
@@ -278,14 +256,14 @@ export default function IndexPage() {
       </div> */}
 
       <div className="relative">
-        <div className="absolute top-14 left-[100px]  w-[100px] h-[2px] bg-primary"></div>
+        <div className="absolute top-7 md:top-14 left-[50px] md:left-[100px] w-[50px] md:w-[100px] h-[2px] bg-primary"></div>
 
-        <div className="absolute top-14 left-[100px] h-[150px] w-[2px] bg-primary"></div>
+        <div className="absolute top-7 md:top-14 left-[50px] md:left-[100px] h-[75px] md:h-[150px] w-[2px] bg-primary"></div>
 
-        <div className="pt-14 pb-24 px-20 grid grid-cols-2 text-blue-950">
-          <div id="1" className="pt-14 px-14 space-y-7 content-end">
-            <h1 className="text-3xl font-bold">
-              <h2 className="text-2xl font-medium">Over</h2> THE PAST DECADE
+        <div className="pt-7 md:pt-14 pb-12 md:pb-24 px-10 md:px-20 grid grid-cols-2 text-blue-950">
+          <div id="1" className="pt-7 md:pt-14 px-7 md:px-14 space-y-3.5 md:space-y-7 content-end">
+            <h1 className="text-xl md:text-3xl font-bold">
+              <h2 className="text-lg md:text-2xl font-medium">Over</h2> THE PAST DECADE
             </h1>
             <h1 className="font-light text-sm">
               I have honed my skills and expertise in the realms of brand
@@ -311,9 +289,9 @@ export default function IndexPage() {
             className=" h-[550px] w-full object-cover relative brightness-50"
           />
         </div>
-        <div className=" absolute -top-6 left-20 w-[500px] border-2 border-primary pt-40 px-14 pb-20 space-y-3">
-          <div className="w-[350px] text-3xl font-bold ">
-            <h1 className=" text-2xl font-medium border-t border-primary w-fit">
+        <div className=" absolute -top-3 md:-top-6 left-10 md:left-20 md:w-[500px] border-2 border-primary pt-20 md:pt-40 px-7 md:px-14 pb-10 md:pb-20 space-y-1.5 md:space-y-3">
+          <div className="w-[175px] md:w-[350px] text-xl md:text-3xl font-bold ">
+            <h1 className=" text-lg md:text-2xl font-medium border-t border-primary w-fit">
               As an
             </h1>{" "}
             EXPERIENCED LECTURER & STRATEGIST
@@ -329,15 +307,72 @@ export default function IndexPage() {
         </div>
       </div>
 
-      <div className="p-20"></div>
+      <div className="p-10 md:p-20">
+        <h1 className="text-center text-lg md:text-2xl font-semibold">
+          Reviews from Clients
+        </h1>
+        <div className="grid md:grid-cols-2 space-y-6 md:space-y-0">
+          <div className="grid justify-items-center space-y-2 md:space-y-4">
+            <img
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
+              className=" h-60 w-60 rounded-full object-cover object-top"
+            />
+            <div className="grid justify-items-center">
+              <h1 className="text-lg md:text-2xl font-semibold">John Doe</h1>
+              <h1 className="italic">
+                "I have worked with speaker from all over the world, she's top
+                notch"
+              </h1>
+            </div>
+          </div>
+
+          <div className="grid justify-items-center space-y-2 md:space-y-4">
+            <img
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
+              className=" h-60 w-60 rounded-full object-cover object-top"
+            />
+            <div className="grid justify-items-center">
+              <h1 className="text-lg md:text-2xl font-semibold">John Doe</h1>
+              <h1 className="italic">
+                "I have worked with speaker from all over the world, she's top
+                notch"
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className=" justify-items-center">
+        <h1 className="text-lg md:text-2xl font-semibold text-center">
+          You can also check out my Podcasts & News
+          <div className="grid grid-cols-2 p-5 md:p-10 space-y-4 space-x-4">
+            <div id="1" className="relative group">
+              <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727349801/20_sipaxb.jpg" className=" rounded-md" />
+              <div className="bg-primary p-3 absolute top-1/2 right-1/2 rounded-md">
+                <Link to="/media#podcast" className=" text-white">
+                  Podcasts
+                </Link>
+              </div>
+            </div>
+            <div className="relative">
+              <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727349801/21_zeozem.jpg" className=" rounded-md" />
+              <div className="bg-primary p-3 absolute top-1/2 right-1/2 rounded-md">
+                <Link to="/media#news" className=" text-white">
+                  News
+                </Link>
+              </div>
+            </div>
+          </div>
+        </h1>
+      </div>
       <div
-        className="relative grid place-content-center p-20 bg-cover bg-fixed  text-white text-center"
-        style={{ backgroundImage: 'url("/img/sideways.jpg")' }}
+        className="relative grid place-content-center p-10 md:p-20 bg-cover bg-fixed bg-zinc-700  text-white text-center"
+        // style={{ backgroundImage: 'url("/img/sideways.jpg")' }}
       >
-        <div className="absolute inset-0 bg-black/50 backdrop-filter backdrop-brightness-100"></div>
+        {/* <div className="absolute inset-0 bg-black/50 backdrop-filter backdrop-brightness-100"></div> */}
         <div className="z-10">
-          <h1 className="text-xl">Sign Up for</h1>
-          <h1 className="text-6xl font-bold pb-3">Oluwayemisi Newsletter</h1>
+          <h1 className="md:text-xl">Sign Up for</h1>
+          <h1 className="text-3xl md:text-6xl font-bold pb-3">Oluwayemisi Newsletter</h1>
           <span>
             Stay in the loop with the latest activities. Subscribe now!
           </span>
@@ -345,14 +380,14 @@ export default function IndexPage() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="p-3 w-96 rounded-md"
+              className="p-1.5 md:p-3 w-96 rounded-md"
             />
-            <button className="p-4 bg-black text-white rounded-md">
+            <button className="p-2 md:p-4 bg-black text-white rounded-md">
               SUBSCRIBE
             </button>
           </form>
           <div className="flex justify-center space-x-5">
-            <a href="mailto:talktooluwayemisiadebyao.com" className="">
+            <a href="mailto:contact@yemisiadebayo.com" className="">
               <svg
                 className="w-8 h-8 text-white hover:bg-primary border-2 p-1 rounded-full "
                 aria-hidden="true"

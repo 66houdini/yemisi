@@ -58,11 +58,41 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <div className="relative">
-        <div className="absolute top-0 left-[100px] h-[150px] w-[1px] bg-zinc-400"></div>
 
+      <div className="px-10 py-20 grid grid-cols-[1fr_2fr] text-blue-950 relative">
+        <div className="py-20 px-10 border-2 border-primary space-y-5 relative z-10 -mr-16 ">
+          <div className="text-xl font-bold py-4 pr-12">
+            <h1 className="text-2xl font-medium border-t border-primary w-fit">
+              Gracelandic Iceland Eco Mini Conference
+            </h1>
+            Design Consultant
+          </div>
+          <h1 className="text-sm font-light pr-12">
+            AltSchool Africa offers a more effective “alternative” to
+            traditional academic institutions, in that it explores and offers
+            practical & functional learning with the aid of modern technology.
+            We believe that learning elevates and success spreads. This is why
+            we have strategically designed our programs and courses to propel
+            our learners toward success in their chosen careers. This way, they
+            become a source of inspiration in their respective communities while
+            also contributing to socio-economic development. By the year 2030,
+            we hope to have armed ten million Africans with profitable skills
+            that will shape their own futures and the growth of the African
+            continent.
+          </h1>
+        </div>
+        <img
+          src="https://res.cloudinary.com/dador6eng/image/upload/v1727245840/yemisi/14_optcyk.jpg"
+          className="h-[500px] py-8 w-full object-cover object-top relative z-0"
+        />
+      </div>
+
+      <div className="relative">
         <div className="pt-14 pb-24 px-20 grid grid-cols-2 text-blue-950">
-          <div id="1" className="pt-14 px-10 space-y-7 content-end">
+          <div id="1" className="pt-14 px-10 space-y-7 content-end relative">
+            <div className="absolute top-0 left-0  w-[100px] h-[2px] bg-primary"></div>
+
+            <div className="absolute -top-7 left-0 h-[150px] w-[2px] bg-primary"></div>
             <h1 className="text-3xl font-bold">
               Arden University London
               <h2 className="text-xl font-medium">
@@ -248,7 +278,7 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="w-full items-center justify-center h-fit relative ">
+      <div className="w-full items-center justify-center h-fit relative pb-20 ">
         <div className="relative">
           <div className="brightness-75">
             <img
@@ -277,33 +307,6 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="px-10 py-20 grid grid-cols-[1fr_2fr] text-blue-950 relative">
-        <div className="py-20 px-10 border-2 border-primary space-y-5 relative z-10 -mr-16 ">
-          <div className="text-xl font-bold py-4 pr-12">
-            <h1 className="text-2xl font-medium border-t border-primary w-fit">
-              Gracelandic Iceland Eco Mini Conference
-            </h1>
-            Design Consultant
-          </div>
-          <h1 className="text-sm font-light pr-12">
-            AltSchool Africa offers a more effective “alternative” to
-            traditional academic institutions, in that it explores and offers
-            practical & functional learning with the aid of modern technology.
-            We believe that learning elevates and success spreads. This is why
-            we have strategically designed our programs and courses to propel
-            our learners toward success in their chosen careers. This way, they
-            become a source of inspiration in their respective communities while
-            also contributing to socio-economic development. By the year 2030,
-            we hope to have armed ten million Africans with profitable skills
-            that will shape their own futures and the growth of the African
-            continent.
-          </h1>
-        </div>
-        <img
-          src="https://res.cloudinary.com/dador6eng/image/upload/v1727245840/yemisi/14_optcyk.jpg"
-          className="h-[500px] py-8 w-full object-cover object-top relative z-0"
-        />
-      </div>
       <div className="relative text-white">
         <div>
           <img
@@ -333,7 +336,7 @@ export default function Projects() {
         <div className="pt-14 pb-24 px-20 grid grid-cols-2 text-blue-950">
           <div id="1" className="pt-14 px-10 space-y-7 content-end">
             <h1 className="text-3xl font-bold">
-              Peckagrey LTD
+              Pecksgrey LTD
               <h2 className="text-xl font-medium">
                 Digital Marketing Consultant
               </h2>
@@ -396,6 +399,98 @@ export default function Projects() {
               Adidas, Nike, Defacto, Trendyol, etc. guarantees our customers the
               cheapest prices on original brand products.
             </h1>
+          </div>
+        </div>
+      </div>
+
+      <div className="relative">
+        <div className="absolute top-0 left-[100px] h-[150px] w-[1px] bg-zinc-400"></div>
+
+        <div className="pt-14 pb-24 px-20 grid grid-cols-2 text-blue-950">
+          <div id="1" className="pt-14 px-10 space-y-7 content-end">
+            <h1 className="text-3xl font-bold">
+              DAE Young Entrepreneurial Program London
+              <h2 className="text-xl font-medium">Digital consultant</h2>
+            </h1>
+            <h1 className="font-light text-base">
+              A career consultant dedicated to guiding individuals from jobs of
+              necessity to fulfilling, purpose-driven careers. YEP is a 6-week
+              workshop designed to provide support, guidance, and skills
+              required to overcome barriers, scale-up, and build a business that
+              truly fulfills you.
+            </h1>
+            <div className="flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6 text-primary"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+              <h1 className="text-sm font-semibold self-center">IMPACT</h1>
+            </div>
+          </div>
+          <div id="2" className=" content-center">
+            <img
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245844/yemisi/18_tjvhtp.jpg"
+              className=" h-[280px] w-full object-cover "
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="relative">
+        {/* <div className="absolute top-0 right-[100px] h-[150px] w-[1px] bg-zinc-400"></div> */}
+
+        <div className="pt-14 pb-24 px-20 grid grid-cols-2 text-blue-950">
+          <div id="2">
+            <img
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245841/yemisi/women-tech_esch9i.jpg"
+              className=" h-[370px] w-full object-cover"
+            />
+          </div>
+          <div id="1" className="pt-14 px-10 space-y-7 content-end relative">
+            <div className="absolute top-0 right-3  w-[100px] h-[2px] bg-primary"></div>
+            <div className="absolute -top-7 right-3 h-[150px] w-[2px] bg-primary"></div>
+
+            <div className="absolute bottom-0 left-3  w-[100px] h-[2px] bg-primary"></div>
+
+            <div className="absolute bottom-0 left-3 h-[100px] w-[2px] bg-primary"></div>
+            <h1 className="text-3xl font-bold">
+              Standard Chartered Bank
+              <h2 className="text-xl font-medium">Creatives(contract)</h2>
+            </h1>
+            <h1 className="font-light text-base">
+              We are a connector for corporates and financial institutions
+              across the world’s most dynamic markets to unlock the most
+              exciting growth opportunities. From transaction banking to
+              financial markets and advisory services and solutions. From here,
+              possibilities are everywhere.
+            </h1>
+            <div className="flex py-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6 text-primary"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+              <h1 className="text-sm font-semibold self-center">IMPACT</h1>
+            </div>
           </div>
         </div>
       </div>

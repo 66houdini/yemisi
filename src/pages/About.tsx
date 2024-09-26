@@ -26,11 +26,21 @@ export default function About() {
       <div className="grid grid-cols-2 p-20 relative">
         {/* <div className="absolute top-0 left-[100px]  w-[100px] h-[2px] bg-primary"></div> */}
 
-        <div className="absolute bottom-[70px] left-[70px]  w-[100px] h-[2px] bg-primary"></div>
+        {/* <div className="absolute bottom-[70px] left-[70px]  w-[100px] h-[2px] bg-primary"></div>
 
-        <div className="absolute bottom-[70px] left-[70px] h-[150px] w-[2px] bg-primary"></div>
+        <div className="absolute bottom-[70px] left-[70px] h-[150px] w-[2px] bg-primary"></div> */}
 
-        <div id="1" className="pr-5 space-y-5 font-light relative content-center">
+        <div id="2" className="">
+          <img
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"
+            className="rounded-md"
+          />
+        </div>
+
+        <div
+          id="1"
+          className="pl-5 space-y-5 font-light relative content-center"
+        >
           <div className="absolute top-0 right-3  w-[100px] h-[2px] bg-primary"></div>
 
           <div className="absolute -top-5 right-3 h-[150px] w-[2px] bg-primary"></div>
@@ -56,15 +66,19 @@ export default function About() {
             with the right strategies, insights, and support, anyone can
             transform their aspirations into reality.
           </h2>
-        </div>
-        <div id="2">
-          <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg" className="rounded-md" />
+
+          <div className="absolute bottom-0 left-[10px]  w-[100px] h-[2px] bg-primary"></div>
+
+          <div className="absolute bottom-0 left-[10px] h-[150px] w-[2px] bg-primary"></div>
         </div>
       </div>
 
       <div
         className="p-20 text-center grid justify-items-center bg-cover bg-center relative text-white"
-        style={{ backgroundImage: "url('https://res.cloudinary.com/dador6eng/image/upload/v1727245905/yemisi/4_j5yqbd.jpg')" }}
+        style={{
+          backgroundImage:
+            "url('https://res.cloudinary.com/dador6eng/image/upload/v1727245905/yemisi/4_j5yqbd.jpg')",
+        }}
       >
         <div className="absolute inset-0  backdrop-filter backdrop-brightness-50  z-0"></div>
         <div className="z-10">
@@ -91,6 +105,29 @@ export default function About() {
               Coaching
             </Link>
           </div>
+        </div>
+      </div>
+
+      <div className="px-20 py-10">
+        <h1 className=" text-3xl text-center pb-4">Gallery</h1>
+        <div className="grid grid-cols-4 gap-4">
+          <img
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"
+            className="rounded-md"
+          />
+          <img
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"
+            className="rounded-md"
+          />
+          <img
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"
+            className="rounded-md"
+          />
+          <img
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"
+            className="rounded-md"
+          />
+          
         </div>
       </div>
     </>
