@@ -4,7 +4,7 @@ const Footer = () => {
   const d = new Date();
   return (
     <div className="bg-black text-white px-2.5 md:px-5 pt-5 md:pt-10 text-sm md:text-base">
-      <div className="grid grid-cols-[0.7fr_1fr_1.3fr] md:grid-cols-3">
+      <div className="grid grid-cols-2 md:grid-cols-3">
         <div id="1" className="grid">
           <Link to="/" className="text-white">
             Home

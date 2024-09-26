@@ -7,7 +7,7 @@ export const PersonalizedHeader = ({ bg }: { bg: string }) => {
         <Link to="/" className=" text-2xl font-bold">
           OLUWAYEMISI ADEBAYO
         </Link>
-        <div className=" space-x-5 md:space-x-10 text-sm  font-medium items-center flex">
+        <div className=" space-x-5 md:space-x-10 text-sm  font-medium items-center grid grid-cols-3 md:flex">
           {/* <a href="/">HOME</a> */}
           <a href="/consulting">CONSULTING</a>
           <a href="/coaching">COACHING</a>
@@ -75,7 +75,7 @@ export default function IndexPage() {
       <div className="block md:hidden h-16"></div>
       <div
         id="intro"
-        className="grid grid-cols-2 px-10 md:px-20 pt-10 pb-10 md:pb-0 md:pt-20 bg-black"
+        className="grid md:grid-cols-2 px-10 md:px-20 pt-10 pb-10 md:pb-0 md:pt-20 bg-black"
         // style={{ backgroundImage: 'url("/img/crowd.jpg")' }}
       >
         <div>
@@ -121,7 +121,7 @@ export default function IndexPage() {
       </div>
 
       {/* Other sections of your page */}
-      <div className="grid grid-cols-2 space-x-5 md:space-x-10 md:h-[350px]  text-white text-center mb-16 md:mb-32 mx-10 md:mx-20 my-5 md:my-10">
+      <div className="grid md:grid-cols-2 space-x-5 md:space-x-10 md:h-[350px]  text-white text-center mb-16 md:mb-32 mx-10 md:mx-20 my-5 md:my-10">
         <div className="">
           <h1 className="py-1 md:py-3 bg-primary ">Consultant</h1>
           <div className="relative group">
@@ -142,7 +142,7 @@ export default function IndexPage() {
             </h2>
           </div>
         </div>
-        <div>
+        <div className="pt-5 md:pt-0">
           <h1 className="py-1 md:py-3 bg-primary ">Coach</h1>
           <div className="relative group">
             <img
