@@ -26,7 +26,7 @@ const Footer = () => {
             <h1 className="underline">Contact:</h1>
             <h1>+44 7440594936</h1>
             <h1> +2349091124086 </h1>
-            <h1>Email:legalclimate76@yahoo.com</h1>
+            <h1>Email:contact@yemisiadebayo.com</h1>
           </div>
           <div>
             <h1 className="underline">Address:</h1>
