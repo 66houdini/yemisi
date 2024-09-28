@@ -7,7 +7,7 @@ export default function Media() {
         <div className="relative">
           <div className="brightness-75">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245905/yemisi/3-copy_wfdeb2.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727482704/MO2_n8hiaq.jpg"
               alt="about"
               className=" h-[600px] w-full object-top object-cover "
             />
@@ -36,48 +36,47 @@ export default function Media() {
                 allowFullScreen
               ></iframe>
               {/* <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727349801/20_sipaxb.jpg" className=" rounded-md h-[300px] w-full object-cover" /> */}
-              
             </div>
             <div>
               <h1 className=" py-5">NEWS</h1>
-               <div className="relative grid md:grid-cols-2 gap-4">
-              <div id="news">
-                <img
-                  src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
-                  className=" w-full h-[400px] object-cover object-top"
-                />
-                <h3 className=" py-5  text-base font-medium hover:underline">
-                  For over a decade, Legal Climate has overseen the
-                  multi-million Naira Estate of E.O. Somoye
-                </h3>
-                <h1 className=" text-zinc-700 text-sm ">
-                  Legal Climate have been involved and been in charge of the
-                  Estate of E.O Somoye which ranges in multi-million Naira
-                  Estate Management deals for over a decade now, while the
-                  offspring of the deceased;
-                </h1>
-                
-              </div>
-              <div id="1">
-                <img
-                  src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
-                  className=" w-full h-[400px] object-cover object-top"
-                />
-                <h3 className=" py-5  text-base font-medium hover:underline">
-                  For over a decade, Legal Climate has overseen the
-                  multi-million Naira Estate of E.O. Somoye
-                </h3>
-                <h1 className=" text-zinc-700 text-sm ">
-                  Legal Climate have been involved and been in charge of the
-                  Estate of E.O Somoye which ranges in multi-million Naira
-                  Estate Management deals for over a decade now, while the
-                  offspring of the deceased;
-                </h1>
-               
+              <div className="relative grid md:grid-cols-2 gap-4">
+                <div id="news">
+                  <img
+                    src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
+                    className=" w-full h-[400px] object-cover object-top"
+                  />
+                  <h3 className=" py-5  text-base font-medium hover:underline">
+                    TTS Initiative Project 100 Schools Activation
+                  </h3>
+                  <h1 className=" text-zinc-700 text-sm ">
+                    Last week, we had the incredible opportunity to empower
+                    another set of teens through our #100SchoolsEmpowerment
+                    program. These bright young minds were guided on how to
+                    develop their personal brand and harness online
+                    opportunities for their growth.
+                  </h1>
+                </div>
+                <div id="1">
+                  <img
+                    src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
+                    className=" w-full h-[400px] object-cover object-top"
+                  />
+                  <h3 className=" py-5  text-base font-medium hover:underline">
+                    TTS Spotlight Program in December: A Unique Mentor-Mentee
+                    Programme Launch
+                  </h3>
+                  <h1 className=" text-zinc-700 text-sm ">
+                    In an exciting development, January 2024 marks the launch of
+                    TTS spotlight, a unique mentor-mentee programme designed to
+                    foster guidance and connection within our community. Whether
+                    you’re a dedicated supporter, a valued partner, or someone
+                    passionate about our cause, this initiative offers a special
+                    opportunity to engage, share ideas, and build meaningful
+                    connections.
+                  </h1>
+                </div>
               </div>
             </div>
-            </div>
-           
           </div>
         </h1>
       </div>

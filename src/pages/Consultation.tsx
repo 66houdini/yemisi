@@ -7,11 +7,11 @@ export default function Consultation() {
     <>
       <div className="w-full items-center justify-center h-fit relative ">
         <div className="relative">
-          <div className="brightness-75">
+          <div className=" brightness-50">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245905/yemisi/3-copy_wfdeb2.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727482703/MO1_msl1fp.jpg"
               alt="about"
-              className=" h-[600px] w-full object-top object-cover "
+              className=" h-[600px] w-full  object-cover "
             />
           </div>
           {/* <Header/> */} <PersonalizedHeader bg="bg-transparent" />

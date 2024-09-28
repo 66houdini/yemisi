@@ -12,8 +12,8 @@ export default function Contact() {
         <div id="1" className="relative">
           <div className="relative">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245905/yemisi/4_j5yqbd.jpg"
-              className="w-full h-[500px] object-cover brightness-75"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727482703/MO3_jirgza.jpg"
+              className="w-full h-[500px] object-cover brightness-50"
             />
             <PersonalizedHeader bg="bg-transparent" />
             <div className="absolute top-[150px] left-[100px] md:left-[300px] text-3xl md:text-5xl font-bold text-white">

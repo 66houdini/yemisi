@@ -9,9 +9,9 @@ export default function Projects() {
         <div className="relative">
           <div className="brightness-75">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245913/yemisi/17_jcxrog.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727482704/MO4_s2dpio.jpg"
               alt="about"
-              className=" h-[600px] w-full object-top object-cover "
+              className=" h-[600px] w-full object-left-top object-cover "
             />
           </div>
           {/* <Header/> */}
