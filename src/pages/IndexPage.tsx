@@ -64,8 +64,6 @@ import Dropdown from "./components/Dropdown";
 import MediaDropdown from "./components/MediaDropdown";
 
 export default function IndexPage() {
- 
-
   const handleSubmit: React.FormEventHandler = (event) =>
     event.preventDefault();
 
@@ -86,7 +84,7 @@ export default function IndexPage() {
             <h1 className="font-medium">Oluwayemisi T. Adebayo</h1>
             <h2 className="text-2xl md:text-5xl font-black my-2 md:my-4 md:leading-tight">
               I HAVE SUCCESSFULLY DRIVEN RESULTS FOR HUNDREDS OF BRANDS ACROSS
-              AFRICA, EUROPE, AND ASIA
+              AFRICA & EUROPE
             </h2>
             <h3 className="font-medium md:text-xl">
               Are you ready to enhance your brand's results? If so, let's get to
@@ -126,7 +124,7 @@ export default function IndexPage() {
           <h1 className="py-1 md:py-3 bg-primary ">Consultant</h1>
           <div className="relative group">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727274366/yemisi/consult.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727480409/C_C_6385_1_l7g9lc.jpg"
               className=" h-[400px] w-full object-cover object-top relative group-hover:brightness-50"
               alt="consultant"
             />
@@ -261,9 +259,13 @@ export default function IndexPage() {
         <div className="absolute top-7 md:top-14 left-[50px] md:left-[100px] h-[75px] md:h-[150px] w-[2px] bg-primary"></div>
 
         <div className="pt-7 md:pt-14 pb-12 md:pb-24 px-10 md:px-20 grid md:grid-cols-2 text-blue-950">
-          <div id="1" className="pt-7 md:pt-14 px-7 md:px-14 space-y-3.5 md:space-y-7 content-end">
+          <div
+            id="1"
+            className="pt-7 md:pt-14 px-7 md:px-14 space-y-3.5 md:space-y-7 content-end"
+          >
             <h1 className="text-xl md:text-3xl font-bold">
-              <h2 className="text-lg md:text-2xl font-medium">Over</h2> THE PAST DECADE
+              <h2 className="text-lg md:text-2xl font-medium">Over</h2> THE PAST
+              DECADE
             </h1>
             <h1 className="font-light text-sm">
               I have honed my skills and expertise in the realms of brand
@@ -274,10 +276,21 @@ export default function IndexPage() {
             </h1>
           </div>
           <div id="2">
-            <img
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/46xMLEqNz8E?si=eyoQFz2uCADO3eIt"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+            {/* <iframe src="https://www.youtube.com/embed/1w7OgIMMRc4" className="h-[300px] w-full object-cover"></iframe> */}
+            {/* <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727245905/yemisi/3-copy_wfdeb2.jpg"
               className=" h-[280px] w-full object-top object-cover"
-            />
+            /> */}
           </div>
         </div>
       </div>
@@ -308,14 +321,14 @@ export default function IndexPage() {
       </div>
 
       <div className="p-10 md:p-20">
-        <h1 className="text-center text-lg md:text-2xl font-semibold">
+        <h1 className="text-center text-lg md:text-2xl font-semibold md:py-5">
           Reviews from Clients
         </h1>
         <div className="grid md:grid-cols-2 space-y-6 md:space-y-0">
           <div className="grid justify-items-center space-y-2 md:space-y-4">
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
-              className=" h-32 md:h-60 w-32 md:w-60 rounded-full object-cover object-top"
+              className=" h-32 md:h-60 w-32 md:w-60 rounded-md object-cover object-top"
             />
             <div className="grid justify-items-center">
               <h1 className="text-lg md:text-2xl font-semibold">John Doe</h1>
@@ -329,7 +342,7 @@ export default function IndexPage() {
           <div className="grid justify-items-center space-y-2 md:space-y-4">
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
-              className=" h-32 md:h-60 w-32 md:w-60 rounded-full object-cover object-top"
+              className=" h-32 md:h-60 w-32 md:w-60 rounded-md object-cover object-top"
             />
             <div className="grid justify-items-center">
               <h1 className="text-lg md:text-2xl font-semibold">John Doe</h1>
@@ -345,21 +358,67 @@ export default function IndexPage() {
       <div className=" justify-items-center">
         <h1 className="text-lg md:text-2xl font-semibold text-center">
           You can also check out my Podcasts & News
-          <div className="grid grid-cols-2 p-5 md:p-10 space-y-4 space-x-4">
-            <div id="1" className="relative group">
-              <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727349801/20_sipaxb.jpg" className=" rounded-md" />
-              <div className="bg-primary p-3 absolute top-1/2 right-1/2 rounded-md">
+          <div className="grid p-5 md:p-10 space-y-4 space-x-4">
+            <div id="1" className="relative group justify-self-center">
+              <iframe
+                className="pb-3 rounded-md"
+                height="560"
+                width="315"
+                src="https://www.youtube.com/embed/U-CbJHz1PyQ"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+              {/* <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727349801/20_sipaxb.jpg" className=" rounded-md h-[300px] w-full object-cover" /> */}
+              <div className="bg-primary p-3 w-full rounded-md ">
                 <Link to="/media#podcast" className=" text-white">
                   Podcasts
                 </Link>
               </div>
             </div>
-            <div className="relative">
-              <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727349801/21_zeozem.jpg" className=" rounded-md" />
-              <div className="bg-primary p-3 absolute top-1/2 right-1/2 rounded-md">
-                <Link to="/media#news" className=" text-white">
-                  News
-                </Link>
+            <div className="relative grid md:grid-cols-2 gap-4">
+              <div id="1">
+                <img
+                  src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
+                  className=" w-full h-[400px] object-cover object-top"
+                />
+                <h3 className=" py-5  text-base font-medium hover:underline">
+                  For over a decade, Legal Climate has overseen the
+                  multi-million Naira Estate of E.O. Somoye
+                </h3>
+                <h1 className=" text-zinc-700 text-sm ">
+                  Legal Climate have been involved and been in charge of the
+                  Estate of E.O Somoye which ranges in multi-million Naira
+                  Estate Management deals for over a decade now, while the
+                  offspring of the deceased;
+                </h1>
+                <div className="bg-primary p-1.5 w-fit  rounded-md">
+                  <Link to="/media#news" className=" text-base font-light text-white">
+                    view more
+                  </Link>
+                </div>
+              </div>
+              <div id="1">
+                <img
+                  src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
+                  className=" w-full h-[400px] object-cover object-top"
+                />
+                <h3 className=" py-5  text-base font-medium hover:underline">
+                  For over a decade, Legal Climate has overseen the
+                  multi-million Naira Estate of E.O. Somoye
+                </h3>
+                <h1 className=" text-zinc-700 text-sm ">
+                  Legal Climate have been involved and been in charge of the
+                  Estate of E.O Somoye which ranges in multi-million Naira
+                  Estate Management deals for over a decade now, while the
+                  offspring of the deceased;
+                </h1>
+                <div className="bg-primary p-1.5 w-fit  rounded-md">
+                  <Link to="/media#news" className=" text-base font-light text-white">
+                    view more
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -372,7 +431,9 @@ export default function IndexPage() {
         {/* <div className="absolute inset-0 bg-black/50 backdrop-filter backdrop-brightness-100"></div> */}
         <div className="z-10">
           <h1 className="md:text-xl">Sign Up for</h1>
-          <h1 className="text-3xl md:text-6xl font-bold pb-3">Oluwayemisi Newsletter</h1>
+          <h1 className="text-3xl md:text-6xl font-bold pb-3">
+            Oluwayemisi Newsletter
+          </h1>
           <span>
             Stay in the loop with the latest activities. Subscribe now!
           </span>

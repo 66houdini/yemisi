@@ -68,28 +68,26 @@ export default function Projects() {
             Design Consultant
           </div>
           <h1 className="text-sm font-light md:pr-12">
-            AltSchool Africa offers a more effective “alternative” to
-            traditional academic institutions, in that it explores and offers
-            practical & functional learning with the aid of modern technology.
-            We believe that learning elevates and success spreads. This is why
-            we have strategically designed our programs and courses to propel
-            our learners toward success in their chosen careers. This way, they
-            become a source of inspiration in their respective communities while
-            also contributing to socio-economic development. By the year 2030,
-            we hope to have armed ten million Africans with profitable skills
-            that will shape their own futures and the growth of the African
-            continent.
+            The Echo Conference is a groundbreaking event under our social
+            initiatives focused on fostering inclusion and diversity in
+            entrepreneurship and innovation across Iceland. The Echo Conference
+            explored the theme: Social-Economic Empowerment for Sustainability
+            in Iceland: Fostering Innovation through Inclusion, Diversity, and
+            National Identity.
           </h1>
         </div>
         <img
-          src="https://res.cloudinary.com/dador6eng/image/upload/v1727245840/yemisi/14_optcyk.jpg"
+          src="https://res.cloudinary.com/dador6eng/image/upload/v1727483097/Gracelandic_project1_c3mpbj.jpg"
           className="h-[500px] py-8 w-full object-cover object-top relative z-0"
         />
       </div>
 
       <div className="relative">
         <div className="pt-7 md:pt-14 pb-24 px-10 md:px-20 grid grid-cols-2 text-blue-950">
-          <div id="1" className="pt-7 md:pt-14 px-5 md:px-10 space-y-7 content-end relative">
+          <div
+            id="1"
+            className="pt-7 md:pt-14 px-5 md:px-10 space-y-7 content-end relative"
+          >
             <div className="absolute top-0 left-0  w-[100px] h-[2px] bg-primary"></div>
 
             <div className="absolute -top-7 left-0 h-[150px] w-[2px] bg-primary"></div>
@@ -130,7 +128,7 @@ export default function Projects() {
           </div>
           <div id="2">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245848/yemisi/8_lyxp3f.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727483273/Arden_University_Lecturer_-_London_UK_rt9jlk.jpg"
               className=" h-full w-full object-cover"
             />
           </div>
@@ -191,7 +189,6 @@ export default function Projects() {
         </div>
       </div>
 
-      
       <div className="relative">
         {/* <div className="absolute top-0 right-[100px] h-[150px] w-[1px] bg-zinc-400"></div> */}
 
@@ -202,7 +199,10 @@ export default function Projects() {
               className=" h-[370px] w-full object-cover"
             />
           </div>
-          <div id="1" className="pt-7 md:pt-14 px-5 md:px-10 space-y-3.5 md:space-y-7 content-end relative">
+          <div
+            id="1"
+            className="pt-7 md:pt-14 px-5 md:px-10 space-y-3.5 md:space-y-7 content-end relative"
+          >
             <div className="absolute top-0 right-3  w-[100px] h-[2px] bg-primary"></div>
             <div className="absolute -top-3.5 md:-top-7 right-3 h-[150px] w-[2px] bg-primary"></div>
 
@@ -211,7 +211,9 @@ export default function Projects() {
             <div className="absolute bottom-0 left-3 h-[100px] w-[2px] bg-primary"></div>
             <h1 className="text-xl md:text-3xl font-bold">
               WearetheWomeninTech London
-              <h2 className="text-base md:text-xl font-medium">Digital Consultant</h2>
+              <h2 className="text-base md:text-xl font-medium">
+                Digital Consultant
+              </h2>
             </h1>
             <h1 className="font-light text-sm  md:text-base">
               We Are the Women In Tech is a passionate community dedicated to
@@ -297,7 +299,10 @@ export default function Projects() {
         <div className="absolute top-0 left-[50px] md:left-[100px] h-[150px] w-[1px] bg-zinc-400"></div>
 
         <div className="pt-7 md:pt-14 pb-12 md:pb-24 px-10 md:px-20 grid grid-cols-2 text-blue-950">
-          <div id="1" className="pt-7 md:pt-14 px-5 md:px-10 space-y-3.5 md:space-y-7 content-end">
+          <div
+            id="1"
+            className="pt-7 md:pt-14 px-5 md:px-10 space-y-3.5 md:space-y-7 content-end"
+          >
             <h1 className="text-xl md:text-3xl font-bold">
               Pecksgrey LTD
               <h2 className="text-base md:text-xl font-medium">
@@ -329,8 +334,8 @@ export default function Projects() {
           </div>
           <div id="2">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245844/yemisi/18_tjvhtp.jpg"
-              className=" h-[280px] w-full object-cover"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727483588/Pecksgrey_nj9ele.jpg"
+              className=" h-[280px] w-full object-top object-cover"
             />
           </div>
         </div>
@@ -340,7 +345,7 @@ export default function Projects() {
         <div className="relative">
           <div className="brightness-75">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245858/yemisi/women-tech-2_nv5jmm.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727483810/WEST_GATE_IMAGE_55_1_wagqkt.jpg"
               alt="about"
               className="h-[400px] md:h-[450px] w-full object-cover object-top "
             />
@@ -370,10 +375,15 @@ export default function Projects() {
         <div className="absolute top-0 left-[50px] md:left-[100px] h-[150px] w-[1px] bg-zinc-400"></div>
 
         <div className="pt-7 md:pt-14 pb-12 md:pb-24 px-10 md:px-20 grid grid-cols-2 text-blue-950">
-          <div id="1" className="pt-7 md:pt-14 px-5 md:px-10 space-y-3.5 md:space-y-7 content-end">
+          <div
+            id="1"
+            className="pt-7 md:pt-14 px-5 md:px-10 space-y-3.5 md:space-y-7 content-end"
+          >
             <h1 className="text-xl md:text-3xl font-bold">
               DAE Young Entrepreneurial Program London
-              <h2 className="text-base md:text-xl font-medium">Digital consultant</h2>
+              <h2 className="text-base md:text-xl font-medium">
+                Digital consultant
+              </h2>
             </h1>
             <h1 className="font-light text-sm md:text-base">
               A career consultant dedicated to guiding individuals from jobs of
@@ -415,11 +425,14 @@ export default function Projects() {
         <div className="pt-7 md:pt-14 pb-10 md:pb-24 px-10 md:px-20 grid grid-cols-2 text-blue-950">
           <div id="2">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245841/yemisi/women-tech_esch9i.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245858/yemisi/women-tech-2_nv5jmm.jpg"
               className=" h-[370px] w-full object-cover"
             />
           </div>
-          <div id="1" className="pt-7 md:pt-14 px-5 md:px-10 space-y-7 md:space-y-7 content-end relative">
+          <div
+            id="1"
+            className="pt-7 md:pt-14 px-5 md:px-10 space-y-7 md:space-y-7 content-end relative"
+          >
             <div className="absolute top-0 right-3  w-[100px] h-[2px] bg-primary"></div>
             <div className="absolute -top-7 right-3 h-[150px] w-[2px] bg-primary"></div>
 
@@ -428,7 +441,9 @@ export default function Projects() {
             <div className="absolute bottom-0 left-3 h-[100px] w-[2px] bg-primary"></div>
             <h1 className="text-xl md:text-3xl font-bold">
               Standard Chartered Bank
-              <h2 className="text-base md:text-xl font-medium">Creatives(contract)</h2>
+              <h2 className="text-base md:text-xl font-medium">
+                Creatives(contract)
+              </h2>
             </h1>
             <h1 className="font-light text-sm md:text-base">
               We are a connector for corporates and financial institutions
