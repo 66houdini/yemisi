@@ -120,12 +120,12 @@ export default function IndexPage() {
 
       {/* Other sections of your page */}
       <div className="grid md:grid-cols-2 space-x-5 md:space-x-10 md:h-[350px]  text-white text-center mb-16 md:mb-32 mx-10 md:mx-20 my-5 md:my-10">
-        <div className="">
-          <h1 className="py-1 md:py-3 bg-primary ">Consultant</h1>
+        <div className="w-[400px]">
+          <h1 className="py-1 md:py-3 bg-primary w-[400px] ">Consultant</h1>
           <div className="relative group">
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727480409/C_C_6385_1_l7g9lc.jpg"
-              className=" h-[400px] w-full object-cover object-top relative group-hover:brightness-50"
+              className=" h-[400px] w-[400px] object-cover object-top relative group-hover:brightness-50"
               alt="consultant"
             />
             <h2 className="absolute top-5 md:top-10 p-5 md:p-10 text-sm md:text-base text-justify invisible group-hover:visible transition duration-700">
@@ -140,12 +140,12 @@ export default function IndexPage() {
             </h2>
           </div>
         </div>
-        <div className="pt-5 md:pt-0">
-          <h1 className="py-1 md:py-3 bg-primary ">Coach</h1>
+        <div className="pt-5 md:pt-0 w-[400px]">
+          <h1 className="py-1 md:py-3 bg-primary w-[400px]">Coach</h1>
           <div className="relative group">
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"
-              className=" h-[400px] w-full object-cover object-top relative group-hover:brightness-50"
+              className=" h-[400px] w-[400px] object-cover object-top relative group-hover:brightness-50"
               alt="consultant"
             />
             <h2 className="absolute top-5 md:top-10 p-5 md:p-10 text-sm md:text-base text-justify invisible group-hover:visible transition duration-700">
