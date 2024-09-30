@@ -356,8 +356,9 @@ export default function IndexPage() {
       </div>
 
       <div className=" justify-items-center">
-        <h1 className="text-lg md:text-2xl font-semibold text-center">
-          You can also check out my Podcasts & News
+        <h1 className="text-lg md:text-2xl font-semibold ">
+          <div className="text-center">You can also check out my Podcasts & News</div>
+          
           <div className="grid p-5 md:p-10 space-y-4 space-x-4">
             <div id="1" className="relative group justify-self-center">
               <iframe
@@ -378,7 +379,7 @@ export default function IndexPage() {
               </div>
             </div>
             <div className="relative grid md:grid-cols-2 gap-4">
-              <div id="1">
+              {/* <div id="1">
                 <img
                   src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
                   className=" w-full h-[400px] object-cover object-top"
@@ -401,6 +402,29 @@ export default function IndexPage() {
                     view more
                   </Link>
                 </div>
+              </div> */}
+              <div id="news">
+                <img
+                  src="https://res.cloudinary.com/dador6eng/image/upload/v1727349801/21_zeozem.jpg"
+                  className=" w-40 object-cover object-top float-left rounded-md pr-2"
+                />
+                <h3 className="   text-base font-medium hover:underline">
+                  TTS Initiative Project 100 Schools Activation
+                </h3>
+                <h1 className=" text-zinc-700 text-sm font-light ">
+                  Last week, we had the incredible opportunity to empower
+                  another set of teens through our #100SchoolsEmpowerment
+                  program. These bright young minds were guided on how to
+                  develop their personal brand and harness online opportunities
+                  for their growth.Save the date and anticipate more details on
+                  how you can actively participate in this transformative
+                  mentor-mentee program. TTS Spotlight is not just a gathering;
+                  it’s a platform for young individuals dedicated to receiving a
+                  positive impact and support for growth and development from
+                  those who have gone ahead and are thriving in the chosen
+                  field. Stay tuned for an enriching experience that goes beyond
+                  the ordinary mentorship programme.
+                </h1>
               </div>
               <div id="1">
                 <img

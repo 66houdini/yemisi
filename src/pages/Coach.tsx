@@ -7,7 +7,7 @@ export default function Coach() {
         <div className="relative">
           <div className="brightness-75">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727482703/MO6_gi8ubm.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727482704/MO2_n8hiaq.jpg"
               alt="about"
               className=" h-[600px] w-full object-top object-cover "
             />
@@ -20,6 +20,8 @@ export default function Coach() {
           </div>
         </div>
       </div>
+
+     
 
       <div className=" text-black grid md:grid-cols-2 border-b border-b-white">
         <div className="p-10 space-y-4">
@@ -50,6 +52,12 @@ export default function Coach() {
             className=" object-cover h-[400px] w-full rounded-lg "
           />
         </div>
+      </div>
+
+      <div>
+        <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727482703/MO6_gi8ubm.jpg" alt=""
+        className="w-full py-5"
+        />
       </div>
 
       <div className="">

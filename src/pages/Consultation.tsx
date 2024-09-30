@@ -26,7 +26,7 @@ export default function Consultation() {
       <div className=" text-black grid md:grid-cols-2 border-b border-b-white">
         <div className="p-10 space-y-4">
           <h1 className="text-2xl font-bold text-primary">
-            BUSINESS CONSULTING EXPERTISE
+            BUSINESS CONSULTING 
           </h1>
           <h2 className="font-light">
             As a business consultant, I specialize in transforming operations,

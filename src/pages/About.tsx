@@ -8,9 +8,9 @@ export default function About() {
         <div className="relative">
           <div className="brightness-75">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727482704/MO2_n8hiaq.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727656362/C_C_6443_1_guxtyv.jpg"
               alt="about"
-              className=" h-[600px] w-full object-left-top object-cover "
+              className=" h-[600px] w-full object-top object-cover "
             />
           </div>
           {/* <Header/> */} <PersonalizedHeader bg="bg-transparent" />
@@ -116,15 +116,15 @@ export default function About() {
             className="rounded-md"
           />
           <img
-            src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"
-            className="rounded-md"
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1727655324/C_C_6443_1_lvvagn.jpg"
+            className="rounded-md h-[260px] w-[260px]  object-top object-scale-down"
           />
           <img
-            src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"
-            className="rounded-md"
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1727655657/C_C_6501_1_t28gpn.jpg"
+            className="rounded-md h-[260px] w-[260px]  object-top object-scale-down"
           />
           <img
-            src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1727655883/C_C_6520_oibnwq.jpg"
             className="rounded-md"
           />
           
