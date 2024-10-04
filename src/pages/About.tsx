@@ -10,12 +10,12 @@ export default function About() {
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727656362/C_C_6443_1_guxtyv.jpg"
               alt="about"
-              className=" h-[600px] w-full object-top object-cover "
+              className="h-[300px] md:h-[600px] w-full object-top object-cover "
             />
           </div>
           {/* <Header/> */} <PersonalizedHeader bg="bg-transparent" />
-          <div className=" border border-white text-white absolute w-[377px] h-[377px] top-44 left-20 flex">
-            <h1 className="text-3xl font-semibold py-40 pl-16 ">
+          <div className=" border border-white text-white absolute w-[185px] h-[185px] md:w-[377px] md:h-[377px] top-24 md:top-44 left-10 md:left-20 flex">
+            <h1 className="text-xl md:text-3xl font-semibold py-20 md:py-40 pl-8 md:pl-16 ">
               <h2 className="border-t border-white  w-fit ">ABOUT</h2>
               OLUWAYEMISI
             </h1>
@@ -39,11 +39,11 @@ export default function About() {
 
         <div
           id="1"
-          className="pl-5 mt-5 md:mt-0 space-y-5 font-light relative content-center"
+          className="md:pl-5 mt-5 md:mt-0 space-y-5 font-light relative content-center"
         >
-          <div className="absolute top-0 right-3  w-[100px] h-[2px] bg-primary"></div>
+          <div className="absolute top-0 -right-3 md:right-3  w-[100px] h-[2px] bg-primary"></div>
 
-          <div className="absolute -top-5 right-3 h-[150px] w-[2px] bg-primary"></div>
+          <div className="absolute -top-5 -right-3 md:right-3 h-[150px] w-[2px] bg-primary"></div>
           <h1 className="text-xl md:text-3xl font-medium">Oluwayemisi T. Adebayo</h1>
           <h2 className="text-sm md:text-base">
             Welcome to my corner of the web! I am a dedicated Business
@@ -67,9 +67,9 @@ export default function About() {
             transform their aspirations into reality.
           </h2>
 
-          <div className="absolute bottom-0 left-[10px]  w-[100px] h-[2px] bg-primary"></div>
+          <div className="absolute bottom-0 -left-3 md:left-[10px]  w-[100px] h-[2px] bg-primary"></div>
 
-          <div className="absolute bottom-0 left-[10px] h-[150px] w-[2px] bg-primary"></div>
+          <div className="absolute bottom-0 -left-3 md:left-[10px] h-[150px] w-[2px] bg-primary"></div>
         </div>
       </div>
 
@@ -85,7 +85,7 @@ export default function About() {
           <h1 className="text-xl md:text-3xl">
             Ready to Transform Your Life and Business?
           </h1>
-          <h2 className="w-[600px] text-justify font-light text-sm md:text-base">
+          <h2 className="md:w-[600px] text-justify font-light text-sm md:text-base">
             If you are ready to set your goals, commit to your vision, and take
             action toward a brighter future, I am here to support you every step
             of the way. Together, we can craft a roadmap for success that aligns
@@ -110,7 +110,7 @@ export default function About() {
 
       <div className="px-10 md:px-20 py-5 md:py-10">
         <h1 className="text-xl md:text-3xl text-center pb-4">Gallery</h1>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <img
             src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"
             className="rounded-md"

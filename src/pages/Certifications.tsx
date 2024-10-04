@@ -105,19 +105,19 @@ export default function Certifications() {
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"
               alt="about"
-              className=" h-[600px] w-full object-top object-cover "
+              className="h-[300px] md:h-[600px] w-full object-top object-cover "
             />
           </div>
           {/* <Header/> */} <PersonalizedHeader bg="bg-transparent" />
-          <div className=" border border-white text-white absolute w-[377px] h-[377px] top-44 left-20 flex">
-            <h1 className="text-3xl font-semibold py-40 pl-16 flex ">
+          <div className=" border border-white text-white absolute w-[185px] h-[185px] md:w-[377px] md:h-[377px] top-24 md:top-44 left-10 md:left-20 flex">
+            <h1 className="text-xl md:text-3xl font-semibold py-20 md:py-40 pl-8 md:pl-16 flex">
               <h2 className="border-t border-white  w-fit ">CERT</h2>IFICATIONS
             </h1>
           </div>
         </div>
       </div>
 
-      <div className="p-14 md:p-20 grid grid-cols-2 md:grid-cols-4 gap-4 bg-black text-white">
+      <div className="p-7 md:p-20 grid grid-cols-2 md:grid-cols-4 gap-4 bg-black text-white">
         {solutions.map((item, index) => (
           <div key={index} className="text-center py-4 space-y-2">
             <img
@@ -126,7 +126,7 @@ export default function Certifications() {
               alt={item.texts}
             />
             <h1>{item.year}</h1>
-            <h2 className="font-light">{item.texts}</h2>
+            <h2 className="font-light text-sm md:text-base">{item.texts}</h2>
           </div>
         ))}
       </div>

@@ -9,12 +9,12 @@ export default function Coach() {
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727482704/MO2_n8hiaq.jpg"
               alt="about"
-              className=" h-[600px] w-full object-top object-cover "
+              className="h-[300px] md:h-[600px] w-full object-top object-cover "
             />
           </div>
           {/* <Header/> */} <PersonalizedHeader bg="bg-transparent" />
-          <div className=" border border-white text-white absolute w-[377px] h-[377px] top-44 left-20 flex">
-            <h1 className="text-3xl font-semibold py-40 pl-16 flex">
+          <div className=" border border-white text-white absolute w-[185px] h-[185px] md:w-[377px] md:h-[377px] top-24 md:top-44 left-10 md:left-20 flex">
+            <h1 className="text-xl md:text-3xl font-semibold py-20 md:py-40 pl-8 md:pl-16 flex">
               <h2 className="border-t border-white ">COA</h2>CHING
             </h1>
           </div>
@@ -49,7 +49,7 @@ export default function Coach() {
         <div className="p-10 py-5 md:p-3 ">
           <img
             src="https://res.cloudinary.com/dador6eng/image/upload/v1727245848/yemisi/8_lyxp3f.jpg"
-            className=" object-cover h-[400px] w-full rounded-lg "
+            className=" object-cover h-40 md:h-[400px] w-full rounded-lg "
           />
         </div>
       </div>
@@ -69,10 +69,10 @@ export default function Coach() {
             <div>
               <img
                 src="https://res.cloudinary.com/dador6eng/image/upload/v1727283235/yemisi/23_y8wmo8.jpg"
-                className="h-full w-full"
+                className="h-[300px] w-full object-cover md:h-full md:w-full"
               />
             </div>
-            <div className="content px-5 py-5 md:py-0 md:px-10 space-y-4">
+            <div className="content py-5 md:py-0 md:px-10 space-y-4">
               {/* <h1 className="text-xl medium">Business Consultation Packages </h1> */}
 
               <h2 className="text-2xl md:text-4xl font-medium">
@@ -216,7 +216,7 @@ export default function Coach() {
           </div> */}
         </div>
       </div>
-      <div className="p-10 md:p-20">
+      <div className="p-10 pt-0 md:p-20">
         <h1 className="text-center text-lg md:text-2xl font-semibold md:py-5">
           Reviews from Clients
         </h1>

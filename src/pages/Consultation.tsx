@@ -11,12 +11,12 @@ export default function Consultation() {
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727482703/MO1_msl1fp.jpg"
               alt="about"
-              className=" h-[600px] w-full  object-cover "
+              className=" h-[300px] md:h-[600px] w-full  object-cover "
             />
           </div>
           {/* <Header/> */} <PersonalizedHeader bg="bg-transparent" />
-          <div className=" border border-white text-white absolute w-[377px] h-[377px] top-44 left-20 flex">
-            <h1 className="text-3xl font-semibold py-40 pl-16 flex">
+          <div className=" border border-white text-white absolute w-[185px] h-[185px] md:w-[377px] md:h-[377px] top-24 md:top-44 left-10 md:left-20 flex">
+            <h1 className="text-xl md:text-3xl font-semibold py-20 md:py-40 pl-8 md:pl-16 flex">
               <h2 className="border-t border-white ">CON</h2>SULTATION
             </h1>
           </div>
@@ -48,10 +48,10 @@ export default function Consultation() {
             me to tailor solutions that meet your specific needs and challenges.
           </h2>
         </div>
-        <div className="p-3 ">
+        <div className="px-10 py-3 ">
           <img
             src="https://res.cloudinary.com/dador6eng/image/upload/v1727282684/yemisi/22_ktewpc.jpg"
-            className=" object-cover object-top h-full rounded-lg "
+            className=" object-cover object-top h-40 w-full md:h-full rounded-lg "
           />
         </div>
       </div>
@@ -65,7 +65,7 @@ export default function Consultation() {
             <div>
               <img
                 src="https://res.cloudinary.com/dador6eng/image/upload/v1727283235/yemisi/23_y8wmo8.jpg"
-                className="h-full w-full"
+                className="h-[300px] w-full object-cover md:h-full md:w-full"
               />
             </div>
             <div className="content px-5 md:px-10 space-y-2 md:space-y-4">
@@ -155,8 +155,8 @@ export default function Consultation() {
             </div>
           </div>
 
-          <div className=" grid md:grid-cols-[1.2fr_0.8fr] pt-10 md:pt-20">
-            <div className="content  py-5 px-5 md:px-10 space-y-4">
+          <div className=" grid md:grid-cols-[1.2fr_0.8fr]  md:pt-20">
+            <div className="content   py-5 px-5 md:px-10 space-y-4">
               {/* <h1 className="text-xl medium">Business Consultation Packages </h1> */}
 
               <h2 className="text-2xl md:text-4xl font-medium">
@@ -246,7 +246,7 @@ export default function Consultation() {
             <div>
               <img
                 src="https://res.cloudinary.com/dador6eng/image/upload/v1727283235/yemisi/23_y8wmo8.jpg"
-                className="h-full w-full"
+                className="h-[300px] w-full object-cover md:h-full md:w-full"
               />
             </div>
           </div>

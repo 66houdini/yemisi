@@ -1,58 +1,125 @@
+// export const PersonalizedHeader = ({ bg }: { bg: string }) => {
+//   return (
+//     <>
+//       <div
+//         className={`md:flex grid p-5 w-full justify-between  text-white ${bg} absolute top-0 `}
+//       >
+//         <Link to="/" className=" text-2xl font-bold">
+//           OLUWAYEMISI ADEBAYO
+//         </Link>
+//         <div className=" space-x-5 md:space-x-10 text-sm  font-medium items-center grid grid-cols-3 md:flex">
+//           {/* <a href="/">HOME</a> */}
+//           <a href="/consulting">CONSULTING</a>
+//           <a href="/coaching">COACHING</a>
+//           <h1>
+//             {" "}
+//             <Dropdown />{" "}
+//           </h1>
+//           <h1>
+//             <MediaDropdown />
+//           </h1>
+//           <a href="/contact">CONTACT</a>
+//         </div>
+//         <div className="space-x-4 content-center">
+//           <Link to={"mailto: contact@yemisiadebayo.com"}>
+//             <FontAwesomeIcon icon={faEnvelope} />
+//           </Link>
+
+//           <Link to={"https://www.x.com/Iamyemisikayode"}>
+//             <FontAwesomeIcon icon={faXTwitter} />
+//           </Link>
+
+//           <Link to="https://www.linkedin.com/in/oluwayemisitopekayode/">
+//             <FontAwesomeIcon icon={faLinkedin} />
+//           </Link>
+
+//           <Link to="https://www.facebook.com/oluwayemisi.kayode.5">
+//             <FontAwesomeIcon icon={faFacebook} />
+//           </Link>
+
+//           <Link to="https://www.instagram.com/iamyemisikayode/">
+//             <FontAwesomeIcon icon={faInstagram} />
+//           </Link>
+//           <Link to="Iamyemisikayode">
+//             <FontAwesomeIcon icon={faThreads} />
+//           </Link>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
 export const PersonalizedHeader = ({ bg }: { bg: string }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <div
-        className={`md:flex grid p-5 w-full justify-between  text-white ${bg} absolute top-0 `}
+        className={`md:flex grid grid-cols-2 p-5 w-full justify-between text-white ${bg} absolute top-0`}
       >
-        <Link to="/" className=" text-2xl font-bold">
+        {/* Logo */}
+        <Link to="/" className="md:text-2xl font-bold">
           OLUWAYEMISI ADEBAYO
         </Link>
-        <div className=" space-x-5 md:space-x-10 text-sm  font-medium items-center grid grid-cols-3 md:flex">
-          {/* <a href="/">HOME</a> */}
-          <a href="/consulting">CONSULTING</a>
+
+        {/* Hamburger Icon for Mobile */}
+        <div className="md:hidden flex items-center justify-end">
+          <button onClick={toggleMenu}>
+            <FontAwesomeIcon icon={isOpen ? faXmark : faBars} size="lg" />
+          </button>
+        </div>
+
+        {/* Links & Icons (hidden on mobile, shown on larger screens) */}
+        <div
+          className={`${
+            isOpen ? "block" : "hidden"
+          } md:flex space-y-4 md:space-y-0 space-x-0 md:space-x-10 mt-5 md:mt-0 text-sm font-medium items-center`}
+        >
+          <a href="/consulting" className="pr-5 md:pr-0">CONSULTING</a>
           <a href="/coaching">COACHING</a>
           <h1>
-            {" "}
-            <Dropdown />{" "}
+            <Dropdown />
           </h1>
           <h1>
             <MediaDropdown />
           </h1>
           <a href="/contact">CONTACT</a>
-        </div>
-        <div className="space-x-4 content-center">
-          <Link to={"mailto: contact@yemisiadebayo.com"}>
-            <FontAwesomeIcon icon={faEnvelope} />
-          </Link>
 
-          <Link to={"https://www.x.com/Iamyemisikayode"}>
-            <FontAwesomeIcon icon={faXTwitter} />
-          </Link>
-
-          <Link to="https://www.linkedin.com/in/oluwayemisitopekayode/">
-            <FontAwesomeIcon icon={faLinkedin} />
-          </Link>
-
-          <Link to="https://www.facebook.com/oluwayemisi.kayode.5">
-            <FontAwesomeIcon icon={faFacebook} />
-          </Link>
-
-          <Link to="https://www.instagram.com/iamyemisikayode/">
-            <FontAwesomeIcon icon={faInstagram} />
-          </Link>
-          <Link to="Iamyemisikayode">
-            <FontAwesomeIcon icon={faThreads} />
-          </Link>
+          {/* Social Media Links */}
+          <div className="space-x-4 content-center">
+            <Link to={"mailto:contact@yemisiadebayo.com"}>
+              <FontAwesomeIcon icon={faEnvelope} />
+            </Link>
+            <Link to={"https://www.x.com/Iamyemisikayode"}>
+              <FontAwesomeIcon icon={faXTwitter} />
+            </Link>
+            <Link to="https://www.linkedin.com/in/oluwayemisitopekayode/">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </Link>
+            <Link to="https://www.facebook.com/oluwayemisi.kayode.5">
+              <FontAwesomeIcon icon={faFacebook} />
+            </Link>
+            <Link to="https://www.instagram.com/iamyemisikayode/">
+              <FontAwesomeIcon icon={faInstagram} />
+            </Link>
+            <Link to="Iamyemisikayode">
+              <FontAwesomeIcon icon={faThreads} />
+            </Link>
+          </div>
         </div>
       </div>
     </>
   );
 };
 
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import {
   faXTwitter,
   faLinkedin,
@@ -70,7 +137,7 @@ export default function IndexPage() {
   return (
     <>
       <PersonalizedHeader bg="bg-black" />
-      <div className="block md:hidden h-16"></div>
+      {/* <div className="block md:hidden h-16"></div> */}
       <div
         id="intro"
         className="grid md:grid-cols-2 px-10 md:px-20 pt-10 pb-10 md:pb-0 md:pt-20 bg-black"
@@ -120,12 +187,12 @@ export default function IndexPage() {
 
       {/* Other sections of your page */}
       <div className="grid md:grid-cols-2 space-x-5 md:space-x-10 md:h-[350px]  text-white text-center mb-16 md:mb-32 mx-10 md:mx-20 my-5 md:my-10">
-        <div className="w-[400px]">
-          <h1 className="py-1 md:py-3 bg-primary w-[400px] ">Consultant</h1>
+        <div className="w-fit md:w-[400px]">
+          <h1 className="py-1 md:py-3 bg-primary md:w-[400px] ">Consultant</h1>
           <div className="relative group">
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727480409/C_C_6385_1_l7g9lc.jpg"
-              className=" h-[400px] w-[400px] object-cover object-top relative group-hover:brightness-50"
+              className="md:h-[400px] md:w-[400px] object-cover object-top relative group-hover:brightness-50"
               alt="consultant"
             />
             <h2 className="absolute top-5 md:top-10 p-5 md:p-10 text-sm md:text-base text-justify invisible group-hover:visible transition duration-700">
@@ -140,8 +207,8 @@ export default function IndexPage() {
             </h2>
           </div>
         </div>
-        <div className="pt-5 md:pt-0 w-[400px]">
-          <h1 className="py-1 md:py-3 bg-primary w-[400px]">Coach</h1>
+        <div className="pt-5 md:pt-0 w-fit md:w-[400px]">
+          <h1 className="py-1 md:py-3 bg-primary md:w-[400px]">Coach</h1>
           <div className="relative group">
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"
@@ -161,97 +228,6 @@ export default function IndexPage() {
           </div>
         </div>
       </div>
-      {/* <div
-        id="expertise"
-        className="p-20 grid grid-cols-2 gap-10 text-center text-sm"
-      >
-        <div className=" space-y-5">
-          <img
-            src="/img/man.png"
-            alt="brand-consulting"
-            className="h-20 inline"
-          />
-          <h1 className="text-lg font-semibold text-blue-950">
-            BUSINESS CONSULTATION
-          </h1>
-          <h1 className="text-justify text-zinc-500">
-            As a business consultant, I specialize in transforming operations,
-            fostering sustainable growth, and achieving strategic objectives.
-            With over 9 years of experience, I have had the privilege of working
-            with hundreds of businesses across various sectors—from dynamic
-            start-ups to established enterprises. My approach is rooted in
-            delivering actionable insights, developing innovative strategies,
-            and providing personalized solutions that drive measurable success.
-          </h1>
-          <h1 className="text-justify text-zinc-500">
-            I am a certified expert in Management Consulting, Strategic
-            Leadership, Business Management and holds a masters in Digital
-            Marketing, with credentials from both the United Kingdom and
-            Nigeria. I have worked in different executive positions in companies
-            in the UK and Nigeria, also lecturing business management in
-            universities in London, United Kingdom. This diverse background
-            equips me with a unique perspective on the global market, enabling
-            me to tailor solutions that meet your specific needs and challenges.
-          </h1>
-        </div>
-
-        <div className="space-y-5">
-          <img
-            src="/img/investment.png"
-            alt="brand-consulting"
-            className="h-20 inline"
-          />
-          <h1 className="text-lg font-semibold text-blue-950">LIFE COACHING</h1>
-          <h1 className="text-justify text-zinc-500">
-            In addition to my consulting work, I am a passionate life coach. I
-            have had the opportunity to coach professionals in various fields,
-            including politics, education, oil and gas, and the creative
-            industries, from artists to fashion designers. My coaching
-            philosophy is grounded in the belief that personal development
-            should be as normalized as physical training. I strive to help my
-            clients raise their standards, set ambitious goals, and take
-            decisive action toward achieving their dreams.
-          </h1>
-          <h1 className="text-justify text-zinc-500">
-            My professional coaching training in the United Kingdom and my
-            international coaching certifications empower me to guide
-            individuals on their journey to self-discovery, growth, and
-            fulfillment.
-          </h1>
-        </div>
-      </div> */}
-      {/*just added*/}
-      {/* <div className="w-full items-center justify-center h-fit relative ">
-        <div className="relative">
-          <div className="brightness-75">
-            <img
-              src="/yemisi/6-copy.jpg"
-              alt="about"
-              className="h-40 md:h-[500px] w-full object-cover object-top"
-            />
-          </div>
-          
-          <div className=" p-10 space-y-6 bg-white text-blue-950 absolute  w-[377px] top-14 right-20 ">
-            <h1 className="text-2xl font-semibold">
-              <h2 className=" border-t border-t-primary w-fit">OLUWAYEMISI</h2>{" "}
-              T. ADEBAYO
-            </h1>
-            <h1 className="text-sm font-light">
-              {" "}
-              A visionary international brand and digital marketing consultant,
-              lecturer, strategist, disruptive content creator, and
-              entrepreneur. With a deep-seated passion for innovation and an
-              unwavering commitment to excellence, I am dedicated to delivering
-              tangible results that not only meet but exceed expectations in
-              today’s fast-paced, ever-evolving digital landscape. I am a
-              dedicated <strong>Business Consultant</strong> and{" "}
-              <strong>Life Coach</strong>, deeply passionate about helping
-              individuals and organizations achieve their goals and unlock their
-              full potential.
-            </h1>
-          </div>
-        </div>
-      </div> */}
 
       <div className="relative">
         <div className="absolute top-7 md:top-14 left-[50px] md:left-[100px] w-[50px] md:w-[100px] h-[2px] bg-primary"></div>
@@ -277,8 +253,8 @@ export default function IndexPage() {
           </div>
           <div id="2">
             <iframe
-              width="560"
-              height="315"
+              className="w-full h-[157px] md:w-[560px] md:h-[315px] pt-3 md:pt-0"
+              
               src="https://www.youtube.com/embed/46xMLEqNz8E?si=eyoQFz2uCADO3eIt"
               title="YouTube video player"
               frameBorder="0"
@@ -357,43 +333,56 @@ export default function IndexPage() {
 
       <div className=" justify-items-center">
         <h1 className="text-lg md:text-2xl font-semibold ">
-          <div className="text-center">You can also check out my Podcasts & News</div>
-          
+          <div className="text-center">
+            You can also check out my Podcasts & News
+          </div>
+
           <div className="grid p-5 md:p-10 space-y-4 space-x-4">
             <div id="1" className="relative group justify-self-center">
-              <iframe
+              {/* <iframe
                 className="pb-3 rounded-md"
-                height="560"
-                width="315"
+                // height="560"
+                // width="315"
+                height="500"
+                width="1500"
                 src="https://www.youtube.com/embed/U-CbJHz1PyQ"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
+              ></iframe> */}
+              <iframe
+                className="pb-3 md:w-[900px] md:h-[400px]"
+                src="https://www.youtube.com/embed/U-CbJHz1PyQ?si=hk9NimlhlZZEH60Q"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
               ></iframe>
               {/* <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727349801/20_sipaxb.jpg" className=" rounded-md h-[300px] w-full object-cover" /> */}
-              <div className="bg-primary p-3 w-full rounded-md ">
+              <div className="bg-primary p-3 w-fit rounded-md ">
                 <Link to="/media#podcast" className=" text-white">
                   Podcasts
                 </Link>
               </div>
             </div>
-            <div className="relative grid md:grid-cols-2 gap-4">
-              {/* <div id="1">
+            <div className="relative grid md:grid-cols-2 gap-4 md:pt-10">
+              <div id="1">
                 <img
-                  src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
+                  src="https://ttsinitiative.com/wp-content/uploads/2024/06/DSC_0306-1536x1024.jpg"
                   className=" w-full h-[400px] object-cover object-top"
                 />
                 <h3 className=" py-5  text-base font-medium hover:underline">
                   TTS Initiative Project 100 Schools Activation
                 </h3>
-                <h1 className=" text-zinc-700 text-sm font-light pb-5 ">
+                {/* <h1 className=" text-zinc-700 text-sm font-light pb-5 ">
                   Last week, we had the incredible opportunity to empower
                   another set of teens through our #100SchoolsEmpowerment
                   program. These bright young minds were guided on how to
                   develop their personal brand and harness online opportunities
                   for their growth.
-                </h1>
+                </h1> */}
                 <div className="bg-primary p-1.5 w-fit  rounded-md">
                   <Link
                     to="/media#news"
@@ -402,40 +391,18 @@ export default function IndexPage() {
                     view more
                   </Link>
                 </div>
-              </div> */}
-              <div id="news">
-                <img
-                  src="https://res.cloudinary.com/dador6eng/image/upload/v1727349801/21_zeozem.jpg"
-                  className=" w-40 object-cover object-top float-left rounded-md pr-2"
-                />
-                <h3 className="   text-base font-medium hover:underline">
-                  TTS Initiative Project 100 Schools Activation
-                </h3>
-                <h1 className=" text-zinc-700 text-sm font-light ">
-                  Last week, we had the incredible opportunity to empower
-                  another set of teens through our #100SchoolsEmpowerment
-                  program. These bright young minds were guided on how to
-                  develop their personal brand and harness online opportunities
-                  for their growth.Save the date and anticipate more details on
-                  how you can actively participate in this transformative
-                  mentor-mentee program. TTS Spotlight is not just a gathering;
-                  it’s a platform for young individuals dedicated to receiving a
-                  positive impact and support for growth and development from
-                  those who have gone ahead and are thriving in the chosen
-                  field. Stay tuned for an enriching experience that goes beyond
-                  the ordinary mentorship programme.
-                </h1>
               </div>
-              <div id="1">
+
+              <div id="1" className="">
                 <img
-                  src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
+                  src="https://ttsinitiative.com/wp-content/uploads/2023/12/pexels-yan-krukau-9002796-1536x1024.jpg"
                   className=" w-full h-[400px] object-cover object-top"
                 />
                 <h3 className=" py-5  text-base font-medium hover:underline">
                   TTS Spotlight Program in December: A Unique Mentor-Mentee
                   Programme Launch
                 </h3>
-                <h1 className=" text-zinc-700 text-sm font-light pb-5 ">
+                {/* <h1 className=" text-zinc-700 text-sm font-light pb-5 ">
                   In an exciting development, January 2024 marks the launch of
                   TTS spotlight, a unique mentor-mentee programme designed to
                   foster guidance and connection within our community. Whether
@@ -443,7 +410,7 @@ export default function IndexPage() {
                   passionate about our cause, this initiative offers a special
                   opportunity to engage, share ideas, and build meaningful
                   connections.
-                </h1>
+                </h1> */}
                 <div className="bg-primary p-1.5 w-fit  rounded-md">
                   <Link
                     to="/media#news"

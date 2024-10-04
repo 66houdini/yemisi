@@ -11,48 +11,14 @@ export default function Projects() {
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727482704/MO4_s2dpio.jpg"
               alt="about"
-              className=" h-[600px] w-full object-left-top object-cover "
+              className=" h-[300px] md:h-[600px] w-full object-left-top object-cover "
             />
           </div>
           {/* <Header/> */}
           <PersonalizedHeader bg="bg-transparent" />
-          {/* <h1 className=" text-2xl md:text-5xl absolute text-white bottom-1/2 pl-10 md:pl-20">
-              My Projects
-            </h1> */}
-          {/* <div className=" p-12 space-y-6 bg-white text-blue-950 absolute  w-[377px] top-32 left-20 ">
-            <h1 className="text-2xl font-semibold">
-              <h2 className=" border-t border-t-primary w-fit">OUR</h2> MISSION
-            </h1>
-            <h1 className="text-sm font-light">
-              {" "}
-              Oluwayemisi serves as a powerful catalyst for change, dedicated to
-              inspiring, educating, and empowering the next generation of
-              leaders. Through a diverse array of dynamic events and engaging
-              interactive platforms, she fosters personal growth and
-              professional development, equipping young leaders with the tools
-              and confidence needed to navigate challenges and create lasting
-              impact in their communities and beyond.
-            </h1>
-            <Link to="/contact" className="flex font-semibold w-fit">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-6 text-primary"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                />
-              </svg>
-              <h1 className="text-sm self-center">CONTACT ME</h1>
-            </Link>
-          </div> */}
-          <div className=" border border-white text-white absolute w-[377px] h-[377px] top-44 left-20 flex">
-            <h1 className="text-3xl font-semibold py-40 pl-16 flex">
+         
+          <div className=" border border-white text-white absolute w-[185px] h-[185px] md:w-[377px] md:h-[377px] top-24 md:top-44 left-10 md:left-20 flex">
+            <h1 className="text-xl md:text-3xl font-semibold  py-20 md:py-40 pl-8 md:pl-16 flex">
               <h2 className="border-t border-white">PRO</h2>JECTS
             </h1>
           </div>
@@ -78,12 +44,12 @@ export default function Projects() {
         </div>
         <img
           src="https://res.cloudinary.com/dador6eng/image/upload/v1727483097/Gracelandic_project1_c3mpbj.jpg"
-          className="h-[500px] py-8 w-full object-cover object-top relative z-0"
+          className="md:h-[500px] py-8 w-full  object-top object-scale-down relative z-0"
         />
       </div>
 
       <div className="relative">
-        <div className="pt-7 md:pt-14 pb-24 px-10 md:px-20 grid grid-cols-2 text-blue-950">
+        <div className="pt-7 md:pt-14 pb-24 px-5 md:px-20 grid md:grid-cols-2 text-blue-950">
           <div
             id="1"
             className="pt-7 md:pt-14 px-5 md:px-10 space-y-7 content-end relative"
@@ -161,7 +127,7 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="px-10 py-20 grid md:grid-cols-[2fr_1fr] text-blue-950 relative">
+      <div className="px-5 md:px-10 py-10 md:py-20 grid md:grid-cols-[2fr_1fr] text-blue-950 relative">
         <img
           src="https://res.cloudinary.com/dador6eng/image/upload/v1727245840/yemisi/14_optcyk.jpg"
           className="h-[500px] py-8 w-full object-cover object-top relative z-0"
@@ -192,7 +158,7 @@ export default function Projects() {
       <div className="relative">
         {/* <div className="absolute top-0 right-[100px] h-[150px] w-[1px] bg-zinc-400"></div> */}
 
-        <div className="pt-7 md:pt-14 pb-12 md:pb-24 px-10 md:px-20 grid grid-cols-2 text-blue-950">
+        <div className="pt-7 md:pt-14 pb-12 md:pb-24 px-5 md:px-20 grid md:grid-cols-2 text-blue-950">
           <div id="2">
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727245841/yemisi/women-tech_esch9i.jpg"
@@ -253,7 +219,7 @@ export default function Projects() {
             />
           </div>
 
-          <div className=" p-6 md:p-12 space-y-3 md:space-y-6 bg-white text-blue-950 absolute  w-[377px] top-8 md:top-16 left-10 md:left-20 ">
+          <div className=" p-6 md:p-12 space-y-3 md:space-y-6 bg-white text-blue-950 absolute w-[250px]  md:w-[377px] top-8 md:top-16 left-10 md:left-20 ">
             <h1 className="text-base md:text-xl font-semibold">
               <h2 className=" border-t border-t-primary w-fit text-lg md:text-2xl">
                 TheEBConcept
@@ -279,7 +245,7 @@ export default function Projects() {
             className=" h-[550px] w-full object-cover relative brightness-50"
           />
         </div>
-        <div className=" absolute -top-3 md:-top-6 right-10 md:right-20 w-[500px] border-2 border-primary pt-20 md:pt-40 px-7 md:px-14 pb-10 md:pb-20 space-y-6">
+        <div className=" absolute -top-3 md:-top-6 right-10 md:right-20 md:w-[500px] border-2 border-primary pt-20 md:pt-40 px-7 md:px-14 pb-10 md:pb-20 space-y-6">
           <div className=" w-[150px] md:w-[300px] text-xl md:text-3xl font-bold  md:space-y-2">
             <h1 className="text-lg md:text-2xl font-medium border-t border-primary w-fit">
               FORT
@@ -296,12 +262,12 @@ export default function Projects() {
       </div>
 
       <div className="relative">
-        <div className="absolute top-0 left-[50px] md:left-[100px] h-[150px] w-[1px] bg-zinc-400"></div>
+        <div className="absolute top-0 left-[15px] md:left-[100px] h-[150px] w-[1px] bg-zinc-400"></div>
 
-        <div className="pt-7 md:pt-14 pb-12 md:pb-24 px-10 md:px-20 grid grid-cols-2 text-blue-950">
+        <div className="pt-7 md:pt-14 pb-12 md:pb-24 px-5 md:px-20 grid md:grid-cols-2 text-blue-950">
           <div
             id="1"
-            className="pt-7 md:pt-14 px-5 md:px-10 space-y-3.5 md:space-y-7 content-end"
+            className="pt-7 md:pt-14  md:px-10 space-y-3.5 md:space-y-7 content-end"
           >
             <h1 className="text-xl md:text-3xl font-bold">
               Pecksgrey LTD
@@ -335,7 +301,7 @@ export default function Projects() {
           <div id="2">
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727483588/Pecksgrey_nj9ele.jpg"
-              className=" h-[280px] w-full object-top object-cover"
+              className=" h-[280px] w-full object-top object-cover "
             />
           </div>
         </div>
@@ -351,7 +317,7 @@ export default function Projects() {
             />
           </div>
 
-          <div className="p-6 md:p-12 space-y-3 md:space-y-6 bg-white text-blue-950 absolute  w-[377px] top-8 md:top-16 left-10 md:left-20 ">
+          <div className="p-6 md:p-12 space-y-3 md:space-y-6 bg-white text-blue-950 absolute w-[300px] md:w-[377px] top-8 md:top-16 left-10 md:left-20 ">
             <h1 className="text-base md:text-xl font-semibold">
               <h2 className=" border-t border-t-primary w-fit text-lg md:text-2xl">
                 Westgate Lifecare Mall
@@ -372,12 +338,12 @@ export default function Projects() {
       </div>
 
       <div className="relative">
-        <div className="absolute top-0 left-[50px] md:left-[100px] h-[150px] w-[1px] bg-zinc-400"></div>
+        <div className="absolute top-0 left-[15px] md:left-[100px] h-[150px] w-[1px] bg-zinc-400"></div>
 
-        <div className="pt-7 md:pt-14 pb-12 md:pb-24 px-10 md:px-20 grid grid-cols-2 text-blue-950">
+        <div className="pt-7 md:pt-14 pb-12 md:pb-24 px-5 md:px-20 grid md:grid-cols-2 text-blue-950">
           <div
             id="1"
-            className="pt-7 md:pt-14 px-5 md:px-10 space-y-3.5 md:space-y-7 content-end"
+            className="pt-7 md:pt-14  md:px-10 space-y-3.5 md:space-y-7 content-end"
           >
             <h1 className="text-xl md:text-3xl font-bold">
               DAE Young Entrepreneurial Program London
@@ -422,7 +388,7 @@ export default function Projects() {
       <div className="relative">
         {/* <div className="absolute top-0 right-[100px] h-[150px] w-[1px] bg-zinc-400"></div> */}
 
-        <div className="pt-7 md:pt-14 pb-10 md:pb-24 px-10 md:px-20 grid grid-cols-2 text-blue-950">
+        <div className="pt-7 md:pt-14 pb-10 md:pb-24 px-10 md:px-20 grid md:grid-cols-2 text-blue-950">
           <div id="2">
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727245858/yemisi/women-tech-2_nv5jmm.jpg"
