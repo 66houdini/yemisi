@@ -29,26 +29,26 @@ const solutions = [
   },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245919/yemisi/5_clgpcc.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727655657/C_C_6501_1_t28gpn.jpg",
     texts:
       "Certified - Management Specialist with Distinction in Time Management, London Graduate School",
   },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727274366/yemisi/consult.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727655883/C_C_6520_oibnwq.jpg",
     texts:
       "Advance Professional Certificate in Business Management - London School Of Business Administration",
   },
 
   {
     year: 2016,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245830/yemisi/16_elqfvu.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727655324/C_C_6443_1_lvvagn.jpg",
     texts: "Masters - Digital Marketing - Team7 Project, Nigeria",
   },
 
   {
     year: 2023,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245913/yemisi/17_jcxrog.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727308586/yemisi/31.jpg",
     texts: "M.Sc. - Digital Marketing - University of Bedfordshire, UK",
   },
   {

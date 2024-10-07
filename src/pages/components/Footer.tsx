@@ -99,10 +99,10 @@ const Footer = () => {
             </h1>
           </div>
         </div>
-        <div id="3" className="space-y-2">
+        <div id="3" className="space-y-2 text-center md:text-start col-span-2 md:col-span-1 pt-3 md:pt-0">
           <h1 className=" underline">Social Media Platforms</h1>
           <h2>You can also reach me on my social media platforms</h2>
-          <div className="flex  space-x-5">
+          <div className="flex  space-x-5 justify-center md:justify-normal">
             <a href="mailto:contact@yemisiadebayo.com" className="">
               <svg
                 className="w-8 h-8 text-white hover:bg-primary border-2 p-1 rounded-full "

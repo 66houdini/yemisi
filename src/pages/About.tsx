@@ -4,7 +4,7 @@ import { PersonalizedHeader } from "./IndexPage";
 export default function About() {
   return (
     <>
-      <div className="w-full items-center justify-center h-fit relative ">
+      <div className="w-full items-center justify-center h-fit relative bg-zinc-500">
         <div className="relative">
           <div className="brightness-75">
             <img

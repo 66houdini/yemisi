@@ -59,7 +59,7 @@ export const PersonalizedHeader = ({ bg }: { bg: string }) => {
   return (
     <>
       <div
-        className={`md:flex grid grid-cols-2 p-5 w-full justify-between text-white ${bg} absolute top-0`}
+        className={`md:flex grid grid-cols-2 p-5 w-full justify-between text-white ${bg} absolute top-0 z-30`}
       >
         {/* Logo */}
         <Link to="/" className="md:text-2xl font-bold">
@@ -207,12 +207,12 @@ export default function IndexPage() {
             </h2>
           </div>
         </div>
-        <div className="pt-5 md:pt-0 w-fit md:w-[400px]">
+        <div className="pt-5 md:pt-0 w-fit md:w-[400px] no-ml">
           <h1 className="py-1 md:py-3 bg-primary md:w-[400px]">Coach</h1>
           <div className="relative group">
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"
-              className=" h-[400px] w-[400px] object-cover object-top relative group-hover:brightness-50"
+              className=" md:h-[400px] md:w-[400px] object-cover object-top relative group-hover:brightness-50"
               alt="consultant"
             />
             <h2 className="absolute top-5 md:top-10 p-5 md:p-10 text-sm md:text-base text-justify invisible group-hover:visible transition duration-700">
@@ -367,7 +367,7 @@ export default function IndexPage() {
                 </Link>
               </div>
             </div>
-            <div className="relative grid md:grid-cols-2 gap-4 md:pt-10">
+            <div className="relative grid md:grid-cols-2 gap-4 md:pt-10 no-ml">
               <div id="1">
                 <img
                   src="https://ttsinitiative.com/wp-content/uploads/2024/06/DSC_0306-1536x1024.jpg"
