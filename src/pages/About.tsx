@@ -8,7 +8,7 @@ export default function About() {
         <div className="relative">
           <div className="brightness-75">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727656362/C_C_6443_1_guxtyv.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245831/yemisi/9_vqnexh.jpg"
               alt="about"
               className="h-[300px] md:h-[600px] w-full object-top object-cover "
             />

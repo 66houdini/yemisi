@@ -79,7 +79,9 @@ export const PersonalizedHeader = ({ bg }: { bg: string }) => {
             isOpen ? "block" : "hidden"
           } md:flex space-y-4 md:space-y-0 space-x-0 md:space-x-10 mt-5 md:mt-0 text-sm font-medium items-center`}
         >
-          <a href="/consulting" className="pr-5 md:pr-0">CONSULTING</a>
+          <a href="/consulting" className="pr-5 md:pr-0">
+            CONSULTING
+          </a>
           <a href="/coaching">COACHING</a>
           <h1>
             <Dropdown />
@@ -129,11 +131,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Dropdown from "./components/Dropdown";
 import MediaDropdown from "./components/MediaDropdown";
+import NewsletterForm from "./components/Newsletter";
 
 export default function IndexPage() {
-  const handleSubmit: React.FormEventHandler = (event) =>
-    event.preventDefault();
-
   return (
     <>
       <PersonalizedHeader bg="bg-black" />
@@ -254,7 +254,6 @@ export default function IndexPage() {
           <div id="2">
             <iframe
               className="w-full h-[157px] md:w-[560px] md:h-[315px] pt-3 md:pt-0"
-              
               src="https://www.youtube.com/embed/46xMLEqNz8E?si=eyoQFz2uCADO3eIt"
               title="YouTube video player"
               frameBorder="0"
@@ -367,42 +366,41 @@ export default function IndexPage() {
                 </Link>
               </div>
             </div>
-            <div className="relative grid md:grid-cols-2 gap-4 md:pt-10 no-ml">
-              <div id="1">
+            <div className="relative grid  gap-4 md:pt-10 no-ml">
+              <div id="news">
                 <img
                   src="https://ttsinitiative.com/wp-content/uploads/2024/06/DSC_0306-1536x1024.jpg"
-                  className=" w-full h-[400px] object-cover object-top"
+                  className=" w-[300px] object-cover object-top float-left rounded-md pr-2"
                 />
-                <h3 className=" py-5  text-base font-medium hover:underline">
+                <h3 className=" text-start text-xl md:text-2xl font-medium ">
                   TTS Initiative Project 100 Schools Activation
                 </h3>
-                {/* <h1 className=" text-zinc-700 text-sm font-light pb-5 ">
+                <h1 className="text-start text-zinc-700 text-sm md:text-base font-light ">
                   Last week, we had the incredible opportunity to empower
                   another set of teens through our #100SchoolsEmpowerment
                   program. These bright young minds were guided on how to
                   develop their personal brand and harness online opportunities
-                  for their growth.
-                </h1> */}
-                <div className="bg-primary p-1.5 w-fit  rounded-md">
-                  <Link
-                    to="/media#news"
-                    className=" text-base font-light text-white"
-                  >
-                    view more
-                  </Link>
-                </div>
+                  for their growth.Save the date and anticipate more details on
+                  how you can actively participate in this transformative
+                  mentor-mentee program. TTS Spotlight is not just a gathering;
+                  it’s a platform for young individuals dedicated to receiving a
+                  positive impact and support for growth and development from
+                  those who have gone ahead and are thriving in the chosen
+                  field. Stay tuned for an enriching experience that goes beyond
+                  the ordinary mentorship programme.
+                </h1>
               </div>
 
-              <div id="1" className="">
+              <div id="news" className="pt-5">
                 <img
                   src="https://ttsinitiative.com/wp-content/uploads/2023/12/pexels-yan-krukau-9002796-1536x1024.jpg"
-                  className=" w-full h-[400px] object-cover object-top"
+                  className=" w-[300px] object-cover object-top float-left rounded-md pr-2"
                 />
-                <h3 className=" py-5  text-base font-medium hover:underline">
+                <h3 className=" text-start text-xl md:text-2xl font-medium">
                   TTS Spotlight Program in December: A Unique Mentor-Mentee
                   Programme Launch
                 </h3>
-                {/* <h1 className=" text-zinc-700 text-sm font-light pb-5 ">
+                <h1 className="text-start text-zinc-700 text-sm md:text-base font-light ">
                   In an exciting development, January 2024 marks the launch of
                   TTS spotlight, a unique mentor-mentee programme designed to
                   foster guidance and connection within our community. Whether
@@ -410,15 +408,7 @@ export default function IndexPage() {
                   passionate about our cause, this initiative offers a special
                   opportunity to engage, share ideas, and build meaningful
                   connections.
-                </h1> */}
-                <div className="bg-primary p-1.5 w-fit  rounded-md">
-                  <Link
-                    to="/media#news"
-                    className=" text-base font-light text-white"
-                  >
-                    view more
-                  </Link>
-                </div>
+                </h1>
               </div>
             </div>
           </div>
@@ -437,16 +427,7 @@ export default function IndexPage() {
           <span>
             Stay in the loop with the latest activities. Subscribe now!
           </span>
-          <form className="py-5" onSubmit={handleSubmit}>
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="p-1.5 md:p-3 w-96 rounded-md"
-            />
-            <button className="p-2 md:p-4 bg-black text-white rounded-md">
-              SUBSCRIBE
-            </button>
-          </form>
+          <NewsletterForm />
           <div className="flex justify-center space-x-5">
             <a href="mailto:contact@yemisiadebayo.com" className="">
               <svg
