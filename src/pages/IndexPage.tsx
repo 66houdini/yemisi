@@ -283,7 +283,7 @@ export default function IndexPage() {
             <h1 className=" text-lg md:text-2xl font-medium border-t border-primary w-fit">
               As an
             </h1>{" "}
-            EXPERIENCED LECTURER & STRATEGIST
+            EXPERIENCED CONSULTANT & LECTURER
           </div>
           <h1 className="w-[200px] md:w-[350px] text-sm font-light">
             I've had the privilege of teaching and consulting for various
