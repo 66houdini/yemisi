@@ -77,6 +77,11 @@ const solutions = [
     img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg",
     texts: "Fellow - Institute of Management Consultants Nigeria (FIMC)",
   },
+  {
+    year: 2024,
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727655657/C_C_6501_1_t28gpn.jpg",
+    texts: "TheCoaching Academy UK"
+  }
 ];
 
 const others = [

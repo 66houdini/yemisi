@@ -21,8 +21,6 @@ export default function Coach() {
         </div>
       </div>
 
-     
-
       <div className=" text-black grid md:grid-cols-2 border-b border-b-white">
         <div className="p-10 space-y-4">
           <h1 className="text-2xl font-bold text-primary">
@@ -48,15 +46,17 @@ export default function Coach() {
         </div>
         <div className="p-10 py-5 md:p-3 ">
           <img
-            src="https://res.cloudinary.com/dador6eng/image/upload/v1727245848/yemisi/8_lyxp3f.jpg"
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1728423694/yemisi/Coaching_o8mvfs.jpg"
             className=" object-cover h-40 md:h-[400px] w-full rounded-lg "
           />
         </div>
       </div>
 
       <div>
-        <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727482703/MO6_gi8ubm.jpg" alt=""
-        className="w-full py-5"
+        <img
+          src="https://res.cloudinary.com/dador6eng/image/upload/v1727482703/MO6_gi8ubm.jpg"
+          alt=""
+          className="w-full py-5"
         />
       </div>
 
@@ -68,7 +68,7 @@ export default function Coach() {
           <div className="container grid md:grid-cols-[0.8fr_1.2fr]">
             <div>
               <img
-                src="https://res.cloudinary.com/dador6eng/image/upload/v1727283235/yemisi/23_y8wmo8.jpg"
+                src="https://res.cloudinary.com/dador6eng/image/upload/v1728423695/yemisi/Group_Coaching_g0zul8.jpg"
                 className="h-[300px] w-full object-cover md:h-full md:w-full"
               />
             </div>
@@ -152,8 +152,7 @@ export default function Coach() {
                 </div>
               </div>
               <div className="py-2 md:py-4 text-base md:text-xl italic">
-              For partnership and speaking engagements please send us an email
-
+                For partnership and speaking engagements please send us an email
               </div>
             </div>
           </div>
@@ -216,37 +215,85 @@ export default function Coach() {
           </div> */}
         </div>
       </div>
-      <div className="p-10 pt-0 md:p-20">
+      
+      <div className="px-20 pt-10" >
+        <h1 className="border-b border-black text-3xl"></h1>
+        <div className="grid grid-cols-3 gap-5 md:gap-10 mt-5 ">
+        <div>
+          <img
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1728423694/yemisi/Coaching_o8mvfs.jpg"
+            className="h-60"
+          />
+          <div className="flex justify-between text-lg border-b-black border-b pt-6">
+            <h1>1-1 Mindfulness session </h1>
+            <h2>cost: $50</h2>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1728423695/yemisi/Group_Coaching_g0zul8.jpg"
+            className="h-60 w-full object-cover"
+          />
+          <div className="flex justify-between text-lg border-b-black border-b pt-6">
+            <h1>Group Session </h1>
+            <h2>cost: $50</h2>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1728427586/yemisi/pexels-caio-46274_lstihp.jpg"
+            className="h-60"
+          />
+          <div className="flex justify-between text-lg border-b-black border-b pt-6">
+            <h1>Self-Discovery Workbook </h1>
+            <h2>cost: $80</h2>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1728423687/yemisi/Healthy_living_jomrtl.jpg"
+            className="h-60"
+          />
+          <div className="flex justify-between text-lg border-b-black border-b pt-6">
+            <h1>Healthy Living </h1>
+            <h2>cost: $100</h2>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1728423687/yemisi/Mental_wellness_kjhlhn.jpg"
+            className="h-60 w-full object-cover"
+          />
+          <div className="flex justify-between text-lg border-b-black border-b pt-6">
+            <h1>Mental wellness </h1>
+            <h2>cost: $100</h2>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1728423690/yemisi/Body_Goals_wbdtbd.jpg"
+            className="h-60"
+          />
+          <div className="flex justify-between text-lg border-b-black border-b pt-6">
+            <h1>Physical training </h1>
+            <h2>cost: $100</h2>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+
+      <div className="p-10 md:p-20">
         <h1 className="text-center text-lg md:text-2xl font-semibold md:py-5">
           Reviews from Clients
         </h1>
-        <div className="grid md:grid-cols-2 space-y-6 md:space-y-0">
+        <div className="grid gap-10 space-y-6 md:space-y-0">
           <div className="grid justify-items-center space-y-2 md:space-y-4">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
-              className=" h-32 md:h-60 w-32 md:w-60 rounded-md object-cover object-top"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423709/yemisi/Reviews1_gltbaa.png"
+              // className=" h-32 md:h-60 w-32 md:w-60 rounded-md object-cover object-top"
+              className=" h-[500px] rounded-md object-cover object-top"
             />
-            <div className="grid justify-items-center">
-              <h1 className="text-lg md:text-2xl font-semibold">John Doe</h1>
-              <h1 className="italic">
-                "I have worked with speaker from all over the world, she's top
-                notch"
-              </h1>
-            </div>
-          </div>
-
-          <div className="grid justify-items-center space-y-2 md:space-y-4">
-            <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
-              className=" h-32 md:h-60 w-32 md:w-60 rounded-md object-cover object-top"
-            />
-            <div className="grid justify-items-center">
-              <h1 className="text-lg md:text-2xl font-semibold">John Doe</h1>
-              <h1 className="italic">
-                "I have worked with speaker from all over the world, she's top
-                notch"
-              </h1>
-            </div>
           </div>
         </div>
       </div>

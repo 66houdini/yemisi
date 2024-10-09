@@ -11,7 +11,7 @@ export default function Consultation() {
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727482703/MO1_msl1fp.jpg"
               alt="about"
-              className=" h-[300px] md:h-[600px] w-full  object-cover "
+              className=" h-[300px] md:h-[600px] w-full  object-cover object-left "
             />
           </div>
           {/* <Header/> */} <PersonalizedHeader bg="bg-transparent" />
@@ -26,7 +26,7 @@ export default function Consultation() {
       <div className=" text-black grid md:grid-cols-2 border-b border-b-white">
         <div className="p-10 space-y-4">
           <h1 className="text-2xl font-bold text-primary">
-            BUSINESS CONSULTING 
+            BUSINESS CONSULTING
           </h1>
           <h2 className="font-light">
             As a business consultant, I specialize in transforming operations,
@@ -50,8 +50,8 @@ export default function Consultation() {
         </div>
         <div className="px-10 py-3 ">
           <img
-            src="https://res.cloudinary.com/dador6eng/image/upload/v1727282684/yemisi/22_ktewpc.jpg"
-            className=" object-cover object-top h-40 w-full md:h-full rounded-lg "
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1728423695/yemisi/Business_consultation_emoae2.jpg"
+            className=" object-cover object-top h-40 w-full md:h-[500px] rounded-lg "
           />
         </div>
       </div>
@@ -64,7 +64,7 @@ export default function Consultation() {
           <div className="container grid md:grid-cols-[0.8fr_1.2fr]">
             <div>
               <img
-                src="https://res.cloudinary.com/dador6eng/image/upload/v1727283235/yemisi/23_y8wmo8.jpg"
+                src="https://res.cloudinary.com/dador6eng/image/upload/v1728423689/yemisi/Digital_Strategy_gnjbji.jpg"
                 className="h-[300px] w-full object-cover md:h-full md:w-full"
               />
             </div>
@@ -239,13 +239,12 @@ export default function Consultation() {
                 </div>
               </div>
               <div className="py-2 md:py-4 text-base md:text-xl italic">
-              Who needs this: CEOs, Executive, Market Representatives.
-
+                Who needs this: CEOs, Executive, Market Representatives.
               </div>
             </div>
             <div>
               <img
-                src="https://res.cloudinary.com/dador6eng/image/upload/v1727283235/yemisi/23_y8wmo8.jpg"
+                src="https://res.cloudinary.com/dador6eng/image/upload/v1728423689/yemisi/Market_expansion_muezco.jpg"
                 className="h-[300px] w-full object-cover md:h-full md:w-full"
               />
             </div>
@@ -257,34 +256,20 @@ export default function Consultation() {
         <h1 className="text-center text-lg md:text-2xl font-semibold md:py-5">
           Reviews from Clients
         </h1>
-        <div className="grid md:grid-cols-2 space-y-6 md:space-y-0">
+        <div className="grid md:grid-cols-2 gap-10 space-y-6 md:space-y-0">
           <div className="grid justify-items-center space-y-2 md:space-y-4">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
-              className=" h-32 md:h-60 w-32 md:w-60 rounded-md object-cover object-top"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423697/yemisi/Reviews_1_kapxg1.png"
+              className=" rounded-md object-cover object-top"
             />
-            <div className="grid justify-items-center">
-              <h1 className="text-lg md:text-2xl font-semibold">John Doe</h1>
-              <h1 className="italic">
-                "I have worked with speaker from all over the world, she's top
-                notch"
-              </h1>
-            </div>
           </div>
-
           <div className="grid justify-items-center space-y-2 md:space-y-4">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
-              className=" h-32 md:h-60 w-32 md:w-60 rounded-md object-cover object-top"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423695/yemisi/Reviews_hr9lbk.png"
+              className=" rounded-md object-cover object-top"
             />
-            <div className="grid justify-items-center">
-              <h1 className="text-lg md:text-2xl font-semibold">John Doe</h1>
-              <h1 className="italic">
-                "I have worked with speaker from all over the world, she's top
-                notch"
-              </h1>
-            </div>
           </div>
+          
         </div>
       </div>
     </>

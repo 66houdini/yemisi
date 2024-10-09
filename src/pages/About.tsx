@@ -127,6 +127,14 @@ export default function About() {
             src="https://res.cloudinary.com/dador6eng/image/upload/v1727655883/C_C_6520_oibnwq.jpg"
             className="rounded-md"
           />
+          <img 
+          src="https://res.cloudinary.com/dador6eng/image/upload/v1728429762/yemisi/NGo__qf5mqt.jpg"
+          className="rounded-md"
+          />
+          <img
+          src="https://res.cloudinary.com/dador6eng/image/upload/v1728429752/yemisi/NGO_project_lscdwe.jpg"
+          className="rounded-md"
+          />
           
         </div>
       </div>

@@ -179,9 +179,9 @@ export default function IndexPage() {
         <h1 className="text-xl md:text-3xl font-bold pb-5">Mission</h1>
         <h2 className="text-sm md:text-base">
           "To empower businesses and individuals to thrive in today’s
-          fast-paced, competitive landscape. I believe that with the right
-          strategies, insights, and support, anyone can transform their
-          aspirations into reality."
+          competitive and evolving world. With the right strategies, insights,
+          and support, I believe anyone can turn their aspirations into
+          reality."
         </h2>
       </div>
 
@@ -273,8 +273,9 @@ export default function IndexPage() {
       <div className="relative text-white">
         <div>
           <img
-            src="https://res.cloudinary.com/dador6eng/image/upload/v1727245842/yemisi/12_g3do9n.jpg"
-            className=" h-[550px] w-full object-cover relative brightness-50"
+            // src="https://res.cloudinary.com/dador6eng/image/upload/v1727245842/yemisi/12_g3do9n.jpg"
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1728423689/yemisi/PSX_20241008_210120_ak59qj.jpg"
+            className=" h-[550px] w-full object-cover object-top relative brightness-50"
           />
         </div>
         <div className=" absolute -top-3 md:-top-6 left-5 md:left-20 md:w-[500px] border-2 border-primary pt-10 md:pt-40 px-7 md:px-14 pb-10 md:pb-20 space-y-1.5 md:space-y-3">
@@ -285,12 +286,11 @@ export default function IndexPage() {
             EXPERIENCED LECTURER & STRATEGIST
           </div>
           <h1 className="w-[200px] md:w-[350px] text-sm font-light">
-            I have had the privilege of mentoring countless individuals and
-            organizations, guiding them to achieve their goals through tailored
-            strategies that drive growth and foster success. My approach is
-            rooted in a deep understanding of the digital ecosystem, combined
-            with a creative flair that ensures each project stands out in a
-            crowded marketplace.
+            I've had the privilege of teaching and consulting for various
+            individuals and organizations, guiding them toward their goals with
+            tailored strategies that drive growth and foster success. My
+            approach focuses on identifying challenges, offering solutions, and
+            implementing strategies that deliver measurable results.
           </h1>
         </div>
       </div>
@@ -299,33 +299,25 @@ export default function IndexPage() {
         <h1 className="text-center text-lg md:text-2xl font-semibold md:py-5">
           Reviews from Clients
         </h1>
-        <div className="grid md:grid-cols-2 space-y-6 md:space-y-0">
+        <div className="grid md:grid-cols-3 gap-10 space-y-6 md:space-y-0">
           <div className="grid justify-items-center space-y-2 md:space-y-4">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
-              className=" h-32 md:h-60 w-32 md:w-60 rounded-md object-cover object-top"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423697/yemisi/Reviews_1_kapxg1.png"
+              className=" rounded-md object-cover object-top"
             />
-            <div className="grid justify-items-center">
-              <h1 className="text-lg md:text-2xl font-semibold">John Doe</h1>
-              <h1 className="italic">
-                "I have worked with speaker from all over the world, she's top
-                notch"
-              </h1>
-            </div>
           </div>
-
           <div className="grid justify-items-center space-y-2 md:space-y-4">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
-              className=" h-32 md:h-60 w-32 md:w-60 rounded-md object-cover object-top"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423695/yemisi/Reviews_hr9lbk.png"
+              className=" rounded-md object-cover object-top"
             />
-            <div className="grid justify-items-center">
-              <h1 className="text-lg md:text-2xl font-semibold">John Doe</h1>
-              <h1 className="italic">
-                "I have worked with speaker from all over the world, she's top
-                notch"
-              </h1>
-            </div>
+          </div>
+          <div className="grid justify-items-center space-y-2 md:space-y-4">
+            <img
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423709/yemisi/Reviews1_gltbaa.png"
+              // className=" h-32 md:h-60 w-32 md:w-60 rounded-md object-cover object-top"
+              className=" rounded-md object-cover object-top"
+            />
           </div>
         </div>
       </div>
@@ -336,7 +328,7 @@ export default function IndexPage() {
             You can also check out my Podcasts & News
           </div>
 
-          <div className="grid p-5 md:p-10 space-y-4 space-x-4">
+          <div className="grid p-5 md:p-10 md:px-20 space-y-4 space-x-4">
             <div id="1" className="relative group justify-self-center">
               {/* <iframe
                 className="pb-3 rounded-md"
