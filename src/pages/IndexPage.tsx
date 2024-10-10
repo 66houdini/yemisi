@@ -178,16 +178,15 @@ export default function IndexPage() {
       <div className="p-5 md:p-10 px-10 md:px-20  text-center">
         <h1 className="text-xl md:text-3xl font-bold pb-5">Mission</h1>
         <h2 className="text-sm md:text-base">
-          "To empower businesses and individuals to thrive in today’s
-          competitive and evolving world. With the right strategies, insights,
-          and support, I believe anyone can turn their aspirations into
-          reality."
+          To empower businesses and individuals to thrive in today’s competitive
+          and evolving world. With the right strategies, insights, and support,
+          I believe anyone can turn their aspirations into reality.
         </h2>
       </div>
 
       {/* Other sections of your page */}
       <div className="grid md:grid-cols-2 space-x-5 md:space-x-10 md:h-[350px]  text-white text-center mb-16 md:mb-32 mx-10 md:mx-20 my-5 md:my-10">
-        <div className="w-fit md:w-[400px]">
+        <div className="w-fit md:w-[400px] justify-self-center">
           <h1 className="py-1 md:py-3 bg-primary md:w-[400px] ">Consultant</h1>
           <div className="relative group">
             <img
@@ -207,7 +206,7 @@ export default function IndexPage() {
             </h2>
           </div>
         </div>
-        <div className="pt-5 md:pt-0 w-fit md:w-[400px] no-ml">
+        <div className="pt-5 md:pt-0 w-fit md:w-[400px] no-ml justify-self-center">
           <h1 className="py-1 md:py-3 bg-primary md:w-[400px]">Coach</h1>
           <div className="relative group">
             <img
@@ -299,25 +298,54 @@ export default function IndexPage() {
         <h1 className="text-center text-lg md:text-2xl font-semibold md:py-5">
           Reviews from Clients
         </h1>
-        <div className="grid md:grid-cols-3 gap-10 space-y-6 md:space-y-0">
-          <div className="grid justify-items-center space-y-2 md:space-y-4">
-            <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423697/yemisi/Reviews_1_kapxg1.png"
-              className=" rounded-md object-cover object-top"
-            />
+        <div className="grid md:grid-cols-2 gap-5 space-y-6 md:space-y-0">
+          <div className="grid justify-items-center space-y-2 md:space-y-4 shadow-xl p-3">
+            {/* <img
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
+              className=" h-32 md:h-60 w-32 md:w-60 rounded-md object-cover object-top"
+            /> */}
+            <div className="grid justify-items-center">
+              <h1 className="text-lg md:text-2xl font-semibold">
+                Oluyemi Odofa, Food NC
+              </h1>
+              <h1 className="italic ">
+                "We had ambitious plans to expand our market but we weren't
+                clear where to begin. Oluwayemisi provided clear, actionable
+                steps to help us break into new markets. Her approach to
+                building partnerships was strategic and throughful and her
+                guidance in navigating cultural and business differences enabled
+                us to succeed faster than we expected"
+              </h1>
+            </div>
           </div>
-          <div className="grid justify-items-center space-y-2 md:space-y-4">
-            <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423695/yemisi/Reviews_hr9lbk.png"
-              className=" rounded-md object-cover object-top"
-            />
+
+          <div className="grid justify-items-center space-y-2 md:space-y-4 shadow-xl p-3">
+            <div className="grid justify-items-center">
+              <h1 className="text-lg md:text-2xl font-semibold">
+                Farijun Faith
+              </h1>
+              <h1 className="italic">
+                "Indeed, life is simple. We just need to live it freely". There
+                were one of the statements to me, and they broight clarity to
+                some difficult issues I was facing at the time. Thank you,
+                <strong>Oluwayemisi Adebayo</strong>
+              </h1>
+            </div>
           </div>
-          <div className="grid justify-items-center space-y-2 md:space-y-4">
-            <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423709/yemisi/Reviews1_gltbaa.png"
-              // className=" h-32 md:h-60 w-32 md:w-60 rounded-md object-cover object-top"
-              className=" rounded-md object-cover object-top"
-            />
+          <div className="grid justify-items-center space-y-2 md:space-y-4 shadow-xl p-3">
+            <div className="grid justify-items-center">
+              <h1 className="text-lg md:text-2xl font-semibold">
+                Dr. Nuro M,. Tech
+              </h1>
+              <h1 className="italic">
+                Working with <strong>Oluwayemisi Adebayo</strong> has been a
+                game changer for our brand. Her understanding of both local and
+                international markets is unmatched. She helped us craft a
+                tailored strtegy that significantly grew our customerr base
+                within the first six months. Her keen insights and practical
+                recommendations make her an invaluable partner for brands
+              </h1>
+            </div>
           </div>
         </div>
       </div>
@@ -362,12 +390,12 @@ export default function IndexPage() {
               <div id="news">
                 <img
                   src="https://ttsinitiative.com/wp-content/uploads/2024/06/DSC_0306-1536x1024.jpg"
-                  className=" w-[300px] object-cover object-top float-left rounded-md pr-2"
+                  className=" w-[250px] object-cover object-top float-left rounded-md pr-2"
                 />
-                <h3 className=" text-start text-xl md:text-2xl font-medium ">
+                <h3 className=" text-start text-lg md:text-xl font-medium ">
                   TTS Initiative Project 100 Schools Activation
                 </h3>
-                <h1 className="text-start text-zinc-700 text-sm md:text-base font-light ">
+                <h1 className="text-start text-zinc-700 text-sm  font-light ">
                   Last week, we had the incredible opportunity to empower
                   another set of teens through our #100SchoolsEmpowerment
                   program. These bright young minds were guided on how to
@@ -386,13 +414,13 @@ export default function IndexPage() {
               <div id="news" className="pt-5">
                 <img
                   src="https://ttsinitiative.com/wp-content/uploads/2023/12/pexels-yan-krukau-9002796-1536x1024.jpg"
-                  className=" w-[300px] object-cover object-top float-left rounded-md pr-2"
+                  className=" w-[250px] object-cover object-top float-left rounded-md pr-2"
                 />
-                <h3 className=" text-start text-xl md:text-2xl font-medium">
+                <h3 className=" text-start text-lg md:text-xl font-medium">
                   TTS Spotlight Program in December: A Unique Mentor-Mentee
                   Programme Launch
                 </h3>
-                <h1 className="text-start text-zinc-700 text-sm md:text-base font-light ">
+                <h1 className="text-start text-zinc-700 text-sm  font-light ">
                   In an exciting development, January 2024 marks the launch of
                   TTS spotlight, a unique mentor-mentee programme designed to
                   foster guidance and connection within our community. Whether

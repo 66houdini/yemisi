@@ -24,7 +24,7 @@ export default function Coach() {
       <div className=" text-black grid md:grid-cols-2 border-b border-b-white">
         <div className="p-10 space-y-4">
           <h1 className="text-2xl font-bold text-primary">
-            LIFE COACHING JOURNEY
+            LIFE COACH
           </h1>
           <h2 className="font-light">
             In addition to consulting for businesses, I am also a passionate
@@ -68,8 +68,8 @@ export default function Coach() {
           <div className="container grid md:grid-cols-[0.8fr_1.2fr]">
             <div>
               <img
-                src="https://res.cloudinary.com/dador6eng/image/upload/v1728423695/yemisi/Group_Coaching_g0zul8.jpg"
-                className="h-[300px] w-full object-cover md:h-full md:w-full"
+                src="https://res.cloudinary.com/dador6eng/image/upload/v1728423690/yemisi/Lecturing_Arden_hokfhz.jpg"
+                className="h-[300px] w-full object-cover object-left md:h-full md:w-full"
               />
             </div>
             <div className="content py-5 md:py-0 md:px-10 space-y-4">
@@ -216,68 +216,68 @@ export default function Coach() {
         </div>
       </div>
       
-      <div className="px-20 pt-10" >
+      <div className="px-10 md:px-20 pt-10" >
         <h1 className="border-b border-black text-3xl"></h1>
-        <div className="grid grid-cols-3 gap-5 md:gap-10 mt-5 ">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-10 mt-5 ">
         <div>
           <img
             src="https://res.cloudinary.com/dador6eng/image/upload/v1728423694/yemisi/Coaching_o8mvfs.jpg"
             className="h-60"
           />
-          <div className="flex justify-between text-lg border-b-black border-b pt-6">
+          <a href="https://yemisi-booking.vercel.app/mindfulness-session" className="flex justify-between text-lg border-b-black border-b pt-6">
             <h1>1-1 Mindfulness session </h1>
             <h2>cost: $50</h2>
-          </div>
+          </a>
         </div>
         <div>
           <img
             src="https://res.cloudinary.com/dador6eng/image/upload/v1728423695/yemisi/Group_Coaching_g0zul8.jpg"
             className="h-60 w-full object-cover"
           />
-          <div className="flex justify-between text-lg border-b-black border-b pt-6">
+          <a href="https://yemisi-booking.vercel.app/group-session" className="flex justify-between text-lg border-b-black border-b pt-6">
             <h1>Group Session </h1>
             <h2>cost: $50</h2>
-          </div>
+          </a>
         </div>
         <div>
           <img
             src="https://res.cloudinary.com/dador6eng/image/upload/v1728427586/yemisi/pexels-caio-46274_lstihp.jpg"
             className="h-60"
           />
-          <div className="flex justify-between text-lg border-b-black border-b pt-6">
+          <a href="https://yemisi-booking.vercel.app/self-discovery" className="flex justify-between text-lg border-b-black border-b pt-6">
             <h1>Self-Discovery Workbook </h1>
             <h2>cost: $80</h2>
-          </div>
+          </a>
         </div>
         <div>
           <img
             src="https://res.cloudinary.com/dador6eng/image/upload/v1728423687/yemisi/Healthy_living_jomrtl.jpg"
             className="h-60"
           />
-          <div className="flex justify-between text-lg border-b-black border-b pt-6">
+          <a href="https://yemisi-booking.vercel.app/healthy-living" className="flex justify-between text-lg border-b-black border-b pt-6">
             <h1>Healthy Living </h1>
             <h2>cost: $100</h2>
-          </div>
+          </a>
         </div>
         <div>
           <img
             src="https://res.cloudinary.com/dador6eng/image/upload/v1728423687/yemisi/Mental_wellness_kjhlhn.jpg"
             className="h-60 w-full object-cover"
           />
-          <div className="flex justify-between text-lg border-b-black border-b pt-6">
+          <a href="https://yemisi-booking.vercel.app/mental-wellness" className="flex justify-between text-lg border-b-black border-b pt-6">
             <h1>Mental wellness </h1>
             <h2>cost: $100</h2>
-          </div>
+          </a>
         </div>
         <div>
           <img
             src="https://res.cloudinary.com/dador6eng/image/upload/v1728423690/yemisi/Body_Goals_wbdtbd.jpg"
             className="h-60"
           />
-          <div className="flex justify-between text-lg border-b-black border-b pt-6">
+          <a href="https://yemisi-booking.vercel.app/physical-training" className="flex justify-between text-lg border-b-black border-b pt-6">
             <h1>Physical training </h1>
             <h2>cost: $100</h2>
-          </div>
+          </a>
         </div>
       </div>
       </div>
@@ -288,12 +288,20 @@ export default function Coach() {
           Reviews from Clients
         </h1>
         <div className="grid gap-10 space-y-6 md:space-y-0">
-          <div className="grid justify-items-center space-y-2 md:space-y-4">
-            <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423709/yemisi/Reviews1_gltbaa.png"
-              // className=" h-32 md:h-60 w-32 md:w-60 rounded-md object-cover object-top"
-              className=" h-[500px] rounded-md object-cover object-top"
-            />
+        <div className="grid justify-items-center space-y-2 md:space-y-4 shadow-xl p-3">
+            <div className="grid justify-items-center">
+              <h1 className="text-lg md:text-2xl font-semibold">
+                Dr. Nuro M,. Tech
+              </h1>
+              <h1 className="italic">
+                Working with <strong>Oluwayemisi Adebayo</strong> has been a
+                game changer for our brand. Her understanding of both local and
+                international markets is unmatched. She helped us craft a
+                tailored strtegy that significantly grew our customerr base
+                within the first six months. Her keen insights and practical
+                recommendations make her an invaluable partner for brands
+              </h1>
+            </div>
           </div>
         </div>
       </div>

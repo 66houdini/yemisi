@@ -114,7 +114,7 @@ export default function Projects() {
               TTS
             </h1>{" "}
             INITIATIVE
-            <h2 className="text-xl font-medium">Founder</h2>
+            <h2 className="text-xl font-medium">Management Consultant</h2>
           </div>
           <h1 className="w-[300px] text-sm font-light">
             TTS Initiative is a dedicated Non-Governmental Organization
@@ -251,7 +251,7 @@ export default function Projects() {
               FORT
             </h1>{" "}
             TYRES
-            <h2 className="text-base md:text-xl font-medium">Co-Founder</h2>
+            <h2 className="text-base md:text-xl font-medium">Marketing Consultant</h2>
           </div>
           <h1 className="w-[300px] text-sm font-light">
             We help individuals and businesses experience a stress free tyre
@@ -391,7 +391,7 @@ export default function Projects() {
         <div className="pt-7 md:pt-14 pb-10 md:pb-24 px-10 md:px-20 grid md:grid-cols-2 text-blue-950">
           <div id="2">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245858/yemisi/women-tech-2_nv5jmm.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1728523266/yemisi/Standard_Chartered_headquarters_in_London-Front_view_g1scxf.jpg"
               className=" h-[370px] w-full object-cover"
             />
           </div>

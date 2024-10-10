@@ -111,14 +111,7 @@ export default function About() {
       <div className="px-10 md:px-20 py-5 md:py-10">
         <h1 className="text-xl md:text-3xl text-center pb-4">Gallery</h1>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <img
-            src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"
-            className="rounded-md"
-          />
-          <img
-            src="https://res.cloudinary.com/dador6eng/image/upload/v1727655324/C_C_6443_1_lvvagn.jpg"
-            className="rounded-md h-[260px] w-[260px]  object-top object-scale-down"
-          />
+         
           <img
             src="https://res.cloudinary.com/dador6eng/image/upload/v1727655657/C_C_6501_1_t28gpn.jpg"
             className="rounded-md h-[260px] w-[260px]  object-top object-scale-down"
@@ -128,11 +121,11 @@ export default function About() {
             className="rounded-md"
           />
           <img 
-          src="https://res.cloudinary.com/dador6eng/image/upload/v1728429762/yemisi/NGo__qf5mqt.jpg"
+          src="https://res.cloudinary.com/dador6eng/image/upload/v1728521522/yemisi/NGO_project_ybs2ll.jpg"
           className="rounded-md"
           />
           <img
-          src="https://res.cloudinary.com/dador6eng/image/upload/v1728429752/yemisi/NGO_project_lscdwe.jpg"
+          src="https://res.cloudinary.com/dador6eng/image/upload/v1728521520/yemisi/NGo__qcmeeb.jpg"
           className="rounded-md"
           />
           

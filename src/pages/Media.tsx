@@ -7,7 +7,7 @@ export default function Media() {
         <div className="relative">
           <div className="brightness-75">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727482704/MO2_n8hiaq.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1728523630/yemisi/pexels-tommyclopez-765139_fuh5ya.jpg"
               alt="about"
               className="h-[300px] md:h-[600px] w-full object-top object-cover "
             />

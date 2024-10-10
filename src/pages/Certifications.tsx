@@ -122,12 +122,12 @@ export default function Certifications() {
         </div>
       </div>
 
-      <div className="p-7 md:p-20 grid grid-cols-2 md:grid-cols-4 gap-4 bg-black text-white">
+      <div className="p-7 md:p-20 grid grid-cols-2 md:grid-cols-5 gap-4 bg-black text-white">
         {solutions.map((item, index) => (
           <div key={index} className="text-center py-4 space-y-2">
             <img
               src={item.img}
-              className="h-60 w-60 rounded-sm object-cover object-top"
+              className="h-60 w-60 md:w-auto rounded-sm object-cover object-top"
               alt={item.texts}
             />
             <h1>{item.year}</h1>

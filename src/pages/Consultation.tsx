@@ -51,7 +51,7 @@ export default function Consultation() {
         <div className="px-10 py-3 ">
           <img
             src="https://res.cloudinary.com/dador6eng/image/upload/v1728423695/yemisi/Business_consultation_emoae2.jpg"
-            className=" object-cover object-top h-40 w-full md:h-[500px] rounded-lg "
+            className=" object-cover object-top h-40 w-full md:h-[400px] rounded-lg "
           />
         </div>
       </div>
@@ -65,7 +65,7 @@ export default function Consultation() {
             <div>
               <img
                 src="https://res.cloudinary.com/dador6eng/image/upload/v1728423689/yemisi/Digital_Strategy_gnjbji.jpg"
-                className="h-[300px] w-full object-cover md:h-full md:w-full"
+                className="h-[300px] w-full object-cover object-right md:h-full md:w-full"
               />
             </div>
             <div className="content px-5 md:px-10 space-y-2 md:space-y-4">
