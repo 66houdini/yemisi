@@ -245,7 +245,7 @@ export default function Consultation() {
             <div>
               <img
                 src="https://res.cloudinary.com/dador6eng/image/upload/v1728423689/yemisi/Market_expansion_muezco.jpg"
-                className="h-[300px] w-full object-cover md:h-full md:w-full"
+                className="h-[300px] w-full object-cover object-left md:h-full md:w-full"
               />
             </div>
           </div>
@@ -256,18 +256,39 @@ export default function Consultation() {
         <h1 className="text-center text-lg md:text-2xl font-semibold md:py-5">
           Reviews from Clients
         </h1>
-        <div className="grid md:grid-cols-2 gap-10 space-y-6 md:space-y-0">
-          <div className="grid justify-items-center space-y-2 md:space-y-4">
-            <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423697/yemisi/Reviews_1_kapxg1.png"
-              className=" rounded-md object-cover object-top"
-            />
+        <div className="grid md:grid-cols-2 gap-5 space-y-6 md:space-y-0">
+          <div className="grid justify-items-center space-y-2 md:space-y-4 shadow-xl p-3">
+            {/* <img
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
+              className=" h-32 md:h-60 w-32 md:w-60 rounded-md object-cover object-top"
+            /> */}
+            <div className="grid justify-items-center">
+              <h1 className="text-lg md:text-2xl font-semibold">
+                Oluyemi Odofa, Food NC
+              </h1>
+              <h1 className="italic ">
+                "We had ambitious plans to expand our market but we weren't
+                clear where to begin. Oluwayemisi provided clear, actionable
+                steps to help us break into new markets. Her approach to
+                building partnerships was strategic and throughful and her
+                guidance in navigating cultural and business differences enabled
+                us to succeed faster than we expected"
+              </h1>
+            </div>
           </div>
-          <div className="grid justify-items-center space-y-2 md:space-y-4">
-            <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423695/yemisi/Reviews_hr9lbk.png"
-              className=" rounded-md object-cover object-top"
-            />
+
+          <div className="grid justify-items-center space-y-2 md:space-y-4 shadow-xl p-3">
+            <div className="grid justify-items-center">
+              <h1 className="text-lg md:text-2xl font-semibold">
+                Farijun Faith
+              </h1>
+              <h1 className="italic">
+                "Indeed, life is simple. We just need to live it freely". There
+                were one of the statements to me, and they broight clarity to
+                some difficult issues I was facing at the time. Thank you,
+                <strong>Oluwayemisi Adebayo</strong>
+              </h1>
+            </div>
           </div>
           
         </div>

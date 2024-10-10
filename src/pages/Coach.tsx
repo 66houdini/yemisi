@@ -7,13 +7,13 @@ export default function Coach() {
         <div className="relative">
           <div className="brightness-75">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727482704/MO2_n8hiaq.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1728572996/yemisi/MO_rizfiu.jpg"
               alt="about"
-              className="h-[300px] md:h-[600px] w-full object-top object-cover "
+              className="h-[300px] md:h-[500px] w-full object-top object-cover "
             />
           </div>
           {/* <Header/> */} <PersonalizedHeader bg="bg-transparent" />
-          <div className=" border border-white text-white absolute w-[185px] h-[185px] md:w-[377px] md:h-[377px] top-24 md:top-44 left-10 md:left-20 flex">
+          <div className=" border border-white text-white absolute w-[185px] h-[185px] md:w-[277px] md:h-[277px] top-24 md:top-44 left-10 md:left-20 flex">
             <h1 className="text-xl md:text-3xl font-semibold py-20 md:py-40 pl-8 md:pl-16 flex">
               <h2 className="border-t border-white ">COA</h2>CHING
             </h1>
