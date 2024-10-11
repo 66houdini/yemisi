@@ -51,6 +51,8 @@
 
 export const PersonalizedHeader = ({ bg }: { bg: string }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const inactiveClass = `md:flex grid grid-cols-2 p-5 w-full justify-between text-white ${bg} absolute top-0 z-30`
+  const activeClass = `md:flex grid grid-cols-2 p-5 w-full justify-between text-white bg-black absolute top-0 z-30`
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -59,7 +61,8 @@ export const PersonalizedHeader = ({ bg }: { bg: string }) => {
   return (
     <>
       <div
-        className={`md:flex grid grid-cols-2 p-5 w-full justify-between text-white ${bg} absolute top-0 z-30`}
+        // className={`md:flex grid grid-cols-2 p-5 w-full justify-between text-white ${bg} absolute top-0 z-30`}
+        className={isOpen ? activeClass : inactiveClass}
       >
         {/* Logo */}
         <Link to="/" className="md:text-2xl font-bold">
@@ -215,7 +218,7 @@ export default function IndexPage() {
               alt="consultant"
             />
             <h2 className="absolute top-5 md:top-10 p-5 md:p-10 text-sm md:text-base text-justify invisible group-hover:visible transition duration-700">
-              In addition to my consulting work, I am a passionate life coach. I
+              I am a passionate life coach. I
               have had the opportunity to coach professionals in various fields,
               including politics, education, oil and gas, and the creative
               industries, from artists to fashion designers. My coaching

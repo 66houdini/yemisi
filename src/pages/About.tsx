@@ -108,29 +108,29 @@ export default function About() {
         </div>
       </div>
 
-      <div className="px-10 md:px-20 py-5 md:py-10">
+      <div className="px-5 md:px-20 py-5 md:py-10">
         <h1 className="text-xl md:text-3xl text-center pb-4">Gallery</h1>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
          
           <img
             src="https://res.cloudinary.com/dador6eng/image/upload/v1727655657/C_C_6501_1_t28gpn.jpg"
-            className="rounded-md h-[260px] w-[260px]  object-top object-scale-down"
+            className="rounded-md h-[260px] w-[260px]  object-top object-cover"
           />
           <img
             src="https://res.cloudinary.com/dador6eng/image/upload/v1727655883/C_C_6520_oibnwq.jpg"
-            className="rounded-md"
+            className="rounded-md h-[260px] w-[260px]  object-cover"
           />
           <img 
           src="https://res.cloudinary.com/dador6eng/image/upload/v1728521522/yemisi/NGO_project_ybs2ll.jpg"
-          className="rounded-md h-[260px]"
+          className="rounded-md h-[260px] w-[260px]  object-cover"
           />
           <img
           src="https://res.cloudinary.com/dador6eng/image/upload/v1728521520/yemisi/NGo__qcmeeb.jpg"
-          className="rounded-md h-[260px]"
+          className="rounded-md h-[260px] w-[260px]  object-cover"
           />
-          {/* <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727245831/yemisi/9_vqnexh.jpg"
-          className=" col-span-2 h-[260px]"
-          /> */}
+          <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727245831/yemisi/9_vqnexh.jpg"
+          className="rounded-md h-[260px] w-full md:w-[260px] col-span-2  object-cover"
+          />
           
         </div>
       </div>

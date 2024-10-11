@@ -71,10 +71,10 @@ export default function Contact() {
           <div className="relative">
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1727482703/MO3_jirgza.jpg"
-              className="w-full h-[500px] object-cover brightness-50"
+              className="w-full h-[500px] object-cover object-right md:object-center brightness-50"
             />
             <PersonalizedHeader bg="bg-transparent" />
-            <div className="absolute top-[150px] left-[100px] md:left-[300px] text-3xl md:text-5xl font-bold text-white">
+            <div className="absolute top-[150px] left-[40px] md:left-[300px] text-3xl md:text-5xl font-bold text-white">
               <h1>CONTACT OLUWAYEMISI</h1>
               <div className="flex pt-5 justify-center">
                 <Link className="text-base md:text-xl font-medium" to={"/home"}>

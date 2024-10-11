@@ -65,7 +65,7 @@ export default function Consultation() {
             <div>
               <img
                 src="https://res.cloudinary.com/dador6eng/image/upload/v1728423689/yemisi/Digital_Strategy_gnjbji.jpg"
-                className="h-[300px] w-full object-cover object-right md:h-full md:w-full"
+                className="h-[300px] w-full object-cover object-left md:h-full md:w-full"
               />
             </div>
             <div className="content px-5 md:px-10 space-y-2 md:space-y-4">
