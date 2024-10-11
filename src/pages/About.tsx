@@ -122,12 +122,15 @@ export default function About() {
           />
           <img 
           src="https://res.cloudinary.com/dador6eng/image/upload/v1728521522/yemisi/NGO_project_ybs2ll.jpg"
-          className="rounded-md"
+          className="rounded-md h-[260px]"
           />
           <img
           src="https://res.cloudinary.com/dador6eng/image/upload/v1728521520/yemisi/NGo__qcmeeb.jpg"
-          className="rounded-md"
+          className="rounded-md h-[260px]"
           />
+          {/* <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727245831/yemisi/9_vqnexh.jpg"
+          className=" col-span-2 h-[260px]"
+          /> */}
           
         </div>
       </div>

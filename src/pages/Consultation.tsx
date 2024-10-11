@@ -268,7 +268,7 @@ export default function Consultation() {
               </h1>
               <h1 className="italic ">
                 "We had ambitious plans to expand our market but we weren't
-                clear where to begin. Oluwayemisi provided clear, actionable
+                clear where to begin. <strong>Oluwayemisi</strong> provided clear, actionable
                 steps to help us break into new markets. Her approach to
                 building partnerships was strategic and throughful and her
                 guidance in navigating cultural and business differences enabled

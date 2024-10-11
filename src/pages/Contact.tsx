@@ -1,11 +1,69 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // import Header from "./Header";
 import { PersonalizedHeader } from "./IndexPage";
 
+interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  subject: string;
+  message: string;
+}
+
+type InputChangeEvent = React.ChangeEvent<
+  HTMLInputElement | HTMLTextAreaElement
+>;
+
 export default function Contact() {
-  const handleSubmit: React.FormEventHandler = (event) =>
+  const [formData, setFormData] = useState<FormData>({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e: InputChangeEvent) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit: React.FormEventHandler<HTMLFormElement> = async (
+    event
+  ) => {
     event.preventDefault();
+    console.log(formData);
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    })
+    // try {
+    //   const response = await fetch("http://localhost:3001/contact", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify(formData),
+    //   });
+
+    //   if (response.ok) {
+    //     alert("Message sent successfully!");
+    //   } else {
+    //     alert("Error sending message.");
+    //   }
+    // } catch (error) {
+    //   console.error("Error:", error);
+    //   alert("Error submitting the form. Please try again.");
+    // }
+  };
+
   return (
     <>
       <div>
@@ -166,30 +224,47 @@ export default function Contact() {
           </div>
 
           <div className="md:w-[400px] bg-zinc-100 text-blue-950 p-10 py-5 mt-5 rounded-md md:absolute md:right-10 md:top-72">
-            <form className=" py-4" onSubmit={handleSubmit}>
+            <form className="py-4" onSubmit={handleSubmit}>
               <label className="text-sm">Name</label>
               <input
                 type="text"
+                name="name"
                 className="w-full p-2 my-2 bg-zinc-200 border"
+                value={formData.name}
+                onChange={handleChange}
               />
               <label className="text-sm">Email</label>
               <input
                 type="email"
+                name="email"
                 className="w-full p-2 my-2 bg-zinc-200 border"
+                value={formData.email}
+                onChange={handleChange}
               />
               <label className="text-sm">Phone</label>
               <input
                 type="text"
+                name="phone"
                 className="w-full p-2 my-2 bg-zinc-200 border"
+                value={formData.phone}
+                onChange={handleChange}
               />
               <label className="text-sm">Subject</label>
               <input
                 type="text"
+                name="subject"
                 className="w-full p-2 my-2 bg-zinc-200 border"
+                value={formData.subject}
+                onChange={handleChange}
               />
               <label className="text-sm">Message</label>
-              <textarea className="w-full p-2 my-2 bg-zinc-200 border" />
-              <button className="  border  border-black rounded-md p-2 my-2">
+              <textarea
+                name="message"
+                className="w-full p-2 my-2 bg-zinc-200 border"
+                value={formData.message}
+                onChange={handleChange}
+              />
+              <button className="border border-black rounded-md p-2 my-2">
                 Submit
               </button>
             </form>
