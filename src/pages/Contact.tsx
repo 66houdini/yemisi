@@ -210,7 +210,7 @@ export default function Contact() {
                 and explore new opportunities
               </h3>
               <Link
-                to={"/work-with-me"}
+                to={"/about"}
                 className="p-3 px-10 bg-primary text-white text-lg font-medium"
               >
                 BOOK NOW
