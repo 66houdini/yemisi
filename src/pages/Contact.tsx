@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // import Header from "./Header";
 import { PersonalizedHeader } from "./IndexPage";
+import axios from "axios"
 
 interface FormData {
   name: string;
@@ -36,7 +37,7 @@ export default function Contact() {
     event
   ) => {
     event.preventDefault();
-    console.log(formData);
+   await axios.post("https://trinity-demo.vercel.app/yemisi/contact", formData)
     setFormData({
       name: "",
       email: "",
@@ -44,24 +45,7 @@ export default function Contact() {
       subject: "",
       message: "",
     })
-    // try {
-    //   const response = await fetch("http://localhost:3001/contact", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify(formData),
-    //   });
-
-    //   if (response.ok) {
-    //     alert("Message sent successfully!");
-    //   } else {
-    //     alert("Error sending message.");
-    //   }
-    // } catch (error) {
-    //   console.error("Error:", error);
-    //   alert("Error submitting the form. Please try again.");
-    // }
+    
   };
 
   return (
