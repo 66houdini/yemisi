@@ -7,7 +7,7 @@ const NewsletterForm = () => {
   const handleSubmit: React.FormEventHandler = async (event) => {
     event.preventDefault();
 
-    const response = await fetch("https://trinity-demo.vercel.app/subscribe", {
+    const response = await fetch("https://nextjs-backend-red.vercel.app/api/subscribe", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

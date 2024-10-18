@@ -37,7 +37,10 @@ export default function Contact() {
     event
   ) => {
     event.preventDefault();
-   await axios.post("https://trinity-demo.vercel.app/yemisi/contact", formData)
+    // https://nextjs-backend-red.vercel.app
+  //  await axios.post("http://localhost:3000/api/contact", formData)
+  await axios.post("https://nextjs-backend-red.vercel.app/api/contact", formData)
+
     setFormData({
       name: "",
       email: "",
