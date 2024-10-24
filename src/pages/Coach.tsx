@@ -23,9 +23,7 @@ export default function Coach() {
 
       <div className=" text-black grid md:grid-cols-2 border-b border-b-white">
         <div className="p-10 space-y-4">
-          <h1 className="text-2xl font-bold text-primary">
-            LIFE COACH
-          </h1>
+          <h1 className="text-2xl font-bold text-primary">LIFE COACH</h1>
           <h2 className="font-light">
             In addition to consulting for businesses, I am also a passionate
             life coach. I’ve had the privilege of coaching individuals at
@@ -68,7 +66,7 @@ export default function Coach() {
           <div className="container grid md:grid-cols-[0.8fr_1.2fr]">
             <div>
               <img
-                src="https://res.cloudinary.com/dador6eng/image/upload/v1728423690/yemisi/Lecturing_Arden_hokfhz.jpg"
+                src="https://res.cloudinary.com/dador6eng/image/upload/v1729790879/yemisi/pexels-mikhail-nilov-8872482_be6vae.jpg"
                 className="h-[300px] w-full object-cover object-left md:h-full md:w-full"
               />
             </div>
@@ -156,152 +154,113 @@ export default function Coach() {
               </div>
             </div>
           </div>
-          {/* <div className="">
-            <h1 className="text-xl medium"> Life Coaching Packages </h1>
-            <h2 className=" text-xl font-medium">Personal Development</h2>
-            <p className=" text-sm font-light">
-              A well-defined personal development plan is essential for
-              unlocking your full potential, achieving your life goals and
-              having fulfillment. By booking this session, you will gain:
-            </p>
-            <ul className=" text-sm font-light list-disc pl-5">
-              <li>
-                {" "}
-                <strong>Personal Growth:</strong> I will guide you through the
-                key areas of personal development, helping you to improve your
-                mindset, habits, and overall well-being.
-              </li>
-              <li>
-                <strong>Self-Assessment and Goal Setting:</strong> Together,
-                we’ll identify your strengths, challenges, and aspirations, and
-                develop clear, actionable goals that align with your personal
-                vision for success.
-              </li>
-              <li>
-                <strong>Results-Driven Strategies:</strong> I will provide you
-                with personalized strategies designed to help you achieve
-                tangible improvements in your personal life.
-              </li>
-              <li>
-                <strong>Actionable Growth System:</strong> We will create a step
-                by step action that will help you achieve long-term personal
-                growth.
-              </li>
-              <li>
-                <strong>Overcoming challenges:</strong> You will get help on
-                solutions to bypass your current challenges
-              </li>
-            </ul>
-            <h1 className="text-lg font-medium py-4">
-              Cost: Starter $100(1 hour) | Advance: $400; Sessions (3 Months - 1
-              meeting monthly)
-            </h1>
-            <div className="flex gap-4">
-              <Link
-                to="https://yemisi-booking.vercel.app/life-coaching"
-                target="_blank"
-                className="px-4 py-2 bg-primary text-white rounded-md"
-              >
-                Book Now- starter
-              </Link>
-              <Link
-                to="https://yemisi-booking.vercel.app/life-coaching-advanced"
-                target="_blank"
-                className="px-4 py-2 bg-primary text-white rounded-md"
-              >
-                Book Now-Advanced
-              </Link>
-            </div>
-          </div> */}
+         
         </div>
       </div>
-      
-      <div className="px-5 md:px-20 pt-10" >
+
+      <div className="px-5 md:px-20 pt-10">
         <h1 className="border-b border-black text-3xl"></h1>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-10 mt-5 ">
-        <div className="pb-3 md:pb-0">
-          <img
-            src="https://res.cloudinary.com/dador6eng/image/upload/v1728423694/yemisi/Coaching_o8mvfs.jpg"
-            className="h-40 md:h-60 object-cover"
-          />
-          <a href="https://yemisi-booking.vercel.app/mindfulness-session" className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6">
-            <h1>1-1 Mindfulness session </h1>
-            <h2>cost: $50</h2>
-          </a>
-        </div>
-        <div className="pb-3 md:pb-0">
-          <img
-            src="https://res.cloudinary.com/dador6eng/image/upload/v1728423695/yemisi/Group_Coaching_g0zul8.jpg"
-            className="h-40 md:h-60 w-full object-cover"
-          />
-          <a href="https://yemisi-booking.vercel.app/group-session" className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6">
-            <h1>Group Session </h1>
-            <h2>cost: $50</h2>
-          </a>
-        </div>
-        <div className="pb-3 md:pb-0">
-          <img
-            src="https://res.cloudinary.com/dador6eng/image/upload/v1728427586/yemisi/pexels-caio-46274_lstihp.jpg"
-            className="h-40 md:h-60 w-full object-cover"
-          />
-          <a href="https://yemisi-booking.vercel.app/self-discovery" className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6">
-            <h1>Self-Discovery Workbook </h1>
-            <h2>cost: $80</h2>
-          </a>
-        </div>
-        <div className="pb-3 md:pb-0">
-          <img
-            src="https://res.cloudinary.com/dador6eng/image/upload/v1728423687/yemisi/Healthy_living_jomrtl.jpg"
-            className="h-40 md:h-60 w-full object-cover"
-          />
-          <a href="https://yemisi-booking.vercel.app/healthy-living" className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6">
-            <h1>Healthy Living </h1>
-            <h2>cost: $100</h2>
-          </a>
-        </div>
-        <div className="pb-3 md:pb-0">
-          <img
-            src="https://res.cloudinary.com/dador6eng/image/upload/v1728423687/yemisi/Mental_wellness_kjhlhn.jpg"
-            className="h-40 md:h-60 w-full object-cover"
-          />
-          <a href="https://yemisi-booking.vercel.app/mental-wellness" className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6">
-            <h1>Mental wellness </h1>
-            <h2>cost: $100</h2>
-          </a>
-        </div>
-        <div className="pb-3 md:pb-0">
-          <img
-            src="https://res.cloudinary.com/dador6eng/image/upload/v1728423690/yemisi/Body_Goals_wbdtbd.jpg"
-            className="h-40 md:h-60 w-full object-cover"
-          />
-          <a href="https://yemisi-booking.vercel.app/physical-training" className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6">
-            <h1>Physical training </h1>
-            <h2>cost: $100</h2>
-          </a>
+          <div className="pb-3 md:pb-0">
+            <img
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423694/yemisi/Coaching_o8mvfs.jpg"
+              className="h-40 md:h-60 object-cover"
+            />
+            <a
+              href="https://yemisi-booking.vercel.app/mindfulness-session"
+              className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
+            >
+              <h1>1-1 Mindfulness session </h1>
+              <h2>cost: $50</h2>
+            </a>
+          </div>
+          <div className="pb-3 md:pb-0">
+            <img
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1728427586/yemisi/pexels-caio-46274_lstihp.jpg"
+              className="h-40 md:h-60 w-full object-cover"
+            />
+            <a
+              href="https://yemisi-booking.vercel.app/self-discovery"
+              className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
+            >
+              <h1>Self-Discovery Workbook </h1>
+              <h2>cost: $80</h2>
+            </a>
+          </div>
+          <div className="pb-3 md:pb-0">
+            <img
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423695/yemisi/Group_Coaching_g0zul8.jpg"
+              className="h-40 md:h-60 w-full object-cover"
+            />
+            <a
+              href="https://yemisi-booking.vercel.app/group-session"
+              className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
+            >
+              <h1>Group Session </h1>
+              <h2>cost: $50</h2>
+            </a>
+          </div>
+          
+          <div className="pb-3 md:pb-0">
+            <img
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423687/yemisi/Healthy_living_jomrtl.jpg"
+              className="h-40 md:h-60 w-full object-cover"
+            />
+            <a
+              href="https://yemisi-booking.vercel.app/healthy-living"
+              className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
+            >
+              <h1>Healthy Living </h1>
+              <h2>cost: $100</h2>
+            </a>
+          </div>
+          <div className="pb-3 md:pb-0">
+            <img
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423687/yemisi/Mental_wellness_kjhlhn.jpg"
+              className="h-40 md:h-60 w-full object-cover"
+            />
+            <a
+              href="https://yemisi-booking.vercel.app/mental-wellness"
+              className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
+            >
+              <h1>Mental wellness </h1>
+              <h2>cost: $100</h2>
+            </a>
+          </div>
+          <div className="pb-3 md:pb-0">
+            <img
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423690/yemisi/Body_Goals_wbdtbd.jpg"
+              className="h-40 md:h-60 w-full object-cover"
+            />
+            <a
+              href="https://yemisi-booking.vercel.app/physical-training"
+              className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
+            >
+              <h1>Physical training </h1>
+              <h2>cost: $100</h2>
+            </a>
+          </div>
         </div>
       </div>
-      </div>
-      
 
       <div className="p-10 md:p-20">
         <h1 className="text-center text-lg md:text-2xl font-semibold md:py-5">
           Reviews from Clients
         </h1>
         <div className="grid gap-10 space-y-6 md:space-y-0">
-        <div className="grid justify-items-center space-y-2 md:space-y-4 shadow-xl p-3">
-            <div className="grid justify-items-center">
+          <div className="grid justify-items-center space-y-2 md:space-y-4 shadow-xl p-3">
+          <div className="grid justify-items-center">
               <h1 className="text-lg md:text-2xl font-semibold">
-                Dr. Nuro M,. Tech
+                Farijun Faith
               </h1>
               <h1 className="italic">
-                Working with <strong>Oluwayemisi Adebayo</strong> has been a
-                game changer for our brand. Her understanding of both local and
-                international markets is unmatched. She helped us craft a
-                tailored strtegy that significantly grew our customerr base
-                within the first six months. Her keen insights and practical
-                recommendations make her an invaluable partner for brands
+                "Indeed, life is simple. We just need to live it freely". There
+                were one of the statements to me, and they broight clarity to
+                some difficult issues I was facing at the time. Thank you,
+                <strong>Oluwayemisi Adebayo</strong>
               </h1>
             </div>
+            
           </div>
         </div>
       </div>

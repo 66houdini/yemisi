@@ -80,7 +80,7 @@ export const PersonalizedHeader = ({ bg }: { bg: string }) => {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } md:flex space-y-4 md:space-y-0 space-x-0 md:space-x-10 mt-5 md:mt-0 text-sm font-medium items-center`}
+          } grid md:flex space-y-4 md:space-y-0 space-x-0 md:space-x-10 mt-5 md:mt-0 text-sm font-medium items-center`}
         >
           <a href="/consulting" className="pr-5 md:pr-0">
             CONSULTING

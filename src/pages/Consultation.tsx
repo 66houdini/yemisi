@@ -9,7 +9,7 @@ export default function Consultation() {
         <div className="relative">
           <div className=" brightness-50">
             <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727482703/MO1_msl1fp.jpg"
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1729791362/yemisi/MO1_dm8uox.jpg"
               alt="about"
               className=" h-[300px] md:h-[600px] w-full  object-cover object-left "
             />
@@ -258,21 +258,17 @@ export default function Consultation() {
         </h1>
         <div className="grid md:grid-cols-2 gap-5 space-y-6 md:space-y-0">
           <div className="grid justify-items-center space-y-2 md:space-y-4 shadow-xl p-3">
-            {/* <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
-              className=" h-32 md:h-60 w-32 md:w-60 rounded-md object-cover object-top"
-            /> */}
             <div className="grid justify-items-center">
               <h1 className="text-lg md:text-2xl font-semibold">
                 Oluyemi Odofa, Food NC
               </h1>
               <h1 className="italic ">
                 "We had ambitious plans to expand our market but we weren't
-                clear where to begin. <strong>Oluwayemisi</strong> provided clear, actionable
-                steps to help us break into new markets. Her approach to
-                building partnerships was strategic and throughful and her
-                guidance in navigating cultural and business differences enabled
-                us to succeed faster than we expected"
+                clear where to begin. <strong>Oluwayemisi</strong> provided
+                clear, actionable steps to help us break into new markets. Her
+                approach to building partnerships was strategic and throughful
+                and her guidance in navigating cultural and business differences
+                enabled us to succeed faster than we expected"
               </h1>
             </div>
           </div>
@@ -280,17 +276,18 @@ export default function Consultation() {
           <div className="grid justify-items-center space-y-2 md:space-y-4 shadow-xl p-3">
             <div className="grid justify-items-center">
               <h1 className="text-lg md:text-2xl font-semibold">
-                Farijun Faith
+                Dr. Nuro M,. Tech
               </h1>
               <h1 className="italic">
-                "Indeed, life is simple. We just need to live it freely". There
-                were one of the statements to me, and they broight clarity to
-                some difficult issues I was facing at the time. Thank you,
-                <strong>Oluwayemisi Adebayo</strong>
+                Working with <strong>Oluwayemisi Adebayo</strong> has been a
+                game changer for our brand. Her understanding of both local and
+                international markets is unmatched. She helped us craft a
+                tailored strtegy that significantly grew our customerr base
+                within the first six months. Her keen insights and practical
+                recommendations make her an invaluable partner for brands
               </h1>
             </div>
           </div>
-          
         </div>
       </div>
     </>

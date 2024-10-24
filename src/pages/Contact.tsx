@@ -99,7 +99,7 @@ export default function Contact() {
               <div className=" ">
                 <img
                   src="https://res.cloudinary.com/dador6eng/image/upload/v1727245909/yemisi/3_fo0gyy.jpg"
-                  className="border-2 h-[500px] md:h-auto "
+                  className="border-2 md:h-auto "
                 />
               </div>
               <h1 className="text-2xl text-center pt-5 pb-2">OLUWAYEMISI</h1>
