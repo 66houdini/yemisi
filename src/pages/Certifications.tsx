@@ -3,7 +3,7 @@ import { PersonalizedHeader } from "./IndexPage";
 const solutions = [
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807606/yemisi/AdvanceHE_logo_KH_thumbnail_z1ink8.png",
     texts: "Advance HE - Associate Fellowship",
   },
   // {
@@ -13,29 +13,29 @@ const solutions = [
   // },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245830/yemisi/16_elqfvu.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807605/yemisi/logo-lsba-1_yn85yg.png",
     texts:
       "Professional Certificate in Strategic Leadership - London School Of Business Administration",
   },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727274366/yemisi/consult.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807605/yemisi/CIM_jpmlxe.jpg",
     texts: "Member - Chartered Management Institute UK (CMI)",
   },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807605/yemisi/CMC_bol7cr.png",
     texts: "Certified - Management Consultant Nigeria (CMC)",
   },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727655657/C_C_6501_1_t28gpn.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807605/yemisi/london_graduate_school_logo_cvzkdr.jpg",
     texts:
       "Certified - Management Specialist with Distinction in Time Management, London Graduate School",
   },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727655883/C_C_6520_oibnwq.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807605/yemisi/logo-lsba-1_yn85yg.png",
     texts:
       "Advance Professional Certificate in Business Management - London School Of Business Administration",
   },
@@ -48,7 +48,7 @@ const solutions = [
 
   {
     year: 2023,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727308586/yemisi/31.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807605/yemisi/niversity_of_Beds_lyy9rp.jpg",
     texts: "M.Sc. - Digital Marketing - University of Bedfordshire, UK",
   },
   {
@@ -58,28 +58,28 @@ const solutions = [
   },
   {
     year: 2022,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245905/yemisi/3-copy_wfdeb2.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729808876/yemisi/Logo-1_dqmnog.png",
     texts: "PGD Mass communication- National Open University Of Nigeria",
   },
   {
     year: 2021,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807606/yemisi/Arcon_fzkw0u.png",
     texts:
       "Associate Fellow Advertising Practitioners Council of Nigeria (APCON)",
   },
   {
     year: 2017,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245913/yemisi/17_jcxrog.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807606/yemisi/P_M_jzie7w.png",
     texts: "Event Management - Precepts & Mentors Nigeria & Dubai",
   },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807608/yemisi/Institute_of_Management_Consultants_Nigeria_fuwatt.jpg",
     texts: "Fellow - Institute of Management Consultants Nigeria (FIMC)",
   },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727655657/C_C_6501_1_t28gpn.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807605/yemisi/Caochig_Academy_ngvtf9.png",
     texts: "TheCoaching Academy UK"
   }
 ];
@@ -127,7 +127,7 @@ export default function Certifications() {
           <div key={index} className="text-center py-4 space-y-2">
             <img
               src={item.img}
-              className="h-60 w-60 md:w-auto rounded-sm object-cover object-top"
+              className="h-60 w-60  md:w-auto rounded-sm object-cover"
               alt={item.texts}
             />
             <h1>{item.year}</h1>

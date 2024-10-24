@@ -16,12 +16,38 @@ export default function Projects() {
           </div>
           {/* <Header/> */}
           <PersonalizedHeader bg="bg-transparent" />
-         
+
           <div className=" border border-white text-white absolute w-[185px] h-[185px] md:w-[377px] md:h-[377px] top-24 md:top-44 left-10 md:left-20 flex">
             <h1 className="text-xl md:text-3xl font-semibold  py-20 md:py-40 pl-8 md:pl-16 flex">
               <h2 className="border-t border-white">PRO</h2>JECTS
             </h1>
           </div>
+        </div>
+      </div>
+
+      <div className="px-5 md:px-10 py-10 md:py-20 grid md:grid-cols-[2fr_1fr] text-blue-950 relative">
+        <img
+          src="https://res.cloudinary.com/dador6eng/image/upload/v1729811576/yemisi/lcca-rgb-640x361_llnggh.jpg"
+          className="h-[500px] py-8 w-full object-cover object-top relative z-0"
+        />
+        <div className="py-10 md:py-20 px-5 md:px-10 border-2 border-primary space-y-5 relative z-10 -mt-12 md:-mt-0 md:-ml-16 ">
+          <div className="text-lg md:text-2xl font-bold py-2 md:py-4 md:pl-12">
+            <h1 className="text-xl font-medium border-t border-primary w-fit">
+              London College of Contemporary Arts (LCCA)
+            </h1>
+            Lecture - Creative Business
+          </div>
+          <h1 className="text-sm font-light md:pl-12">
+            London College of Contemporary Arts (LCCA) offers students a unique
+            advantage by providing access to thriving business hubs,
+            unparalleled networking opportunities with industry leaders,
+            creative inspiration from diverse cultures and exposure to the
+            vibrant hospitality and fashion scenes, ensuring a comprehensive
+            education that prepares graduates for successful careers in these
+            dynamic industries. Our degrees are awarded by the University for
+            the Creative Arts, the leading arts university in the National
+            League Tables.
+          </h1>
         </div>
       </div>
 
@@ -251,7 +277,9 @@ export default function Projects() {
               FORT
             </h1>{" "}
             TYRES
-            <h2 className="text-base md:text-xl font-medium">Marketing Consultant</h2>
+            <h2 className="text-base md:text-xl font-medium">
+              Marketing Consultant
+            </h2>
           </div>
           <h1 className="w-[300px] text-sm font-light">
             We help individuals and businesses experience a stress free tyre
