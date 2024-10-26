@@ -3,7 +3,7 @@ import { PersonalizedHeader } from "./IndexPage";
 const solutions = [
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807606/yemisi/AdvanceHE_logo_KH_thumbnail_z1ink8.png",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729930408/yemisi/Untitled-1_zjodl9.png",
     texts: "Advance HE - Associate Fellowship",
   },
   // {
@@ -42,7 +42,7 @@ const solutions = [
 
   {
     year: 2016,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727655324/C_C_6443_1_lvvagn.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729930646/yemisi/images_esswex.jpg",
     texts: "Masters - Digital Marketing - Team7 Project, Nigeria",
   },
 
@@ -53,7 +53,7 @@ const solutions = [
   },
   {
     year: 2023,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245830/yemisi/16_elqfvu.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729930646/yemisi/images_esswex.jpg",
     texts: "Digital Marketing for CXOs",
   },
   {
@@ -87,17 +87,17 @@ const solutions = [
 const others = [
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729930646/yemisi/images_esswex.jpg",
     texts: "Certificate - Equality, Diversity & Inclusion, iHasco",
   },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245830/yemisi/16_elqfvu.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729930646/yemisi/images_esswex.jpg",
     texts: "Safeguarding Children and Young People - Thirtyone:eight",
   },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727274366/yemisi/consult.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729930646/yemisi/images_esswex.jpg",
     texts: "Health and Safety Essentials",
   },
 ];
