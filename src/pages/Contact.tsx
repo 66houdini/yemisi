@@ -98,8 +98,8 @@ export default function Contact() {
             <div className="justify-self-center md:justify-self-auto">
               <div className=" ">
                 <img
-                  src="https://res.cloudinary.com/dador6eng/image/upload/v1727245909/yemisi/3_fo0gyy.jpg"
-                  className="border-2 md:h-auto "
+                  src="https://res.cloudinary.com/dador6eng/image/upload/v1727274366/yemisi/consult.jpg"
+                  className="border-2 md:h-[300px] justify-self-center "
                 />
               </div>
               <h1 className="text-2xl text-center pt-5 pb-2">OLUWAYEMISI</h1>

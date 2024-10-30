@@ -101,6 +101,9 @@ const others = [
     texts: "Health and Safety Essentials",
   },
 ];
+
+const sortedSolutions = solutions.sort((a, b) => b.year - a.year);
+const sortedOthers = others.sort((a, b) => b.year - a.year);
 export default function Certifications() {
   return (
     <>
@@ -122,8 +125,8 @@ export default function Certifications() {
         </div>
       </div>
 
-      <div className="p-7 md:p-20 grid grid-cols-2 md:grid-cols-5 gap-4 bg-black text-white">
-        {solutions.map((item, index) => (
+      <div className="p-7 md:p-20 grid grid-cols-2 md:grid-cols-4 gap-10 bg-black text-white">
+        {sortedSolutions.map((item, index) => (
           <div key={index} className="text-center py-4 space-y-2">
             <img
               src={item.img}
@@ -141,7 +144,7 @@ export default function Certifications() {
           OTHER CERTIFICATIONS
         </h1>
         <div className=" grid grid-cols-2 md:grid-cols-4 gap-4 bg-black text-white">
-          {others.map((item, index) => (
+          {sortedOthers.map((item, index) => (
             <div key={index} className="text-center py-4 space-y-2">
               <img
                 src={item.img}

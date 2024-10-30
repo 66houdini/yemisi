@@ -154,7 +154,6 @@ export default function Coach() {
               </div>
             </div>
           </div>
-         
         </div>
       </div>
 
@@ -200,7 +199,7 @@ export default function Coach() {
               <h2>cost: $50</h2>
             </a>
           </div>
-          
+
           <div className="pb-3 md:pb-0">
             <img
               src="https://res.cloudinary.com/dador6eng/image/upload/v1728423687/yemisi/Healthy_living_jomrtl.jpg"
@@ -248,8 +247,8 @@ export default function Coach() {
           Reviews from Clients
         </h1>
         <div className="grid gap-10 space-y-6 md:space-y-0">
-          <div className="grid justify-items-center space-y-2 md:space-y-4 shadow-xl p-3">
-          <div className="grid justify-items-center">
+          <div className="grid justify-items-center space-y-2 md:space-y-4 shadow-xl p-3 w-1/2 justify-self-center">
+            <div className="grid justify-items-center">
               <h1 className="text-lg md:text-2xl font-semibold">
                 Farijun Faith
               </h1>
@@ -260,7 +259,6 @@ export default function Coach() {
                 <strong>Oluwayemisi Adebayo</strong>
               </h1>
             </div>
-            
           </div>
         </div>
       </div>

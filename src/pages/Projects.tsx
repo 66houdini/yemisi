@@ -35,7 +35,7 @@ export default function Projects() {
             <h1 className="text-xl font-medium border-t border-primary w-fit">
               London College of Contemporary Arts (LCCA)
             </h1>
-            Lecture - Creative Business
+            Lecturer - Creative Business
           </div>
           <h1 className="text-sm font-light md:pl-12">
             London College of Contemporary Arts (LCCA) offers students a unique
