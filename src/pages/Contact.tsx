@@ -61,7 +61,7 @@ export default function Contact() {
               className="w-full h-[500px] object-cover object-right md:object-center brightness-50"
             />
             <PersonalizedHeader bg="bg-transparent" />
-            <div className="absolute top-[150px] left-[40px] md:left-[300px] text-3xl md:text-5xl font-bold text-white">
+            <div className="absolute bottom-[100px] left-[40px] md:left-[300px] text-3xl md:text-5xl font-bold text-white">
               <h1>CONTACT OLUWAYEMISI</h1>
               <div className="flex pt-5 justify-center">
                 <Link className="text-base md:text-xl font-medium" to={"/home"}>
@@ -210,7 +210,7 @@ export default function Contact() {
             </div> */}
           </div>
 
-          <div className="md:w-[400px] bg-zinc-100 text-blue-950 p-10 py-5 mt-5 rounded-md md:absolute md:right-10 md:top-72">
+          <div className="md:w-[400px] bg-zinc-100 text-blue-950 p-10 py-5 mt-5 rounded-md md:absolute md:right-10 md:top-96">
             <form className="py-4" onSubmit={handleSubmit}>
               <label className="text-sm">Name</label>
               <input
