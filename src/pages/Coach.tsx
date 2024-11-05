@@ -27,8 +27,8 @@ export default function Coach() {
           <h2 className="font-light">
             In addition to consulting for businesses, I am also a passionate
             life coach. I’ve had the privilege of coaching individuals at
-            different stages of life, teenagers, young adults, adults in their
-            30s to 50s, and senior citizens, across various locations. My
+            different stages of life—teenagers, young adults, adults in their
+            30s to 50s, and senior citizens—across various locations. My
             coaching philosophy is grounded in the belief that emotional
             well-being and personal growth should be as normalized as physical
             fitness. I strive to help my clients live fulfilling lives, set
@@ -86,8 +86,8 @@ export default function Coach() {
                   <span className="text-primary text-xl md:text-3xl mr-2">
                     ✓
                   </span>{" "}
-                  <strong>Personal Growth:</strong> I will guide you through the
-                  key areas of personal development, helping you to improve your
+                  <strong>Personal Growth:</strong>I will guide you through the
+                  key areas of personal development, helping you improve your
                   mindset, habits, and overall well-being.
                 </li>
                 <li>
@@ -103,24 +103,24 @@ export default function Coach() {
                   <span className="text-primary text-xl md:text-3xl mr-2">
                     ✓
                   </span>
-                  <strong>Results-Driven Strategies: </strong>I will provide you
-                  with effective strategies designed to guarantee positive
-                  outcomes for your marketing efforts.
+                  <strong>Results-Driven Strategies: </strong> I will provide
+                  you with effective strategies designed to guarantee positive
+                  outcomes for your personal growth efforts.
                 </li>
                 <li>
                   <span className="text-primary text-xl md:text-3xl mr-2">
                     ✓
                   </span>
                   <strong>Actionable Growth System:</strong> We will create a
-                  step by step action that will help you achieve long-term
+                  step-by-step action plan to help you achieve long-term
                   personal growth.
                 </li>
                 <li>
                   <span className="text-primary text-xl md:text-3xl mr-2">
                     ✓
                   </span>
-                  <strong>Overcoming challenges:</strong> You will get help on
-                  solutions to bypass your current challenges
+                  <strong>Overcoming challenges:</strong> You will receive
+                  guidance on solutions to bypass your current challenges.
                 </li>
               </ul>
               <div className=" font-medium py-4">
@@ -169,7 +169,7 @@ export default function Coach() {
               href="https://yemisi-booking.vercel.app/mindfulness-session"
               className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
             >
-              <h1>1-1 Mindfulness session </h1>
+              <h1>1-1 Mindfulness Session </h1>
               <h2>cost: $50</h2>
             </a>
           </div>
@@ -222,7 +222,7 @@ export default function Coach() {
               href="https://yemisi-booking.vercel.app/mental-wellness"
               className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
             >
-              <h1>Mental wellness </h1>
+              <h1>Mental Wellness </h1>
               <h2>cost: $100</h2>
             </a>
           </div>
@@ -235,7 +235,7 @@ export default function Coach() {
               href="https://yemisi-booking.vercel.app/physical-training"
               className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
             >
-              <h1>Physical training </h1>
+              <h1>Physical Training </h1>
               <h2>cost: $100</h2>
             </a>
           </div>
@@ -253,8 +253,8 @@ export default function Coach() {
                 Farijun Faith
               </h1>
               <h1 className="italic">
-                "Indeed, life is simple. We just need to live it freely". There
-                were one of the statements to me, and they broight clarity to
+                "Indeed, life is simple. We just need to live it freely". This
+                was one of the statements made to me, and it brought clarity to
                 some difficult issues I was facing at the time. Thank you,
                 <strong>Oluwayemisi Adebayo</strong>
               </h1>

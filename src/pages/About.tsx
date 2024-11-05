@@ -44,7 +44,9 @@ export default function About() {
           <div className="absolute top-0 -right-3 md:right-3  w-[100px] h-[2px] bg-primary"></div>
 
           <div className="absolute -top-5 -right-3 md:right-3 h-[150px] w-[2px] bg-primary"></div>
-          <h1 className="text-xl md:text-3xl font-medium">Oluwayemisi T. Adebayo</h1>
+          <h1 className="text-xl md:text-3xl font-medium">
+            Oluwayemisi T. Adebayo
+          </h1>
           <h2 className="text-sm md:text-base">
             Welcome to my corner of the web! I am a dedicated Business
             Consultant and Life Coach, deeply passionate about helping
@@ -53,12 +55,12 @@ export default function About() {
           </h2>
           <h3 className="text-sm md:text-base">
             {" "}
-            A visionary international brand and digital marketing consultant,
-            lecturer, strategist, disruptive content creator, and entrepreneur.
-            With a deep-seated passion for innovation and an unwavering
-            commitment to excellence, I am dedicated to delivering tangible
-            results that not only meet but exceed expectations in today’s
-            fast-paced, ever-evolving digital landscape.
+            I am a visionary international brand and digital marketing
+            consultant, lecturer, strategist, disruptive content creator, and
+            entrepreneur. With a deep-seated passion for innovation and an
+            unwavering commitment to excellence, I am dedicated to delivering
+            tangible results that not only meet but exceed expectations in
+            today’s fast-paced, ever-evolving digital landscape.
           </h3>
           <h2 className="text-sm md:text-base">
             My mission is simple: to empower businesses and individuals to
@@ -111,7 +113,6 @@ export default function About() {
       <div className="px-5 md:px-20 py-5 md:py-10">
         <h1 className="text-xl md:text-3xl text-center pb-4">Gallery</h1>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-         
           <img
             src="https://res.cloudinary.com/dador6eng/image/upload/v1727655657/C_C_6501_1_t28gpn.jpg"
             className="rounded-md h-[260px] w-[260px]  object-top object-cover"
@@ -120,18 +121,18 @@ export default function About() {
             src="https://res.cloudinary.com/dador6eng/image/upload/v1727655883/C_C_6520_oibnwq.jpg"
             className="rounded-md h-[260px] w-[260px]  object-cover"
           />
-          <img 
-          src="https://res.cloudinary.com/dador6eng/image/upload/v1728521522/yemisi/NGO_project_ybs2ll.jpg"
-          className="rounded-md h-[260px] w-[260px]  object-cover"
+          <img
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1728521522/yemisi/NGO_project_ybs2ll.jpg"
+            className="rounded-md h-[260px] w-[260px]  object-cover"
           />
           <img
-          src="https://res.cloudinary.com/dador6eng/image/upload/v1728521520/yemisi/NGo__qcmeeb.jpg"
-          className="rounded-md h-[260px] w-[260px]  object-cover"
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1728521520/yemisi/NGo__qcmeeb.jpg"
+            className="rounded-md h-[260px] w-[260px]  object-cover"
           />
-          <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727245831/yemisi/9_vqnexh.jpg"
-          className="rounded-md h-[260px] w-full md:w-[260px] col-span-2  object-cover"
+          <img
+            src="https://res.cloudinary.com/dador6eng/image/upload/v1727245831/yemisi/9_vqnexh.jpg"
+            className="rounded-md h-[260px] w-full md:w-[260px] col-span-2  object-cover"
           />
-          
         </div>
       </div>
     </>

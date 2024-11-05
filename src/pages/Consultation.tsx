@@ -33,19 +33,20 @@ export default function Consultation() {
             fostering sustainable growth, and achieving strategic objectives.
             With over 9 years of experience, I have had the privilege of working
             with hundreds of businesses across various sectors—from dynamic
-            start-ups to established enterprises. My approach is rooted in
+            startups to established enterprises. My approach is rooted in
             delivering actionable insights, developing innovative strategies,
             and providing personalized solutions that drive measurable success.
           </h2>
           <h2 className="font-light">
             I am certified in Business Research, Management Consulting,
-            Strategic Leadership, Business Management and holds a masters in
-            Digital Marketing, with credentials from both the United Kingdom and
-            Nigeria. I have worked in different executive positions in companies
-            in the UK and Nigeria, also lecturing business management in
-            universities in London, United Kingdom. This diverse background
-            equips me with a unique perspective on the global market, enabling
-            me to tailor solutions that meet your specific needs and challenges.
+            Strategic Leadership, and Business Management, and I hold a master’s
+            in Digital Marketing, with credentials from both the United Kingdom
+            and Nigeria. I have worked in different executive positions in
+            companies in the UK and Nigeria, and I have also lectured in
+            Business Management at universities in London, United Kingdom. This
+            diverse background equips me with a unique perspective on the global
+            market, enabling me to tailor solutions that meet your specific
+            needs and challenges.
           </h2>
         </div>
         <div className="px-10 py-3 ">
@@ -93,7 +94,7 @@ export default function Consultation() {
                   <span className="text-primary text-xl md:text-3xl mr-2">
                     ✓
                   </span>
-                  <strong>Platform Identification:</strong>
+                  <strong>Platform Identification: </strong>
                   Together, we’ll identify the digital marketing platform that
                   best aligns with your business and brand needs.
                 </li>
@@ -109,7 +110,7 @@ export default function Consultation() {
                   <span className="text-primary text-xl md:text-3xl mr-2">
                     ✓
                   </span>
-                  <strong>Lead Conversion System:</strong>
+                  <strong>Lead Conversion System: </strong>
                   You will receive a proven system for converting leads into
                   sales, enhancing your overall profitability.
                 </li>
@@ -117,7 +118,7 @@ export default function Consultation() {
                   <span className="text-primary text-xl md:text-3xl mr-2">
                     ✓
                   </span>
-                  <strong>Effective Management Techniques:</strong>
+                  <strong>Effective Management Techniques: </strong>
                   Learn how to effectively manage your digital marketing space
                   to maximize efficiency and impact.
                 </li>
@@ -150,7 +151,7 @@ export default function Consultation() {
               </div>
               <div className="py-2 md:py-4 text-base md:text-xl italic">
                 Who needs this: Individuals - Executives - Political leaders -
-                Aspirants - Public Figures - Inflencers
+                Aspirants - Public Figures - Influencers
               </div>
             </div>
           </div>
@@ -172,7 +173,7 @@ export default function Consultation() {
                   <span className="text-primary text-xl md:text-3xl mr-2">
                     ✓
                   </span>
-                  <strong> Understanding of New Markets:</strong>I will guide
+                  <strong> Understanding of New Markets: </strong>I will guide
                   you through the process of identifying and evaluating
                   potential markets for expansion, helping you understand the
                   unique dynamics and opportunities they offer.
@@ -181,7 +182,7 @@ export default function Consultation() {
                   <span className="text-primary text-xl md:text-3xl mr-2">
                     ✓
                   </span>
-                  <strong>Market Selection:</strong>
+                  <strong>Market Selection: </strong>
                   Together, we’ll identify the most promising markets that align
                   with your business goals and resources, ensuring a strategic
                   and successful expansion.
@@ -190,15 +191,16 @@ export default function Consultation() {
                   <span className="text-primary text-xl md:text-3xl mr-2">
                     ✓
                   </span>
-                  <strong>Growth-Oriented Strategies:</strong>I will provide you
-                  with tailored strategies that will ensure positive outcomes in
-                  your target markets, helping you scale efficiently.
+                  <strong>Growth-Oriented Strategies: </strong>I will provide
+                  you with tailored strategies that will ensure positive
+                  outcomes in your target markets, helping you scale
+                  efficiently.
                 </li>
                 <li>
                   <span className="text-primary text-xl md:text-3xl mr-2">
                     ✓
                   </span>
-                  <strong>Customer Acquisition System:</strong>
+                  <strong>Customer Acquisition System: </strong>
                   You will receive a proven system for attracting and converting
                   new customers, increasing your market share and profitability.
                 </li>
@@ -206,7 +208,7 @@ export default function Consultation() {
                   <span className="text-primary text-xl md:text-3xl mr-2">
                     ✓
                   </span>
-                  <strong>Effective Market Management:</strong>
+                  <strong>Effective Market Management: </strong>
                   Learn how to manage your expansion efforts effectively,
                   ensuring smooth operations and sustainable growth in new
                   territories.
@@ -266,7 +268,7 @@ export default function Consultation() {
                 "We had ambitious plans to expand our market but we weren't
                 clear where to begin. <strong>Oluwayemisi</strong> provided
                 clear, actionable steps to help us break into new markets. Her
-                approach to building partnerships was strategic and throughful
+                approach to building partnerships was strategic and thoughtful
                 and her guidance in navigating cultural and business differences
                 enabled us to succeed faster than we expected"
               </h1>
@@ -282,9 +284,9 @@ export default function Consultation() {
                 Working with <strong>Oluwayemisi Adebayo</strong> has been a
                 game changer for our brand. Her understanding of both local and
                 international markets is unmatched. She helped us craft a
-                tailored strtegy that significantly grew our customerr base
+                tailored strategy that significantly grew our customer base
                 within the first six months. Her keen insights and practical
-                recommendations make her an invaluable partner for brands
+                recommendations make her an invaluable partner for brands.
               </h1>
             </div>
           </div>
