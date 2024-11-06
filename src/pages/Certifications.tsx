@@ -3,7 +3,7 @@ import { PersonalizedHeader } from "./IndexPage";
 const solutions = [
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729930408/yemisi/Untitled-1_zjodl9.png",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900462/ebconcept/Logo_2_qrarga.png",
     texts: "Advance HE - Associate Fellowship",
   },
   // {
@@ -13,18 +13,18 @@ const solutions = [
   // },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807605/yemisi/logo-lsba-1_yn85yg.png",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900459/ebconcept/Logo_jqrgfb.png",
     texts:
       "Professional Certificate in Strategic Leadership - London School Of Business Administration",
   },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807605/yemisi/CIM_jpmlxe.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900460/ebconcept/Logo_6_hpn7c3.png",
     texts: "Member - Chartered Management Institute UK (CMI)",
   },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807605/yemisi/CMC_bol7cr.png",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900458/ebconcept/Logo_5_fbggaq.png",
     texts: "Certified - Management Consultant Nigeria (CMC)",
   },
   {
@@ -35,14 +35,14 @@ const solutions = [
   },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807605/yemisi/logo-lsba-1_yn85yg.png",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900459/ebconcept/Logo_jqrgfb.png",
     texts:
       "Advance Professional Certificate in Business Management - London School Of Business Administration",
   },
 
   {
     year: 2016,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729930646/yemisi/images_esswex.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900462/ebconcept/Team7_project_ggotvm.png",
     texts: "Masters - Digital Marketing - Team7 Project, Nigeria",
   },
 
@@ -53,33 +53,33 @@ const solutions = [
   },
   {
     year: 2023,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729930646/yemisi/images_esswex.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900462/ebconcept/CXS_training_image_c0x20j.png",
     texts: "Digital Marketing for CXOs",
   },
   {
     year: 2022,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729808876/yemisi/Logo-1_dqmnog.png",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900461/ebconcept/Logo_10_wtu1jn.png",
     texts: "PGD Mass communication- National Open University Of Nigeria",
   },
   {
     year: 2021,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807606/yemisi/Arcon_fzkw0u.png",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900462/ebconcept/Logo_4_v5clmr.png",
     texts:
       "Associate Fellow Advertising Practitioners Council of Nigeria (APCON)",
   },
   {
     year: 2017,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807606/yemisi/P_M_jzie7w.png",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900458/ebconcept/Logo_7_zkmawq.png",
     texts: "Event Management - Precepts & Mentors Nigeria & Dubai",
   },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807608/yemisi/Institute_of_Management_Consultants_Nigeria_fuwatt.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900461/ebconcept/Logo_8_wl1l2q.png",
     texts: "Fellow - Institute of Management Consultants Nigeria (FIMC)",
   },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807605/yemisi/Caochig_Academy_ngvtf9.png",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900462/ebconcept/Logo_1_n9nnlm.png",
     texts: "TheCoaching Academy UK"
   }
 ];
@@ -87,17 +87,17 @@ const solutions = [
 const others = [
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729930646/yemisi/images_esswex.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900462/ebconcept/Ihasco_x2c6fe.png",
     texts: "Certificate - Equality, Diversity & Inclusion, iHasco",
   },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729930646/yemisi/images_esswex.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900460/ebconcept/Logo_11_pxwiyz.png",
     texts: "Safeguarding Children and Young People - Thirtyone:eight",
   },
   {
     year: 2024,
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1729930646/yemisi/images_esswex.jpg",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900462/ebconcept/Ihasco_x2c6fe.png",
     texts: "Health and Safety Essentials",
   },
 ];
@@ -125,7 +125,7 @@ export default function Certifications() {
         </div>
       </div>
 
-      <div className="p-7 md:p-20 grid grid-cols-2 md:grid-cols-4 gap-10 bg-black text-white">
+      <div className="p-7 md:p-20 grid grid-cols-2 md:grid-cols-4 gap-14 bg-black text-white">
         {sortedSolutions.map((item, index) => (
           <div key={index} className="text-center py-4 space-y-2">
             <img
