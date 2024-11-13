@@ -149,7 +149,7 @@ export default function IndexPage() {
         <div>
           <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727245918/yemisi/2_yf9z5n.jpg" />
         </div>
-        <div className="text-white content-center md:content-normal">
+        <div className="text-white content-center ">
           <div className="pb-3">
             <h1 className="font-medium">Oluwayemisi T. Adebayo</h1>
             <h2 className="text-2xl md:text-5xl font-black my-2 md:my-4 md:leading-tight">

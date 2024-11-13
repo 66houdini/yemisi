@@ -281,12 +281,12 @@ export default function Consultation() {
                 Dr. Nuro M,. Tech
               </h1>
               <h1 className="italic">
-                Working with <strong>Oluwayemisi Adebayo</strong> has been a
+                "Working with <strong>Oluwayemisi Adebayo</strong> has been a
                 game changer for our brand. Her understanding of both local and
                 international markets is unmatched. She helped us craft a
                 tailored strategy that significantly grew our customer base
                 within the first six months. Her keen insights and practical
-                recommendations make her an invaluable partner for brands.
+                recommendations make her an invaluable partner for brands."
               </h1>
             </div>
           </div>

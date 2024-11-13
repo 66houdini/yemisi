@@ -18,9 +18,10 @@ export default function Projects() {
           <PersonalizedHeader bg="bg-transparent" />
 
           <div className=" border border-white text-white absolute w-[185px] h-[185px] md:w-[377px] md:h-[377px] top-24 md:top-44 left-10 md:left-20 flex">
-            <h1 className="text-xl md:text-3xl font-semibold  py-20 md:py-40 pl-8 md:pl-16 flex">
-              <h2 className="border-t border-white">PRO</h2>JECTS
-            </h1>
+            <div className="text-xl md:text-3xl font-semibold py-20 md:py-40 md:pt-52 pl-8 md:pl-16 flex">
+              <h1>SELECTED <br/>  PROJECTS</h1>
+              {/* <span className="border-t border-white ml-2">PROJECTS</span> */}
+            </div>
           </div>
         </div>
       </div>
