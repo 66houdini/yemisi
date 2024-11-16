@@ -87,7 +87,7 @@ export default function About() {
           <h1 className="text-xl md:text-3xl">
             Ready to Transform Your Life and Business?
           </h1>
-          <h2 className="md:w-[600px] text-justify font-light text-sm md:text-base">
+          <h2 className="md:w-[600px] text-justify tracking-wide tracking-wide font-light text-sm md:text-base">
             If you are ready to set your goals, commit to your vision, and take
             action toward a brighter future, I am here to support you every step
             of the way. Together, we can craft a roadmap for success that aligns

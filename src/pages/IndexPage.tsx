@@ -197,7 +197,7 @@ export default function IndexPage() {
               className="md:h-[400px] md:w-[400px] object-cover object-top relative group-hover:brightness-50"
               alt="consultant"
             />
-            <h2 className="absolute top-5 md:top-10 p-5 md:p-10 text-sm md:text-base text-justify invisible group-hover:visible transition duration-700">
+            <h2 className="absolute top-5 md:top-10 p-5 md:p-10 text-sm md:text-base text-justify tracking-wide invisible group-hover:visible transition duration-700">
               As a business consultant, I specialize in transforming operations,
               fostering sustainable growth, and achieving strategic objectives.
               With over 9 years of experience, I have had the privilege of
@@ -217,7 +217,7 @@ export default function IndexPage() {
               className=" md:h-[400px] md:w-[400px] object-cover object-top relative group-hover:brightness-50"
               alt="consultant"
             />
-            <h2 className="absolute top-5 md:top-10 p-5 md:p-10 text-sm md:text-base text-justify invisible group-hover:visible transition duration-700">
+            <h2 className="absolute top-5 md:top-10 p-5 md:p-10 text-sm md:text-base text-justify tracking-wide invisible group-hover:visible transition duration-700">
               I am a passionate life coach. I
               have had the opportunity to coach professionals in various fields,
               including politics, education, oil and gas, and the creative
