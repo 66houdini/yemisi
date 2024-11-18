@@ -170,7 +170,7 @@ export default function Coach() {
               className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
             >
               <h1>1-1 Mindfulness Session </h1>
-              <h2>cost: $50</h2>
+              <h2>cost: $400</h2>
             </a>
           </div>
           <div className="pb-3 md:pb-0">
@@ -183,7 +183,7 @@ export default function Coach() {
               className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
             >
               <h1>Self-Discovery Workbook </h1>
-              <h2>cost: $80</h2>
+              <h2>cost: $200</h2>
             </a>
           </div>
           <div className="pb-3 md:pb-0">
@@ -196,7 +196,7 @@ export default function Coach() {
               className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
             >
               <h1>Group Session </h1>
-              <h2>cost: $50</h2>
+              <h2>cost: $1000</h2>
             </a>
           </div>
 
@@ -210,7 +210,7 @@ export default function Coach() {
               className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
             >
               <h1>Healthy Living </h1>
-              <h2>cost: $100</h2>
+              <h2>cost: $1200</h2>
             </a>
           </div>
           <div className="pb-3 md:pb-0">
@@ -223,7 +223,7 @@ export default function Coach() {
               className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
             >
               <h1>Mental Wellness </h1>
-              <h2>cost: $100</h2>
+              <h2>cost: $2000</h2>
             </a>
           </div>
           <div className="pb-3 md:pb-0">
@@ -236,7 +236,7 @@ export default function Coach() {
               className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
             >
               <h1>Physical Training </h1>
-              <h2>cost: $100</h2>
+              <h2>cost: $1100</h2>
             </a>
           </div>
         </div>
