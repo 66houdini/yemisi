@@ -126,7 +126,7 @@ export default function Coach() {
               <div className=" font-medium py-4">
                 <div className="flex space-x-3 py-2">
                   <h1 className=" content-center">
-                    Cost: Starter $100(1 hour)
+                    Cost: Starter $1000(2 hour)
                   </h1>
                   <Link
                     to="https://yemisi-booking.vercel.app/life-coaching"
@@ -138,7 +138,7 @@ export default function Coach() {
                 </div>
                 <div className="flex space-x-3 py-2">
                   <h1 className=" content-center">
-                    Advance: $400; Sessions ( 1 Month - 2 Meetings)
+                    Advance: $3000; (3 Month - 1 Meeting Monthly)
                   </h1>
                   <Link
                     to="https://yemisi-booking.vercel.app/life-coaching-advanced"
@@ -242,12 +242,12 @@ export default function Coach() {
         </div>
       </div>
 
-      <div className="p-10 md:p-20">
+      <div className="p-5 md:p-20">
         <h1 className="text-center text-lg md:text-2xl font-semibold md:py-5">
           Reviews from Clients
         </h1>
         <div className="grid gap-10 space-y-6 md:space-y-0">
-          <div className="grid justify-items-center space-y-2 md:space-y-4 shadow-xl p-3 w-1/2 justify-self-center">
+          <div className="grid justify-items-center space-y-2 md:space-y-4 shadow-xl p-3 md:w-1/2 justify-self-center">
             <div className="grid justify-items-center">
               <h1 className="text-lg md:text-2xl font-semibold">
                 Farijun Faith

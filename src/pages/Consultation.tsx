@@ -126,7 +126,7 @@ export default function Consultation() {
               <div className=" font-medium py-2 md:py-4">
                 <div className="flex space-x-3 py-2">
                   <h1 className=" content-center">
-                    Cost: Starter $100(1 hour)
+                    Cost: Starter $400(1 hour)
                   </h1>
                   <Link
                     to="https://yemisi-booking.vercel.app/digital-strategy"
@@ -138,7 +138,7 @@ export default function Consultation() {
                 </div>
                 <div className="flex space-x-3 py-2">
                   <h1 className=" content-center ">
-                    Advance: $400; Sessions ( 1 Month - 2 Meetings)
+                    Advance: $700; Sessions ( 1 Month - 2 Meetings)
                   </h1>
                   <Link
                     to="https://yemisi-booking.vercel.app/digital-strategy-advanced"
@@ -217,7 +217,7 @@ export default function Consultation() {
               <div className=" font-medium py-2 md:py-4">
                 <div className="flex space-x-3 py-2">
                   <h1 className=" content-center">
-                    Cost: Starter $100(1 hour)
+                    Cost: Starter $500(3 hour)
                   </h1>
                   <Link
                     to="https://yemisi-booking.vercel.app/market-expansion"
@@ -229,7 +229,7 @@ export default function Consultation() {
                 </div>
                 <div className="flex space-x-3 py-2">
                   <h1 className=" content-center">
-                    Advance: $400; Sessions ( 1 Month - 2 Meetings)
+                    Advance: $900; Sessions ( 1 Month - 2 Meetings)
                   </h1>
                   <Link
                     to="https://yemisi-booking.vercel.app/market-expansion-advanced"
@@ -254,7 +254,7 @@ export default function Consultation() {
         </div>
       </div>
 
-      <div className="p-10 md:p-20">
+      <div className="p-5 md:p-20">
         <h1 className="text-center text-lg md:text-2xl font-semibold md:py-5">
           Reviews from Clients
         </h1>

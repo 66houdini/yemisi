@@ -51,8 +51,8 @@
 
 export const PersonalizedHeader = ({ bg }: { bg: string }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const inactiveClass = `md:flex grid grid-cols-2 p-5 w-full justify-between text-white ${bg} absolute top-0 z-30`
-  const activeClass = `md:flex grid grid-cols-2 p-5 w-full justify-between text-white bg-black absolute top-0 z-30`
+  const inactiveClass = `md:flex grid grid-cols-2 p-5 w-full justify-between text-white ${bg} absolute top-0 z-30`;
+  const activeClass = `md:flex grid grid-cols-2 p-5 w-full justify-between text-white bg-black absolute top-0 z-30`;
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -218,14 +218,13 @@ export default function IndexPage() {
               alt="consultant"
             />
             <h2 className="absolute top-5 md:top-10 p-5 md:p-10 text-sm md:text-base text-justify tracking-wide invisible group-hover:visible transition duration-700">
-              I am a passionate life coach. I
-              have had the opportunity to coach professionals in various fields,
-              including politics, education, oil and gas, and the creative
-              industries, from artists to fashion designers. My coaching
-              philosophy is grounded in the belief that personal development
-              should be as normalized as physical training. I strive to help my
-              clients raise their standards, set ambitious goals, and take
-              decisive action toward achieving their dreams.
+              I am a passionate life coach. I have had the opportunity to coach
+              professionals in various fields, including politics, education,
+              oil and gas, and the creative industries, from artists to fashion
+              designers. My coaching philosophy is grounded in the belief that
+              personal development should be as normalized as physical training.
+              I strive to help my clients raise their standards, set ambitious
+              goals, and take decisive action toward achieving their dreams.
             </h2>
           </div>
         </div>
@@ -313,11 +312,11 @@ export default function IndexPage() {
               </h1>
               <h1 className="italic ">
                 "We had ambitious plans to expand our market but we weren't
-                clear where to begin. <strong>Oluwayemisi</strong> provided clear, actionable
-                steps to help us break into new markets. Her approach to
-                building partnerships was strategic and throughful and her
-                guidance in navigating cultural and business differences enabled
-                us to succeed faster than we expected"
+                clear where to begin. <strong>Oluwayemisi</strong> provided
+                clear, actionable steps to help us break into new markets. Her
+                approach to building partnerships was strategic and throughful
+                and her guidance in navigating cultural and business differences
+                enabled us to succeed faster than we expected"
               </h1>
             </div>
           </div>
@@ -392,8 +391,8 @@ export default function IndexPage() {
             <div className="relative grid  gap-4 md:pt-10 no-ml">
               <div id="news">
                 <img
-                  src="https://ttsinitiative.com/wp-content/uploads/2024/06/DSC_0306-1536x1024.jpg"
-                  className=" w-[250px] object-cover object-top float-left rounded-md pr-2"
+                  src="https://res.cloudinary.com/dador6eng/image/upload/v1732305714/yemisi/Project_4_copy_buqez0.jpg"
+                  className="h-40 md:h-36 w-full md:w-[250px] object-cover object-top md:float-left rounded-md pr-2"
                 />
                 <h3 className=" text-start text-lg md:text-xl font-medium ">
                   TTS Initiative Project 100 Schools Activation
@@ -416,8 +415,8 @@ export default function IndexPage() {
 
               <div id="news" className="pt-5">
                 <img
-                  src="https://ttsinitiative.com/wp-content/uploads/2023/12/pexels-yan-krukau-9002796-1536x1024.jpg"
-                  className=" w-[250px] object-cover object-top float-left rounded-md pr-2"
+                  src="https://res.cloudinary.com/dador6eng/image/upload/v1732305714/yemisi/DD_daenwg.jpg"
+                  className=" h-40 md:h-36 w-full md:w-[250px] object-cover object-top md:float-left rounded-md pr-2"
                 />
                 <h3 className=" text-start text-lg md:text-xl font-medium">
                   TTS Spotlight Program in December: A Unique Mentor-Mentee
@@ -437,6 +436,18 @@ export default function IndexPage() {
           </div>
         </h1>
       </div>
+
+      <div className="py-10 md:py-14 px-10 md:px-40 border border-black">
+        <h1 className="md:text-2xl pb-10">
+          Take the opportunity to connect with me by scheduling a free 15-minute
+          meeting. Let's discuss your goals, ideas, or challenges and explore
+          how I can assist you in achieving success!
+        </h1>
+        <a href="/" className="p-4 bg-black text-white">
+          Book Now
+        </a>
+      </div>
+
       <div
         className="relative grid place-content-center p-10 md:p-20 bg-cover bg-fixed bg-zinc-700  text-white text-center"
         // style={{ backgroundImage: 'url("/img/sideways.jpg")' }}

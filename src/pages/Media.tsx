@@ -27,7 +27,6 @@ export default function Media() {
             <div id="podcast" className="relative group justify-self-center">
               <iframe
                 className="pb-3 rounded-md md:h-[560px] md:w-[315px]"
-                
                 src="https://www.youtube.com/embed/U-CbJHz1PyQ"
                 title="YouTube video player"
                 frameBorder="0"
@@ -41,8 +40,8 @@ export default function Media() {
               <div className="relative grid  gap-4">
                 <div id="news">
                   <img
-                    src="https://ttsinitiative.com/wp-content/uploads/2024/06/DSC_0306-1536x1024.jpg"
-                    className=" w-[400px] object-cover object-top float-left rounded-md pr-2"
+                    src="https://res.cloudinary.com/dador6eng/image/upload/v1732305714/yemisi/Project_4_copy_buqez0.jpg"
+                    className=" h-[200px] w-[400px] object-cover object-top float-left rounded-md pr-2"
                   />
                   <h3 className=" text-start text-xl md:text-3xl font-medium underline">
                     TTS Initiative Project 100 Schools Activation
@@ -100,8 +99,8 @@ export default function Media() {
                 </div> */}
                 <div id="news" className="pt-5">
                   <img
-                    src="https://ttsinitiative.com/wp-content/uploads/2023/12/pexels-yan-krukau-9002796-1536x1024.jpg"
-                    className=" w-[400px] object-cover object-top float-left rounded-md pr-2"
+                    src="https://res.cloudinary.com/dador6eng/image/upload/v1732305714/yemisi/DD_daenwg.jpg"
+                    className=" h-[200px] w-[400px] object-cover object-top float-left rounded-md pr-2"
                   />
                   <h3 className=" text-start text-xl md:text-3xl font-medium underline">
                     TTS Spotlight Program in December: A Unique Mentor-Mentee

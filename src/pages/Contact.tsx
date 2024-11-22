@@ -99,7 +99,7 @@ export default function Contact() {
               <div className=" ">
                 <img
                   src="https://res.cloudinary.com/dador6eng/image/upload/v1727274366/yemisi/consult.jpg"
-                  className="border-2 md:h-[300px] justify-self-center "
+                  className="border-2 h-[400px] md:h-[300px] justify-self-center "
                 />
               </div>
               <h1 className="text-2xl text-center pt-5 pb-2">OLUWAYEMISI</h1>
@@ -189,7 +189,7 @@ export default function Contact() {
               </div>
             </div>
             <div className=" space-y-5 px-3">
-              <h2 className="text-2xl font-semibold">Let's Connect</h2>
+              <h2 className="text-2xl font-semibold text-center md:text-left">Let's Connect</h2>
               <h3 className=" italic  pb-5">
                 Get in Touch: Let’s work together to turn your vision into
                 reality. Feel free to reach out to discuss how we can

@@ -130,7 +130,7 @@ export default function Certifications() {
           <div key={index} className="text-center py-4 space-y-2">
             <img
               src={item.img}
-              className="h-60 w-60  md:w-auto rounded-sm object-cover"
+              className="md:h-60  md:w-auto rounded-sm object-cover"
               alt={item.texts}
             />
             <h1>{item.year}</h1>
@@ -139,7 +139,7 @@ export default function Certifications() {
         ))}
       </div>
 
-      <div className="p-14 md:p-20 pt-0 bg-black text-white">
+      <div className="p-7 md:p-20 pt-0 bg-black text-white">
         <h1 className=" py-3 text-3xl font-light border-b border-white">
           OTHER CERTIFICATIONS
         </h1>
@@ -148,7 +148,7 @@ export default function Certifications() {
             <div key={index} className="text-center py-4 space-y-2">
               <img
                 src={item.img}
-                className="h-60 w-60 rounded-sm object-cover object-top"
+                className="md:h-60 w-60 rounded-sm object-cover object-top"
                 alt={item.texts}
               />
               <h1>{item.year}</h1>
