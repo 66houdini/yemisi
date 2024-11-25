@@ -352,10 +352,20 @@ export default function IndexPage() {
         </div>
       </div>
 
+      <div className="py-10 md:py-14 px-10 md:px-40 border border-black">
+        <h1 className="md:text-2xl pb-10">
+          Take the opportunity to connect with me by scheduling a FREE 15-minute
+          meeting. Let's discuss your goals, ideas, challenges and explore solutions
+        </h1>
+        <a href="https://calendly.com/oluwayemisiadebayo/15min" className="p-4 bg-black text-white">
+          Book Now
+        </a>
+      </div>
+
       <div className=" justify-items-center">
         <h1 className="text-lg md:text-2xl font-semibold ">
-          <div className="text-center">
-            You can also check out my Podcasts & News
+          <div className="text-center pt-5 md:pt-10">
+             Podcasts & News
           </div>
 
           <div className="grid p-5 md:p-10 md:px-20 space-y-4 space-x-4">
@@ -437,16 +447,7 @@ export default function IndexPage() {
         </h1>
       </div>
 
-      <div className="py-10 md:py-14 px-10 md:px-40 border border-black">
-        <h1 className="md:text-2xl pb-10">
-          Take the opportunity to connect with me by scheduling a free 15-minute
-          meeting. Let's discuss your goals, ideas, or challenges and explore
-          how I can assist you in achieving success!
-        </h1>
-        <a href="/" className="p-4 bg-black text-white">
-          Book Now
-        </a>
-      </div>
+     
 
       <div
         className="relative grid place-content-center p-10 md:p-20 bg-cover bg-fixed bg-zinc-700  text-white text-center"
@@ -455,10 +456,10 @@ export default function IndexPage() {
         {/* <div className="absolute inset-0 bg-black/50 backdrop-filter backdrop-brightness-100"></div> */}
         <div className="z-10">
           <h1 className="md:text-xl">Sign Up for</h1>
-          <h1 className="text-3xl md:text-6xl font-bold pb-3">
+          <h1 className="text-2xl md:text-6xl font-bold pb-3">
             Oluwayemisi Newsletter
           </h1>
-          <span>
+          <span className="text-sm">
             Stay in the loop with the latest activities. Subscribe now!
           </span>
           <NewsletterForm />

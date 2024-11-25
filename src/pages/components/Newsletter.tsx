@@ -29,7 +29,7 @@ const NewsletterForm = () => {
       <input
         type="email"
         placeholder="Enter your email"
-        className="p-1.5 md:p-3 w-96 rounded-md"
+        className="p-1.5 md:p-3 w-full md:w-96 rounded-md"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required

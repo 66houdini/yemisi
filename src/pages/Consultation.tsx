@@ -123,11 +123,12 @@ export default function Consultation() {
                   to maximize efficiency and impact.
                 </li>
               </ul>
-              <div className=" font-medium py-2 md:py-4">
+              <div className="text-sm md:text-base font-medium py-2 md:py-4">
                 <div className="flex space-x-3 py-2">
-                  <h1 className=" content-center">
-                    Cost: Starter $400(1 hour)
-                  </h1>
+                  <div className=" content-center">
+                    Cost: Starter $400
+                    <h2 className="block md:inline">(1 hour)</h2>
+                  </div>
                   <Link
                     to="https://yemisi-booking.vercel.app/digital-strategy"
                     target="_blank"
@@ -137,9 +138,10 @@ export default function Consultation() {
                   </Link>
                 </div>
                 <div className="flex space-x-3 py-2">
-                  <h1 className=" content-center ">
-                    Advance: $700; Sessions ( 1 Month - 2 Meetings)
-                  </h1>
+                  <div className=" content-center ">
+                    Advance: $700; Sessions 
+                    <h2 className="block md:inline"> ( 1 Month - 2 Meetings)</h2>
+                  </div>
                   <Link
                     to="https://yemisi-booking.vercel.app/digital-strategy-advanced"
                     target="_blank"
@@ -156,7 +158,7 @@ export default function Consultation() {
             </div>
           </div>
 
-          <div className=" grid md:grid-cols-[1.2fr_0.8fr]  md:pt-20">
+          <div className=" grid md:grid-cols-[1.2fr_0.8fr]  md:pt-20 ">
             <div className="content   py-5 px-5 md:px-10 space-y-4">
               {/* <h1 className="text-xl medium">Business Consultation Packages </h1> */}
 
@@ -214,11 +216,12 @@ export default function Consultation() {
                   territories.
                 </li>
               </ul>
-              <div className=" font-medium py-2 md:py-4">
+              <div className=" font-medium py-2 md:py-4 text-sm md:text-base">
                 <div className="flex space-x-3 py-2">
-                  <h1 className=" content-center">
-                    Cost: Starter $500(3 hour)
-                  </h1>
+                  <div className=" content-center">
+                    Cost: Starter $500
+                    <h2 className="block md:inline">(3 hour)</h2>
+                  </div>
                   <Link
                     to="https://yemisi-booking.vercel.app/market-expansion"
                     target="_blank"
@@ -228,9 +231,10 @@ export default function Consultation() {
                   </Link>
                 </div>
                 <div className="flex space-x-3 py-2">
-                  <h1 className=" content-center">
-                    Advance: $900; Sessions ( 1 Month - 2 Meetings)
-                  </h1>
+                  <div className=" content-center">
+                    Advance: $900; Sessions 
+                    <h2 className="block md:inline">( 1 Month - 2 Meetings)</h2>
+                  </div>
                   <Link
                     to="https://yemisi-booking.vercel.app/market-expansion-advanced"
                     target="_blank"
