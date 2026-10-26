@@ -1,3 +1,54 @@
+// export const PersonalizedHeader = ({ bg }: { bg: string }) => {
+//   return (
+//     <>
+//       <div
+//         className={`md:flex grid p-5 w-full justify-between  text-white ${bg} absolute top-0 `}
+//       >
+//         <Link to="/" className=" text-2xl font-bold">
+//           OLUWAYEMISI ADEBAYO
+//         </Link>
+//         <div className=" space-x-5 md:space-x-10 text-sm  font-medium items-center grid grid-cols-3 md:flex">
+//           {/* <a href="/">HOME</a> */}
+//           <a href="/consulting">CONSULTING</a>
+//           <a href="/coaching">COACHING</a>
+//           <h1>
+//             {" "}
+//             <Dropdown />{" "}
+//           </h1>
+//           <h1>
+//             <MediaDropdown />
+//           </h1>
+//           <a href="/contact">CONTACT</a>
+//         </div>
+//         <div className="space-x-4 content-center">
+//           <Link to={"mailto: contact@yemisiadebayo.com"}>
+//             <FontAwesomeIcon icon={faEnvelope} />
+//           </Link>
+
+//           <Link to={"https://www.x.com/Iamyemisikayode"}>
+//             <FontAwesomeIcon icon={faXTwitter} />
+//           </Link>
+
+//           <Link to="https://www.linkedin.com/in/oluwayemisitopekayode/">
+//             <FontAwesomeIcon icon={faLinkedin} />
+//           </Link>
+
+//           <Link to="https://www.facebook.com/oluwayemisi.kayode.5">
+//             <FontAwesomeIcon icon={faFacebook} />
+//           </Link>
+
+//           <Link to="https://www.instagram.com/iamyemisikayode/">
+//             <FontAwesomeIcon icon={faInstagram} />
+//           </Link>
+//           <Link to="Iamyemisikayode">
+//             <FontAwesomeIcon icon={faThreads} />
+//           </Link>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
 export const PersonalizedHeader = ({ bg }: { bg: string }) => {
   const [isOpen, setIsOpen] = useState(false);
   const inactiveClass = `md:flex grid grid-cols-2 p-5 w-full justify-between text-white ${bg} absolute top-0 z-30`;
@@ -70,7 +121,7 @@ export const PersonalizedHeader = ({ bg }: { bg: string }) => {
   );
 };
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -87,61 +138,49 @@ import NewsletterForm from "./components/Newsletter";
 
 export default function IndexPage() {
   return (
-    <main className="bg-black text-white">
+    <>
       <PersonalizedHeader bg="bg-black" />
-
-      {/* Hero */}
+      {/* <div className="block md:hidden h-16"></div> */}
       <div
         id="intro"
-        className="relative flex min-h-screen flex-col bg-black overflow-hidden"
+        className="grid md:grid-cols-2 px-10 md:px-20 pt-10 pb-10 md:pb-0 md:pt-20 bg-black"
+        // style={{ backgroundImage: 'url("/img/crowd.jpg")' }}
       >
-        {/* Image layer behind the text */}
-        <img
-          src="https://res.cloudinary.com/dador6eng/image/upload/v1727245918/yemisi/2_yf9z5n.jpg"
-          alt="Oluwayemisi Tope Adebayo"
-          className="absolute inset-0 z-10 h-full w-full md:left-auto md:right-0 md:w-3/5 object-cover object-top opacity-80"
-        />
-        {/* Gradient so the text stays readable over the photo */}
-        <div className="absolute inset-0 z-10 bg-gradient-to-r from-black via-black/60 to-transparent"></div>
-
-        {/* Name stacked in front of the image */}
-        <div className="relative z-20 flex flex-1 items-center px-10 md:px-20 pt-24 md:pt-28 pb-6">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase leading-none tracking-tight">
-            Oluwayemisi
-            <br />
-            Tope
-            <br />
-            <span className="text-primary-light">Adebayo</span>
-          </h1>
+        <div>
+          <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727245918/yemisi/2_yf9z5n.jpg" />
         </div>
-        <a
-          href="#mission"
-          className="relative z-20 flex flex-col items-center gap-1 pb-8 text-primary-light uppercase tracking-widest text-sm font-semibold"
-        >
-          Scroll Down
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-5 h-5 animate-bounce"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="m19.5 8.25-7.5 7.5-7.5-7.5"
-            />
-          </svg>
-        </a>
+        <div className="text-white content-center ">
+          <div className="pb-3">
+            <h1 className="font-medium">Oluwayemisi T. Adebayo</h1>
+            <h2 className="text-2xl md:text-5xl font-black my-2 md:my-4 md:leading-tight">
+              I HAVE SUCCESSFULLY DRIVEN RESULTS FOR HUNDREDS OF BRANDS ACROSS
+              AFRICA & EUROPE
+            </h2>
+            <h3 className="font-medium md:text-xl">
+              Are you ready to enhance your brand's results? If so, let's get to
+              work.
+            </h3>
+          </div>
+          <div className="flex space-x-2 md:space-x-5">
+            <Link
+              to={"/consulting"}
+              className="py-1 md:py-2 px-1 md:px-6 bg-primary text-white rounded-md text-sm md:text-base"
+            >
+              Book Me - Consultation
+            </Link>
+            <Link
+              to={"/coaching"}
+              className="py-1 md:py-2 px-1 md:px-6 bg-primary text-white rounded-md text-sm md:text-base"
+            >
+              Book Me - Coaching
+            </Link>
+          </div>
+        </div>
       </div>
 
-      <div id="mission" className="p-5 md:p-10 px-10 md:px-20 text-center">
-        <h1 className="text-xl md:text-3xl font-bold pb-5 uppercase tracking-wide">
-          Mission
-        </h1>
-        <div className="mx-auto mb-5 h-[2px] w-16 bg-primary-light"></div>
-        <h2 className="text-sm md:text-base text-zinc-300">
+      <div className="p-5 md:p-10 px-10 md:px-20  text-center">
+        <h1 className="text-xl md:text-3xl font-bold pb-5">Mission</h1>
+        <h2 className="text-sm md:text-base">
           To empower businesses and individuals to thrive in today’s competitive
           and evolving world. With the right strategies, insights, and support,
           I believe anyone can turn their aspirations into reality.
@@ -192,11 +231,11 @@ export default function IndexPage() {
       </div>
 
       <div className="relative">
-        <div className="absolute top-7 md:top-14 left-[50px] md:left-[100px] w-[50px] md:w-[100px] h-[2px] bg-primary-light"></div>
+        <div className="absolute top-7 md:top-14 left-[50px] md:left-[100px] w-[50px] md:w-[100px] h-[2px] bg-primary"></div>
 
-        <div className="absolute top-7 md:top-14 left-[50px] md:left-[100px] h-[75px] md:h-[150px] w-[2px] bg-primary-light"></div>
+        <div className="absolute top-7 md:top-14 left-[50px] md:left-[100px] h-[75px] md:h-[150px] w-[2px] bg-primary"></div>
 
-        <div className="pt-7 md:pt-14 pb-12 md:pb-24 px-10 md:px-20 grid md:grid-cols-2 text-white">
+        <div className="pt-7 md:pt-14 pb-12 md:pb-24 px-10 md:px-20 grid md:grid-cols-2 text-blue-950">
           <div
             id="1"
             className="pt-7 md:pt-14 px-7 md:px-14 space-y-3.5 md:space-y-7 content-end"
@@ -205,7 +244,7 @@ export default function IndexPage() {
               <h2 className="text-lg md:text-2xl font-medium">Over</h2> THE PAST
               DECADE
             </h1>
-            <h1 className="font-light text-sm text-zinc-300">
+            <h1 className="font-light text-sm">
               I have honed my skills and expertise in the realms of brand
               development, digital marketing, and strategic planning. My journey
               has been marked by a relentless pursuit of knowledge and a desire
@@ -223,6 +262,11 @@ export default function IndexPage() {
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
+            {/* <iframe src="https://www.youtube.com/embed/1w7OgIMMRc4" className="h-[300px] w-full object-cover"></iframe> */}
+            {/* <img
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245905/yemisi/3-copy_wfdeb2.jpg"
+              className=" h-[280px] w-full object-top object-cover"
+            /> */}
           </div>
         </div>
       </div>
@@ -230,13 +274,14 @@ export default function IndexPage() {
       <div className="relative text-white">
         <div>
           <img
+            // src="https://res.cloudinary.com/dador6eng/image/upload/v1727245842/yemisi/12_g3do9n.jpg"
             src="https://res.cloudinary.com/dador6eng/image/upload/v1728423689/yemisi/PSX_20241008_210120_ak59qj.jpg"
             className=" h-[550px] w-full object-cover object-top relative brightness-50"
           />
         </div>
-        <div className=" absolute -top-3 md:-top-6 left-5 md:left-20 md:w-[500px] border-2 border-primary-light bg-black/60 pt-10 md:pt-40 px-7 md:px-14 pb-10 md:pb-20 space-y-1.5 md:space-y-3">
+        <div className=" absolute -top-3 md:-top-6 left-5 md:left-20 md:w-[500px] border-2 border-primary pt-10 md:pt-40 px-7 md:px-14 pb-10 md:pb-20 space-y-1.5 md:space-y-3">
           <div className="w-[175px] md:w-[350px] text-xl md:text-3xl font-bold ">
-            <h1 className=" text-lg md:text-2xl font-medium border-t border-primary-light w-fit">
+            <h1 className=" text-lg md:text-2xl font-medium border-t border-primary w-fit">
               As an
             </h1>{" "}
             EXPERIENCED CONSULTANT & LECTURER
@@ -252,16 +297,20 @@ export default function IndexPage() {
       </div>
 
       <div className="p-10 md:p-20">
-        <h1 className="text-center text-lg md:text-2xl font-semibold md:py-5 uppercase tracking-wide">
+        <h1 className="text-center text-lg md:text-2xl font-semibold md:py-5">
           Reviews from Clients
         </h1>
         <div className="grid md:grid-cols-2 gap-5 space-y-6 md:space-y-0">
-          <div className="grid justify-items-center space-y-2 md:space-y-4 border border-zinc-800 bg-zinc-950 rounded-md p-3">
+          <div className="grid justify-items-center space-y-2 md:space-y-4 shadow-xl p-3">
+            {/* <img
+              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245880/yemisi/6-copy_gqgboh.jpg"
+              className=" h-32 md:h-60 w-32 md:w-60 rounded-md object-cover object-top"
+            /> */}
             <div className="grid justify-items-center">
-              <h1 className="text-lg md:text-2xl font-semibold text-primary-light">
+              <h1 className="text-lg md:text-2xl font-semibold">
                 Oluyemi Odofa, Food NC
               </h1>
-              <h1 className="italic text-zinc-300">
+              <h1 className="italic ">
                 "We had ambitious plans to expand our market but we weren't
                 clear where to begin. <strong>Oluwayemisi</strong> provided
                 clear, actionable steps to help us break into new markets. Her
@@ -272,12 +321,12 @@ export default function IndexPage() {
             </div>
           </div>
 
-          <div className="grid justify-items-center space-y-2 md:space-y-4 border border-zinc-800 bg-zinc-950 rounded-md p-3">
+          <div className="grid justify-items-center space-y-2 md:space-y-4 shadow-xl p-3">
             <div className="grid justify-items-center">
-              <h1 className="text-lg md:text-2xl font-semibold text-primary-light">
+              <h1 className="text-lg md:text-2xl font-semibold">
                 Farijun Faith
               </h1>
-              <h1 className="italic text-zinc-300">
+              <h1 className="italic">
                 "Indeed, life is simple. We just need to live it freely". There
                 were one of the statements to me, and they broight clarity to
                 some difficult issues I was facing at the time. Thank you,
@@ -285,12 +334,12 @@ export default function IndexPage() {
               </h1>
             </div>
           </div>
-          <div className="grid justify-items-center space-y-2 md:space-y-4 border border-zinc-800 bg-zinc-950 rounded-md p-3">
+          <div className="grid justify-items-center space-y-2 md:space-y-4 shadow-xl p-3">
             <div className="grid justify-items-center">
-              <h1 className="text-lg md:text-2xl font-semibold text-primary-light">
+              <h1 className="text-lg md:text-2xl font-semibold">
                 Dr. Nuro M,. Tech
               </h1>
-              <h1 className="italic text-zinc-300">
+              <h1 className="italic">
                 Working with <strong>Oluwayemisi Adebayo</strong> has been a
                 game changer for our brand. Her understanding of both local and
                 international markets is unmatched. She helped us craft a
@@ -303,27 +352,36 @@ export default function IndexPage() {
         </div>
       </div>
 
-      <div className="py-10 md:py-14 px-10 md:px-40 mx-10 md:mx-20 mb-10 border border-primary-light">
+      <div className="py-10 md:py-14 px-10 md:px-40 border border-black">
         <h1 className="md:text-2xl pb-10">
           Take the opportunity to connect with me by scheduling a FREE 15-minute
           meeting. Let's discuss your goals, ideas, challenges and explore solutions
         </h1>
-        <a
-          href="https://calendly.com/oluwayemisiadebayo/15min"
-          className="p-4 bg-primary text-white rounded-md"
-        >
+        <a href="https://calendly.com/oluwayemisiadebayo/15min" className="p-4 bg-black text-white">
           Book Now
         </a>
       </div>
 
       <div className=" justify-items-center">
         <h1 className="text-lg md:text-2xl font-semibold ">
-          <div className="text-center pt-5 md:pt-10 uppercase tracking-wide">
-            Podcasts & News
+          <div className="text-center pt-5 md:pt-10">
+             Podcasts & News
           </div>
 
           <div className="grid p-5 md:p-10 md:px-20 space-y-4 space-x-4">
             <div id="1" className="relative group justify-self-center">
+              {/* <iframe
+                className="pb-3 rounded-md"
+                // height="560"
+                // width="315"
+                height="500"
+                width="1500"
+                src="https://www.youtube.com/embed/U-CbJHz1PyQ"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe> */}
               <iframe
                 className="pb-3 md:w-[900px] md:h-[400px]"
                 src="https://www.youtube.com/embed/U-CbJHz1PyQ?si=hk9NimlhlZZEH60Q"
@@ -333,6 +391,7 @@ export default function IndexPage() {
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               ></iframe>
+              {/* <img src="https://res.cloudinary.com/dador6eng/image/upload/v1727349801/20_sipaxb.jpg" className=" rounded-md h-[300px] w-full object-cover" /> */}
               <div className="bg-primary p-3 w-fit rounded-md ">
                 <Link to="/media#podcast" className=" text-white">
                   Podcasts
@@ -348,7 +407,7 @@ export default function IndexPage() {
                 <h3 className=" text-start text-lg md:text-xl font-medium ">
                   TTS Initiative Project 100 Schools Activation
                 </h3>
-                <h1 className="text-start text-zinc-400 text-sm  font-light ">
+                <h1 className="text-start text-zinc-700 text-sm  font-light ">
                   Last week, we had the incredible opportunity to empower
                   another set of teens through our #100SchoolsEmpowerment
                   program. These bright young minds were guided on how to
@@ -373,7 +432,7 @@ export default function IndexPage() {
                   TTS Spotlight Program in December: A Unique Mentor-Mentee
                   Programme Launch
                 </h3>
-                <h1 className="text-start text-zinc-400 text-sm  font-light ">
+                <h1 className="text-start text-zinc-700 text-sm  font-light ">
                   In an exciting development, January 2024 marks the launch of
                   TTS spotlight, a unique mentor-mentee programme designed to
                   foster guidance and connection within our community. Whether
@@ -388,13 +447,19 @@ export default function IndexPage() {
         </h1>
       </div>
 
-      <div className="relative grid place-content-center p-10 md:p-20 bg-black border-t border-zinc-800 text-white text-center">
+     
+
+      <div
+        className="relative grid place-content-center p-10 md:p-20 bg-cover bg-fixed bg-zinc-700  text-white text-center"
+        // style={{ backgroundImage: 'url("/img/sideways.jpg")' }}
+      >
+        {/* <div className="absolute inset-0 bg-black/50 backdrop-filter backdrop-brightness-100"></div> */}
         <div className="z-10">
           <h1 className="md:text-xl">Sign Up for</h1>
           <h1 className="text-2xl md:text-6xl font-bold pb-3">
             Oluwayemisi Newsletter
           </h1>
-          <span className="text-sm text-zinc-300">
+          <span className="text-sm">
             Stay in the loop with the latest activities. Subscribe now!
           </span>
           <NewsletterForm />
@@ -484,6 +549,6 @@ export default function IndexPage() {
           </div>
         </div>
       </div>
-    </main>
+    </>
   );
 }

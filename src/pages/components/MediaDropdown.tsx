@@ -1,11 +1,17 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+
+import React from 'react'
 
 const solutions = [
   { name: 'PODCAST',  href: '/media#podcast',  },
   { name: 'NEWS', href: '/media#news'},
-
+  
+]
+const callsToAction = [
+  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
+  { name: 'Contact sales', href: '#', icon: PhoneIcon },
 ]
 
 export default function MediaDropdown() {
