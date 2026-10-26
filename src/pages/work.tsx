@@ -74,8 +74,7 @@ export default function Work() {
               </li>
             </ul>
             <h1 className=" font-medium py-4">
-              Cost: Starter $100(1 hour) | Advance: $400; Sessions ( 1 Month - 2
-              Meetings)
+              Starter (1 hour) | Advanced Sessions (1 Month - 2 Meetings)
             </h1>
             <div className="flex gap-4">
             <Link to="https://yemisi-booking.vercel.app/digital-strategy" target="_blank" className="px-4 py-2 bg-pink-400 rounded-md" >Book Now- starter</Link>
@@ -125,8 +124,7 @@ export default function Work() {
               </li>
             </ul>
             <h1 className="text-lg font-medium py-4">
-              Cost: Starter $100(1 hour) | Advance: $400; Sessions ( 1 Month - 2
-              Meetings)
+              Starter (1 hour) | Advanced Sessions (1 Month - 2 Meetings)
             </h1>
             <div className="flex gap-4">
             <Link to="https://yemisi-booking.vercel.app/market-expansion" target="_blank" className="px-4 py-2 bg-pink-400 rounded-md" >Book Now- starter</Link>
@@ -174,7 +172,7 @@ export default function Work() {
               </li>
             </ul>
             <h1 className="text-lg font-medium py-4">
-              Cost: Starter $100(1 hour) | Advance: $400; Sessions (3 Months - 1 meeting monthly)
+              Starter (1 hour) | Advanced Sessions (3 Months - 1 meeting monthly)
             </h1>
             <div className="flex gap-4">
             <Link to="https://yemisi-booking.vercel.app/life-coaching" target="_blank" className="px-4 py-2 bg-pink-400 rounded-md" >Book Now- starter</Link>

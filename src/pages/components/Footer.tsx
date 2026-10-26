@@ -25,8 +25,6 @@ const Footer = () => {
         <div id="2">
           <div className="pb-2  ">
             <h1 className="underline">Contact:</h1>
-            <h1>+44 7440594936</h1>
-            <h1> +2349091124086 </h1>
             <h1>Email : contact@yemisiadebayo.com</h1>
           </div>
           <div className="space-y-1.5">
@@ -96,6 +94,28 @@ const Footer = () => {
                 />
               </svg>
               Reykjavik Iceland
+            </h1>
+            <h1 className="flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+              Boston, United States
             </h1>
           </div>
         </div>

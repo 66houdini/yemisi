@@ -1,4 +1,5 @@
 import { PersonalizedHeader } from "./IndexPage";
+import HorizontalScroller from "./components/HorizontalScroller";
 
 const solutions = [
   {
@@ -125,38 +126,56 @@ export default function Certifications() {
         </div>
       </div>
 
-      <div className="p-7 md:p-20 grid grid-cols-2 md:grid-cols-4 gap-14 bg-black text-white">
-        {sortedSolutions.map((item, index) => (
-          <div key={index} className="text-center py-4 space-y-2">
-            <img
-              src={item.img}
-              className="md:h-60  md:w-auto rounded-sm object-cover"
-              alt={item.texts}
-            />
-            <h1>{item.year}</h1>
-            <h2 className="font-light text-sm md:text-base">{item.texts}</h2>
-          </div>
-        ))}
-      </div>
-
-      <div className="p-7 md:p-20 pt-0 bg-black text-white">
-        <h1 className=" py-3 text-3xl font-light border-b border-white">
-          OTHER CERTIFICATIONS
+      <section className="bg-black text-white px-5 md:px-20 pt-12 md:pt-20 pb-8">
+        <p className="text-primary-light uppercase tracking-widest text-sm font-semibold">
+          Credentials
+        </p>
+        <h1 className="text-3xl md:text-5xl font-black uppercase tracking-tight pb-6 md:pb-10">
+          Qualifications &amp; Memberships
         </h1>
-        <div className=" grid grid-cols-2 md:grid-cols-4 gap-4 bg-black text-white">
-          {sortedOthers.map((item, index) => (
-            <div key={index} className="text-center py-4 space-y-2">
-              <img
-                src={item.img}
-                className="md:h-60 w-60 rounded-sm object-cover object-top"
-                alt={item.texts}
-              />
-              <h1>{item.year}</h1>
-              <h2 className="font-light">{item.texts}</h2>
-            </div>
+        <HorizontalScroller>
+          {sortedSolutions.map((item, index) => (
+            <CertCard key={index} item={item} />
           ))}
+        </HorizontalScroller>
+      </section>
+
+      <section className="bg-black text-white px-5 md:px-20 pt-8 md:pt-12 pb-16 md:pb-24">
+        <div className="mb-6 md:mb-10 border-t border-zinc-800 pt-8 md:pt-12">
+          <p className="text-primary-light uppercase tracking-widest text-sm font-semibold">
+            More
+          </p>
+          <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tight">
+            Other Certifications
+          </h2>
         </div>
-      </div>
+        <HorizontalScroller>
+          {sortedOthers.map((item, index) => (
+            <CertCard key={index} item={item} />
+          ))}
+        </HorizontalScroller>
+      </section>
     </>
+  );
+}
+
+function CertCard({ item }: { item: { year: number; img: string; texts: string } }) {
+  return (
+    <div className="w-64 md:w-72 shrink-0 snap-start overflow-hidden rounded-md border border-zinc-800 bg-zinc-950 transition hover:border-primary-light">
+      <div className="flex h-44 md:h-52 items-center justify-center bg-white p-4">
+        <img
+          src={item.img}
+          alt={item.texts}
+          loading="lazy"
+          className="max-h-full max-w-full object-contain"
+        />
+      </div>
+      <div className="space-y-2 p-4">
+        <span className="text-primary-light font-semibold">{item.year}</span>
+        <h3 className="font-light text-sm md:text-base text-zinc-200">
+          {item.texts}
+        </h3>
+      </div>
+    </div>
   );
 }

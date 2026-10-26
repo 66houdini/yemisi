@@ -126,7 +126,7 @@ export default function Coach() {
               <div className=" font-medium py-4">
                 <div className="flex space-x-3 py-2">
                   <h1 className=" content-center">
-                    Cost: Starter $1000(2 hour)
+                    Starter Session (2 hours)
                   </h1>
                   <Link
                     to="https://yemisi-booking.vercel.app/life-coaching"
@@ -138,7 +138,7 @@ export default function Coach() {
                 </div>
                 <div className="flex space-x-3 py-2">
                   <h1 className=" content-center">
-                    Advance: $3000; (3 Month - 1 Meeting Monthly)
+                    Advanced Sessions (3 Months - 1 Meeting Monthly)
                   </h1>
                   <Link
                     to="https://yemisi-booking.vercel.app/life-coaching-advanced"
@@ -153,91 +153,6 @@ export default function Coach() {
                 For partnership and speaking engagements please send us an email
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="px-5 md:px-20 pt-10">
-        <h1 className="border-b border-black text-3xl"></h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-10 mt-5 ">
-          <div className="pb-3 md:pb-0">
-            <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423694/yemisi/Coaching_o8mvfs.jpg"
-              className="h-40 md:h-60 object-cover"
-            />
-            <a
-              href="https://yemisi-booking.vercel.app/mindfulness-session"
-              className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
-            >
-              <h1>1-1 Mindfulness Session </h1>
-              <h2>cost: $400</h2>
-            </a>
-          </div>
-          <div className="pb-3 md:pb-0">
-            <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1728427586/yemisi/pexels-caio-46274_lstihp.jpg"
-              className="h-40 md:h-60 w-full object-cover"
-            />
-            <a
-              href="https://yemisi-booking.vercel.app/self-discovery"
-              className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
-            >
-              <h1>Self-Discovery Workbook </h1>
-              <h2>cost: $200</h2>
-            </a>
-          </div>
-          <div className="pb-3 md:pb-0">
-            <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423695/yemisi/Group_Coaching_g0zul8.jpg"
-              className="h-40 md:h-60 w-full object-cover"
-            />
-            <a
-              href="https://yemisi-booking.vercel.app/group-session"
-              className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
-            >
-              <h1>Group Session </h1>
-              <h2>cost: $1000</h2>
-            </a>
-          </div>
-
-          <div className="pb-3 md:pb-0">
-            <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423687/yemisi/Healthy_living_jomrtl.jpg"
-              className="h-40 md:h-60 w-full object-cover"
-            />
-            <a
-              href="https://yemisi-booking.vercel.app/healthy-living"
-              className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
-            >
-              <h1>Healthy Living </h1>
-              <h2>cost: $1200</h2>
-            </a>
-          </div>
-          <div className="pb-3 md:pb-0">
-            <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423687/yemisi/Mental_wellness_kjhlhn.jpg"
-              className="h-40 md:h-60 w-full object-cover"
-            />
-            <a
-              href="https://yemisi-booking.vercel.app/mental-wellness"
-              className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
-            >
-              <h1>Mental Wellness </h1>
-              <h2>cost: $2000</h2>
-            </a>
-          </div>
-          <div className="pb-3 md:pb-0">
-            <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1728423690/yemisi/Body_Goals_wbdtbd.jpg"
-              className="h-40 md:h-60 w-full object-cover"
-            />
-            <a
-              href="https://yemisi-booking.vercel.app/physical-training"
-              className="flex justify-between text-xs md:text-lg border-b-black border-b pt-2 md:pt-6"
-            >
-              <h1>Physical Training </h1>
-              <h2>cost: $1100</h2>
-            </a>
           </div>
         </div>
       </div>
