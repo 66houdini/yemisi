@@ -4,6 +4,8 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 const solutions = [
   { name: 'BIO',  href: '/about',  },
+  { name: 'CONSULTING', href: '/consulting' },
+  { name: 'COACHING', href: '/coaching' },
   { name: 'PROJECTS', href: '/projects'},
   {name: "CERTIFICATIONS", href: "/certifications"}
 

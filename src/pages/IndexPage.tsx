@@ -31,11 +31,7 @@ export const PersonalizedHeader = ({ bg }: { bg: string }) => {
             isOpen ? "block" : "hidden"
           } grid md:flex space-y-4 md:space-y-0 space-x-0 md:space-x-10 mt-5 md:mt-0 text-sm font-medium items-center`}
         >
-          <a href="/consulting" className="pr-5 md:pr-0">
-            CONSULTING
-          </a>
-          <a href="/coaching">COACHING</a>
-          <h1>
+          <h1 className="pr-5 md:pr-0">
             <Dropdown />
           </h1>
           <h1>
@@ -84,7 +80,75 @@ import {
 import Dropdown from "./components/Dropdown";
 import MediaDropdown from "./components/MediaDropdown";
 import NewsletterForm from "./components/Newsletter";
+import HorizontalScroller from "./components/HorizontalScroller";
 
+const credentialLogos = [
+  { name: "Advance HE", img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900462/ebconcept/Logo_2_qrarga.png" },
+  { name: "London School of Business Administration", img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900459/ebconcept/Logo_jqrgfb.png" },
+  { name: "Chartered Management Institute UK", img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900460/ebconcept/Logo_6_hpn7c3.png" },
+  { name: "Certified Management Consultant Nigeria", img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900458/ebconcept/Logo_5_fbggaq.png" },
+  { name: "University of Bedfordshire", img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807605/yemisi/niversity_of_Beds_lyy9rp.jpg" },
+  { name: "APCON", img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900462/ebconcept/Logo_4_v5clmr.png" },
+  { name: "Institute of Management Consultants Nigeria", img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900461/ebconcept/Logo_8_wl1l2q.png" },
+  { name: "The Coaching Academy UK", img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900462/ebconcept/Logo_1_n9nnlm.png" },
+];
+
+const categoryCards = [
+  {
+    title: "Consulting",
+    to: "/consulting",
+    text: "Transforming operations, fostering sustainable growth and achieving strategic objectives.",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727480409/C_C_6385_1_l7g9lc.jpg",
+  },
+  {
+    title: "Coaching",
+    to: "/coaching",
+    text: "Personal development that helps you set ambitious goals and take decisive action.",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg",
+  },
+  {
+    title: "Projects",
+    to: "/projects",
+    text: "Initiatives and engagements delivered with brands and communities.",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727482703/MO3_jirgza.jpg",
+  },
+  {
+    title: "Media",
+    to: "/media",
+    text: "Podcasts, interviews and news featuring Oluwayemisi.",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1732305714/yemisi/Project_4_copy_buqez0.jpg",
+  },
+  {
+    title: "Certifications",
+    to: "/certifications",
+    text: "Qualifications and memberships from the UK and Nigeria.",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245874/yemisi/11_e3l1bf.jpg",
+  },
+  {
+    title: "About",
+    to: "/about",
+    text: "The story, experience and philosophy behind the work.",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245918/yemisi/2_yf9z5n.jpg",
+  },
+];
+
+const testimonials = [
+  {
+    name: "Oluyemi Odofa, Food NC",
+    quote:
+      "“We had ambitious plans to expand our market but we weren't clear where to begin. Oluwayemisi provided clear, actionable steps to help us break into new markets. Her approach to building partnerships was strategic and thoughtful and her guidance in navigating cultural and business differences enabled us to succeed faster than we expected.”",
+  },
+  {
+    name: "Farijun Faith",
+    quote:
+      "“Indeed, life is simple. We just need to live it freely.” This was one of the statements made to me, and it brought clarity to some difficult issues I was facing at the time. Thank you, Oluwayemisi Adebayo.",
+  },
+  {
+    name: "Dr. Nuro M, Tech",
+    quote:
+      "“Working with Oluwayemisi Adebayo has been a game changer for our brand. Her understanding of both local and international markets is unmatched. She helped us craft a tailored strategy that significantly grew our customer base within the first six months. Her keen insights and practical recommendations make her an invaluable partner for brands.”",
+  },
+];
 export default function IndexPage() {
   return (
     <main className="bg-black text-white">
@@ -136,185 +200,176 @@ export default function IndexPage() {
         </a>
       </div>
 
-      <div id="mission" className="p-5 md:p-10 px-10 md:px-20 text-center">
-        <h1 className="text-xl md:text-3xl font-bold pb-5 uppercase tracking-wide">
-          Mission
-        </h1>
-        <div className="mx-auto mb-5 h-[2px] w-16 bg-primary-light"></div>
-        <h2 className="text-sm md:text-base text-zinc-300">
+      {/* Credentials + mission */}
+      <section
+        id="mission"
+        className="px-10 md:px-20 py-16 md:py-24 text-center"
+      >
+        <p className="text-primary-light uppercase tracking-[0.3em] text-xs md:text-sm font-semibold">
+          Consultant &middot; Coach &middot; Lecturer
+        </p>
+        <h2 className="mx-auto mt-4 max-w-4xl text-3xl md:text-5xl font-black uppercase leading-tight">
+          Empowering businesses and individuals to thrive
+        </h2>
+        <div className="mx-auto my-6 h-[2px] w-16 bg-primary-light"></div>
+        <p className="mx-auto max-w-3xl text-sm md:text-lg text-zinc-300">
           To empower businesses and individuals to thrive in today’s competitive
           and evolving world. With the right strategies, insights, and support,
           I believe anyone can turn their aspirations into reality.
-        </h2>
-      </div>
-
-      {/* Other sections of your page */}
-      <div className="grid md:grid-cols-2 space-x-5 md:space-x-10 md:h-[350px]  text-white text-center mb-16 md:mb-32 mx-10 md:mx-20 my-5 md:my-10">
-        <div className="w-fit md:w-[400px] justify-self-center">
-          <h1 className="py-1 md:py-3 bg-primary md:w-[400px] ">Consultant</h1>
-          <div className="relative group">
-            <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727480409/C_C_6385_1_l7g9lc.jpg"
-              className="md:h-[400px] md:w-[400px] object-cover object-top relative group-hover:brightness-50"
-              alt="consultant"
-            />
-            <h2 className="absolute top-5 md:top-10 p-5 md:p-10 text-sm md:text-base text-justify tracking-wide invisible group-hover:visible transition duration-700">
-              As a business consultant, I specialize in transforming operations,
-              fostering sustainable growth, and achieving strategic objectives.
-              With over 9 years of experience, I have had the privilege of
-              working with hundreds of businesses across various sectors—from
-              dynamic start-ups to established enterprises. My approach is
-              rooted in delivering actionable insights, developing innovative
-              strategies, and providing personalized solutions that drive
-              measurable success.
-            </h2>
-          </div>
-        </div>
-        <div className="pt-5 md:pt-0 w-fit md:w-[400px] no-ml justify-self-center">
-          <h1 className="py-1 md:py-3 bg-primary md:w-[400px]">Coach</h1>
-          <div className="relative group">
-            <img
-              src="https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg"
-              className=" md:h-[400px] md:w-[400px] object-cover object-top relative group-hover:brightness-50"
-              alt="consultant"
-            />
-            <h2 className="absolute top-5 md:top-10 p-5 md:p-10 text-sm md:text-base text-justify tracking-wide invisible group-hover:visible transition duration-700">
-              I am a passionate life coach. I have had the opportunity to coach
-              professionals in various fields, including politics, education,
-              oil and gas, and the creative industries, from artists to fashion
-              designers. My coaching philosophy is grounded in the belief that
-              personal development should be as normalized as physical training.
-              I strive to help my clients raise their standards, set ambitious
-              goals, and take decisive action toward achieving their dreams.
-            </h2>
-          </div>
-        </div>
-      </div>
-
-      <div className="relative">
-        <div className="absolute top-7 md:top-14 left-[50px] md:left-[100px] w-[50px] md:w-[100px] h-[2px] bg-primary-light"></div>
-
-        <div className="absolute top-7 md:top-14 left-[50px] md:left-[100px] h-[75px] md:h-[150px] w-[2px] bg-primary-light"></div>
-
-        <div className="pt-7 md:pt-14 pb-12 md:pb-24 px-10 md:px-20 grid md:grid-cols-2 text-white">
-          <div
-            id="1"
-            className="pt-7 md:pt-14 px-7 md:px-14 space-y-3.5 md:space-y-7 content-end"
-          >
-            <h1 className="text-xl md:text-3xl font-bold">
-              <h2 className="text-lg md:text-2xl font-medium">Over</h2> THE PAST
-              DECADE
-            </h1>
-            <h1 className="font-light text-sm text-zinc-300">
-              I have honed my skills and expertise in the realms of brand
-              development, digital marketing, and strategic planning. My journey
-              has been marked by a relentless pursuit of knowledge and a desire
-              to push boundaries, enabling me to craft innovative solutions that
-              address both challenges and opportunities in the marketplace.
-            </h1>
-          </div>
-          <div id="2">
-            <iframe
-              className="w-full h-[157px] md:w-[560px] md:h-[315px] pt-3 md:pt-0"
-              src="https://www.youtube.com/embed/46xMLEqNz8E?si=eyoQFz2uCADO3eIt"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div className="relative text-white">
-        <div>
-          <img
-            src="https://res.cloudinary.com/dador6eng/image/upload/v1728423689/yemisi/PSX_20241008_210120_ak59qj.jpg"
-            className=" h-[550px] w-full object-cover object-top relative brightness-50"
-          />
-        </div>
-        <div className=" absolute -top-3 md:-top-6 left-5 md:left-20 md:w-[500px] border-2 border-primary-light bg-black/60 pt-10 md:pt-40 px-7 md:px-14 pb-10 md:pb-20 space-y-1.5 md:space-y-3">
-          <div className="w-[175px] md:w-[350px] text-xl md:text-3xl font-bold ">
-            <h1 className=" text-lg md:text-2xl font-medium border-t border-primary-light w-fit">
-              As an
-            </h1>{" "}
-            EXPERIENCED CONSULTANT & LECTURER
-          </div>
-          <h1 className="w-[200px] md:w-[350px] text-sm font-light">
-            I've had the privilege of teaching and consulting for various
-            individuals and organizations, guiding them toward their goals with
-            tailored strategies that drive growth and foster success. My
-            approach focuses on identifying challenges, offering solutions, and
-            implementing strategies that deliver measurable results.
-          </h1>
-        </div>
-      </div>
-
-      <div className="p-10 md:p-20">
-        <h1 className="text-center text-lg md:text-2xl font-semibold md:py-5 uppercase tracking-wide">
-          Reviews from Clients
-        </h1>
-        <div className="grid md:grid-cols-2 gap-5 space-y-6 md:space-y-0">
-          <div className="grid justify-items-center space-y-2 md:space-y-4 border border-zinc-800 bg-zinc-950 rounded-md p-3">
-            <div className="grid justify-items-center">
-              <h1 className="text-lg md:text-2xl font-semibold text-primary-light">
-                Oluyemi Odofa, Food NC
-              </h1>
-              <h1 className="italic text-zinc-300">
-                "We had ambitious plans to expand our market but we weren't
-                clear where to begin. <strong>Oluwayemisi</strong> provided
-                clear, actionable steps to help us break into new markets. Her
-                approach to building partnerships was strategic and throughful
-                and her guidance in navigating cultural and business differences
-                enabled us to succeed faster than we expected"
-              </h1>
-            </div>
-          </div>
-
-          <div className="grid justify-items-center space-y-2 md:space-y-4 border border-zinc-800 bg-zinc-950 rounded-md p-3">
-            <div className="grid justify-items-center">
-              <h1 className="text-lg md:text-2xl font-semibold text-primary-light">
-                Farijun Faith
-              </h1>
-              <h1 className="italic text-zinc-300">
-                "Indeed, life is simple. We just need to live it freely". There
-                were one of the statements to me, and they broight clarity to
-                some difficult issues I was facing at the time. Thank you,
-                <strong>Oluwayemisi Adebayo</strong>
-              </h1>
-            </div>
-          </div>
-          <div className="grid justify-items-center space-y-2 md:space-y-4 border border-zinc-800 bg-zinc-950 rounded-md p-3">
-            <div className="grid justify-items-center">
-              <h1 className="text-lg md:text-2xl font-semibold text-primary-light">
-                Dr. Nuro M,. Tech
-              </h1>
-              <h1 className="italic text-zinc-300">
-                Working with <strong>Oluwayemisi Adebayo</strong> has been a
-                game changer for our brand. Her understanding of both local and
-                international markets is unmatched. She helped us craft a
-                tailored strtegy that significantly grew our customerr base
-                within the first six months. Her keen insights and practical
-                recommendations make her an invaluable partner for brands
-              </h1>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="py-10 md:py-14 px-10 md:px-40 mx-10 md:mx-20 mb-10 border border-primary-light">
-        <h1 className="md:text-2xl pb-10">
-          Take the opportunity to connect with me by scheduling a FREE 15-minute
-          meeting. Let's discuss your goals, ideas, challenges and explore solutions
-        </h1>
+        </p>
         <a
           href="https://calendly.com/oluwayemisiadebayo/15min"
-          className="p-4 bg-primary text-white rounded-md"
+          className="mt-8 inline-block rounded-md bg-primary-light px-8 py-3 font-bold uppercase tracking-wide text-black transition hover:bg-white"
         >
-          Book Now
+          Book a Free 15-Minute Call
         </a>
-      </div>
+      </section>
+
+      {/* Credential logos strip */}
+      <section className="border-y border-zinc-800 bg-zinc-950 py-8">
+        <p className="mb-6 text-center text-xs md:text-sm uppercase tracking-[0.3em] text-zinc-400">
+          Certified &amp; recognised by
+        </p>
+        <div className="marquee overflow-hidden">
+          <div className="marquee-track gap-6 pr-6">
+            {[...credentialLogos, ...credentialLogos].map((logo, index) => (
+              <div
+                key={index}
+                className="flex h-20 w-40 md:h-24 md:w-52 shrink-0 items-center justify-center rounded-md bg-white p-3"
+              >
+                <img
+                  src={logo.img}
+                  alt={logo.name}
+                  loading="lazy"
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About split: video + bio */}
+      <section className="grid items-center gap-8 md:gap-16 px-10 md:px-20 py-16 md:py-24 md:grid-cols-2">
+        <iframe
+          className="aspect-video w-full"
+          src="https://www.youtube.com/embed/46xMLEqNz8E?si=eyoQFz2uCADO3eIt"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+        <div className="space-y-5">
+          <p className="text-primary-light uppercase tracking-[0.3em] text-xs md:text-sm font-semibold">
+            About
+          </p>
+          <h2 className="text-3xl md:text-5xl font-black uppercase leading-tight">
+            Over the past decade
+          </h2>
+          <p className="text-sm md:text-base font-light text-zinc-300">
+            I have honed my skills and expertise in the realms of brand
+            development, digital marketing, and strategic planning. My journey
+            has been marked by a relentless pursuit of knowledge and a desire to
+            push boundaries, enabling me to craft innovative solutions that
+            address both challenges and opportunities in the marketplace.
+          </p>
+          <p className="text-sm md:text-base font-light text-zinc-300">
+            With over 9 years of experience, I have had the privilege of working
+            with hundreds of businesses across various sectors—from dynamic
+            start-ups to established enterprises.
+          </p>
+          <Link
+            to="/about"
+            className="inline-block border-b-2 border-primary-light pb-1 font-semibold uppercase tracking-wide text-primary-light transition hover:text-white"
+          >
+            Read my story →
+          </Link>
+        </div>
+      </section>
+
+      {/* Closing pitch banner */}
+      <section className="relative isolate overflow-hidden">
+        <img
+          src="https://res.cloudinary.com/dador6eng/image/upload/v1728423689/yemisi/PSX_20241008_210120_ak59qj.jpg"
+          alt="Oluwayemisi Tope Adebayo lecturing"
+          className="absolute inset-0 -z-10 h-full w-full object-cover object-top brightness-50"
+        />
+        <div className="px-10 md:px-20 py-20 md:py-32 md:max-w-3xl space-y-5">
+          <p className="text-primary-light uppercase tracking-[0.3em] text-xs md:text-sm font-semibold">
+            As an experienced consultant &amp; lecturer
+          </p>
+          <h2 className="text-3xl md:text-5xl font-black uppercase italic leading-tight">
+            Let’s turn your goals into results
+          </h2>
+          <p className="text-sm md:text-lg font-light text-zinc-200">
+            I’ve had the privilege of teaching and consulting for various
+            individuals and organizations, guiding them toward their goals with
+            tailored strategies that drive growth and foster success. Take the
+            opportunity to connect with me by scheduling a FREE 15-minute
+            meeting.
+          </p>
+          <a
+            href="https://calendly.com/oluwayemisiadebayo/15min"
+            className="inline-block rounded-md bg-primary px-8 py-3 font-bold uppercase tracking-wide text-white transition hover:bg-primary-light hover:text-black"
+          >
+            Book Now
+          </a>
+        </div>
+      </section>
+
+      {/* Category cards */}
+      <section className="px-10 md:px-20 py-16 md:py-24">
+        <h2 className="pb-8 md:pb-12 text-center text-3xl md:text-5xl font-black uppercase">
+          Explore
+        </h2>
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {categoryCards.map((card) => (
+            <Link
+              key={card.title}
+              to={card.to}
+              className="group relative block aspect-[4/5] overflow-hidden rounded-md border border-zinc-800"
+            >
+              <img
+                src={card.img}
+                alt={card.title}
+                loading="lazy"
+                className="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+              <div className="absolute inset-x-0 bottom-0 space-y-2 p-5 md:p-6">
+                <h3 className="text-2xl font-black uppercase">{card.title}</h3>
+                <p className="text-sm font-light text-zinc-300">{card.text}</p>
+                <span className="inline-block border-b border-primary-light pb-0.5 text-sm font-semibold uppercase tracking-wide text-primary-light">
+                  Learn more →
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Testimonials: horizontal scroll */}
+      <section className="px-5 md:px-20 pb-16 md:pb-24">
+        <h2 className="pb-8 md:pb-12 text-center text-3xl md:text-5xl font-black uppercase">
+          What people say
+        </h2>
+        <HorizontalScroller>
+          {testimonials.map((t) => (
+            <figure
+              key={t.name}
+              className="flex w-[85%] shrink-0 snap-start flex-col justify-between gap-4 rounded-md border border-zinc-800 bg-zinc-950 p-6 md:w-[420px]"
+            >
+              <blockquote className="italic text-zinc-300">
+                {t.quote}
+              </blockquote>
+              <figcaption className="font-semibold text-primary-light">
+                {t.name}
+              </figcaption>
+            </figure>
+          ))}
+        </HorizontalScroller>
+      </section>
 
       <div className=" justify-items-center">
         <h1 className="text-lg md:text-2xl font-semibold ">
@@ -425,9 +480,9 @@ export default function IndexPage() {
                 viewBox="0 0 24 24"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
               </svg>
             </a>
@@ -457,9 +512,9 @@ export default function IndexPage() {
               >
                 <path
                   fill="currentColor"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
               </svg>
             </a>
@@ -474,9 +529,9 @@ export default function IndexPage() {
                 viewBox="0 0 24 24"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
                 <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
               </svg>
@@ -487,3 +542,4 @@ export default function IndexPage() {
     </main>
   );
 }
+

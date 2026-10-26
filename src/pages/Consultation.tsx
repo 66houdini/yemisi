@@ -126,8 +126,8 @@ export default function Consultation() {
               <div className="text-sm md:text-base font-medium py-2 md:py-4">
                 <div className="flex space-x-3 py-2">
                   <div className=" content-center">
-                    Cost: Starter $400
-                    <h2 className="block md:inline">(1 hour)</h2>
+                    Starter Session
+                    <h2 className="block md:inline"> (1 hour)</h2>
                   </div>
                   <Link
                     to="https://yemisi-booking.vercel.app/digital-strategy"
@@ -139,8 +139,8 @@ export default function Consultation() {
                 </div>
                 <div className="flex space-x-3 py-2">
                   <div className=" content-center ">
-                    Advance: $700; Sessions 
-                    <h2 className="block md:inline"> ( 1 Month - 2 Meetings)</h2>
+                    Advanced Sessions
+                    <h2 className="block md:inline"> (1 Month - 2 Meetings)</h2>
                   </div>
                   <Link
                     to="https://yemisi-booking.vercel.app/digital-strategy-advanced"
@@ -219,8 +219,8 @@ export default function Consultation() {
               <div className=" font-medium py-2 md:py-4 text-sm md:text-base">
                 <div className="flex space-x-3 py-2">
                   <div className=" content-center">
-                    Cost: Starter $500
-                    <h2 className="block md:inline">(3 hour)</h2>
+                    Starter Session
+                    <h2 className="block md:inline"> (3 hours)</h2>
                   </div>
                   <Link
                     to="https://yemisi-booking.vercel.app/market-expansion"
@@ -232,8 +232,8 @@ export default function Consultation() {
                 </div>
                 <div className="flex space-x-3 py-2">
                   <div className=" content-center">
-                    Advance: $900; Sessions 
-                    <h2 className="block md:inline">( 1 Month - 2 Meetings)</h2>
+                    Advanced Sessions
+                    <h2 className="block md:inline"> (1 Month - 2 Meetings)</h2>
                   </div>
                   <Link
                     to="https://yemisi-booking.vercel.app/market-expansion-advanced"
