@@ -95,6 +95,7 @@ import {
   firstStatement,
   images,
   logos,
+  photo,
   roleCards,
   secondStatement,
   shortStatement,
@@ -107,12 +108,12 @@ const roleLine = "Strategist | Entrepreneur | Lecturer | Investor | Coach | Disc
 const ttsNews = [
   {
     title: "TTS Initiative Project 100 Schools Activation",
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1732305714/yemisi/Project_4_copy_buqez0.jpg",
+    img: photo("v1732305714/yemisi/Project_4_copy_buqez0.jpg", 900),
     text: "Last week, we had the incredible opportunity to empower another set of teens through our #100SchoolsEmpowerment program. These bright young minds were guided on how to develop their personal brand and harness online opportunities for their growth. Save the date and anticipate more details on how you can actively participate in this transformative mentor-mentee program. TTS Spotlight is not just a gathering; it’s a platform for young individuals dedicated to receiving a positive impact and support for growth and development from those who have gone ahead and are thriving in the chosen field. Stay tuned for an enriching experience that goes beyond the ordinary mentorship programme.",
   },
   {
     title: "TTS Spotlight Program in December: A Unique Mentor-Mentee Programme Launch",
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1732305714/yemisi/DD_daenwg.jpg",
+    img: photo("v1732305714/yemisi/DD_daenwg.jpg", 900),
     text: "In an exciting development, January 2024 marks the launch of TTS spotlight, a unique mentor-mentee programme designed to foster guidance and connection within our community. Whether you’re a dedicated supporter, a valued partner, or someone passionate about our cause, this initiative offers a special opportunity to engage, share ideas, and build meaningful connections.",
   },
 ];
@@ -184,7 +185,7 @@ export default function IndexPage() {
         className="grid items-start gap-10 md:gap-16 border-t border-zinc-800 px-6 md:px-20 py-16 md:py-24 md:grid-cols-2"
       >
         <img
-          src="https://res.cloudinary.com/dador6eng/image/upload/v1728423689/yemisi/PSX_20241008_210120_ak59qj.jpg"
+          src={photo("v1728423689/yemisi/PSX_20241008_210120_ak59qj.jpg", 1200)}
           alt="Oluwayemisi Adebayo lecturing"
           loading="lazy"
           className="w-full rounded-md object-cover object-top md:sticky md:top-24 md:max-h-[80vh]"

@@ -1,5 +1,9 @@
 const cdn = "https://res.cloudinary.com/dador6eng/image/upload";
 
+// Originals are several MB each; serve a compressed copy at display width.
+export const photo = (path: string, width = 1000) =>
+  `${cdn}/f_auto,q_auto,w_${width}/${path}`;
+
 // e_trim crops the large transparent margin around the wordmark.
 export const logos = {
   white: `${cdn}/e_trim/v1794934612/yemisi/logo_png_white_ldxbyv.png`,
@@ -8,11 +12,11 @@ export const logos = {
 };
 
 export const images = {
-  stage: `${cdn}/v1794934628/yemisi/Stage_Picture_pdheqc.jpg`,
-  strategist: `${cdn}/v1794934645/yemisi/Strategist_oeb8qs.png`,
-  lecturer: `${cdn}/v1794934657/yemisi/LC_z4hky5.png`,
-  bng04797: `${cdn}/v1794934629/yemisi/BNG04797_idifjd.jpg`,
-  bng05141: `${cdn}/v1794934623/yemisi/BNG05141_zmgwcb.jpg`,
+  stage: photo("v1794934628/yemisi/Stage_Picture_pdheqc.jpg", 1920),
+  strategist: photo("v1794934645/yemisi/Strategist_oeb8qs.png"),
+  lecturer: photo("v1794934657/yemisi/LC_z4hky5.png"),
+  bng04797: photo("v1794934629/yemisi/BNG04797_idifjd.jpg"),
+  bng05141: photo("v1794934623/yemisi/BNG05141_zmgwcb.jpg"),
 };
 
 export const tagline = "Strategist | Academic | Entrepreneur & Investor | Coach";
@@ -59,7 +63,7 @@ export const roleCards = [
   {
     title: "Investor",
     text: "Backing opportunities that create commercial value and sustainable business models.",
-    img: `${cdn}/v1727245918/yemisi/2_yf9z5n.jpg`,
+    img: photo("v1727245918/yemisi/2_yf9z5n.jpg"),
   },
   {
     title: "Coach",
@@ -69,7 +73,7 @@ export const roleCards = [
   {
     title: "Disciple of God",
     text: "Faith that grounds the work, and a purpose to serve people and leave a lasting legacy.",
-    img: `${cdn}/v1727245897/yemisi/2-copy_wixqpm.jpg`,
+    img: photo("v1727245897/yemisi/2-copy_wixqpm.jpg"),
   },
 ];
 
@@ -119,9 +123,9 @@ export const galleryImages = [
   { src: images.lecturer, alt: "Oluwayemisi Adebayo lecturing" },
   { src: images.bng04797, alt: "Oluwayemisi Adebayo at an event" },
   { src: images.bng05141, alt: "Portrait of Oluwayemisi Adebayo" },
-  { src: `${cdn}/v1727655657/C_C_6501_1_t28gpn.jpg`, alt: "Oluwayemisi Adebayo portrait" },
-  { src: `${cdn}/v1727655883/C_C_6520_oibnwq.jpg`, alt: "Oluwayemisi Adebayo portrait" },
-  { src: `${cdn}/v1728521522/yemisi/NGO_project_ybs2ll.jpg`, alt: "TTS Initiative Foundation project" },
-  { src: `${cdn}/v1728521520/yemisi/NGo__qcmeeb.jpg`, alt: "TTS Initiative Foundation outreach" },
-  { src: `${cdn}/v1727245831/yemisi/9_vqnexh.jpg`, alt: "Oluwayemisi Adebayo at an event" },
+  { src: photo("v1727655657/C_C_6501_1_t28gpn.jpg"), alt: "Oluwayemisi Adebayo portrait" },
+  { src: photo("v1727655883/C_C_6520_oibnwq.jpg"), alt: "Oluwayemisi Adebayo portrait" },
+  { src: photo("v1728521522/yemisi/NGO_project_ybs2ll.jpg"), alt: "TTS Initiative Foundation project" },
+  { src: photo("v1728521520/yemisi/NGo__qcmeeb.jpg"), alt: "TTS Initiative Foundation outreach" },
+  { src: photo("v1727245831/yemisi/9_vqnexh.jpg"), alt: "Oluwayemisi Adebayo at an event" },
 ];
