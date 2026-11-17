@@ -12,6 +12,7 @@ import About from "./pages/About"
 import Media from "./pages/Media"
 import Certifications from "./pages/Certifications"
 import Testimonials from "./pages/Testimonials"
+import Gallery from "./pages/Gallery"
 function App() {
   
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/media" element={<Media/>} />
         <Route path="/certifications" element={<Certifications/>} />
         <Route path="/testimonials" element={<Testimonials/>} />
+        <Route path="/gallery" element={<Gallery/>} />
       </Route>
     </Routes>
     </>
