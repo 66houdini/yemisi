@@ -14,8 +14,15 @@ export const PersonalizedHeader = ({ bg }: { bg: string }) => {
         className={isOpen ? activeClass : inactiveClass}
       >
         {/* Logo */}
-        <Link to="/" className="md:text-2xl font-bold">
-          OLUWAYEMISI ADEBAYO
+        <Link to="/" className="flex items-center gap-3">
+          <img
+            src={logos.white}
+            alt="Oluwayemisi Adebayo logo"
+            className="h-8 w-8 md:h-10 md:w-10 object-contain"
+          />
+          <span className="hidden md:block text-[11px] uppercase tracking-[0.2em] text-zinc-300">
+            {tagline}
+          </span>
         </Link>
 
         {/* Hamburger Icon for Mobile */}
@@ -29,8 +36,9 @@ export const PersonalizedHeader = ({ bg }: { bg: string }) => {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } grid md:flex space-y-4 md:space-y-0 space-x-0 md:space-x-10 mt-5 md:mt-0 text-sm font-medium items-center`}
+          } col-span-2 grid md:flex space-y-4 md:space-y-0 space-x-0 md:space-x-10 mt-5 md:mt-0 text-sm font-medium items-center`}
         >
+          <Link to="/">HOME</Link>
           <h1 className="pr-5 md:pr-0">
             <Dropdown />
           </h1>
@@ -81,7 +89,7 @@ import Dropdown from "./components/Dropdown";
 import MediaDropdown from "./components/MediaDropdown";
 import NewsletterForm from "./components/Newsletter";
 import HorizontalScroller from "./components/HorizontalScroller";
-import { testimonials } from "../content/site";
+import { logos, tagline, testimonials } from "../content/site";
 
 const credentialLogos = [
   { name: "Advance HE", img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900462/ebconcept/Logo_2_qrarga.png" },

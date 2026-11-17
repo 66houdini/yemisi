@@ -18,8 +18,17 @@ const Footer = () => {
           <Link to="/coaching" className="text-white">
             Coaching
           </Link>
+          <Link to="/certifications" className="text-white">
+            Certifications
+          </Link>
           <Link to="/projects" className="text-white">
             Projects
+          </Link>
+          <Link to="/testimonials" className="text-white">
+            Testimonials
+          </Link>
+          <Link to="/gallery" className="text-white">
+            Gallery
           </Link>
         </div>
         <div id="2">

@@ -5,7 +5,7 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 const solutions = [
   { name: 'PODCAST',  href: '/media#podcast',  },
   { name: 'NEWS', href: '/media#news'},
-
+  { name: 'GALLERY', href: '/gallery' },
 ]
 
 export default function MediaDropdown() {
