@@ -81,6 +81,7 @@ import Dropdown from "./components/Dropdown";
 import MediaDropdown from "./components/MediaDropdown";
 import NewsletterForm from "./components/Newsletter";
 import HorizontalScroller from "./components/HorizontalScroller";
+import { testimonials } from "../content/site";
 
 const credentialLogos = [
   { name: "Advance HE", img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900462/ebconcept/Logo_2_qrarga.png" },
@@ -132,23 +133,6 @@ const categoryCards = [
   },
 ];
 
-const testimonials = [
-  {
-    name: "Oluyemi Odofa, Food NC",
-    quote:
-      "“We had ambitious plans to expand our market but we weren't clear where to begin. Oluwayemisi provided clear, actionable steps to help us break into new markets. Her approach to building partnerships was strategic and thoughtful and her guidance in navigating cultural and business differences enabled us to succeed faster than we expected.”",
-  },
-  {
-    name: "Farijun Faith",
-    quote:
-      "“Indeed, life is simple. We just need to live it freely.” This was one of the statements made to me, and it brought clarity to some difficult issues I was facing at the time. Thank you, Oluwayemisi Adebayo.",
-  },
-  {
-    name: "Dr. Nuro M, Tech",
-    quote:
-      "“Working with Oluwayemisi Adebayo has been a game changer for our brand. Her understanding of both local and international markets is unmatched. She helped us craft a tailored strategy that significantly grew our customer base within the first six months. Her keen insights and practical recommendations make her an invaluable partner for brands.”",
-  },
-];
 export default function IndexPage() {
   return (
     <main className="bg-black text-white">
