@@ -130,9 +130,9 @@ export default function IndexPage() {
         <img
           src={images.stage}
           alt="Oluwayemisi Adebayo speaking on stage"
-          className="absolute inset-0 z-10 h-full w-full object-cover object-center opacity-70"
+          className="absolute inset-0 z-10 h-full w-full object-cover object-[80%_center] md:object-center opacity-70"
         />
-        <div className="absolute inset-0 z-10 bg-gradient-to-r from-black via-black/70 to-black/10"></div>
+        <div className="absolute inset-0 z-10 bg-gradient-to-t from-black via-black/50 to-black/10 md:bg-gradient-to-r md:from-black md:via-black/70 md:to-black/10"></div>
 
         <div className="relative z-20 flex flex-1 flex-col justify-center px-6 md:px-20 pt-28 pb-6">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase leading-none tracking-tight">
