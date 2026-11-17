@@ -1,8 +1,9 @@
 const cdn = "https://res.cloudinary.com/dador6eng/image/upload";
 
+// e_trim crops the large transparent margin around the wordmark.
 export const logos = {
-  white: `${cdn}/v1794934612/yemisi/logo_png_white_ldxbyv.png`,
-  black: `${cdn}/v1794934612/yemisi/logo_png_black_ptnbfp.png`,
+  white: `${cdn}/e_trim/v1794934612/yemisi/logo_png_white_ldxbyv.png`,
+  black: `${cdn}/e_trim/v1794934612/yemisi/logo_png_black_ptnbfp.png`,
   blackJpg: `${cdn}/v1794934612/yemisi/Logo_jpeg_black_adtb06.jpg`,
 };
 

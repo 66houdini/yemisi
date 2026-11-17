@@ -18,9 +18,9 @@ export const PersonalizedHeader = ({ bg }: { bg: string }) => {
           <img
             src={logos.white}
             alt="Oluwayemisi Adebayo logo"
-            className="h-8 w-8 md:h-10 md:w-10 object-contain"
+            className="h-6 md:h-8 w-auto max-w-[180px] md:max-w-none"
           />
-          <span className="hidden md:block text-[11px] uppercase tracking-[0.2em] text-zinc-300">
+          <span className="hidden xl:block text-[11px] uppercase tracking-[0.2em] text-zinc-300">
             {tagline}
           </span>
         </Link>
@@ -89,55 +89,31 @@ import Dropdown from "./components/Dropdown";
 import MediaDropdown from "./components/MediaDropdown";
 import NewsletterForm from "./components/Newsletter";
 import HorizontalScroller from "./components/HorizontalScroller";
-import { logos, tagline, testimonials } from "../content/site";
+import {
+  beyondTheWork,
+  calendlyUrl,
+  firstStatement,
+  images,
+  logos,
+  roleCards,
+  secondStatement,
+  shortStatement,
+  tagline,
+  testimonials,
+} from "../content/site";
 
-const credentialLogos = [
-  { name: "Advance HE", img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900462/ebconcept/Logo_2_qrarga.png" },
-  { name: "London School of Business Administration", img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900459/ebconcept/Logo_jqrgfb.png" },
-  { name: "Chartered Management Institute UK", img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900460/ebconcept/Logo_6_hpn7c3.png" },
-  { name: "Certified Management Consultant Nigeria", img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900458/ebconcept/Logo_5_fbggaq.png" },
-  { name: "University of Bedfordshire", img: "https://res.cloudinary.com/dador6eng/image/upload/v1729807605/yemisi/niversity_of_Beds_lyy9rp.jpg" },
-  { name: "APCON", img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900462/ebconcept/Logo_4_v5clmr.png" },
-  { name: "Institute of Management Consultants Nigeria", img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900461/ebconcept/Logo_8_wl1l2q.png" },
-  { name: "The Coaching Academy UK", img: "https://res.cloudinary.com/dador6eng/image/upload/v1730900462/ebconcept/Logo_1_n9nnlm.png" },
-];
+const roleLine = "Strategist | Entrepreneur | Lecturer | Investor | Coach | Disciple of God";
 
-const categoryCards = [
+const ttsNews = [
   {
-    title: "Consulting",
-    to: "/consulting",
-    text: "Transforming operations, fostering sustainable growth and achieving strategic objectives.",
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727480409/C_C_6385_1_l7g9lc.jpg",
-  },
-  {
-    title: "Coaching",
-    to: "/coaching",
-    text: "Personal development that helps you set ambitious goals and take decisive action.",
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245897/yemisi/2-copy_wixqpm.jpg",
-  },
-  {
-    title: "Projects",
-    to: "/projects",
-    text: "Initiatives and engagements delivered with brands and communities.",
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727482703/MO3_jirgza.jpg",
-  },
-  {
-    title: "Media",
-    to: "/media",
-    text: "Podcasts, interviews and news featuring Oluwayemisi.",
+    title: "TTS Initiative Project 100 Schools Activation",
     img: "https://res.cloudinary.com/dador6eng/image/upload/v1732305714/yemisi/Project_4_copy_buqez0.jpg",
+    text: "Last week, we had the incredible opportunity to empower another set of teens through our #100SchoolsEmpowerment program. These bright young minds were guided on how to develop their personal brand and harness online opportunities for their growth. Save the date and anticipate more details on how you can actively participate in this transformative mentor-mentee program. TTS Spotlight is not just a gathering; it’s a platform for young individuals dedicated to receiving a positive impact and support for growth and development from those who have gone ahead and are thriving in the chosen field. Stay tuned for an enriching experience that goes beyond the ordinary mentorship programme.",
   },
   {
-    title: "Certifications",
-    to: "/certifications",
-    text: "Qualifications and memberships from the UK and Nigeria.",
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245874/yemisi/11_e3l1bf.jpg",
-  },
-  {
-    title: "About",
-    to: "/about",
-    text: "The story, experience and philosophy behind the work.",
-    img: "https://res.cloudinary.com/dador6eng/image/upload/v1727245918/yemisi/2_yf9z5n.jpg",
+    title: "TTS Spotlight Program in December: A Unique Mentor-Mentee Programme Launch",
+    img: "https://res.cloudinary.com/dador6eng/image/upload/v1732305714/yemisi/DD_daenwg.jpg",
+    text: "In an exciting development, January 2024 marks the launch of TTS spotlight, a unique mentor-mentee programme designed to foster guidance and connection within our community. Whether you’re a dedicated supporter, a valued partner, or someone passionate about our cause, this initiative offers a special opportunity to engage, share ideas, and build meaningful connections.",
   },
 ];
 
@@ -151,27 +127,25 @@ export default function IndexPage() {
         id="intro"
         className="relative flex min-h-screen flex-col bg-black overflow-hidden"
       >
-        {/* Image layer behind the text */}
         <img
-          src="https://res.cloudinary.com/dador6eng/image/upload/v1727245918/yemisi/2_yf9z5n.jpg"
-          alt="Oluwayemisi Tope Adebayo"
-          className="absolute inset-0 z-10 h-full w-full md:left-auto md:right-0 md:w-3/5 object-cover object-top opacity-80"
+          src={images.stage}
+          alt="Oluwayemisi Adebayo speaking on stage"
+          className="absolute inset-0 z-10 h-full w-full object-cover object-center opacity-70"
         />
-        {/* Gradient so the text stays readable over the photo */}
-        <div className="absolute inset-0 z-10 bg-gradient-to-r from-black via-black/60 to-transparent"></div>
+        <div className="absolute inset-0 z-10 bg-gradient-to-r from-black via-black/70 to-black/10"></div>
 
-        {/* Name stacked in front of the image */}
-        <div className="relative z-20 flex flex-1 items-center px-10 md:px-20 pt-24 md:pt-28 pb-6">
+        <div className="relative z-20 flex flex-1 flex-col justify-center px-6 md:px-20 pt-28 pb-6">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase leading-none tracking-tight">
             Oluwayemisi
             <br />
-            Tope
-            <br />
             <span className="text-primary-light">Adebayo</span>
           </h1>
+          <p className="mt-6 max-w-xl text-sm md:text-lg uppercase tracking-[0.2em] text-zinc-200">
+            {tagline}
+          </p>
         </div>
         <a
-          href="#mission"
+          href="#statement"
           className="relative z-20 flex flex-col items-center gap-1 pb-8 text-primary-light uppercase tracking-widest text-sm font-semibold"
         >
           Scroll Down
@@ -192,156 +166,135 @@ export default function IndexPage() {
         </a>
       </div>
 
-      {/* Credentials + mission */}
+      {/* First statement */}
       <section
-        id="mission"
-        className="px-10 md:px-20 py-16 md:py-24 text-center"
+        id="statement"
+        data-statement="first"
+        className="mx-auto max-w-4xl space-y-6 px-6 md:px-10 py-16 md:py-24 text-base md:text-lg font-light leading-relaxed text-zinc-200"
       >
-        <p className="text-primary-light uppercase tracking-[0.3em] text-xs md:text-sm font-semibold">
-          Consultant &middot; Coach &middot; Lecturer
-        </p>
-        <h2 className="mx-auto mt-4 max-w-4xl text-3xl md:text-5xl font-black uppercase leading-tight">
-          Empowering businesses and individuals to thrive
-        </h2>
-        <div className="mx-auto my-6 h-[2px] w-16 bg-primary-light"></div>
-        <p className="mx-auto max-w-3xl text-sm md:text-lg text-zinc-300">
-          To empower businesses and individuals to thrive in today’s competitive
-          and evolving world. With the right strategies, insights, and support,
-          I believe anyone can turn their aspirations into reality.
-        </p>
-        <a
-          href="https://calendly.com/oluwayemisiadebayo/15min"
-          className="mt-8 inline-block rounded-md bg-primary-light px-8 py-3 font-bold uppercase tracking-wide text-black transition hover:bg-white"
-        >
-          Book a Free 15-Minute Call
-        </a>
+        <div className="h-[2px] w-16 bg-primary-light"></div>
+        {firstStatement.map((p) => (
+          <p key={p.slice(0, 40)}>{p}</p>
+        ))}
       </section>
 
-      {/* Credential logos strip */}
-      <section className="border-y border-zinc-800 bg-zinc-950 py-8">
-        <p className="mb-6 text-center text-xs md:text-sm uppercase tracking-[0.3em] text-zinc-400">
-          Certified &amp; recognised by
-        </p>
-        <div className="marquee overflow-hidden">
-          <div className="marquee-track gap-6 pr-6">
-            {[...credentialLogos, ...credentialLogos].map((logo, index) => (
-              <div
-                key={index}
-                className="flex h-20 w-40 md:h-24 md:w-52 shrink-0 items-center justify-center rounded-md bg-white p-3"
-              >
-                <img
-                  src={logo.img}
-                  alt={logo.name}
-                  loading="lazy"
-                  className="max-h-full max-w-full object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* About split: video + bio */}
-      <section className="grid items-center gap-8 md:gap-16 px-10 md:px-20 py-16 md:py-24 md:grid-cols-2">
-        <iframe
-          className="aspect-video w-full"
-          src="https://www.youtube.com/embed/46xMLEqNz8E?si=eyoQFz2uCADO3eIt"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-        <div className="space-y-5">
-          <p className="text-primary-light uppercase tracking-[0.3em] text-xs md:text-sm font-semibold">
-            About
-          </p>
-          <h2 className="text-3xl md:text-5xl font-black uppercase leading-tight">
-            Over the past decade
-          </h2>
-          <p className="text-sm md:text-base font-light text-zinc-300">
-            I have honed my skills and expertise in the realms of brand
-            development, digital marketing, and strategic planning. My journey
-            has been marked by a relentless pursuit of knowledge and a desire to
-            push boundaries, enabling me to craft innovative solutions that
-            address both challenges and opportunities in the marketplace.
-          </p>
-          <p className="text-sm md:text-base font-light text-zinc-300">
-            With over 9 years of experience, I have had the privilege of working
-            with hundreds of businesses across various sectors—from dynamic
-            start-ups to established enterprises.
-          </p>
-          <Link
-            to="/about"
-            className="inline-block border-b-2 border-primary-light pb-1 font-semibold uppercase tracking-wide text-primary-light transition hover:text-white"
-          >
-            Read my story →
-          </Link>
-        </div>
-      </section>
-
-      {/* Closing pitch banner */}
-      <section className="relative isolate overflow-hidden">
+      {/* Second statement */}
+      <section
+        data-statement="second"
+        className="grid items-start gap-10 md:gap-16 border-t border-zinc-800 px-6 md:px-20 py-16 md:py-24 md:grid-cols-2"
+      >
         <img
           src="https://res.cloudinary.com/dador6eng/image/upload/v1728423689/yemisi/PSX_20241008_210120_ak59qj.jpg"
-          alt="Oluwayemisi Tope Adebayo lecturing"
-          className="absolute inset-0 -z-10 h-full w-full object-cover object-top brightness-50"
+          alt="Oluwayemisi Adebayo lecturing"
+          loading="lazy"
+          className="w-full rounded-md object-cover object-top md:sticky md:top-24 md:max-h-[80vh]"
         />
-        <div className="px-10 md:px-20 py-20 md:py-32 md:max-w-3xl space-y-5">
-          <p className="text-primary-light uppercase tracking-[0.3em] text-xs md:text-sm font-semibold">
-            As an experienced consultant &amp; lecturer
-          </p>
-          <h2 className="text-3xl md:text-5xl font-black uppercase italic leading-tight">
-            Let’s turn your goals into results
+        <div className="space-y-6">
+          <h2 className="text-3xl md:text-5xl font-black uppercase leading-tight">
+            {secondStatement.title}
           </h2>
-          <p className="text-sm md:text-lg font-light text-zinc-200">
-            I’ve had the privilege of teaching and consulting for various
-            individuals and organizations, guiding them toward their goals with
-            tailored strategies that drive growth and foster success. Take the
-            opportunity to connect with me by scheduling a FREE 15-minute
-            meeting.
-          </p>
+          {secondStatement.paragraphs.map((p) => (
+            <p
+              key={p.slice(0, 40)}
+              className="text-sm md:text-base font-light leading-relaxed text-zinc-300"
+            >
+              {p}
+            </p>
+          ))}
+        </div>
+      </section>
+
+      {/* Short statement */}
+      <section className="bg-zinc-950 border-y border-zinc-800 px-6 md:px-20 py-16 md:py-24 text-center">
+        <div className="mx-auto max-w-4xl space-y-6">
+          {shortStatement.map((line, i) => (
+            <p
+              key={line.slice(0, 40)}
+              className={
+                i === shortStatement.length - 1
+                  ? "text-2xl md:text-4xl font-black uppercase italic text-primary-light"
+                  : "text-xl md:text-3xl font-bold leading-snug"
+              }
+            >
+              {line}
+            </p>
+          ))}
           <a
-            href="https://calendly.com/oluwayemisiadebayo/15min"
-            className="inline-block rounded-md bg-primary px-8 py-3 font-bold uppercase tracking-wide text-white transition hover:bg-primary-light hover:text-black"
+            href={calendlyUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-4 inline-block rounded-md bg-primary-light px-8 py-3 font-bold uppercase tracking-wide text-black transition hover:bg-white"
           >
-            Book Now
+            Contact Oluwayemisi Adebayo
           </a>
         </div>
       </section>
 
-      {/* Category cards */}
-      <section className="px-10 md:px-20 py-16 md:py-24">
-        <h2 className="pb-8 md:pb-12 text-center text-3xl md:text-5xl font-black uppercase">
-          Explore
+      {/* Role cards */}
+      <section className="px-6 md:px-20 py-16 md:py-24">
+        <h2 className="pb-8 md:pb-12 text-center text-xs md:text-sm font-semibold uppercase tracking-[0.25em] text-primary-light">
+          {roleLine}
         </h2>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {categoryCards.map((card) => (
-            <Link
+          {roleCards.map((card) => (
+            <div
               key={card.title}
-              to={card.to}
-              className="group relative block aspect-[4/5] overflow-hidden rounded-md border border-zinc-800"
+              data-role-card
+              className="group relative aspect-[4/5] overflow-hidden rounded-md border border-zinc-800"
             >
               <img
                 src={card.img}
-                alt={card.title}
+                alt={`Oluwayemisi Adebayo, ${card.title}`}
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
               <div className="absolute inset-x-0 bottom-0 space-y-2 p-5 md:p-6">
                 <h3 className="text-2xl font-black uppercase">{card.title}</h3>
-                <p className="text-sm font-light text-zinc-300">{card.text}</p>
-                <span className="inline-block border-b border-primary-light pb-0.5 text-sm font-semibold uppercase tracking-wide text-primary-light">
-                  Learn more →
-                </span>
+                <p className="text-sm font-light text-zinc-200">{card.text}</p>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </section>
 
-      {/* Testimonials: horizontal scroll */}
+      {/* Beyond The Work */}
+      <section className="border-t border-zinc-800 px-6 md:px-20 py-16 md:py-24">
+        <h2 className="text-3xl md:text-5xl font-black uppercase">
+          {beyondTheWork.title}
+        </h2>
+        {beyondTheWork.paragraphs.map((p) => (
+          <p
+            key={p.slice(0, 40)}
+            className="mt-6 max-w-3xl text-base md:text-lg font-light text-zinc-300"
+          >
+            {p}
+          </p>
+        ))}
+        <div className="mt-10 grid gap-8 md:grid-cols-2">
+          {ttsNews.map((item) => (
+            <article
+              key={item.title}
+              className="overflow-hidden rounded-md border border-zinc-800 bg-zinc-950"
+            >
+              <img
+                src={item.img}
+                alt={item.title}
+                loading="lazy"
+                className="h-56 w-full object-cover object-top"
+              />
+              <div className="space-y-3 p-5">
+                <h3 className="text-lg md:text-xl font-semibold">
+                  {item.title}
+                </h3>
+                <p className="text-sm font-light text-zinc-400">{item.text}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* What People Say */}
       <section className="px-5 md:px-20 pb-16 md:pb-24">
         <h2 className="pb-8 md:pb-12 text-center text-3xl md:text-5xl font-black uppercase">
           What people say
@@ -352,9 +305,7 @@ export default function IndexPage() {
               key={t.name}
               className="flex w-[85%] shrink-0 snap-start flex-col justify-between gap-4 rounded-md border border-zinc-800 bg-zinc-950 p-6 md:w-[420px]"
             >
-              <blockquote className="italic text-zinc-300">
-                {t.quote}
-              </blockquote>
+              <blockquote className="italic text-zinc-300">{t.quote}</blockquote>
               <figcaption className="font-semibold text-primary-light">
                 {t.name}
               </figcaption>
@@ -363,77 +314,26 @@ export default function IndexPage() {
         </HorizontalScroller>
       </section>
 
-      <div className=" justify-items-center">
-        <h1 className="text-lg md:text-2xl font-semibold ">
-          <div className="text-center pt-5 md:pt-10 uppercase tracking-wide">
-            Podcasts & News
-          </div>
+      {/* Podcast */}
+      <section className="border-t border-zinc-800 px-6 md:px-20 py-16 text-center">
+        <h2 className="pb-8 text-3xl md:text-5xl font-black uppercase">Podcast</h2>
+        <iframe
+          className="mx-auto aspect-video w-full max-w-4xl"
+          src="https://www.youtube.com/embed/U-CbJHz1PyQ?si=hk9NimlhlZZEH60Q"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+        <Link
+          to="/media#podcast"
+          className="mt-6 inline-block rounded-md bg-primary px-6 py-3 font-semibold text-white"
+        >
+          More podcasts
+        </Link>
+      </section>
 
-          <div className="grid p-5 md:p-10 md:px-20 space-y-4 space-x-4">
-            <div id="1" className="relative group justify-self-center">
-              <iframe
-                className="pb-3 md:w-[900px] md:h-[400px]"
-                src="https://www.youtube.com/embed/U-CbJHz1PyQ?si=hk9NimlhlZZEH60Q"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-              <div className="bg-primary p-3 w-fit rounded-md ">
-                <Link to="/media#podcast" className=" text-white">
-                  Podcasts
-                </Link>
-              </div>
-            </div>
-            <div className="relative grid  gap-4 md:pt-10 no-ml">
-              <div id="news">
-                <img
-                  src="https://res.cloudinary.com/dador6eng/image/upload/v1732305714/yemisi/Project_4_copy_buqez0.jpg"
-                  className="h-40 md:h-36 w-full md:w-[250px] object-cover object-top md:float-left rounded-md pr-2"
-                />
-                <h3 className=" text-start text-lg md:text-xl font-medium ">
-                  TTS Initiative Project 100 Schools Activation
-                </h3>
-                <h1 className="text-start text-zinc-400 text-sm  font-light ">
-                  Last week, we had the incredible opportunity to empower
-                  another set of teens through our #100SchoolsEmpowerment
-                  program. These bright young minds were guided on how to
-                  develop their personal brand and harness online opportunities
-                  for their growth.Save the date and anticipate more details on
-                  how you can actively participate in this transformative
-                  mentor-mentee program. TTS Spotlight is not just a gathering;
-                  it’s a platform for young individuals dedicated to receiving a
-                  positive impact and support for growth and development from
-                  those who have gone ahead and are thriving in the chosen
-                  field. Stay tuned for an enriching experience that goes beyond
-                  the ordinary mentorship programme.
-                </h1>
-              </div>
-
-              <div id="news" className="pt-5">
-                <img
-                  src="https://res.cloudinary.com/dador6eng/image/upload/v1732305714/yemisi/DD_daenwg.jpg"
-                  className=" h-40 md:h-36 w-full md:w-[250px] object-cover object-top md:float-left rounded-md pr-2"
-                />
-                <h3 className=" text-start text-lg md:text-xl font-medium">
-                  TTS Spotlight Program in December: A Unique Mentor-Mentee
-                  Programme Launch
-                </h3>
-                <h1 className="text-start text-zinc-400 text-sm  font-light ">
-                  In an exciting development, January 2024 marks the launch of
-                  TTS spotlight, a unique mentor-mentee programme designed to
-                  foster guidance and connection within our community. Whether
-                  you’re a dedicated supporter, a valued partner, or someone
-                  passionate about our cause, this initiative offers a special
-                  opportunity to engage, share ideas, and build meaningful
-                  connections.
-                </h1>
-              </div>
-            </div>
-          </div>
-        </h1>
-      </div>
 
       <div className="relative grid place-content-center p-10 md:p-20 bg-black border-t border-zinc-800 text-white text-center">
         <div className="z-10">
