@@ -14,11 +14,11 @@ export default function Header() {
         </div>
         <div className='space-x-4 content-center'>
       <FontAwesomeIcon icon={faEnvelope}  href='talktooluwayemisiadebyao.com' />
-      <FontAwesomeIcon icon={faXTwitter} href='https://wwww.x.com/Iamyemisikayode' />
+      <FontAwesomeIcon icon={faXTwitter} href='https://www.x.com/Iamyemisikayode' />
       <FontAwesomeIcon icon={faLinkedin} href='https://www.linkedin.com/in/oluwayemisitopekayode/' />
       <FontAwesomeIcon icon={faFacebook} href='https://www.facebook.com/oluwayemisi.kayode.5' />
       <FontAwesomeIcon icon={faInstagram} href='https://www.instagram.com/iamyemisikayode/' />
-      <FontAwesomeIcon icon={faThreads} href='Iamyemisikayode' />
+      <FontAwesomeIcon icon={faThreads} href='https://www.threads.net/@iamyemisikayode' />
   </div>
       </div>
     )

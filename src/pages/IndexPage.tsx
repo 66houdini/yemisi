@@ -64,7 +64,7 @@ export const PersonalizedHeader = ({ bg }: { bg: string }) => {
             <Link to="https://www.instagram.com/iamyemisikayode/">
               <FontAwesomeIcon icon={faInstagram} />
             </Link>
-            <Link to="Iamyemisikayode">
+            <Link to="https://www.threads.net/@iamyemisikayode">
               <FontAwesomeIcon icon={faThreads} />
             </Link>
           </div>
@@ -380,7 +380,7 @@ export default function IndexPage() {
               </svg>
             </a>
 
-            <a href="https://wwww.x.com/Iamyemisikayode">
+            <a href="https://www.x.com/Iamyemisikayode">
               <svg
                 className="w-8 h-8 text-white hover:bg-primary border-2 p-1 rounded-full"
                 aria-hidden="true"

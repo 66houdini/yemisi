@@ -137,7 +137,7 @@ export default function Contact() {
                   </svg>
                 </a>
 
-                <a href="https://wwww.x.com/Iamyemisikayode">
+                <a href="https://www.x.com/Iamyemisikayode">
                   <svg
                     className="w-8 h-8 text-white bg-primary border-2 p-1 rounded-full"
                     aria-hidden="true"
